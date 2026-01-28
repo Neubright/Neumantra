@@ -18,15 +18,19 @@ export default function NeumanatraApproach() {
 
         <div className="max-w-4xl mx-auto space-y-6">
           <p className="text-gray-200 text-lg leading-relaxed">
-            Neumantra Capital Advisors was founded to close this gap with precision. We are a traditional communication advisory firm focused on investor relations. We work with fast-growing, operationally sophisticated mid-market companies.
-          </p>
-          
-          <p className="text-gray-200 text-base leading-relaxed">
-            Our founding team recognized that effective investor relations demands deep financial expertise alongside strategic communications capability. We've spent decades helping companies build market credibility. We've engineered companies through complex transactions and sophisticated communications campaigns. We've built investor intelligence. We work with high-growth capital models and specialized investor support.
+            Neumantra Capital Advisors was founded to close this gap with precision.
           </p>
 
           <p className="text-gray-200 text-base leading-relaxed">
-            We work with companies that are ready to scale, ready to raise, and ready to build capital markets credibility. We're disciplined in our approach to professional investor relations.
+            We are not a traditional communications agency learning finance. We are not accountants dabbling in messaging. Neumantra represents the purposeful integration of Mantraa Advisory's financial strategy expertise and Neubright Partners' stakeholder engagement capabilities - two established practices coming together to serve an underserved market segment.
+          </p>
+
+          <p className="text-gray-200 text-base leading-relaxed">
+            Our founding teams recognized that effective investor relations demands fluency across multiple disciplines: financial analysis, capital markets dynamics, governance frameworks, communication strategy, stakeholder psychology, and market positioning. Fragmented vendor relationships create inefficiency and inconsistency. Neumantra delivers unified accountability.
+          </p>
+
+          <p className="text-gray-200 text-base leading-relaxed">
+            We work with companies that are ready to scale, ready to raise, and ready to build a lasting presence in the capital markets.
           </p>
         </div>
       </div>
