@@ -7,8 +7,9 @@ export default function HeritagePartners() {
     <section
       ref={ref}
       className={`py-16 md:py-24 bg-primary text-white transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}>
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -18,66 +19,98 @@ export default function HeritagePartners() {
 
         <div className="space-y-8 max-w-4xl mx-auto">
           <div className="bg-white text-primary rounded-lg p-8">
-            <h3 className="text-xl font-bold mb-2">Mantraa Advisory | Financial & Strategic Expertise</h3>
+            <h3 className="text-xl font-bold mb-2">
+              Mantraa Advisory | Financial & Strategic Expertise
+            </h3>
             <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-              Mantraa brings rigorous financial advisory credentials to Neumantra's foundation:
+              Mantraa brings rigorous financial advisory credentials to
+              Neumantra's foundation:
             </p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Capital structure optimization and valuation analysis</span>
+                <span className="text-gray-700 text-sm">
+                  Capital structure optimization and valuation analysis
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">IPO preparation and transaction readiness</span>
+                <span className="text-gray-700 text-sm">
+                  IPO preparation and transaction readiness
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Financial reporting frameworks and disclosure enhancement</span>
+                <span className="text-gray-700 text-sm">
+                  Financial reporting frameworks and disclosure enhancement
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">CFO-level strategic guidance</span>
+                <span className="text-gray-700 text-sm">
+                  CFO-level strategic guidance
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Board advisory and governance strengthening</span>
+                <span className="text-gray-700 text-sm">
+                  Board advisory and governance strengthening
+                </span>
               </li>
             </ul>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Mantraa's track record of supporting companies through complex financial transitions ensures Neumantra's investor relations guidance is grounded in financial substance, not marketing narratives.
+              Mantraa's track record of supporting companies through complex
+              financial transitions ensures Neumantra's investor relations
+              guidance is grounded in financial substance, not marketing
+              narratives.
             </p>
           </div>
 
           <div className="bg-white text-primary rounded-lg p-8">
-            <h3 className="text-xl font-bold mb-2">Neubright Partners | Stakeholder Engagement Excellence</h3>
+            <h3 className="text-xl font-bold mb-2">
+              Neubright Partners | Stakeholder Engagement Excellence
+            </h3>
             <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-              Neubright contributes sophisticated communication and engagement capabilities:
+              Neubright contributes sophisticated communication and engagement
+              capabilities:
             </p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Stakeholder mapping and engagement strategy</span>
+                <span className="text-gray-700 text-sm">
+                  Stakeholder mapping and engagement strategy
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Corporate messaging and narrative development</span>
+                <span className="text-gray-700 text-sm">
+                  Corporate messaging and narrative development
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Reputation management and perception tracking</span>
+                <span className="text-gray-700 text-sm">
+                  Reputation management and perception tracking
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">ESG integration and sustainability communication</span>
+                <span className="text-gray-700 text-sm">
+                  ESG integration and sustainability communication
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-sm">Crisis preparedness and issue management</span>
+                <span className="text-gray-700 text-sm">
+                  Crisis preparedness and issue management
+                </span>
               </li>
             </ul>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Neubright's expertise ensures Neumantra delivers not just accurate information, but compelling, consistent, and credible communication that resonates with institutional investors and analysts.
+              Neubright's expertise ensures Neumantra delivers not just accurate
+              information, but compelling, consistent, and credible
+              communication that resonates with institutional investors and
+              analysts.
             </p>
           </div>
         </div>

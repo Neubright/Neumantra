@@ -7,8 +7,9 @@ export default function MissionVision() {
     <section
       ref={ref}
       className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}>
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -20,14 +21,20 @@ export default function MissionVision() {
           <div className="border-l-4 border-accent pl-6">
             <h3 className="text-xl font-bold text-primary mb-4">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
-              To partner with India's mid-market growth companies to transform financial strength into credible market brands through strategic, integrated investor relations built on financial insight, disciplined communication, and stakeholder trust.
+              To partner with India's mid-market growth companies to transform
+              financial strength into credible market brands through strategic,
+              integrated investor relations built on financial insight,
+              disciplined communication, and stakeholder trust.
             </p>
           </div>
 
           <div className="border-l-4 border-accent pl-6">
             <h3 className="text-xl font-bold text-primary mb-4">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">
-              To be the trusted investor relations partner for mid-market growth companies, integrating financial rigour with strategic brand and reputation building expertise to unlock inherent value to support long-term growth.
+              To be the trusted investor relations partner for mid-market growth
+              companies, integrating financial rigour with strategic brand and
+              reputation building expertise to unlock inherent value to support
+              long-term growth.
             </p>
           </div>
         </div>

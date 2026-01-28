@@ -52,17 +52,26 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <Link to="/about" className="hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   Heritage
                 </Link>
               </li>
@@ -81,22 +90,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <Link to="/services" className="hover:text-accent transition-colors">
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Capital Readiness
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-accent transition-colors">
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Strategic IR
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-accent transition-colors">
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   ESG Integration
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-accent transition-colors">
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
                   Analyst Engagement
                 </Link>
               </li>
@@ -110,12 +131,18 @@ export default function Footer() {
             </h4>
             <div className="text-sm text-gray-300 space-y-3">
               <p>
-                <a href="mailto:info@neumantra.com" className="hover:text-accent transition-colors">
+                <a
+                  href="mailto:info@neumantra.com"
+                  className="hover:text-accent transition-colors"
+                >
                   info@neumantra.com
                 </a>
               </p>
               <p>
-                <a href="tel:+912200000000" className="hover:text-accent transition-colors">
+                <a
+                  href="tel:+912200000000"
+                  className="hover:text-accent transition-colors"
+                >
                   +91-22-XXXXXXX
                 </a>
               </p>
