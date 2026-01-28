@@ -20,14 +20,14 @@ export default function MissionVision() {
           <div className="border-l-4 border-accent pl-6">
             <h3 className="text-xl font-bold text-primary mb-4">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
-              To empower India's capital-growth focused mid-market companies with the strategic communications and investor relations expertise required to build lasting credibility with stakeholders and accelerate their growth trajectories.
+              To partner with India's mid-market growth companies to transform financial strength into credible market brands through strategic, integrated investor relations built on financial insight, disciplined communication, and stakeholder trust.
             </p>
           </div>
 
           <div className="border-l-4 border-accent pl-6">
             <h3 className="text-xl font-bold text-primary mb-4">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">
-              To establish Neumantra as the definitive IR partner for high-growth mid-market companies in India - recognized for delivering measurable business impact and becoming the standard-setting approach to professional investor relations.
+              To be the trusted investor relations partner for mid-market growth companies, integrating financial rigour with strategic brand and reputation building expertise to unlock inherent value to support long-term growth.
             </p>
           </div>
         </div>
