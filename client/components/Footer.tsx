@@ -107,14 +107,14 @@ export default function Footer() {
             </h4>
             <div className="text-sm text-gray-300 space-y-3">
               <p>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <a href="mailto:info@neumantra.com" className="hover:text-accent transition-colors">
                   info@neumantra.com
-                </span>
+                </a>
               </p>
               <p>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <a href="tel:+912200000000" className="hover:text-accent transition-colors">
                   +91-22-XXXXXXX
-                </span>
+                </a>
               </p>
               <p>Mumbai, India</p>
             </div>
