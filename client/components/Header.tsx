@@ -116,23 +116,26 @@ export default function Header() {
           <nav className="md:hidden border-t border-gray-200 bg-white">
             <div className="flex flex-col py-4 space-y-2">
               {navLinks.map((link) => (
-                <span
+                <Link
                   key={link.path}
-                  className={`px-4 py-2 text-sm font-medium text-primary nav-link block cursor-default ${
+                  to={link.path}
+                  onClick={handleNavClick}
+                  className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
                     isActive(link.path)
                       ? "active bg-gray-50"
                       : "hover:bg-gray-50"
                   }`}
                 >
                   {link.label}
-                </span>
+                </Link>
               ))}
-              <button
-                disabled
-                className="mx-4 bg-accent hover:bg-red-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center w-auto cursor-default"
+              <Link
+                to="/contact"
+                onClick={handleNavClick}
+                className="mx-4 bg-accent hover:bg-red-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center w-auto"
               >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </nav>
         )}
