@@ -78,24 +78,24 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/services" className="hover:text-accent transition-colors">
                   Capital Readiness
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/services" className="hover:text-accent transition-colors">
                   Strategic IR
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/services" className="hover:text-accent transition-colors">
                   ESG Integration
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/services" className="hover:text-accent transition-colors">
                   Analyst Engagement
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
