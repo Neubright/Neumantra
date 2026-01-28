@@ -79,24 +79,27 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <span
+              <Link
                 key={link.path}
-                className={`text-sm font-medium text-primary nav-link cursor-default ${
+                to={link.path}
+                onClick={handleNavClick}
+                className={`text-sm font-medium text-primary nav-link ${
                   isActive(link.path) ? "active" : ""
                 }`}
               >
                 {link.label}
-              </span>
+              </Link>
             ))}
           </nav>
 
           {/* Desktop Contact Button */}
-          <button
-            disabled
-            className="hidden md:block bg-accent hover:bg-red-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors cursor-default"
+          <Link
+            to="/contact"
+            onClick={handleNavClick}
+            className="hidden md:block bg-accent hover:bg-red-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors"
           >
             Contact Us
-          </button>
+          </Link>
 
           {/* Mobile Hamburger Menu Button */}
           <button
