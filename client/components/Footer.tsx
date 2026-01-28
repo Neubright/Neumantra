@@ -21,24 +21,27 @@ export default function Footer() {
             </p>
             {/* Social Icons */}
             <div className="flex gap-4">
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
-              </span>
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
                 aria-label="X"
               >
                 <X size={18} />
-              </span>
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
-              </span>
+              </a>
             </div>
           </div>
 
