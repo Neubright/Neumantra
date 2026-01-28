@@ -49,19 +49,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/about" className="hover:text-accent transition-colors">
                   About Us
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/about" className="hover:text-accent transition-colors">
                   Our Team
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link to="/about" className="hover:text-accent transition-colors">
                   Heritage
-                </span>
+                </Link>
               </li>
               <li>
                 <span className="hover:text-accent transition-colors cursor-default">
