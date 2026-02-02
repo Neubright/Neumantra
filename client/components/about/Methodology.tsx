@@ -56,7 +56,7 @@ export default function Methodology() {
 • Benchmark Performance: Valuation multiples, peer positioning, institutional ownership trends`,
       deliverable:
         "Quarterly IR effectiveness reports with strategic recommendations",
-      icon: <TrendingUp className="w-8 h-8 text-accent" strokeWidth={1.5} />,
+      icon: <TrendingUp className="w-10 h-10 text-accent" strokeWidth={1.5} />,
     },
   ];
 
