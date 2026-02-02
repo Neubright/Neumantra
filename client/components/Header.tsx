@@ -150,11 +150,10 @@ export default function Header() {
           .nav-link.active {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(220, 38, 38, 0.25);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             padding: 8px 16px;
             border-radius: 20px;
             color: hsl(var(--accent));
-            box-shadow: inset 0 0 0 1px rgba(220, 38, 38, 0.15);
           }
 
           .nav-link.active::after {
