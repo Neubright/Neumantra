@@ -65,7 +65,12 @@ export default function Header() {
           transform: scaleX(1);
         }
       `}</style>
-      <div className="backdrop-blur-lg bg-white/80 text-primary border border-white/40 rounded-full shadow-lg shadow-black/5">
+      <div className="backdrop-blur-2xl bg-white/70 text-primary border border-white/20 rounded-full shadow-2xl shadow-black/10" style={{
+        background: "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
+        backdropFilter: "blur(20px)",
+        borderColor: "rgba(255, 255, 255, 0.25)",
+        boxShadow: "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)"
+      }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
