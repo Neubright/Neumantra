@@ -166,7 +166,9 @@ export default function Header() {
             {/* Mobile Hamburger Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-primary p-2"
+              className={`md:hidden p-2 transition-colors ${
+                isOverDarkBackground ? "text-white" : "text-primary"
+              }`}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
