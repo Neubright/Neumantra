@@ -148,7 +148,7 @@ export default function Methodology() {
               <h3 className="text-xl font-bold text-primary mb-3">
                 {method.title}
               </h3>
-              <p className="text-gray-700 text-base leading-relaxed mb-4">
+              <p className="text-gray-700 text-sm leading-relaxed mb-4 whitespace-pre-wrap text-left">
                 {method.description}
               </p>
               <div
