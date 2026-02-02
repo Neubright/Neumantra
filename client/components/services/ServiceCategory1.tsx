@@ -6,12 +6,12 @@ export default function ServiceCategory1() {
       title: "IPO & Public Issue Preparation",
       description: "Comprehensive support for companies planning mainboard or SME listings:",
       points: [
-        "Pre-IPO Positioning Strategy: Timing considerations, market condition assessment, investor appetite evaluation",
-        "Equity Story Development: Investment thesis articulation, competitive differentiation, growth narrative",
+        "Pre-IPO Positioning Strategy: Timing considerations, market condition assessment, and investor appetite evaluation",
+        "Equity Story Development: Investment thesis articulation, competitive differentiation, and growth narrative development",
         "Valuation Communication Framework: Translating DCF, comparable analysis, and precedent transactions into accessible investor language",
-        "Pre-Marketing Coordination: Working with investment banks on pre-IPO investor education without regulatory violations",
-        "Management Preparation: Leadership coaching for investor presentations, analyst Q&A, media interactions",
-        "Documentation Support: Red herring prospectus inputs, investor presentation development, FAQ preparation",
+        "Pre-Marketing Coordination: Working with investment banks on pre-IPO investor education within regulatory boundaries",
+        "Management Preparation: Leadership coaching for investor presentations, analyst Q&A, and media interactions",
+        "Documentation Support: DRHP inputs, investor presentation development, and FAQ preparation",
       ],
     },
     {
