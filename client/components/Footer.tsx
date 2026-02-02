@@ -1,4 +1,3 @@
-import { Linkedin, X, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
