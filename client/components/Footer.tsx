@@ -1,4 +1,4 @@
-import { Linkedin, X, Facebook } from "lucide-react";
+import { Linkedin, X, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
@@ -9,15 +9,16 @@ export default function Footer() {
       <div className="h-1 bg-accent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        {/* Main Footer Content */}
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
             <div className="mb-4 h-10">
               <Logo variant="white" />
             </div>
-            <p className="text-base text-gray-300 mb-6 leading-relaxed">
-              Bridging the gap between corporate value and market perception
-              through strategic investor relations.
+            <p className="text-sm text-gray-300 mb-6 leading-relaxed">
+              Investor relations advisory combining financial strategy expertise
+              and stakeholder engagement excellence.
             </p>
             {/* Social Icons */}
             <div className="flex gap-4">
@@ -38,9 +39,9 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
-                aria-label="Facebook"
+                aria-label="Medium"
               >
-                <Facebook size={18} />
+                <Github size={18} />
               </a>
             </div>
           </div>
@@ -64,7 +65,7 @@ export default function Footer() {
                   to="/about"
                   className="hover:text-accent transition-colors"
                 >
-                  Our Team
+                  Our Approach
                 </Link>
               </li>
               <li>
@@ -72,7 +73,7 @@ export default function Footer() {
                   to="/about"
                   className="hover:text-accent transition-colors"
                 >
-                  Heritage
+                  Leadership Team
                 </Link>
               </li>
               <li>
@@ -94,7 +95,7 @@ export default function Footer() {
                   to="/services"
                   className="hover:text-accent transition-colors"
                 >
-                  Capital Readiness
+                  Capital Markets Readiness
                 </Link>
               </li>
               <li>
@@ -102,7 +103,7 @@ export default function Footer() {
                   to="/services"
                   className="hover:text-accent transition-colors"
                 >
-                  Strategic IR
+                  Investor Relations & Engagement
                 </Link>
               </li>
               <li>
@@ -110,7 +111,7 @@ export default function Footer() {
                   to="/services"
                   className="hover:text-accent transition-colors"
                 >
-                  ESG Integration
+                  Ongoing IR Support
                 </Link>
               </li>
               <li>
@@ -118,8 +119,40 @@ export default function Footer() {
                   to="/services"
                   className="hover:text-accent transition-colors"
                 >
-                  Analyst Engagement
+                  Service Overview
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+              Resources
+            </h4>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li>
+                <Link
+                  to="/insights"
+                  className="hover:text-accent transition-colors"
+                >
+                  Insights & Articles
+                </Link>
+              </li>
+              <li>
+                <span className="hover:text-accent transition-colors cursor-default">
+                  Downloadable Tools
+                </span>
+              </li>
+              <li>
+                <span className="hover:text-accent transition-colors cursor-default">
+                  Case Studies
+                </span>
+              </li>
+              <li>
+                <span className="hover:text-accent transition-colors cursor-default">
+                  FAQs
+                </span>
               </li>
             </ul>
           </div>
@@ -129,38 +162,88 @@ export default function Footer() {
             <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
               Contact
             </h4>
-            <div className="text-sm text-gray-300 space-y-3">
-              <p>
-                <a
-                  href="mailto:info@neumantra.com"
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li>
+                <Link
+                  to="/contact"
                   className="hover:text-accent transition-colors"
                 >
-                  info@neumantra.com
+                  Schedule Consultation
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@neumantra.com"
+                  className="hover:text-accent transition-colors"
+                >
+                  General Inquiries
+                </a>
+              </li>
+              <li>
+                <span className="hover:text-accent transition-colors cursor-default">
+                  Locations
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="border-t border-gray-700 pt-8 pb-8">
+          <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+            Contact Information
+          </h4>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="text-sm text-gray-300 space-y-2">
+              <p className="font-semibold">Neumantra Capital Advisors</p>
+              <p>[Office Address]</p>
+              <p>
+                <a
+                  href="mailto:contact@neumantra.com"
+                  className="hover:text-accent transition-colors"
+                >
+                  Email: contact@neumantra.com
                 </a>
               </p>
               <p>
                 <a
-                  href="tel:+912200000000"
+                  href="tel:+91XXXXXXXXXX"
                   className="hover:text-accent transition-colors"
                 >
-                  +91-22-XXXXXXX
+                  Phone: +91-[XX]-XXXX-XXXX
                 </a>
               </p>
-              <p>Mumbai, India</p>
             </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400">
-          <p>&copy; 2024 Neumantra Capital Advisors. All Rights Reserved.</p>
-          <div className="flex gap-6 mt-4 sm:mt-0">
-            <span className="hover:text-accent transition-colors cursor-default">
-              Privacy Policy
-            </span>
-            <span className="hover:text-accent transition-colors cursor-default">
-              Terms of Service
-            </span>
+        {/* Bottom Section - Legal & Copyright */}
+        <div className="border-t border-gray-700 pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-6">
+            <div className="text-xs text-gray-400 space-y-3">
+              <p>
+                © 2025 Neumantra Capital Advisors. All rights reserved.
+              </p>
+              <p className="text-gray-500">
+                Neumantra Capital Advisors is an investor relations advisory
+                practice combining the capabilities of Mantraa Advisory and
+                Neubright Partners.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center text-xs text-gray-400 border-t border-gray-700 pt-6">
+            <div className="flex gap-6">
+              <span className="hover:text-accent transition-colors cursor-default">
+                Privacy Policy
+              </span>
+              <span className="hover:text-accent transition-colors cursor-default">
+                Terms of Service
+              </span>
+              <span className="hover:text-accent transition-colors cursor-default">
+                Disclaimer
+              </span>
+            </div>
           </div>
         </div>
       </div>
