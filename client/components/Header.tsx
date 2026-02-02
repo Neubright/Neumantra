@@ -234,7 +234,7 @@ export default function Header() {
               <Link
                 to="/"
                 onClick={scrollToTop}
-                className="flex items-center gap-2 ml-4 sm:ml-6"
+                className="flex items-center gap-2 ml-2 sm:ml-3"
               >
                 <Logo />
               </Link>
