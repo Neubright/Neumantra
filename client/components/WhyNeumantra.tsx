@@ -73,10 +73,12 @@ export default function WhyNeumantra() {
                 key={index}
                 className="backdrop-blur-xl bg-white/35 border-2 border-white/80 rounded-lg p-6 text-left hover:shadow-2xl hover:bg-white/50 hover:border-white/100 transition-all duration-300"
               >
-                <Icon
-                  className="w-12 h-12 text-accent mb-4 opacity-75"
-                  strokeWidth={1.5}
-                />
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                  <Icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
+                </div>
                 <h3 className="text-base font-bold text-primary mb-2">
                   {reason.title}
                 </h3>
