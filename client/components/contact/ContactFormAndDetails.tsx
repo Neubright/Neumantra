@@ -304,7 +304,7 @@ export default function ContactFormAndDetails() {
               <div className="flex justify-center mb-4">
                 <button
                   type="submit"
-                  className="bg-accent hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                  className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg"
                 >
                   Submit
                 </button>
