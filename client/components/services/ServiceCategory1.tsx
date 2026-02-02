@@ -29,9 +29,9 @@ export default function ServiceCategory1() {
       description: "Diagnostic assessment identifying gaps that could undermine investor confidence:",
       points: [
         "Disclosure Quality Audit: Evaluation of financial reporting against best practices and regulatory requirements",
-        "Governance Framework Assessment: Board composition, committee structure, policy documentation, compliance infrastructure",
-        "Related-Party Transaction Review: Transparency of RPTs, approval processes, disclosure adequacy",
-        "Internal Controls Evaluation: Financial controls maturity relevant to public company expectations",
+        "Governance Framework Assessment: Board composition, committee structures, policy documentation, compliance infrastructure",
+        "Related-Party Transaction Review: Transparency of RPTs, approval processes, and disclosure adequacy",
+        "Internal Controls Evaluation: Financial controls maturity aligned with public company expectations",
         "Risk Disclosure Development: Comprehensive risk factor articulation for investor materials",
       ],
     },
