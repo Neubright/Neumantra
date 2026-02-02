@@ -23,7 +23,7 @@ export default function MidMarketGap() {
           <SectionDivider />
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-6">
             <p className="text-gray-700 text-lg leading-relaxed">
               India's mid-market represents some of the country's most dynamic
