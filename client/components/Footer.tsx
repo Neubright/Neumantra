@@ -170,7 +170,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider">
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
               Contact
             </h4>
             <ul className="space-y-3 text-base text-gray-300">
