@@ -186,10 +186,10 @@ export default function Header() {
                 ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
                 : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
             backdropFilter: isMenuOpen ? "none" : "blur(20px)",
-            borderWidth: "1px",
+            borderWidth: isMenuOpen ? "0" : "1px",
             borderStyle: "solid",
             borderColor: isMenuOpen
-              ? "rgba(0, 0, 0, 0.1)"
+              ? "transparent"
               : isOverDarkBackground
                 ? "rgba(255, 255, 255, 0.5)"
                 : "rgba(255, 255, 255, 0.25)",
