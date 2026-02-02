@@ -137,38 +137,57 @@ export default function Methodology() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {methods.map((method, index) => (
-            <div
-              key={index}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
-            >
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                {method.icon}
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-3">
-                {method.title}
-              </h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-4 whitespace-pre-wrap text-left">
-                {method.description}
-              </p>
+          {methods.map((method, index) => {
+            const lines = method.description.split('\n').filter(line => line.trim());
+            const intro = lines[0];
+            const bullets = lines.slice(1).filter(line => line.startsWith('•'));
+
+            return (
               <div
-                className="pt-4 mb-2"
-                style={{
-                  borderTop: "1px solid transparent",
-                  borderImage:
-                    "linear-gradient(to right, hsl(var(--accent)) 0%, transparent 100%)",
-                  borderImageSlice: 1,
-                }}
+                key={index}
+                className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
               >
-                <p className="text-xs font-semibold text-primary mb-2">
-                  DELIVERABLE
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                  {method.icon}
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-3">
+                  {method.title}
+                </h3>
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
+                  {intro}
                 </p>
-                <p className="text-gray-600 text-xs leading-relaxed">
-                  {method.deliverable}
-                </p>
+                <ul className="space-y-2 mb-4">
+                  {bullets.map((bullet, idx) => {
+                    const text = bullet.replace('• ', '').trim();
+                    return (
+                      <li key={idx} className="flex items-start">
+                        <span className="text-accent mr-3 flex-shrink-0">•</span>
+                        <span className="text-gray-700 text-base">
+                          {text}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div
+                  className="pt-4 mb-2"
+                  style={{
+                    borderTop: "1px solid transparent",
+                    borderImage:
+                      "linear-gradient(to right, hsl(var(--accent)) 0%, transparent 100%)",
+                    borderImageSlice: 1,
+                  }}
+                >
+                  <p className="text-xs font-semibold text-primary mb-2">
+                    DELIVERABLE
+                  </p>
+                  <p className="text-gray-600 text-xs leading-relaxed">
+                    {method.deliverable}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
