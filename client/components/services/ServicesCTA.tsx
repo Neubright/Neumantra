@@ -15,12 +15,12 @@ export default function ServicesCTA() {
           "linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
       }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Ready to Elevate Your IR Capability?
         </h2>
         <SectionDivider />
-        <p className="text-base text-gray-700 mb-8 max-w-2xl mx-auto mt-6">
+        <p className="text-base text-gray-700 mb-8 max-w-4xl mx-auto mt-6">
           Every company's capital markets' journey is unique. Neumantra's flexible engagement models ensure support aligned to your stage, objectives, and resources.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
