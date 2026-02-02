@@ -5,8 +5,14 @@ export default function Methodology() {
   const methods = [
     {
       title: "Phase 1: Diagnostic & Discovery",
-      description:
-        "A comprehensive assessment establishing baseline readiness across six dimensions: Financial Transparency, Intrinsic Value of Business, Market Positioning, Narrative Strength, Engagement Infrastructure, and Leadership Readiness.",
+      description: `A comprehensive assessment establishing baseline readiness across six dimensions:
+
+• Financial Transparency: Quality of disclosures, reporting clarity, and governance frameworks
+• Intrinsic Value of Business: Identifying intrinsic value of business for establishing long term potential, clear positioning against markets and market players
+• Market Positioning: Current investor perceptions, peer comparisons, coverage gaps
+• Narrative Strength: Clarity of investment thesis, differentiation articulation, and value driver communication
+• Engagement Infrastructure: IR processes, stakeholder mapping, and communication calendars
+• Leadership Readiness: Management team comfort with investor dialogue, and message discipline`,
       deliverable:
         "IR Readiness Report with prioritised recommendations",
       icon: (
@@ -27,8 +33,13 @@ export default function Methodology() {
     },
     {
       title: "Phase 2: Strategy Design",
-      description:
-        "Development of a comprehensive investor relations strategy tailored to company stage and objectives including Investment Narrative Architecture, Target Investor Mapping, Engagement Calendar, Communication Framework, and Success Metrics.",
+      description: `Development of a comprehensive investor relations strategy tailored to company stage and objectives:
+
+• Investment Narrative Architecture: Core equity story, sector positioning, growth thesis, and defensibility arguments
+• Target Investor Mapping: Identification of appropriate institutional investors, analysts, and coverage targets
+• Engagement Calendar: Structured quarterly cadence covering earnings, analyst days, investor meets, and ad-hoc opportunities
+• Communication Framework: Message hierarchies, disclosure protocols, FAQ development, and scenario planning
+• Success Metrics: Defined KPIs for coverage expansion, investor base quality, and perception improvement`,
       deliverable:
         "Strategic IR Blueprint with 12-18 month roadmap",
       icon: (
@@ -49,10 +60,16 @@ export default function Methodology() {
     },
     {
       title: "Phase 3: Execution & Engagement",
-      description:
-        "Hands-on implementation of investor relations programs with continuous refinement covering Investor Materials, Analyst Engagement, Earnings Support, Investor Meetings, Governance Signaling, and Market Monitoring.",
+      description: `Hands-on implementation of investor relations programs with continuous refinement:
+
+• Investor Materials: Presentations, fact books, earnings supplements, and management talking points
+• Analyst Engagement: Initiation coverage targeting, regular updates, facility visits, and model support
+• Earnings Support: Results preparation, management briefings, Q&A anticipation, and commentary drafting
+• Investor Meetings: Scheduling, briefing preparation, and follow-up coordination
+• Governance Signaling: Board composition communication, policy disclosures, and ESG reporting
+• Market Monitoring: News flow tracking, peer activity analysis, and sentiment shifts`,
       deliverable:
-        "Comprehensive IR operations management with ongoing support",
+        "Comprehensive IR operations management",
       icon: (
         <svg
           className="w-8 h-8 text-accent"
@@ -71,8 +88,13 @@ export default function Methodology() {
     },
     {
       title: "Phase 4: Measurement & Refinement",
-      description:
-        "Continuous feedback integration and program optimization through Investor Perception Studies, Coverage Quality Assessment, Engagement Metrics, Message Effectiveness, and Benchmark Performance tracking.",
+      description: `Continuous feedback integration and program optimization:
+
+• Investor Perception Studies: Regular feedback collection from analysts and institutional investors
+• Coverage Quality Assessment: Depth and accuracy of analyst research, recommendation trends
+• Engagement Metrics: Meeting quality, follow-up interest, and coverage breadth
+• Message Effectiveness: Testing narrative resonance and addressing areas of confusion
+• Benchmark Performance: Valuation multiples, peer positioning, institutional ownership trends`,
       deliverable:
         "Quarterly IR effectiveness reports with strategic recommendations",
       icon: (
