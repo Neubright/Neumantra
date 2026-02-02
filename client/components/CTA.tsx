@@ -41,7 +41,7 @@ export default function CTA() {
               />
             </span>
           </button>
-          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 px-3 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 hover:shadow-2xl hover:scale-105 px-3 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Download IR Readiness Assessment
           </button>
         </div>
