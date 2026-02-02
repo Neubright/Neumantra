@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function LeadershipTeam() {
   const leaders = [
