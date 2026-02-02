@@ -18,6 +18,11 @@ export default function MidMarketGap() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-4">
+            <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
+              <TrendingDown className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+            </div>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             The Mid-Market IR Gap
           </h2>
