@@ -20,7 +20,7 @@ export default function Newsletter() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -33,7 +33,10 @@ export default function Newsletter() {
         </h2>
         <SectionDivider />
         <p className="text-gray-700 text-base mb-8 max-w-4xl mx-auto mt-6">
-          Subscribe to receive insights, resources, and updates from the Neumantra team. We share perspectives on capital markets readiness, investor relations best practices, and stakeholder engagement strategies for growth companies.
+          Subscribe to receive insights, resources, and updates from the
+          Neumantra team. We share perspectives on capital markets readiness,
+          investor relations best practices, and stakeholder engagement
+          strategies for growth companies.
         </p>
 
         <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-md mx-auto">

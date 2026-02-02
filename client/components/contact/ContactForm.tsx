@@ -17,7 +17,9 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value, type } = e.target;
     if (type === "radio") {
@@ -56,7 +58,7 @@ export default function ContactForm() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -71,7 +73,10 @@ export default function ContactForm() {
           <SectionDivider />
         </div>
 
-        <form onSubmit={handleSubmit} className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-7xl mx-auto">
+        <form
+          onSubmit={handleSubmit}
+          className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-7xl mx-auto"
+        >
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-sm font-semibold text-primary mb-2">
@@ -159,7 +164,9 @@ export default function ContactForm() {
                     onChange={handleChange}
                     className="mr-3"
                   />
-                  <span className="text-gray-700 text-base capitalize">{method === "either" ? "Either" : method}</span>
+                  <span className="text-gray-700 text-base capitalize">
+                    {method === "either" ? "Either" : method}
+                  </span>
                 </label>
               ))}
             </div>
@@ -211,7 +218,8 @@ export default function ContactForm() {
 
           {submitted && (
             <p className="text-accent font-semibold text-center mt-4">
-              Thank you! We have received your message and will be in touch shortly.
+              Thank you! We have received your message and will be in touch
+              shortly.
             </p>
           )}
         </form>

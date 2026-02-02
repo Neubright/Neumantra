@@ -8,7 +8,7 @@ export default function WhyUsIntro() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -30,11 +30,18 @@ export default function WhyUsIntro() {
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="space-y-6 text-gray-700">
               <p className="text-base leading-relaxed">
-                Selecting an investor relations advisor is a strategic decision with lasting implications. The wrong partner can damage credibility, waste leadership time, and miss critical market opportunities. The right partner becomes an essential extension of your leadership team - protecting reputation, expanding access, and enhancing valuation.
+                Selecting an investor relations advisor is a strategic decision
+                with lasting implications. The wrong partner can damage
+                credibility, waste leadership time, and miss critical market
+                opportunities. The right partner becomes an essential extension
+                of your leadership team - protecting reputation, expanding
+                access, and enhancing valuation.
               </p>
 
               <p className="text-base leading-relaxed">
-                Neumantra represents a distinctive approach to investor relations advisory, purpose-built for India's mid-market opportunity.
+                Neumantra represents a distinctive approach to investor
+                relations advisory, purpose-built for India's mid-market
+                opportunity.
               </p>
             </div>
           </div>

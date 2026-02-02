@@ -8,7 +8,8 @@ export default function Differentiators() {
     {
       number: 1,
       title: "Dual-Domain Expertise: Finance Meets Communication",
-      problem: "Traditional IR advisory often suffers from domain limitations. Communications agencies understand messaging but lack financial depth to engage analytically with investors. Financial and accounting advisors possess technical expertise but often struggle with stakeholder engagement sophistication. Companies are left managing multiple vendors with fragmented accountability",
+      problem:
+        "Traditional IR advisory often suffers from domain limitations. Communications agencies understand messaging but lack financial depth to engage analytically with investors. Financial and accounting advisors possess technical expertise but often struggle with stakeholder engagement sophistication. Companies are left managing multiple vendors with fragmented accountability",
       solution: [
         "We are purpose-built as the integration of financial strategy (Mantraa Advisory) and stakeholder engagement (Neubright Partners). Our team brings:",
         "CFO-level experience in financial analysis, valuation, and capital-markets transactions",
@@ -20,7 +21,8 @@ export default function Differentiators() {
     {
       number: 2,
       title: "Mid-Market Specialisation: Built for Your Journey",
-      problem: "Large corporations benefit from big-firm advisory access and dedicated IR teams. Early-stage startups leverage venture capital networks. Mid-market companies—those preparing to list, transitioning from SME platforms, or operating as ₹1,000–10,000 crore listed entities—are often underserved. They are too complex for basic compliance support and too small for sustained attention from large firms.",
+      problem:
+        "Large corporations benefit from big-firm advisory access and dedicated IR teams. Early-stage startups leverage venture capital networks. Mid-market companies—those preparing to list, transitioning from SME platforms, or operating as ₹1,000–10,000 crore listed entities—are often underserved. They are too complex for basic compliance support and too small for sustained attention from large firms.",
       solution: [
         "Our entire practice is calibrated to the mid-market growth companies:",
         "Understanding Constraints: Engagement models designed for efficiency, not excess",
@@ -33,7 +35,8 @@ export default function Differentiators() {
     {
       number: 3,
       title: "Founder-Led Advisory: Senior Attention Throughout",
-      problem: "Many advisory firms promise senior expertise but delegate execution to junior teams after the sales pitch. Companies receive standardized playbooks executed by analysts with limited capital-markets experience, forcing leadership teams to manage the advisory relationship closely.",
+      problem:
+        "Many advisory firms promise senior expertise but delegate execution to junior teams after the sales pitch. Companies receive standardized playbooks executed by analysts with limited capital-markets experience, forcing leadership teams to manage the advisory relationship closely.",
       solution: [
         "Direct founding-partner involvement in every engagement",
         "Custom IR strategies developed from deep company immersion",
@@ -45,7 +48,8 @@ export default function Differentiators() {
     {
       number: 4,
       title: "End-to-End Capability: Single-Partner Accountability",
-      problem: "Effective investor relations requires coordination across finance, governance, disclosure, analyst engagement, and leadership communication. Managing multiple vendors leads to inefficiency, message inconsistency, and accountability gaps",
+      problem:
+        "Effective investor relations requires coordination across finance, governance, disclosure, analyst engagement, and leadership communication. Managing multiple vendors leads to inefficiency, message inconsistency, and accountability gaps",
       solution: [
         "We deliver comprehensive IR capability under single-partner accountability:",
         "Readiness Diagnostics: Financial, governance, and disclosure assessments identifying gaps",
@@ -60,7 +64,8 @@ export default function Differentiators() {
     {
       number: 5,
       title: "Outcomes Orientation: Impact Over Activity",
-      problem: "Many IR advisors measure success by activity, such as meetings scheduled, decks created, and presentations delivered. Activity does not guarantee market impact.",
+      problem:
+        "Many IR advisors measure success by activity, such as meetings scheduled, decks created, and presentations delivered. Activity does not guarantee market impact.",
       solution: [
         "Our engagements are structured around measurable outcomes:",
         "Coverage Expansion: Number and quality of equity research analysts covering your company",
@@ -74,7 +79,8 @@ export default function Differentiators() {
     {
       number: 6,
       title: "Market Credibility: Track Record in Capital Markets",
-      problem: "Investor relations requires more than communication skill, it demands deep understanding of capital-markets behaviour, investor decision-making, and valuation drivers.",
+      problem:
+        "Investor relations requires more than communication skill, it demands deep understanding of capital-markets behaviour, investor decision-making, and valuation drivers.",
       solution: [
         "Our founding teams bring authentic capital markets credentials:",
         "Transaction Experience: Supporting multiple companies through IPOs, fundraises, M&A communications",
@@ -91,7 +97,7 @@ export default function Differentiators() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -125,20 +131,31 @@ export default function Differentiators() {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-bold text-primary mb-3 text-base">The Problem We Solve</h4>
-                  <p className="text-gray-700 text-base leading-relaxed">{diff.problem}</p>
+                  <h4 className="font-bold text-primary mb-3 text-base">
+                    The Problem We Solve
+                  </h4>
+                  <p className="text-gray-700 text-base leading-relaxed">
+                    {diff.problem}
+                  </p>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-primary mb-3 text-base">The Neumantra Difference:</h4>
+                  <h4 className="font-bold text-primary mb-3 text-base">
+                    The Neumantra Difference:
+                  </h4>
                   <ul className="space-y-2">
                     {diff.solution.map((point, idx) => (
-                      <li key={idx} className="text-gray-700 text-base flex items-start">
+                      <li
+                        key={idx}
+                        className="text-gray-700 text-base flex items-start"
+                      >
                         {point.includes(":") ? (
                           <span className="font-semibold">{point}</span>
                         ) : (
                           <>
-                            <span className="text-accent mr-3 flex-shrink-0 font-bold">−</span>
+                            <span className="text-accent mr-3 flex-shrink-0 font-bold">
+                              −
+                            </span>
                             <span>{point}</span>
                           </>
                         )}

@@ -8,7 +8,7 @@ export default function ContactDetails() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -33,8 +33,10 @@ export default function ContactDetails() {
               <div>
                 <h4 className="font-bold text-primary mb-3">Address</h4>
                 <p className="text-gray-700">
-                  [Office Address Line 1]<br />
-                  [Office Address Line 2]<br />
+                  [Office Address Line 1]
+                  <br />
+                  [Office Address Line 2]
+                  <br />
                   [City, State, PIN Code]
                 </p>
               </div>
@@ -42,20 +44,20 @@ export default function ContactDetails() {
               <div>
                 <h4 className="font-bold text-primary mb-3">Email</h4>
                 <p className="text-gray-700 mb-2">
-                  <span className="font-semibold">General Inquiries:</span><br />
+                  <span className="font-semibold">General Inquiries:</span>
+                  <br />
                   contact@neumantra.com
                 </p>
                 <p className="text-gray-700">
-                  <span className="font-semibold">New Client Inquiries:</span><br />
+                  <span className="font-semibold">New Client Inquiries:</span>
+                  <br />
                   engage@neumantra.com
                 </p>
               </div>
 
               <div>
                 <h4 className="font-bold text-primary mb-3">Phone</h4>
-                <p className="text-gray-700">
-                  +91-[XX]-XXXX-XXXX
-                </p>
+                <p className="text-gray-700">+91-[XX]-XXXX-XXXX</p>
               </div>
 
               <div>
@@ -68,8 +70,10 @@ export default function ContactDetails() {
           </div>
 
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-fit">
-            <h4 className="font-bold text-primary mb-4 text-lg">Connect With Us</h4>
-            
+            <h4 className="font-bold text-primary mb-4 text-lg">
+              Connect With Us
+            </h4>
+
             <div className="space-y-4">
               <a
                 href="#"

@@ -8,7 +8,7 @@ export default function InsightsIntro() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -27,11 +27,16 @@ export default function InsightsIntro() {
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="space-y-6 text-gray-700">
               <p className="text-base leading-relaxed">
-                Capital markets are dynamic. Regulatory expectations evolve. Investor preferences shift. ESG standards mature. Effective IR requires continuous learning and adaptation.
+                Capital markets are dynamic. Regulatory expectations evolve.
+                Investor preferences shift. ESG standards mature. Effective IR
+                requires continuous learning and adaptation.
               </p>
 
               <p className="text-base leading-relaxed">
-                Neumantra shares perspectives on capital markets readiness, investor engagement strategy, and IR best practices for mid-market companies navigating India's evolving investment landscape.
+                Neumantra shares perspectives on capital markets readiness,
+                investor engagement strategy, and IR best practices for
+                mid-market companies navigating India's evolving investment
+                landscape.
               </p>
             </div>
           </div>

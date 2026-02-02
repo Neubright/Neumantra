@@ -20,7 +20,10 @@ export default function HeritagePartners() {
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-              <Building className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+              <Building
+                className="w-8 h-8 text-accent opacity-75"
+                strokeWidth={1.5}
+              />
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">

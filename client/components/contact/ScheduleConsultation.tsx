@@ -16,7 +16,7 @@ export default function ScheduleConsultation() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -34,20 +34,33 @@ export default function ScheduleConsultation() {
         <div className="max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
             <p className="text-base text-gray-700 mb-6 leading-relaxed">
-              Whether you are beginning to explore capital markets engagement, preparing for a significant transaction, or seeking to strengthen an existing investor relations function, we welcome a conversation about your goals and how Neumantra can support them.
+              Whether you are beginning to explore capital markets engagement,
+              preparing for a significant transaction, or seeking to strengthen
+              an existing investor relations function, we welcome a conversation
+              about your goals and how Neumantra can support them.
             </p>
 
             <p className="text-base text-gray-700 mb-6 leading-relaxed">
-              Our initial discussions are exploratory and confidential. We take time to understand your business, capital markets objectives, and current stakeholder engagement approach—then provide perspective on how we might add value.
+              Our initial discussions are exploratory and confidential. We take
+              time to understand your business, capital markets objectives, and
+              current stakeholder engagement approach—then provide perspective
+              on how we might add value.
             </p>
           </div>
 
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
-            <h3 className="text-xl font-bold text-primary mb-6">What to expect:</h3>
+            <h3 className="text-xl font-bold text-primary mb-6">
+              What to expect:
+            </h3>
             <ul className="space-y-3">
               {expectations.map((item, index) => (
-                <li key={index} className="text-gray-700 text-base flex items-start">
-                  <span className="text-accent mr-3 flex-shrink-0 font-bold">−</span>
+                <li
+                  key={index}
+                  className="text-gray-700 text-base flex items-start"
+                >
+                  <span className="text-accent mr-3 flex-shrink-0 font-bold">
+                    −
+                  </span>
                   <span>{item}</span>
                 </li>
               ))}

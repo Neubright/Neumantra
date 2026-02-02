@@ -25,7 +25,7 @@ export default function ServiceCategory({
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-500 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -41,9 +41,12 @@ export default function ServiceCategory({
           </h2>
           <SectionDivider />
           <p className="text-base text-gray-700 mt-6">
-            {categoryNumber === 1 && "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
-            {categoryNumber === 2 && "For companies actively engaging with investors, analysts, and the investment community"}
-            {categoryNumber === 3 && "For listed mid-sized companies requiring a continuous investor relations partnership"}
+            {categoryNumber === 1 &&
+              "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
+            {categoryNumber === 2 &&
+              "For companies actively engaging with investors, analysts, and the investment community"}
+            {categoryNumber === 3 &&
+              "For listed mid-sized companies requiring a continuous investor relations partnership"}
           </p>
         </div>
 
@@ -61,8 +64,13 @@ export default function ServiceCategory({
               </p>
               <ul className="space-y-3">
                 {service.points.map((point, pointIndex) => (
-                  <li key={pointIndex} className="text-gray-700 text-base flex items-start">
-                    <span className="text-accent mr-3 flex-shrink-0 font-bold">•</span>
+                  <li
+                    key={pointIndex}
+                    className="text-gray-700 text-base flex items-start"
+                  >
+                    <span className="text-accent mr-3 flex-shrink-0 font-bold">
+                      •
+                    </span>
                     <span>{point}</span>
                   </li>
                 ))}

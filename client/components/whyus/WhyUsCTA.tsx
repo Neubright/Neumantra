@@ -8,7 +8,7 @@ export default function WhyUsCTA() {
     <section
       ref={ref}
       className={`py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
@@ -21,7 +21,8 @@ export default function WhyUsCTA() {
         </h2>
         <SectionDivider />
         <p className="text-base text-gray-700 mb-8 max-w-4xl mx-auto mt-6">
-          Let's discuss whether Neumantra's approach aligns with your capital-markets objectives.
+          Let's discuss whether Neumantra's approach aligns with your
+          capital-markets objectives.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-accent text-white hover:bg-red-700 px-8 py-3 rounded-full font-semibold transition-colors">

@@ -4,12 +4,14 @@ interface ArticleCardProps {
   readTime: string;
 }
 
-export default function ArticleCard({ title, description, readTime }: ArticleCardProps) {
+export default function ArticleCard({
+  title,
+  description,
+  readTime,
+}: ArticleCardProps) {
   return (
     <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-full flex flex-col">
-      <h3 className="text-xl font-bold text-primary mb-4">
-        {title}
-      </h3>
+      <h3 className="text-xl font-bold text-primary mb-4">{title}</h3>
       <p className="text-gray-700 flex-grow mb-6 leading-relaxed text-base">
         {description}
       </p>
