@@ -282,11 +282,7 @@ export default function Header() {
                   key={link.path}
                   to={link.path}
                   onClick={handleNavClick}
-                  className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
-                    isActive(link.path)
-                      ? "active bg-gray-50"
-                      : "hover:bg-gray-50"
-                  }`}
+                  className={`px-4 py-2 text-sm font-medium text-accent block`}
                 >
                   {link.label}
                 </Link>
