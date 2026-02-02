@@ -15,12 +15,12 @@ export default function WhyUsCTA() {
           "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
       }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Ready for a Strategic IR Partnership?
         </h2>
         <SectionDivider />
-        <p className="text-base text-gray-700 mb-8 max-w-2xl mx-auto mt-6">
+        <p className="text-base text-gray-700 mb-8 max-w-4xl mx-auto mt-6">
           Let's discuss whether Neumantra's approach aligns with your capital-markets objectives.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -106,7 +106,7 @@ export default function Differentiators() {
           <SectionDivider />
         </div>
 
-        <div className="space-y-8 max-w-5xl mx-auto">
+        <div className="space-y-8 max-w-7xl mx-auto">
           {differentiators.map((diff) => (
             <div
               key={diff.number}

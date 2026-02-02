@@ -26,7 +26,7 @@ export default function WhyUsIntro() {
           </h3>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="space-y-6 text-gray-700">
               <p className="text-base leading-relaxed">
