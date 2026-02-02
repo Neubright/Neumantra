@@ -15,7 +15,7 @@ export default function ServicesCTA() {
           Ready to Elevate Your IR Capability?
         </h2>
         <p className="text-lg text-red-100 mb-8 max-w-2xl mx-auto">
-          Every company's capital markets journey is unique. Neumantra's flexible engagement models ensure appropriate support matched to your stage, objectives, and resources.
+          Every company's capital markets' journey is unique. Neumantra's flexible engagement models ensure support aligned to your stage, objectives, and resources.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-white text-accent hover:bg-gray-100 px-8 py-3 rounded font-semibold transition-colors">
