@@ -21,7 +21,6 @@ export default function Hero() {
       <style>{`
         @media (max-width: 768px) {
           section {
-            background-image: none !important;
             background-attachment: scroll !important;
           }
         }
