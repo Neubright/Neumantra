@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function Methodology() {
   const methods = [
@@ -89,22 +90,27 @@ export default function Methodology() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Our Approach: The Neumantra IR Methodology
           </h2>
+          <SectionDivider />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {methods.map((method, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col items-center text-center"
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-6 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col items-center text-center"
             >
               <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                 {method.icon}
@@ -112,7 +118,7 @@ export default function Methodology() {
               <h3 className="text-lg font-bold text-primary mb-3">
                 {method.title}
               </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-gray-700 text-base leading-relaxed">
                 {method.description}
               </p>
             </div>
