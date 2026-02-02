@@ -201,11 +201,11 @@ export default function Footer() {
 
         {/* Contact Information */}
         <div className="border-t border-gray-700 pt-8 pb-8">
-          <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+          <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider">
             Contact Information
           </h4>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-sm text-gray-300 space-y-2">
+            <div className="text-base text-gray-300 space-y-2">
               <p className="font-semibold">Neumantra Capital Advisors</p>
               <p>[Office Address]</p>
               <p>
