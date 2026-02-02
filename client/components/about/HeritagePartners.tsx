@@ -23,7 +23,7 @@ export default function HeritagePartners() {
           <SectionDivider />
         </div>
 
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="space-y-8 max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <h3 className="text-xl font-bold text-primary mb-2">
               Mantraa Advisory | Financial & Strategic Expertise
