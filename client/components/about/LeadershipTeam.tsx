@@ -50,7 +50,7 @@ export default function LeadershipTeam() {
           <SectionDivider />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {leaders.map((leader, index) => (
             <div key={index} className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col items-center text-center">
               <div className="w-24 h-24 rounded-full bg-white/40 border border-white/80 mb-6 flex items-center justify-center backdrop-blur-xl">
