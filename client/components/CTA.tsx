@@ -25,10 +25,10 @@ export default function CTA() {
           strategic IR partnership that growth-focused companies require.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="backdrop-blur-md bg-accent text-white border border-accent hover:bg-red-700 px-8 py-3 rounded font-semibold transition-all duration-300 shadow-lg">
+          <button className="bg-accent text-white hover:bg-red-700 pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Schedule a Consultation
           </button>
-          <button className="backdrop-blur-md bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded font-semibold transition-all duration-300 shadow-lg">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Download IR Readiness Assessment
           </button>
         </div>
