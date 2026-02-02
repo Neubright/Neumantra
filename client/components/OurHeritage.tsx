@@ -83,7 +83,7 @@ export default function OurHeritage() {
           </div>
         </div>
 
-        <div className="text-center bg-red-700 text-white rounded-lg p-8 mt-8">
+        <div className="text-center bg-accent text-white rounded-lg p-8 mt-8">
           <h4 className="text-2xl font-bold mb-3">Together as Neumantra</h4>
           <p className="text-white text-lg max-w-3xl mx-auto">
             A new standard in investor relations - where financial substance
