@@ -25,13 +25,13 @@ export default function MidMarketGap() {
 
         <div className="max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-6">
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-base leading-relaxed">
               India's mid-market represents some of the country's most dynamic
               growth stories - innovative business models, strong fundamentals,
               ambitious expansion plans. Yet many of these companies struggle to
               translate operational excellence into sustained market credibility.
             </p>
-            <p className="text-gray-700 text-lg font-semibold leading-relaxed text-primary">
+            <p className="text-gray-700 text-base font-semibold leading-relaxed text-primary">
               The gap lies in the absence of a professional investor relations
               infrastructure.
             </p>
