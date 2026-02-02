@@ -228,7 +228,7 @@ export default function Header() {
                 : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
           }}
         >
-          <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+          <div className="max-w-7xl mx-auto px-1 sm:px-1 lg:px-2">
             <div className="flex items-center justify-between h-14">
               {/* Logo */}
               <Link
