@@ -118,13 +118,14 @@ export default function Header() {
             ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
             : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
           backdropFilter: "blur(20px)",
+          borderWidth: "1px",
+          borderStyle: "solid",
           borderColor: isOverDarkBackground
             ? "rgba(255, 255, 255, 0.5)"
             : "rgba(255, 255, 255, 0.25)",
           boxShadow: isOverDarkBackground
             ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
             : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
-          border: "1px solid",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
