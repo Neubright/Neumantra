@@ -111,6 +111,44 @@ export default function Header() {
         .nav-link.active::after {
           transform: scaleX(1);
         }
+
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slideUp {
+          from {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          to {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+        }
+
+        .mobile-menu-enter {
+          animation: slideDown 0.3s ease-out forwards;
+        }
+
+        .mobile-menu-exit {
+          animation: slideUp 0.3s ease-in forwards;
+        }
+
+        .menu-icon {
+          transition: transform 0.3s ease;
+        }
+
+        .menu-icon.open {
+          transform: rotate(0deg);
+        }
       `}</style>
       <div
         className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
