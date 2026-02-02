@@ -110,14 +110,21 @@ export default function Header() {
         }
       `}</style>
       <div
-        className="backdrop-blur-2xl bg-white/70 text-primary border border-white/20 rounded-full shadow-2xl shadow-black/10"
+        className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
+          isOverDarkBackground ? "text-white" : "text-primary"
+        }`}
         style={{
-          background:
-            "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
+          background: isOverDarkBackground
+            ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
+            : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
           backdropFilter: "blur(20px)",
-          borderColor: "rgba(255, 255, 255, 0.25)",
-          boxShadow:
-            "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+          borderColor: isOverDarkBackground
+            ? "rgba(255, 255, 255, 0.5)"
+            : "rgba(255, 255, 255, 0.25)",
+          boxShadow: isOverDarkBackground
+            ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
+            : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+          border: "1px solid",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
