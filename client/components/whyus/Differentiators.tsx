@@ -108,34 +108,37 @@ export default function Differentiators() {
 
         <div className="space-y-8 max-w-5xl mx-auto">
           {differentiators.map((diff) => (
-            <div key={diff.number} className="max-w-5xl mx-auto border-l-4 border-accent pl-6">
-              <div className="flex items-start gap-4 mb-4">
+            <div
+              key={diff.number}
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
+            >
+              <div className="flex items-start gap-4 mb-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-accent text-white font-bold">
+                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-accent text-white font-bold text-sm">
                     {diff.number}
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-primary">
+                <h3 className="text-xl font-bold text-primary pt-0.5">
                   {diff.title}
                 </h3>
               </div>
 
-              <div className="ml-14 space-y-4">
+              <div className="space-y-4">
                 <div>
-                  <h4 className="font-bold text-primary mb-2">The Problem We Solve:</h4>
-                  <p className="text-gray-700 leading-relaxed">{diff.problem}</p>
+                  <h4 className="font-bold text-primary mb-3 text-base">The Problem We Solve</h4>
+                  <p className="text-gray-700 text-base leading-relaxed">{diff.problem}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-primary mb-2">The Neumantra Difference:</h4>
+                  <h4 className="font-bold text-primary mb-3 text-base">The Neumantra Difference:</h4>
                   <ul className="space-y-2">
                     {diff.solution.map((point, idx) => (
-                      <li key={idx} className="text-gray-700 flex items-start">
+                      <li key={idx} className="text-gray-700 text-base flex items-start">
                         {point.includes(":") ? (
                           <span className="font-semibold">{point}</span>
                         ) : (
                           <>
-                            <span className="text-accent mr-3 flex-shrink-0">���</span>
+                            <span className="text-accent mr-3 flex-shrink-0 font-bold">−</span>
                             <span>{point}</span>
                           </>
                         )}
