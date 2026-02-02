@@ -35,12 +35,16 @@ export default function LeadershipTeam() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-primary text-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}>
+      }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Leadership Team
           </h2>
           <SectionDivider />
@@ -48,15 +52,15 @@ export default function LeadershipTeam() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {leaders.map((leader, index) => (
-            <div key={index} className="bg-white text-primary rounded-lg p-8 flex flex-col items-center text-center">
-              <div className="w-24 h-24 rounded-full bg-gray-300 mb-6 flex items-center justify-center">
-                <svg className="w-12 h-12 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+            <div key={index} className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col items-center text-center">
+              <div className="w-24 h-24 rounded-full bg-white/40 border border-white/80 mb-6 flex items-center justify-center backdrop-blur-xl">
+                <svg className="w-12 h-12 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold mb-1">{leader.name}</h3>
+              <h3 className="text-lg font-bold mb-1 text-primary">{leader.name}</h3>
               <p className="text-accent font-semibold text-sm mb-4">{leader.title}</p>
-              <p className="text-gray-600 text-sm leading-relaxed">{leader.bio}</p>
+              <p className="text-gray-700 text-sm leading-relaxed">{leader.bio}</p>
             </div>
           ))}
         </div>
