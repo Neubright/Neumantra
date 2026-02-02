@@ -16,8 +16,16 @@ export default function Hero() {
         backgroundAttachment: "fixed",
         backgroundColor: "#1a1a2e",
       }}
+      id="hero-section"
     >
       <style>{`
+        @media (max-width: 768px) {
+          section {
+            background-image: none !important;
+            background-attachment: scroll !important;
+          }
+        }
+
         @keyframes slideInUp {
           from {
             opacity: 0;
