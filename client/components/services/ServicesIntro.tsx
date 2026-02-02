@@ -18,15 +18,15 @@ export default function ServicesIntro() {
 
           <div className="space-y-6 text-gray-700">
             <p className="text-lg leading-relaxed">
-              India's capital markets have matured significantly. Institutional investors apply global evaluation frameworks. Analysts demand transparent, consistent communication. Regulators raise disclosure standards. ESG considerations influence allocation decisions.
+              India's capital markets have matured significantly. Institutional investors apply global evaluation frameworks. Analysts demand transparent, consistent communication. Regulators continue to raise disclosure standards, while ESG considerations increasingly influence capital allocation decisions.
             </p>
 
             <p className="text-base leading-relaxed">
-              For mid-market companies, meeting these expectations requires specialized capability that most don't have in-house, and shouldn't. Investor relations is a professional discipline demanding continuous attention, market intelligence, and strategic coordination across finance, legal, and leadership functions.
+              For mid-market companies, meeting these expectations requires specialized capability that most organisations do not—and should not—build in-house. Investor relations is a professional discipline demanding continuous attention, market intelligence, and strategic coordination across finance, legal, and leadership functions.
             </p>
 
             <p className="text-base leading-relaxed font-semibold text-primary">
-              Neumantra's services are structured around three distinct company journeys, each requiring different IR capabilities:
+              Neumantra's services are structured around three distinct company journeys, each requiring different investor relations capabilities
             </p>
           </div>
         </div>
