@@ -26,7 +26,7 @@ export default function LeadershipTeam() {
     {
       name: "Khushbu Singh",
       title: "Associate",
-      bio: "Strong blend of analytical training and market-facing experience. Campus placement with Business Standard, followed by senior roles at Standard Chartered Bank and HDFC Bank working with premium client segments. B.Sc. in Electronics and MBA in Marketing. Brings deep client relationship and market intelligence expertise to Neumantra."
+      bio: "Khushbu brings a strong blend of analytical training and market-facing experience to Neumantra. She began her career through a campus placement with Business Standard and has held senior roles at Standard Chartered Bank and HDFC Bank, where she worked closely with premium client segments and relationship teams. She holds a B.Sc. in Electronics and an MBA in Marketing."
     }
   ];
 
