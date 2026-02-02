@@ -20,7 +20,6 @@ export default function ServicesHero() {
       <style>{`
         @media (max-width: 768px) {
           section {
-            background-image: none !important;
             background-attachment: scroll !important;
           }
         }
