@@ -16,21 +16,7 @@ export default function Methodology() {
 • Leadership Readiness: Management team comfort with investor dialogue, and message discipline`,
       deliverable:
         "IR Readiness Report with prioritised recommendations",
-      icon: (
-        <svg
-          className="w-8 h-8 text-accent"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          />
-        </svg>
-      ),
+      icon: <Search className="w-8 h-8 text-accent" strokeWidth={1.5} />,
     },
     {
       title: "Phase 2: Strategy Design",
