@@ -11,7 +11,7 @@ export default function LeadershipTeam() {
     {
       name: "Kartik R. Upadhyay",
       title: "Founding Partner",
-      bio: "Over 30 years of experience in strategic communications and stakeholder engagement. Founder Director of Neubright Partners advising on reputation management, IPO communications, governance transitions, and ESG integration. Former Head of Corporate Communications at HCC Ltd, Lavasa Corporation, YES Bank, and Otis Elevators. Advanced Management Programme in Public Policy from ISB with expertise in public policy and legal matters."
+      bio: "Kartik Upadhyay brings over 30 years of experience in strategic communications and stakeholder engagement. He is the Founder Director of Neubright Partners, where he has advised leadership teams on reputation management, IPO communications, governance transitions, and ESG integration.\n\nHis client experience spans industries and organisations across the full spectrum — from start-ups to legacy enterprises — with recognised capability in crafting stakeholder strategies for complex, multi-audience environments.\n\nKartik has led investor relations campaigns for IPOs, including shareholder and analyst outreach, and has held senior leadership roles as Head of Corporate Communications and Public Affairs at HCC Ltd, Lavasa Corporation, YES Bank, and Otis Elevators.\n\nWith formal training through the Advanced Management Programme in Public Policy at ISB, he brings public policy and legal expertise and has been actively involved in mentoring and guiding young professionals in the communications and public affairs industry."
     },
     {
       name: "Prasanna Upadhyay",
