@@ -92,7 +92,7 @@ export default function Methodology() {
                 key={index}
                 className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
               >
-                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-full w-20 h-20 flex items-center justify-center mb-6">
                   {method.icon}
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">
