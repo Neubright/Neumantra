@@ -10,7 +10,7 @@ export default function ContactHero() {
       className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/5989928/pexels-photo-5989928.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
+          "url('https://images.pexels.com/photos/7433919/pexels-photo-7433919.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
