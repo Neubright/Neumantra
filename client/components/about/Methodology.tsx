@@ -14,8 +14,7 @@ export default function Methodology() {
 • Narrative Strength: Clarity of investment thesis, differentiation articulation, and value driver communication
 • Engagement Infrastructure: IR processes, stakeholder mapping, and communication calendars
 • Leadership Readiness: Management team comfort with investor dialogue, and message discipline`,
-      deliverable:
-        "IR Readiness Report with prioritised recommendations",
+      deliverable: "IR Readiness Report with prioritised recommendations",
       icon: <Search className="w-10 h-10 text-accent" strokeWidth={1.5} />,
     },
     {
@@ -27,8 +26,7 @@ export default function Methodology() {
 • Engagement Calendar: Structured quarterly cadence covering earnings, analyst days, investor meets, and ad-hoc opportunities
 • Communication Framework: Message hierarchies, disclosure protocols, FAQ development, and scenario planning
 • Success Metrics: Defined KPIs for coverage expansion, investor base quality, and perception improvement`,
-      deliverable:
-        "Strategic IR Blueprint with 12-18 month roadmap",
+      deliverable: "Strategic IR Blueprint with 12-18 month roadmap",
       icon: <Lightbulb className="w-10 h-10 text-accent" strokeWidth={1.5} />,
     },
     {
@@ -41,8 +39,7 @@ export default function Methodology() {
 • Investor Meetings: Scheduling, briefing preparation, and follow-up coordination
 • Governance Signaling: Board composition communication, policy disclosures, and ESG reporting
 • Market Monitoring: News flow tracking, peer activity analysis, and sentiment shifts`,
-      deliverable:
-        "Comprehensive IR operations management",
+      deliverable: "Comprehensive IR operations management",
       icon: <Zap className="w-10 h-10 text-accent" strokeWidth={1.5} />,
     },
     {
@@ -83,9 +80,13 @@ export default function Methodology() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {methods.map((method, index) => {
-            const lines = method.description.split('\n').filter(line => line.trim());
+            const lines = method.description
+              .split("\n")
+              .filter((line) => line.trim());
             const intro = lines[0];
-            const bullets = lines.slice(1).filter(line => line.startsWith('•'));
+            const bullets = lines
+              .slice(1)
+              .filter((line) => line.startsWith("•"));
 
             return (
               <div
@@ -103,13 +104,13 @@ export default function Methodology() {
                 </p>
                 <ul className="space-y-2 mb-4">
                   {bullets.map((bullet, idx) => {
-                    const text = bullet.replace('• ', '').trim();
+                    const text = bullet.replace("• ", "").trim();
                     return (
                       <li key={idx} className="flex items-start">
-                        <span className="text-accent mr-3 flex-shrink-0">•</span>
-                        <span className="text-gray-700 text-base">
-                          {text}
+                        <span className="text-accent mr-3 flex-shrink-0">
+                          •
                         </span>
+                        <span className="text-gray-700 text-base">{text}</span>
                       </li>
                     );
                   })}

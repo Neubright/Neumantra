@@ -65,87 +65,92 @@ export default function Header() {
           transform: scaleX(1);
         }
       `}</style>
-      <div className="backdrop-blur-2xl bg-white/70 text-primary border border-white/20 rounded-full shadow-2xl shadow-black/10" style={{
-        background: "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
-        backdropFilter: "blur(20px)",
-        borderColor: "rgba(255, 255, 255, 0.25)",
-        boxShadow: "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)"
-      }}>
+      <div
+        className="backdrop-blur-2xl bg-white/70 text-primary border border-white/20 rounded-full shadow-2xl shadow-black/10"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
+          backdropFilter: "blur(20px)",
+          borderColor: "rgba(255, 255, 255, 0.25)",
+          boxShadow:
+            "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link
-            to="/"
-            onClick={scrollToTop}
-            className="flex items-center gap-2"
-          >
-            <Logo />
-          </Link>
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <Link
+              to="/"
+              onClick={scrollToTop}
+              className="flex items-center gap-2"
+            >
+              <Logo />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={handleNavClick}
-                className={`text-sm font-medium text-primary nav-link ${
-                  isActive(link.path) ? "active" : ""
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Desktop Contact Button */}
-          <Link
-            to="/contact"
-            onClick={handleNavClick}
-            className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
-          >
-            Contact Us
-          </Link>
-
-          {/* Mobile Hamburger Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-primary p-2"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <nav className="md:hidden border-t border-gray-200 bg-white">
-            <div className="flex flex-col py-4 space-y-2">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={handleNavClick}
-                  className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
-                    isActive(link.path)
-                      ? "active bg-gray-50"
-                      : "hover:bg-gray-50"
+                  className={`text-sm font-medium text-primary nav-link ${
+                    isActive(link.path) ? "active" : ""
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/contact"
-                onClick={handleNavClick}
-                className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
-              >
-                Contact Us
-              </Link>
-            </div>
-          </nav>
-        )}
-      </div>
+            </nav>
+
+            {/* Desktop Contact Button */}
+            <Link
+              to="/contact"
+              onClick={handleNavClick}
+              className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+            >
+              Contact Us
+            </Link>
+
+            {/* Mobile Hamburger Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-primary p-2"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <nav className="md:hidden border-t border-gray-200 bg-white">
+              <div className="flex flex-col py-4 space-y-2">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={handleNavClick}
+                    className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
+                      isActive(link.path)
+                        ? "active bg-gray-50"
+                        : "hover:bg-gray-50"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link
+                  to="/contact"
+                  onClick={handleNavClick}
+                  className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </nav>
+          )}
+        </div>
       </div>
     </header>
   );

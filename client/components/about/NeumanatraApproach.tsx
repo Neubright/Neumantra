@@ -31,26 +31,26 @@ export default function NeumanatraApproach() {
             </p>
 
             <p className="text-gray-700 text-base leading-relaxed">
-              We are not a traditional communications agency learning finance. We
-              are not accountants dabbling in messaging. Neumantra represents the
-              purposeful integration of Mantraa Advisory's financial strategy
-              expertise and Neubright Partners' stakeholder engagement
-              capabilities - two established practices coming together to serve an
-              underserved market segment.
+              We are not a traditional communications agency learning finance.
+              We are not accountants dabbling in messaging. Neumantra represents
+              the purposeful integration of Mantraa Advisory's financial
+              strategy expertise and Neubright Partners' stakeholder engagement
+              capabilities - two established practices coming together to serve
+              an underserved market segment.
             </p>
 
             <p className="text-gray-700 text-base leading-relaxed">
               Our founding teams recognized that effective investor relations
               demands fluency across multiple disciplines: financial analysis,
               capital markets dynamics, governance frameworks, communication
-              strategy, stakeholder psychology, and market positioning. Fragmented
-              vendor relationships create inefficiency and inconsistency.
-              Neumantra delivers unified accountability.
+              strategy, stakeholder psychology, and market positioning.
+              Fragmented vendor relationships create inefficiency and
+              inconsistency. Neumantra delivers unified accountability.
             </p>
 
             <p className="text-gray-700 text-base leading-relaxed">
-              We work with companies that are ready to scale, ready to raise, and
-              ready to build a lasting presence in the capital markets.
+              We work with companies that are ready to scale, ready to raise,
+              and ready to build a lasting presence in the capital markets.
             </p>
           </div>
         </div>

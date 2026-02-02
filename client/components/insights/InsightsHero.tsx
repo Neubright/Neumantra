@@ -9,7 +9,8 @@ export default function InsightsHero() {
       ref={ref}
       className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/30965505/pexels-photo-30965505.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
+        backgroundImage:
+          "url('https://images.pexels.com/photos/30965505/pexels-photo-30965505.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -65,7 +66,8 @@ export default function InsightsHero() {
           Insights & Resources
         </h1>
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
-          Expert perspectives on capital markets readiness and investor relations strategy
+          Expert perspectives on capital markets readiness and investor
+          relations strategy
         </p>
         <SectionDivider />
       </div>

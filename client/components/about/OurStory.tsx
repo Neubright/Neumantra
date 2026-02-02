@@ -9,7 +9,8 @@ export default function OurStory() {
       ref={ref}
       className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
+        backgroundImage:
+          "url('https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -66,7 +67,8 @@ export default function OurStory() {
           Our Story
         </h1>
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
-          Forged from two decades of excellence in financial advisory and stakeholder engagement
+          Forged from two decades of excellence in financial advisory and
+          stakeholder engagement
         </p>
         <SectionDivider />
       </div>

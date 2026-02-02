@@ -9,7 +9,8 @@ export default function WhyUsHero() {
       ref={ref}
       className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
       style={{
-        backgroundImage: "url('https://images.pexels.com/photos/5716037/pexels-photo-5716037.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
+        backgroundImage:
+          "url('https://images.pexels.com/photos/5716037/pexels-photo-5716037.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
@@ -65,7 +66,8 @@ export default function WhyUsHero() {
           Why Us
         </h1>
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
-          Distinctive expertise in finance, communication, and capital markets strategy
+          Distinctive expertise in finance, communication, and capital markets
+          strategy
         </p>
         <SectionDivider />
       </div>

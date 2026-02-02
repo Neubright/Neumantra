@@ -29,19 +29,20 @@ export default function MidMarketGap() {
               India's mid-market represents some of the country's most dynamic
               growth stories - innovative business models, strong fundamentals,
               ambitious expansion plans. Yet many of these companies struggle to
-              translate operational excellence into sustained market credibility.
+              translate operational excellence into sustained market
+              credibility.
             </p>
             <p className="text-gray-700 text-base font-semibold leading-relaxed text-primary">
               The gap lies in the absence of a professional investor relations
               infrastructure.
             </p>
             <p className="text-gray-700 text-base leading-relaxed">
-              Large corporations benefit from dedicated IR teams and long-standing
-              advisory relationships. Early-stage startups leverage venture
-              capital networks. Mid-market companies—those preparing to list,
-              already on SME exchanges, or operating as listed mid-sized
-              entities—often navigate capital markets with limited specialised
-              support.
+              Large corporations benefit from dedicated IR teams and
+              long-standing advisory relationships. Early-stage startups
+              leverage venture capital networks. Mid-market companies—those
+              preparing to list, already on SME exchanges, or operating as
+              listed mid-sized entities—often navigate capital markets with
+              limited specialised support.
             </p>
           </div>
         </div>

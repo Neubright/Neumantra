@@ -27,7 +27,10 @@ export default function MissionVision() {
         <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <Target className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+              <Target
+                className="w-8 h-8 text-accent opacity-75"
+                strokeWidth={1.5}
+              />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">Our Mission</h3>
             <p className="text-gray-700 text-base leading-relaxed">
@@ -40,7 +43,10 @@ export default function MissionVision() {
 
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-              <Eye className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+              <Eye
+                className="w-8 h-8 text-accent opacity-75"
+                strokeWidth={1.5}
+              />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">Our Vision</h3>
             <p className="text-gray-700 text-base leading-relaxed">
