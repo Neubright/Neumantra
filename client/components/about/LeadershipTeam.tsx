@@ -60,7 +60,15 @@ export default function LeadershipTeam() {
               </div>
               <h3 className="text-lg font-bold mb-1 text-primary">{leader.name}</h3>
               <p className="text-accent font-semibold text-sm mb-4">{leader.title}</p>
-              <p className="text-gray-700 text-sm leading-relaxed">{leader.bio}</p>
+              <div className="text-gray-700 text-sm leading-relaxed space-y-3">
+                {leader.bio.split('\n').map((paragraph, idx) => (
+                  paragraph.trim() && (
+                    <p key={idx}>
+                      {paragraph.trim()}
+                    </p>
+                  )
+                ))}
+              </div>
             </div>
           ))}
         </div>
