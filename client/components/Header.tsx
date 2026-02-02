@@ -136,7 +136,7 @@ export default function Header() {
 
         @media (min-width: 768px) {
           .nav-link {
-            transition: all 0.6s ease;
+            transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           }
 
           .nav-link:hover:not(.active) {
