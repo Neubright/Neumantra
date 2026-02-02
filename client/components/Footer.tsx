@@ -97,10 +97,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider">
               Services
             </h4>
-            <ul className="space-y-3 text-sm text-gray-300">
+            <ul className="space-y-3 text-base text-gray-300">
               <li>
                 <Link
                   to="/services"
