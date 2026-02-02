@@ -106,7 +106,9 @@ export default function Methodology() {
               key={index}
               className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col items-center text-center"
             >
-              <div className="mb-4">{method.icon}</div>
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                {method.icon}
+              </div>
               <h3 className="text-lg font-bold text-primary mb-3">
                 {method.title}
               </h3>
