@@ -276,7 +276,7 @@ export default function Header() {
               marginTop: "-1px",
             }}
           >
-            <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
+            <div className="flex flex-col pt-2 pb-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
