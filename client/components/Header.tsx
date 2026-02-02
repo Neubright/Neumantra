@@ -194,7 +194,7 @@ export default function Header() {
                   to={link.path}
                   onClick={handleNavClick}
                   className={`text-sm font-medium nav-link transition-colors ${
-                    isOverDarkBackground ? "text-white" : "text-primary"
+                    isMenuOpen || isOverDarkBackground ? "text-primary" : "text-primary"
                   } ${isActive(link.path) ? "active" : ""}`}
                 >
                   {link.label}
