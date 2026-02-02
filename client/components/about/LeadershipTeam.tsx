@@ -61,18 +61,28 @@ export default function LeadershipTeam() {
               key={index}
               className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col items-center text-center"
             >
-              <div className="w-24 h-24 rounded-full bg-white/40 border border-white/80 mb-6 flex items-center justify-center backdrop-blur-xl">
-                <svg
-                  className="w-12 h-12 text-accent"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                    clipRule="evenodd"
+              <div className="w-24 h-24 rounded-full bg-white/40 border border-white/80 mb-6 overflow-hidden backdrop-blur-xl">
+                {leader.image ? (
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-full h-full object-cover"
                   />
-                </svg>
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <svg
+                      className="w-12 h-12 text-accent"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                )}
               </div>
               <h3 className="text-lg font-bold mb-1 text-primary">
                 {leader.name}
