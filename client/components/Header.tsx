@@ -177,7 +177,13 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <nav className="md:hidden border-t border-gray-200 bg-white">
+            <nav
+              className={`md:hidden border-t transition-colors ${
+                isOverDarkBackground
+                  ? "border-gray-300 bg-white"
+                  : "border-gray-200 bg-white"
+              }`}
+            >
               <div className="flex flex-col py-4 space-y-2">
                 {navLinks.map((link) => (
                   <Link
