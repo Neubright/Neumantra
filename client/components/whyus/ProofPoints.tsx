@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Users, Briefcase, Trophy } from "lucide-react";
 
 export default function ProofPoints() {
   const [ref, isInView] = useInView();
