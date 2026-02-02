@@ -234,7 +234,10 @@ export default function Header() {
                 to="/"
                 onClick={scrollToTop}
                 className="flex items-center gap-2 ml-2 sm:ml-3"
-                style={{ transform: "scale(0.9)", transformOrigin: "left center" }}
+                style={{
+                  transform: "scale(0.9)",
+                  transformOrigin: "left center",
+                }}
               >
                 <Logo />
               </Link>
