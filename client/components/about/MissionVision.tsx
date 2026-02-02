@@ -43,7 +43,7 @@ export default function MissionVision() {
               <Eye className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">Our Vision</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 text-base leading-relaxed">
               To be the trusted investor relations partner for mid-market growth
               companies, integrating financial rigour with strategic brand and
               reputation building expertise to unlock inherent value to support
