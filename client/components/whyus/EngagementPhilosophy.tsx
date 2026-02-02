@@ -1,63 +1,77 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function EngagementPhilosophy() {
   const [ref, isInView] = useInView();
 
   const principles = [
     {
-      title: "We Invest in Understanding",
-      description: "Deep immersion in your business model, competitive dynamics, and strategic priorities before any external engagement",
+      title: "We invest deeply in understanding your business",
+      description: "",
     },
     {
-      title: "We Challenge Respectfully",
-      description: "Professional obligation to provide candid counsel, even when it's uncomfortable, rather than just validating existing views",
+      title: "We remain outcome-focused and client-centric",
+      description: "",
     },
     {
-      title: "We Protect Long-Term Interests",
-      description: "Recommendations balanced between immediate objectives and sustained market credibility",
+      title: "We challenge respectfully and advise candidly",
+      description: "",
     },
     {
-      title: "We are Accountable",
-      description: "Clear responsibility for outcomes, transparent reporting, and continuous improvement",
+      title: "We protect long-term market credibility",
+      description: "",
     },
     {
-      title: "We Enable Internal Capability",
-      description: "Knowledge transfer approach that strengthens your team's IR competency over time",
+      title: "We remain accountable through transparent reporting",
+      description: "",
+    },
+    {
+      title: "We enable internal capability through knowledge transfer",
+      description: "",
     },
   ];
 
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Engagement Philosophy
           </h2>
-          <h3 className="text-2xl font-semibold text-primary mb-12 text-center">
+          <SectionDivider />
+          <h3 className="text-2xl font-semibold text-primary mt-6">
             Partnership, Not Vendor Relationship
           </h3>
+        </div>
 
-          <p className="text-gray-700 text-lg mb-8 leading-relaxed text-center">
-            Effective investor relations isn't transactional - it's a sustained partnership requiring trust, transparency, and strategic alignment.
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
+            <p className="text-gray-700 text-base leading-relaxed">
+              Effective investor relations isn't transactional - it's a sustained partnership requiring trust, transparency, and strategic alignment.
+            </p>
+          </div>
 
-          <p className="text-gray-700 font-semibold text-lg mb-8">
+          <p className="text-gray-700 font-semibold text-base mb-8 text-center">
             When you engage Neumantra:
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <ul className="space-y-3">
             {principles.map((principle, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 border-l-4 border-accent">
-                <h4 className="text-lg font-bold text-primary mb-3">{principle.title}</h4>
-                <p className="text-gray-700">{principle.description}</p>
-              </div>
+              <li key={index} className="text-gray-700 text-base flex items-start">
+                <span className="text-accent mr-3 flex-shrink-0 font-bold">•</span>
+                <span>{principle.title}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>
