@@ -57,7 +57,12 @@ export default function ProofPoints() {
           </div>
 
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <h3 className="text-xl font-bold text-primary mb-6">Advisory Depth</h3>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center flex-shrink-0">
+                <Briefcase className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-bold text-primary">Advisory Depth</h3>
+            </div>
             <ul className="space-y-4 text-gray-700 text-base">
               <li className="flex items-start">
                 <span className="text-accent mr-3 flex-shrink-0 font-bold">−</span>
