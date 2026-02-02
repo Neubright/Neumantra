@@ -255,7 +255,7 @@ export default function Header() {
       {/* Mobile Menu - Outside glass island, positioned absolutely */}
       {isMenuOpen && (
         <nav
-          className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 rounded-b-3xl`}
+          className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-30 rounded-b-3xl`}
           style={{
             background: "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%)",
             backdropFilter: "blur(20px)",
