@@ -241,7 +241,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center text-xs text-gray-400 border-t border-gray-700 pt-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center text-sm text-gray-400 border-t border-gray-700 pt-6">
             <div className="flex gap-6">
               <span className="hover:text-accent transition-colors cursor-default">
                 Privacy Policy
