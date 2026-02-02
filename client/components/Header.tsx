@@ -133,6 +133,20 @@ export default function Header() {
           transform: scaleX(1);
         }
 
+        @media (min-width: 768px) {
+          .nav-link.active {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+          }
+
+          .nav-link.active::after {
+            display: none;
+          }
+        }
+
         @keyframes slideDown {
           from {
             opacity: 0;
