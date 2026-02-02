@@ -22,7 +22,6 @@ export default function About() {
         <HeritagePartners />
         <Methodology />
         <LeadershipTeam />
-        <Quote />
       </main>
       <Footer />
     </div>
