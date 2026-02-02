@@ -282,7 +282,9 @@ export default function Header() {
                   key={link.path}
                   to={link.path}
                   onClick={handleNavClick}
-                  className={`px-4 py-2 text-sm font-medium text-accent block`}
+                  className={`px-4 py-2 text-sm font-medium block ${
+                    isActive(link.path) ? "text-accent" : "text-primary"
+                  }`}
                 >
                   {link.label}
                 </Link>
