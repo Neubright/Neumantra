@@ -183,7 +183,7 @@ export default function Header() {
         }
 
         .mobile-menu-enter {
-          animation: slideDown 0.3s ease-out forwards;
+          animation: slideDown 0.8s ease-out forwards;
         }
 
         .mobile-menu-exit {
