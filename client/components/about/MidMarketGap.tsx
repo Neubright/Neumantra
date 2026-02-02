@@ -1,6 +1,5 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
-import { TrendingDown } from "lucide-react";
 
 export default function MidMarketGap() {
   const [ref, isInView] = useInView();
