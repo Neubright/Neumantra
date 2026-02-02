@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="mb-4 h-10">
               <Logo variant="white" />
             </div>
-            <p className="text-sm text-gray-300 mb-6 leading-relaxed">
+            <p className="text-base text-gray-300 mb-6 leading-relaxed">
               Bridging the gap between corporate value and market perception
               through strategic investor relations.
             </p>
