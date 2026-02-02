@@ -66,7 +66,7 @@ export default function Header() {
         }
       `}</style>
       <div className="backdrop-blur-lg bg-white/80 text-primary border border-white/40 rounded-full shadow-lg shadow-black/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
