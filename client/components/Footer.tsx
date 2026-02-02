@@ -231,7 +231,7 @@ export default function Footer() {
         {/* Bottom Section - Legal & Copyright */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-6">
-            <div className="text-xs text-gray-400 space-y-3">
+            <div className="text-sm text-gray-400 space-y-3">
               <p>© 2025 Neumantra Capital Advisors. All rights reserved.</p>
               <p className="text-gray-500">
                 Neumantra Capital Advisors is an investor relations advisory
