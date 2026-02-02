@@ -16,8 +16,8 @@ export default function ServiceScenarios() {
       ],
       engagement: [
         "Phase 1 (Months 1-3): IR readiness diagnostic, governance gap identification, equity story development",
-        "Phase 2 (Months 4-12): Governance strengthening, board appointments, disclosure enhancement, management IR training",
-        "Phase 3 (Months 13-18): Investor materials development, pre-IPO positioning, analyst education, IPO support",
+        "Phase 2 (Months 4-12): Governance strengthening, board appointments, disclosure enhancement, management IR training, Merchant Banker Selection",
+        "Phase 3 (Months 13-18): Regulatory Filings & Support, Investor materials development, pre-IPO positioning, analyst education, IPO support",
         "Post-IPO: Transition to ongoing IR partnership",
       ],
       outcome: "Successful IPO with strong institutional demand, analyst coverage from 3 research firms, premium valuation",
