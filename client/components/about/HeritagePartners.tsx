@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function HeritagePartners() {
   const [ref, isInView] = useInView();
@@ -6,20 +7,25 @@ export default function HeritagePartners() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-primary text-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 text-gray-900 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Our Heritage Partners
           </h2>
+          <SectionDivider />
         </div>
 
         <div className="space-y-8 max-w-4xl mx-auto">
-          <div className="bg-white text-primary rounded-lg p-8">
-            <h3 className="text-xl font-bold mb-2">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <h3 className="text-xl font-bold text-primary mb-2">
               Mantraa Advisory | Financial & Strategic Expertise
             </h3>
             <p className="text-gray-700 text-base mb-4 leading-relaxed">
@@ -66,8 +72,8 @@ export default function HeritagePartners() {
             </p>
           </div>
 
-          <div className="bg-white text-primary rounded-lg p-8">
-            <h3 className="text-xl font-bold mb-2">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <h3 className="text-xl font-bold text-primary mb-2">
               Neubright Partners | Stakeholder Engagement Excellence
             </h3>
             <p className="text-gray-700 text-base mb-4 leading-relaxed">
