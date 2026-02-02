@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-4 z-50 mx-4 sm:mx-6 lg:mx-8">
+    <header className="sticky top-4 z-50 mx-6 sm:mx-10 lg:mx-20">
       <style>{`
         .nav-link {
           position: relative;
