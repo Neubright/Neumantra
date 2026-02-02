@@ -47,7 +47,7 @@ export default function Header() {
           left: 0;
           width: 100%;
           height: 3px;
-          background-color: rgb(239, 68, 68);
+          background-color: hsl(var(--accent));
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.3s ease;
@@ -58,7 +58,7 @@ export default function Header() {
         }
 
         .nav-link.active {
-          color: rgb(239, 68, 68);
+          color: hsl(var(--accent));
         }
 
         .nav-link.active::after {
