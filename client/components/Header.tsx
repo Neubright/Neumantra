@@ -152,7 +152,7 @@ export default function Header() {
       `}</style>
       <div
         className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
-          isMenuOpen || isOverDarkBackground ? "text-primary" : "text-primary"
+          isMenuOpen ? "text-primary" : isOverDarkBackground ? "text-white" : "text-primary"
         }`}
         style={{
           background: isMenuOpen
