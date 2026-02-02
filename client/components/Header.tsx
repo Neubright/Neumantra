@@ -231,10 +231,6 @@ export default function Header() {
                   ? "border-gray-300 bg-white"
                   : "border-gray-200 bg-white"
               }`}
-              style={{
-                marginTop: "8px",
-                borderRadius: "0 0 16px 16px",
-              }}
             >
               <div className="flex flex-col py-4 space-y-2">
                 {navLinks.map((link) => (
