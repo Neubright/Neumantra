@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function ServicesCTA() {
   const [ref, isInView] = useInView();
@@ -6,22 +7,27 @@ export default function ServicesCTA() {
   return (
     <section
       ref={ref}
-      className={`bg-accent text-white py-16 md:py-24 transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Ready to Elevate Your IR Capability?
         </h2>
-        <p className="text-lg text-red-100 mb-8 max-w-2xl mx-auto">
+        <SectionDivider />
+        <p className="text-base text-gray-700 mb-8 max-w-2xl mx-auto mt-6">
           Every company's capital markets' journey is unique. Neumantra's flexible engagement models ensure support aligned to your stage, objectives, and resources.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-accent hover:bg-gray-100 px-8 py-3 rounded font-semibold transition-colors">
+          <button className="bg-accent text-white hover:bg-red-700 px-8 py-3 rounded-full font-semibold transition-colors">
             Schedule a Consultation
           </button>
-          <button className="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-3 rounded font-semibold transition-colors">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 px-8 py-3 rounded-full font-semibold transition-colors">
             Download Service Overview
           </button>
         </div>
