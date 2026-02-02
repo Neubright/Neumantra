@@ -62,7 +62,7 @@ export default function ServiceCategory3() {
   return (
     <ServiceCategory
       categoryNumber={3}
-      categoryTitle="Ongoing IR for Listed Companies"
+      categoryTitle="Customised IR for Listed Companies"
       services={services}
       backgroundColor="bg-white"
     />
