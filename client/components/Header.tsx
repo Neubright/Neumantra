@@ -213,7 +213,13 @@ export default function Header() {
               }`}
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              <div className="menu-icon open relative w-6 h-6 flex items-center justify-center">
+                {isMenuOpen ? (
+                  <X size={24} className="absolute" />
+                ) : (
+                  <Menu size={24} className="absolute" />
+                )}
+              </div>
             </button>
           </div>
 
