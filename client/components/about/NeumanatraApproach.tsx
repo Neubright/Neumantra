@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Lightbulb } from "lucide-react";
 
 export default function NeumanatraApproach() {
   const [ref, isInView] = useInView();
