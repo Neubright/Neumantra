@@ -201,7 +201,7 @@ export default function Footer() {
 
         {/* Contact Information */}
         <div className="border-t border-gray-700 pt-8 pb-8">
-          <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider">
+          <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
             Contact Information
           </h4>
           <div className="grid md:grid-cols-2 gap-8">
