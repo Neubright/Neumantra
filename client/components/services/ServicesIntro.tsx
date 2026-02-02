@@ -18,9 +18,12 @@ export default function ServicesIntro() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Modern Investor Relations Demands More
+            INTRODUCTION
           </h2>
           <SectionDivider />
+          <h3 className="text-2xl font-semibold text-primary mt-6">
+            Modern Investor Relations Demands More
+          </h3>
         </div>
 
         <div className="max-w-4xl mx-auto">
