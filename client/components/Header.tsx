@@ -228,7 +228,7 @@ export default function Header() {
       {/* Mobile Menu - Outside glass island, positioned absolutely */}
       {isMenuOpen && (
         <nav
-          className={`md:hidden border-t mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 mt-2 ${
+          className={`md:hidden border-t mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 ${
             isOverDarkBackground
               ? "border-gray-300 bg-white"
               : "border-gray-200 bg-white"
