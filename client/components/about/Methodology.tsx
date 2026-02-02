@@ -6,7 +6,9 @@ export default function Methodology() {
     {
       title: "Phase 1: Diagnostic & Discovery",
       description:
-        "A comprehensive assessment establishing baseline readiness across six dimensions: Financial Transparency (quality of disclosures, reporting clarity, governance frameworks), Intrinsic Value of Business (identifying long-term potential, market positioning), Market Positioning (investor perceptions, peer comparisons, coverage gaps), Narrative Strength (investment thesis clarity, differentiation, value drivers), Engagement Infrastructure (IR processes, stakeholder mapping, communication calendars), and Leadership Readiness (management comfort with investor dialogue, message discipline). Deliverable: IR Readiness Report with prioritised recommendations.",
+        "A comprehensive assessment establishing baseline readiness across six dimensions: Financial Transparency, Intrinsic Value of Business, Market Positioning, Narrative Strength, Engagement Infrastructure, and Leadership Readiness.",
+      deliverable:
+        "IR Readiness Report with prioritised recommendations",
       icon: (
         <svg
           className="w-8 h-8 text-accent"
@@ -26,7 +28,9 @@ export default function Methodology() {
     {
       title: "Phase 2: Strategy Design",
       description:
-        "Development of a comprehensive investor relations strategy tailored to company stage and objectives: Investment Narrative Architecture (core equity story, sector positioning, growth thesis, defensibility arguments), Target Investor Mapping (institutional investors, analysts, coverage targets), Engagement Calendar (structured quarterly cadence covering earnings, analyst days, investor meets), Communication Framework (message hierarchies, disclosure protocols, FAQ development, scenario planning), and Success Metrics (defined KPIs for coverage expansion, investor base quality, perception improvement). Deliverable: Strategic IR Blueprint with 12-18 month roadmap.",
+        "Development of a comprehensive investor relations strategy tailored to company stage and objectives including Investment Narrative Architecture, Target Investor Mapping, Engagement Calendar, Communication Framework, and Success Metrics.",
+      deliverable:
+        "Strategic IR Blueprint with 12-18 month roadmap",
       icon: (
         <svg
           className="w-8 h-8 text-accent"
@@ -46,7 +50,9 @@ export default function Methodology() {
     {
       title: "Phase 3: Execution & Engagement",
       description:
-        "Hands-on implementation of investor relations programs with continuous refinement: Investor Materials (presentations, fact books, earnings supplements, talking points), Analyst Engagement (coverage targeting, regular updates, facility visits, model support), Earnings Support (results preparation, management briefings, Q&A anticipation), Investor Meetings (scheduling, briefing preparation, follow-up coordination), Governance Signaling (board composition communication, policy disclosures, ESG reporting), and Market Monitoring (news flow tracking, peer activity analysis, sentiment shifts). Deliverable: Comprehensive IR operations management.",
+        "Hands-on implementation of investor relations programs with continuous refinement covering Investor Materials, Analyst Engagement, Earnings Support, Investor Meetings, Governance Signaling, and Market Monitoring.",
+      deliverable:
+        "Comprehensive IR operations management with ongoing support",
       icon: (
         <svg
           className="w-8 h-8 text-accent"
@@ -66,7 +72,9 @@ export default function Methodology() {
     {
       title: "Phase 4: Measurement & Refinement",
       description:
-        "Continuous feedback integration and program optimization: Investor Perception Studies (regular feedback from analysts and institutional investors), Coverage Quality Assessment (depth and accuracy of analyst research, recommendation trends), Engagement Metrics (meeting quality, follow-up interest, coverage breadth), Message Effectiveness (testing narrative resonance, addressing confusion areas), and Benchmark Performance (valuation multiples, peer positioning, institutional ownership trends). Deliverable: Quarterly IR effectiveness reports with strategic recommendations.",
+        "Continuous feedback integration and program optimization through Investor Perception Studies, Coverage Quality Assessment, Engagement Metrics, Message Effectiveness, and Benchmark Performance tracking.",
+      deliverable:
+        "Quarterly IR effectiveness reports with strategic recommendations",
       icon: (
         <svg
           className="w-8 h-8 text-accent"
