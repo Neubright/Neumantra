@@ -90,16 +90,23 @@ export default function Differentiators() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-gray-50 transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(248, 223, 228, 0.8) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-16 text-center">
-          What Makes Neumantra Different
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            What Makes Neumantra Different
+          </h2>
+          <SectionDivider />
+        </div>
 
-        <div className="space-y-16">
+        <div className="space-y-8 max-w-5xl mx-auto">
           {differentiators.map((diff) => (
             <div key={diff.number} className="max-w-5xl mx-auto border-l-4 border-accent pl-6">
               <div className="flex items-start gap-4 mb-4">
