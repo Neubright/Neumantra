@@ -7,7 +7,6 @@ import MissionVision from "@/components/about/MissionVision";
 import HeritagePartners from "@/components/about/HeritagePartners";
 import Methodology from "@/components/about/Methodology";
 import LeadershipTeam from "@/components/about/LeadershipTeam";
-import Quote from "@/components/about/Quote";
 import { usePageLoadScroll } from "@/hooks/usePageLoadScroll";
 
 export default function About() {
