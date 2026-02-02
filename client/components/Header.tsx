@@ -106,6 +106,7 @@ export default function Header() {
           position: relative;
           display: inline-block;
           font-weight: 600;
+          transition: color 0.3s ease;
         }
 
         .nav-link::after {
@@ -134,12 +135,25 @@ export default function Header() {
         }
 
         @media (min-width: 768px) {
+          .nav-link {
+            transition: all 0.3s ease;
+          }
+
+          .nav-link:hover:not(.active) {
+            color: hsl(var(--accent));
+          }
+
+          .nav-link:hover::after {
+            display: none;
+          }
+
           .nav-link.active {
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 8px 16px;
             border-radius: 20px;
+            color: hsl(var(--accent));
           }
 
           .nav-link.active::after {
