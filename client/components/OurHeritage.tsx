@@ -31,12 +31,14 @@ export default function OurHeritage() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300 shadow-lg">
-            <div className="flex justify-start mb-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
-                alt="Mantraa Logo"
-                className="h-6 w-auto"
-              />
+            <div className="flex justify-start mb-6">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
+                  alt="Mantraa Logo"
+                  className="h-8 w-auto"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
               <a
