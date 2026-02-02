@@ -32,7 +32,7 @@ export default function ServicesCTA() {
               <img src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200" alt="Arrow" style={{ filter: "brightness(0) invert(1)", maxWidth: "14px", maxHeight: "22px", objectFit: "contain", marginLeft: "2px" }} />
             </span>
           </button>
-          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 px-3 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Download Service Overview
           </button>
         </div>
