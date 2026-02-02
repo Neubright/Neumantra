@@ -78,12 +78,24 @@ export default function Header() {
     scrollToTop();
   };
 
+  // Prevent scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       {/* Overlay when menu is open */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-30 md:hidden"
+          className="fixed inset-0 bg-black/30 backdrop-blur-md z-30 md:hidden"
           onClick={() => setIsMenuOpen(false)}
         ></div>
       )}
@@ -161,31 +173,21 @@ export default function Header() {
       `}</style>
       <div
         className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
-          isMenuOpen
-            ? "text-primary"
-            : isOverDarkBackground
-              ? "text-white"
-              : "text-primary"
+          isOverDarkBackground ? "text-white" : "text-primary"
         }`}
         style={{
-          background: isMenuOpen
-            ? "linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"
-            : isOverDarkBackground
-              ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
-              : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
+          background: isOverDarkBackground
+            ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
+            : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
           backdropFilter: "blur(20px)",
           borderWidth: "1px",
           borderStyle: "solid",
-          borderColor: isMenuOpen
-            ? "rgba(0, 0, 0, 0.1)"
-            : isOverDarkBackground
-              ? "rgba(255, 255, 255, 0.5)"
-              : "rgba(255, 255, 255, 0.25)",
-          boxShadow: isMenuOpen
-            ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.15)"
-            : isOverDarkBackground
-              ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
-              : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+          borderColor: isOverDarkBackground
+            ? "rgba(255, 255, 255, 0.5)"
+            : "rgba(255, 255, 255, 0.25)",
+          boxShadow: isOverDarkBackground
+            ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
+            : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
@@ -207,11 +209,7 @@ export default function Header() {
                   to={link.path}
                   onClick={handleNavClick}
                   className={`text-sm font-medium nav-link transition-colors ${
-                    isMenuOpen
-                      ? "text-primary"
-                      : isOverDarkBackground
-                        ? "text-white"
-                        : "text-primary"
+                    isOverDarkBackground ? "text-white" : "text-primary"
                   } ${isActive(link.path) ? "active" : ""}`}
                 >
                   {link.label}
@@ -232,11 +230,7 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`md:hidden p-2 transition-colors ${
-                isMenuOpen
-                  ? "text-primary"
-                  : isOverDarkBackground
-                    ? "text-white"
-                    : "text-primary"
+                isOverDarkBackground ? "text-white" : "text-primary"
               }`}
               aria-label="Toggle menu"
             >
@@ -255,11 +249,14 @@ export default function Header() {
       {/* Mobile Menu - Outside glass island, positioned absolutely */}
       {isMenuOpen && (
         <nav
-          className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 rounded-b-3xl ${
-            isOverDarkBackground ? "bg-white" : "bg-white"
-          }`}
+          className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 rounded-b-3xl`}
           style={{
-            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+            background: "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%)",
+            backdropFilter: "blur(20px)",
+            borderWidth: "1px",
+            borderStyle: "solid",
+            borderColor: "rgba(255, 255, 255, 0.3)",
+            boxShadow: "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
           }}
         >
           <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
