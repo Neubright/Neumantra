@@ -69,12 +69,9 @@ export default function ContactFormAndDetails() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div>
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Contact Form
-              </h2>
-              <SectionDivider />
-            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+              Contact Form
+            </h2>
 
             <form
               onSubmit={handleSubmit}
@@ -230,12 +227,9 @@ export default function ContactFormAndDetails() {
 
           {/* Contact Details */}
           <div>
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Corporate Contact Details
-              </h2>
-              <SectionDivider />
-            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+              Corporate Contact Details
+            </h2>
 
             <div className="space-y-6">
               <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
