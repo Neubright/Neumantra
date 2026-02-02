@@ -19,7 +19,7 @@ export default function ContactFormAndDetails() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value, type } = e.target;
     if (type === "radio") {
@@ -94,9 +94,7 @@ export default function ContactFormAndDetails() {
                   <div>
                     <h4 className="font-bold text-primary mb-3">Email</h4>
                     <p className="text-gray-700 text-sm mb-2">
-                      <span className="font-semibold">
-                        General Inquiries:
-                      </span>
+                      <span className="font-semibold">General Inquiries:</span>
                       <br />
                       contact@neumantra.com
                     </p>
@@ -115,7 +113,9 @@ export default function ContactFormAndDetails() {
                   </div>
 
                   <div>
-                    <h4 className="font-bold text-primary mb-3">Office Hours</h4>
+                    <h4 className="font-bold text-primary mb-3">
+                      Office Hours
+                    </h4>
                     <p className="text-gray-700 text-sm">
                       Monday–Friday: 9:30 AM – 6:00 PM IST
                     </p>

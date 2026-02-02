@@ -22,7 +22,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const headerElement = document.querySelector('header');
+      const headerElement = document.querySelector("header");
       if (!headerElement) return;
 
       const headerRect = headerElement.getBoundingClientRect();
@@ -39,7 +39,10 @@ export default function Header() {
         // Walk up the DOM tree to find a meaningful background color
         let current = element;
         let iterations = 0;
-        while ((bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') && iterations < 10) {
+        while (
+          (bgColor === "rgba(0, 0, 0, 0)" || bgColor === "transparent") &&
+          iterations < 10
+        ) {
           current = current.parentElement;
           if (!current) break;
           bgColor = window.getComputedStyle(current).backgroundColor;
@@ -57,10 +60,10 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Call once on mount
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const isActive = (path: string) => {
