@@ -26,11 +26,13 @@ export default function HeritagePartners() {
         <div className="space-y-8 max-w-7xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="flex justify-start mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
-                alt="Mantraa Logo"
-                className="h-6 w-auto"
-              />
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
+                  alt="Mantraa Logo"
+                  className="h-10 w-auto"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">
               Mantraa Advisory | Financial & Strategic Expertise
