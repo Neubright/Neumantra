@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import { useState } from "react";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function ContactForm() {
   const [ref, isInView] = useInView();
@@ -54,16 +55,23 @@ export default function ContactForm() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-gray-50 transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-          Contact Form
-        </h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Contact Form
+          </h2>
+          <SectionDivider />
+        </div>
 
-        <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 border border-gray-200">
+        <form onSubmit={handleSubmit} className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-sm font-semibold text-primary mb-2">
@@ -75,7 +83,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
               />
             </div>
             <div>
@@ -88,7 +96,7 @@ export default function ContactForm() {
                 value={formData.company}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
               />
             </div>
           </div>
@@ -104,7 +112,7 @@ export default function ContactForm() {
                 value={formData.designation}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
               />
             </div>
             <div>
@@ -117,7 +125,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
               />
             </div>
           </div>
@@ -132,7 +140,7 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
             />
           </div>
 
@@ -151,7 +159,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     className="mr-3"
                   />
-                  <span className="text-gray-700 capitalize">{method === "either" ? "Either" : method}</span>
+                  <span className="text-gray-700 text-base capitalize">{method === "either" ? "Either" : method}</span>
                 </label>
               ))}
             </div>
@@ -166,7 +174,7 @@ export default function ContactForm() {
               value={formData.inquiryType}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
             >
               <option value="">Select an inquiry type</option>
               {inquiryTypes.map((type) => (
@@ -187,17 +195,19 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               rows={5}
-              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent"
+              className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
               placeholder="Tell us about your capital markets objectives..."
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-accent hover:bg-red-700 text-white py-3 rounded font-semibold transition-colors"
-          >
-            Submit
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-accent hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+            >
+              Submit
+            </button>
+          </div>
 
           {submitted && (
             <p className="text-accent font-semibold text-center mt-4">
