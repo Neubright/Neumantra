@@ -23,24 +23,36 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center hover:bg-white/30 hover:border-white/50 transition-all duration-300 inline-flex overflow-hidden"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={18} />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc70c353ad8944f4dbb75a6bb24c76824?format=webp&width=800&height=1200"
+                  alt="LinkedIn"
+                  className="w-6 h-6 object-contain"
+                />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center hover:bg-white/30 hover:border-white/50 transition-all duration-300 inline-flex overflow-hidden"
                 aria-label="X"
               >
-                <X size={18} />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fcf9919b3a7004787b1db4af92cc61251?format=webp&width=800&height=1200"
+                  alt="X"
+                  className="w-6 h-6 object-contain"
+                />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 inline-flex"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center hover:bg-white/30 hover:border-white/50 transition-all duration-300 inline-flex overflow-hidden"
                 aria-label="Medium"
               >
-                <Github size={18} />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fdd9ac6c666834a50bd8895b8497ca675?format=webp&width=800&height=1200"
+                  alt="Medium"
+                  className="w-6 h-6 object-contain"
+                />
               </a>
             </div>
           </div>
