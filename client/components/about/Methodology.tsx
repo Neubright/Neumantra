@@ -29,21 +29,7 @@ export default function Methodology() {
 • Success Metrics: Defined KPIs for coverage expansion, investor base quality, and perception improvement`,
       deliverable:
         "Strategic IR Blueprint with 12-18 month roadmap",
-      icon: (
-        <svg
-          className="w-8 h-8 text-accent"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
+      icon: <Lightbulb className="w-8 h-8 text-accent" strokeWidth={1.5} />,
     },
     {
       title: "Phase 3: Execution & Engagement",
