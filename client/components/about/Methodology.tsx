@@ -93,9 +93,7 @@ export default function Methodology() {
                 className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
               >
                 <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-full w-20 h-20 flex items-center justify-center mb-6">
-                  <div className="w-10 h-10 text-accent">
-                    {method.icon}
-                  </div>
+                  {method.icon}
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-3">
                   {method.title}
