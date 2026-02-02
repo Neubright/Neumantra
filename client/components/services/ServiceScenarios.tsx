@@ -62,32 +62,42 @@ export default function ServiceScenarios() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-primary text-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Client Journey Scenarios
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Client Journey Scenarios
+          </h2>
+          <SectionDivider />
+        </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {scenarios.map((scenario, index) => (
-            <div key={index} className="border border-gray-600 rounded-lg p-8 bg-primary/50">
-              <h3 className="text-2xl font-bold mb-6 text-accent">{scenario.title}</h3>
+            <div
+              key={index}
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
+            >
+              <h3 className="text-xl font-bold text-primary mb-6">{scenario.title}</h3>
 
-              <div className="space-y-4 text-sm">
+              <div className="space-y-6 text-base text-gray-700">
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Profile</h4>
-                  <p className="text-gray-200">{scenario.profile}</p>
+                  <h4 className="font-bold text-primary mb-2">Profile</h4>
+                  <p className="text-gray-700">{scenario.profile}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Current State</h4>
-                  <ul className="space-y-1">
+                  <h4 className="font-bold text-primary mb-2">Current State</h4>
+                  <ul className="space-y-2">
                     {scenario.currentState.map((item, i) => (
-                      <li key={i} className="text-gray-200 flex items-start">
-                        <span className="text-accent mr-3">•</span>
+                      <li key={i} className="text-gray-700 flex items-start">
+                        <span className="text-accent mr-3 flex-shrink-0">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -95,11 +105,11 @@ export default function ServiceScenarios() {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Neumantra Engagement</h4>
-                  <ul className="space-y-1">
+                  <h4 className="font-bold text-primary mb-2">Neumantra Engagement</h4>
+                  <ul className="space-y-2">
                     {scenario.engagement.map((item, i) => (
-                      <li key={i} className="text-gray-200 flex items-start">
-                        <span className="text-accent mr-3">•</span>
+                      <li key={i} className="text-gray-700 flex items-start">
+                        <span className="text-accent mr-3 flex-shrink-0">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -107,8 +117,8 @@ export default function ServiceScenarios() {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Outcome</h4>
-                  <p className="text-gray-200">{scenario.outcome}</p>
+                  <h4 className="font-bold text-primary mb-2">Outcome</h4>
+                  <p className="text-gray-700">{scenario.outcome}</p>
                 </div>
               </div>
             </div>
