@@ -52,7 +52,10 @@ export default function EngagementPhilosophy() {
 
         <div className="max-w-5xl mx-auto">
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <h3 className="text-xl font-bold text-primary mb-6">Partnership, Not Vendor Relationship</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Partnership, Not Vendor Relationship</h3>
+            <p className="text-gray-700 text-base leading-relaxed mb-6">
+              Effective investor relations isn't transactional - it's a sustained partnership requiring trust, transparency, and strategic alignment.
+            </p>
             <p className="text-gray-700 text-base mb-6 font-semibold">
               When you engage Neumantra:
             </p>
