@@ -48,30 +48,23 @@ export default function EngagementPhilosophy() {
             Engagement Philosophy
           </h2>
           <SectionDivider />
-          <h3 className="text-2xl font-semibold text-primary mt-6">
-            Partnership, Not Vendor Relationship
-          </h3>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
-            <p className="text-gray-700 text-base leading-relaxed">
-              Effective investor relations isn't transactional - it's a sustained partnership requiring trust, transparency, and strategic alignment.
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <h3 className="text-xl font-bold text-primary mb-6">Partnership, Not Vendor Relationship</h3>
+            <p className="text-gray-700 text-base mb-6 font-semibold">
+              When you engage Neumantra:
             </p>
+            <ul className="space-y-3">
+              {principles.map((principle, index) => (
+                <li key={index} className="text-gray-700 text-base flex items-start">
+                  <span className="text-accent mr-3 text-lg flex-shrink-0 font-bold">✓</span>
+                  <span>{principle.title}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-
-          <p className="text-gray-700 font-semibold text-base mb-8 text-center">
-            When you engage Neumantra:
-          </p>
-
-          <ul className="space-y-3">
-            {principles.map((principle, index) => (
-              <li key={index} className="text-gray-700 text-base flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">•</span>
-                <span>{principle.title}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
