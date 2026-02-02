@@ -79,7 +79,7 @@ export default function Hero() {
       {/* Overlay for text visibility */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/85"></div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="hero-title text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
+        <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8">
           Building Market Credibility for India's Growth Companies
         </h1>
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
