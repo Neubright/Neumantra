@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function MidMarketGap() {
   const [ref, isInView] = useInView();
@@ -6,36 +7,47 @@ export default function MidMarketGap() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             The Mid-Market IR Gap
           </h2>
+          <SectionDivider />
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            India's mid-market represents some of the country's most dynamic
-            growth stories - innovative business models, strong fundamentals,
-            ambitious expansion plans. Yet many of these companies struggle to
-            translate operational excellence into sustained market credibility.
-          </p>
-          <p className="text-gray-700 text-lg font-semibold mb-6 leading-relaxed text-primary">
-            The gap lies in the absence of a professional investor relations
-            infrastructure.
-          </p>
-          <p className="text-gray-600 text-base leading-relaxed">
-            Large corporations benefit from dedicated IR teams and long-standing
-            advisory relationships. Early-stage startups leverage venture
-            capital networks. Mid-market companies—those preparing to list,
-            already on SME exchanges, or operating as listed mid-sized
-            entities—often navigate capital markets with limited specialised
-            support.
-          </p>
+        <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <p className="text-gray-700 text-lg leading-relaxed">
+              India's mid-market represents some of the country's most dynamic
+              growth stories - innovative business models, strong fundamentals,
+              ambitious expansion plans. Yet many of these companies struggle to
+              translate operational excellence into sustained market credibility.
+            </p>
+          </div>
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <p className="text-gray-700 text-lg font-semibold leading-relaxed text-primary">
+              The gap lies in the absence of a professional investor relations
+              infrastructure.
+            </p>
+          </div>
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+            <p className="text-gray-700 text-base leading-relaxed">
+              Large corporations benefit from dedicated IR teams and long-standing
+              advisory relationships. Early-stage startups leverage venture
+              capital networks. Mid-market companies—those preparing to list,
+              already on SME exchanges, or operating as listed mid-sized
+              entities—often navigate capital markets with limited specialised
+              support.
+            </p>
+          </div>
         </div>
       </div>
     </section>
