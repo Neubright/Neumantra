@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="mb-4 h-10 opacity-60">
               <Logo variant="white" />
             </div>
-            <p className="text-base text-gray-300 mb-6 leading-relaxed">
+            <p className="text-base text-white mb-6 leading-relaxed">
               Investor relations advisory combining financial strategy expertise
               and stakeholder engagement excellence.
             </p>
