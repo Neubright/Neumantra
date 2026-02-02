@@ -1,3 +1,4 @@
+import { Search, Lightbulb, Zap, TrendingUp } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 
