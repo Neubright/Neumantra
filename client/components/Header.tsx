@@ -222,43 +222,46 @@ export default function Header() {
               </div>
             </button>
           </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <nav
-              className={`md:hidden border-t mobile-menu-enter ${
-                isOverDarkBackground
-                  ? "border-gray-300 bg-white"
-                  : "border-gray-200 bg-white"
-              }`}
-            >
-              <div className="flex flex-col py-4 space-y-2">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    onClick={handleNavClick}
-                    className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
-                      isActive(link.path)
-                        ? "active bg-gray-50"
-                        : "hover:bg-gray-50"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <Link
-                  to="/contact"
-                  onClick={handleNavClick}
-                  className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </nav>
-          )}
         </div>
       </div>
+
+      {/* Mobile Menu - Outside glass island, positioned absolutely */}
+      {isMenuOpen && (
+        <nav
+          className={`md:hidden border-t mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 mt-2 ${
+            isOverDarkBackground
+              ? "border-gray-300 bg-white"
+              : "border-gray-200 bg-white"
+          }`}
+          style={{
+            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+          }}
+        >
+          <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={handleNavClick}
+                className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
+                  isActive(link.path)
+                    ? "active bg-gray-50"
+                    : "hover:bg-gray-50"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              to="/contact"
+              onClick={handleNavClick}
+              className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
