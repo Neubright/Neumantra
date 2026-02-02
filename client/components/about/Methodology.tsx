@@ -43,7 +43,7 @@ export default function Methodology() {
 • Market Monitoring: News flow tracking, peer activity analysis, and sentiment shifts`,
       deliverable:
         "Comprehensive IR operations management",
-      icon: <Zap className="w-8 h-8 text-accent" strokeWidth={1.5} />,
+      icon: <Zap className="w-10 h-10 text-accent" strokeWidth={1.5} />,
     },
     {
       title: "Phase 4: Measurement & Refinement",
