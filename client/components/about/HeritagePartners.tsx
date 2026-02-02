@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Building } from "lucide-react";
 
 export default function HeritagePartners() {
   const [ref, isInView] = useInView();
