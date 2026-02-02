@@ -87,7 +87,7 @@ export default function Hero() {
           with stakeholder engagement excellence - helping mid-market companies
           command attention in India's capital markets.
         </p>
-        <button className="hero-button px-3 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-accent text-white hover:bg-red-700 shadow-lg">
+        <button className="hero-button px-3 py-2 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-accent text-white hover:bg-red-700 shadow-lg">
           Schedule a Strategic Consultation
           <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
             →
