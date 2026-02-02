@@ -101,7 +101,7 @@ export default function Header() {
       )}
 
       <header className="sticky top-4 z-50 mx-6 sm:mx-10 lg:mx-20">
-      <style>{`
+        <style>{`
         .nav-link {
           position: relative;
           display: inline-block;
@@ -171,124 +171,136 @@ export default function Header() {
           transform: rotate(0deg);
         }
       `}</style>
-      <div
-        className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
-          isMenuOpen ? "text-primary" : isOverDarkBackground ? "text-white" : "text-primary"
-        }`}
-        style={{
-          background: isMenuOpen
-            ? "linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"
-            : isOverDarkBackground
-            ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
-            : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
-          backdropFilter: isMenuOpen ? "none" : "blur(20px)",
-          borderWidth: "1px",
-          borderStyle: "solid",
-          borderColor: isMenuOpen
-            ? "rgba(0, 0, 0, 0.1)"
-            : isOverDarkBackground
-            ? "rgba(255, 255, 255, 0.5)"
-            : "rgba(255, 255, 255, 0.25)",
-          boxShadow: isMenuOpen
-            ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.15)"
-            : isOverDarkBackground
-            ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
-            : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link
-              to="/"
-              onClick={scrollToTop}
-              className="flex items-center gap-2"
-            >
-              <Logo />
-            </Link>
+        <div
+          className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
+            isMenuOpen
+              ? "text-primary"
+              : isOverDarkBackground
+                ? "text-white"
+                : "text-primary"
+          }`}
+          style={{
+            background: isMenuOpen
+              ? "linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"
+              : isOverDarkBackground
+                ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
+                : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
+            backdropFilter: isMenuOpen ? "none" : "blur(20px)",
+            borderWidth: "1px",
+            borderStyle: "solid",
+            borderColor: isMenuOpen
+              ? "rgba(0, 0, 0, 0.1)"
+              : isOverDarkBackground
+                ? "rgba(255, 255, 255, 0.5)"
+                : "rgba(255, 255, 255, 0.25)",
+            boxShadow: isMenuOpen
+              ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.15)"
+              : isOverDarkBackground
+                ? "inset 0 1px 1px 0 rgba(255, 255, 255, 1), 0 8px 32px 0 rgba(31, 38, 135, 0.3)"
+                : "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+          }}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
+            <div className="flex items-center justify-between h-16">
+              {/* Logo */}
+              <Link
+                to="/"
+                onClick={scrollToTop}
+                className="flex items-center gap-2"
+              >
+                <Logo />
+              </Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8">
+              {/* Desktop Navigation */}
+              <nav className="hidden md:flex items-center gap-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={handleNavClick}
+                    className={`text-sm font-medium nav-link transition-colors ${
+                      isMenuOpen || isOverDarkBackground
+                        ? "text-primary"
+                        : "text-primary"
+                    } ${isActive(link.path) ? "active" : ""}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+
+              {/* Desktop Contact Button */}
+              <Link
+                to="/contact"
+                onClick={handleNavClick}
+                className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+              >
+                Contact Us
+              </Link>
+
+              {/* Mobile Hamburger Menu Button */}
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className={`md:hidden p-2 transition-colors ${
+                  isMenuOpen || isOverDarkBackground
+                    ? "text-primary"
+                    : "text-primary"
+                }`}
+                aria-label="Toggle menu"
+              >
+                <div className="menu-icon open relative w-6 h-6 flex items-center justify-center">
+                  {isMenuOpen ? (
+                    <X size={24} className="absolute" />
+                  ) : (
+                    <Menu size={24} className="absolute" />
+                  )}
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu - Outside glass island, positioned absolutely */}
+        {isMenuOpen && (
+          <nav
+            className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 rounded-b-3xl`}
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%)",
+              backdropFilter: "blur(20px)",
+              borderWidth: "1px",
+              borderStyle: "solid",
+              borderColor: "rgba(255, 255, 255, 0.3)",
+              boxShadow:
+                "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+            }}
+          >
+            <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={handleNavClick}
-                  className={`text-sm font-medium nav-link transition-colors ${
-                    isMenuOpen || isOverDarkBackground ? "text-primary" : "text-primary"
-                  } ${isActive(link.path) ? "active" : ""}`}
+                  className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
+                    isActive(link.path)
+                      ? "active bg-gray-50"
+                      : "hover:bg-gray-50"
+                  }`}
                 >
                   {link.label}
                 </Link>
               ))}
-            </nav>
-
-            {/* Desktop Contact Button */}
-            <Link
-              to="/contact"
-              onClick={handleNavClick}
-              className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
-            >
-              Contact Us
-            </Link>
-
-            {/* Mobile Hamburger Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`md:hidden p-2 transition-colors ${
-                isMenuOpen || isOverDarkBackground ? "text-primary" : "text-primary"
-              }`}
-              aria-label="Toggle menu"
-            >
-              <div className="menu-icon open relative w-6 h-6 flex items-center justify-center">
-                {isMenuOpen ? (
-                  <X size={24} className="absolute" />
-                ) : (
-                  <Menu size={24} className="absolute" />
-                )}
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu - Outside glass island, positioned absolutely */}
-      {isMenuOpen && (
-        <nav
-          className={`md:hidden mobile-menu-enter absolute top-full left-6 right-6 sm:left-10 sm:right-10 lg:left-20 lg:right-20 z-40 rounded-b-3xl`}
-          style={{
-            background: "linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 100%)",
-            backdropFilter: "blur(20px)",
-            borderWidth: "1px",
-            borderStyle: "solid",
-            borderColor: "rgba(255, 255, 255, 0.3)",
-            boxShadow: "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
-          }}
-        >
-          <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
-            {navLinks.map((link) => (
               <Link
-                key={link.path}
-                to={link.path}
+                to="/contact"
                 onClick={handleNavClick}
-                className={`px-4 py-2 text-sm font-medium text-primary nav-link block ${
-                  isActive(link.path) ? "active bg-gray-50" : "hover:bg-gray-50"
-                }`}
+                className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
               >
-                {link.label}
+                Contact Us
               </Link>
-            ))}
-            <Link
-              to="/contact"
-              onClick={handleNavClick}
-              className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </nav>
-      )}
-    </header>
+            </div>
+          </nav>
+        )}
+      </header>
     </>
   );
 }
