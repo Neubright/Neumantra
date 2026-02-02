@@ -18,10 +18,10 @@ export default function ServiceCategory1() {
       title: "Private Capital Raise Support",
       description: "Investor relations for companies approaching PE/VC or institutional investors:",
       points: [
-        "Investor Targeting Intelligence: Identifying appropriate funds based on sector focus, ticket size, investment stage",
-        "Management Presentation Development: Pitch deck optimization, data room organization, due diligence preparation",
+        "Investor Targeting Intelligence: Identifying appropriate funds based on sector focus, ticket size, and investment stage",
+        "Management Presentation Development: Pitch deck optimization, data room organization, and due diligence preparation",
         "Valuation Justification Materials: Building credible valuation arguments supported by market comparables and financial projections",
-        "Negotiation Support Materials: Term sheet analysis, cap table modeling, governance implications",
+        "Negotiation Support Materials: Term sheet analysis, cap table modeling, and governance implications assessment",
       ],
     },
     {
