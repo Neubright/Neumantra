@@ -30,7 +30,7 @@ export default function HeritagePartners() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
                   alt="Mantraa Logo"
-                  className="h-10 w-auto"
+                  className="h-8 w-auto"
                 />
               </div>
             </div>
