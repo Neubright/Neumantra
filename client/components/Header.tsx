@@ -273,6 +273,7 @@ export default function Header() {
               borderColor: "rgba(255, 255, 255, 0.3)",
               boxShadow:
                 "inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+              marginTop: "-1px",
             }}
           >
             <div className="flex flex-col py-4 space-y-2 max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
