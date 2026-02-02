@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
@@ -17,7 +17,51 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOverDarkBackground, setIsOverDarkBackground] = useState(true);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const headerElement = document.querySelector('header');
+      if (!headerElement) return;
+
+      const headerRect = headerElement.getBoundingClientRect();
+      const centerX = window.innerWidth / 2;
+      const centerY = headerRect.top + headerRect.height / 2;
+
+      // Create a temporary element to check background color
+      const element = document.elementFromPoint(centerX, centerY);
+
+      if (element) {
+        const computedStyle = window.getComputedStyle(element);
+        let bgColor = computedStyle.backgroundColor;
+
+        // Walk up the DOM tree to find a meaningful background color
+        let current = element;
+        let iterations = 0;
+        while ((bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') && iterations < 10) {
+          current = current.parentElement;
+          if (!current) break;
+          bgColor = window.getComputedStyle(current).backgroundColor;
+          iterations++;
+        }
+
+        // Parse RGB values to determine if it's dark or light
+        const rgbMatch = bgColor.match(/\d+/g);
+        if (rgbMatch) {
+          const [r, g, b] = rgbMatch.map(Number);
+          // Calculate luminance
+          const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+          setIsOverDarkBackground(luminance < 0.5);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once on mount
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path: string) => {
     if (path === "/") {
