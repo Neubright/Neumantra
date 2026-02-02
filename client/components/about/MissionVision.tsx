@@ -30,7 +30,7 @@ export default function MissionVision() {
               <Target className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">Our Mission</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 text-base leading-relaxed">
               To partner with India's mid-market growth companies to transform
               financial strength into credible market brands through strategic,
               integrated investor relations built on financial insight,
