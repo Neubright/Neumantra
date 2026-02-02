@@ -260,7 +260,7 @@ export default function Header() {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+                className="hidden md:block bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg"
               >
                 Contact Us
               </Link>
