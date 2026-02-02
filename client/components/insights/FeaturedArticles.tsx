@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import ArticleCard from "./ArticleCard";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function FeaturedArticles() {
   const [ref, isInView] = useInView();
@@ -40,14 +41,21 @@ export default function FeaturedArticles() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-gray-50 transition-all duration-700 ease-out ${
+      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
         isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-          Featured Perspectives
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Featured Perspectives
+          </h2>
+          <SectionDivider />
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {articles.map((article, index) => (
