@@ -65,7 +65,7 @@ export default function Header() {
           transform: scaleX(1);
         }
       `}</style>
-      <div className="backdrop-blur-md bg-white/90 text-primary border border-gray-200/50 rounded-lg lg:rounded-xl">
+      <div className="backdrop-blur-md bg-white/90 text-primary border border-gray-200/50 rounded-2xl lg:rounded-3xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -97,7 +97,7 @@ export default function Header() {
           <Link
             to="/contact"
             onClick={handleNavClick}
-            className="hidden md:block bg-accent hover:bg-red-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors"
+            className="hidden md:block bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
           >
             Contact Us
           </Link>
