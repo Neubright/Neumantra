@@ -25,10 +25,10 @@ export default function WhyUsCTA() {
           capital-markets objectives.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-accent text-white hover:bg-red-700 px-8 py-3 rounded-full font-semibold transition-colors">
+          <button className="bg-accent text-white hover:bg-red-700 pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Schedule a Confidential Consultation
           </button>
-          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 px-8 py-3 rounded-full font-semibold transition-colors">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/50 pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg">
             Request Credentials Presentation
           </button>
         </div>
