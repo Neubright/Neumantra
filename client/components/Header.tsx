@@ -187,7 +187,7 @@ export default function Header() {
         }
 
         .mobile-menu-exit {
-          animation: slideUp 0.3s ease-in forwards;
+          animation: slideUp 0.8s ease-in forwards;
         }
 
         .menu-icon {
