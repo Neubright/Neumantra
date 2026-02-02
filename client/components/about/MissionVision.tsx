@@ -1,3 +1,4 @@
+import { Target, Eye } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 
