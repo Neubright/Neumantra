@@ -83,11 +83,13 @@ export default function HeritagePartners() {
 
           <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="flex justify-start mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
-                alt="Neubright Logo"
-                className="h-6 w-auto"
-              />
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
+                  alt="Neubright Logo"
+                  className="h-10 w-auto"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">
               Neubright Partners | Stakeholder Engagement Excellence
