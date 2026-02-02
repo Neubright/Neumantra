@@ -79,7 +79,16 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-4 z-50 mx-6 sm:mx-10 lg:mx-20">
+    <>
+      {/* Overlay when menu is open */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-30 md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+      )}
+
+      <header className="sticky top-4 z-50 mx-6 sm:mx-10 lg:mx-20">
       <style>{`
         .nav-link {
           position: relative;
@@ -277,5 +286,6 @@ export default function Header() {
         </nav>
       )}
     </header>
+    </>
   );
 }
