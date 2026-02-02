@@ -23,15 +23,13 @@ export default function NeumanatraApproach() {
           <SectionDivider />
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+        <div className="max-w-4xl mx-auto">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-6">
             <p className="text-gray-700 text-lg leading-relaxed">
               Neumantra Capital Advisors was founded to close this gap with
               precision.
             </p>
-          </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <p className="text-gray-700 text-base leading-relaxed">
               We are not a traditional communications agency learning finance. We
               are not accountants dabbling in messaging. Neumantra represents the
@@ -40,9 +38,7 @@ export default function NeumanatraApproach() {
               capabilities - two established practices coming together to serve an
               underserved market segment.
             </p>
-          </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <p className="text-gray-700 text-base leading-relaxed">
               Our founding teams recognized that effective investor relations
               demands fluency across multiple disciplines: financial analysis,
@@ -51,9 +47,7 @@ export default function NeumanatraApproach() {
               vendor relationships create inefficiency and inconsistency.
               Neumantra delivers unified accountability.
             </p>
-          </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <p className="text-gray-700 text-base leading-relaxed">
               We work with companies that are ready to scale, ready to raise, and
               ready to build a lasting presence in the capital markets.
