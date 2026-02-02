@@ -62,7 +62,7 @@ export default function Footer() {
             <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
               Company
             </h4>
-            <ul className="space-y-3 text-base text-gray-300">
+            <ul className="space-y-3 text-base text-white">
               <li>
                 <Link
                   to="/about"
