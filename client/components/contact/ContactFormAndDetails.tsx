@@ -69,7 +69,7 @@ export default function ContactFormAndDetails() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Details */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-8">
               Corporate Contact Details
             </h2>
 
@@ -163,7 +163,7 @@ export default function ContactFormAndDetails() {
 
           {/* Contact Form */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-8">
               Contact Form
             </h2>
 
