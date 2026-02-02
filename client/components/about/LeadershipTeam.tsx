@@ -16,7 +16,7 @@ export default function LeadershipTeam() {
     {
       name: "Prasanna Upadhyay",
       title: "Partner",
-      bio: "Over 25 years of experience in content development, corporate communications, CSR, and investor relations. Former journalist with leading media houses including The Indian Express, Financial Express, and Asian Age. Strong expertise in research, analysis, and due diligence for private equity and investment funds. Led communications and CSR initiatives at Ambuja Cements, Ashok Piramal Group, and TCG Real Estate."
+      bio: "Prasanna Upadhyay has over 25 years of experience in content development, corporate communications, CSR, and investor relations. She brings strong expertise in research, analysis, and due diligence for private equity and investment funds.\n\nA former journalist, Prasanna has worked with leading media houses including The Indian Express, Financial Express, and Asian Age. She has led communications, investor relations, CSR, and sustainability reporting initiatives at Ambuja Cements, Ashok Piramal Group, and TCG Real Estate."
     },
     {
       name: "Dharini Desai",
