@@ -21,7 +21,7 @@ export default function LeadershipTeam() {
     {
       name: "Dharini Desai",
       title: "Associate Partner",
-      bio: "Over 10 years of experience in financial advisory and CFO consulting. Strong expertise in strategy, planning, and resource optimization. Proven track record of delivering sustainable results across client engagements, driving growth, improving financial performance, and enhancing profitability."
+      bio: "Dharini Desai has over 10 years of experience in financial advisory and CFO consulting. She has strong expertise in strategy, planning, and resource optimisation, and is skilled at driving growth, improving financial performance, and enhancing profitability.\n\nHer work reflects a proven track record of delivering sustainable results and long-term success across client engagements."
     },
     {
       name: "Khushbu Singh",
