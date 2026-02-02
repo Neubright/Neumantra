@@ -154,6 +154,7 @@ export default function Header() {
             padding: 8px 16px;
             border-radius: 20px;
             color: hsl(var(--accent));
+            box-shadow: inset 0 0 0 1px rgba(220, 38, 38, 0.15);
           }
 
           .nav-link.active::after {
