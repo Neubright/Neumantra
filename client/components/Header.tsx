@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 text-primary border-b border-gray-200/50">
+    <header className="sticky top-4 z-50 mx-4 sm:mx-6 lg:mx-8">
       <style>{`
         .nav-link {
           position: relative;
@@ -65,7 +65,8 @@ export default function Header() {
           transform: scaleX(1);
         }
       `}</style>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="backdrop-blur-md bg-white/90 text-primary border border-gray-200/50 rounded-lg lg:rounded-xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
@@ -139,6 +140,7 @@ export default function Header() {
             </div>
           </nav>
         )}
+      </div>
       </div>
     </header>
   );
