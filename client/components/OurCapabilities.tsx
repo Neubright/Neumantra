@@ -70,7 +70,7 @@ export default function OurCapabilities() {
                 <h3 className="text-xl font-bold text-primary mb-3">
                   {capability.title}
                 </h3>
-                <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4">
                   {capability.description}
                 </p>
                 <div
