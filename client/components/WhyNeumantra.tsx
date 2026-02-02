@@ -80,7 +80,7 @@ export default function WhyNeumantra() {
                 <h3 className="text-base font-bold text-primary mb-2">
                   {reason.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {reason.description}
                 </p>
               </div>

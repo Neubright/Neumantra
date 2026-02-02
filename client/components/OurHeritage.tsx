@@ -48,7 +48,7 @@ export default function OurHeritage() {
                 Mantraa Advisory
               </a>
             </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <p className="text-gray-700 text-base leading-relaxed">
               Established financial and strategic advisory practice with deep
               capital-markets expertise - supporting companies through
               valuations, IPO preparation, CFO-level guidance, and transaction
@@ -74,7 +74,7 @@ export default function OurHeritage() {
                 Neubright Partners
               </a>
             </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <p className="text-gray-700 text-base leading-relaxed">
               Strategic consulting firm specializing in stakeholder engagement,
               corporate communications, reputation management, and ESG
               integration - trusted by leadership teams navigating complex
