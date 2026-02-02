@@ -4,29 +4,29 @@ import SectionDivider from "../ui/SectionDivider";
 export default function LeadershipTeam() {
   const leaders = [
     {
-      name: "Vinay Kanbya",
-      title: "Lead Advisor",
-      bio: "Well in financial strategy, listing domain outreach and client management. Advise India's mid-market capital market firms. Has led corporate investor relations through comprehensive capital and investor relations initiatives. Serial advisor to clients for multi-disciplinary decision-making and integration leadership."
+      name: "Vinay Pandya",
+      title: "Founding Partner",
+      bio: "Chartered Accountant (ICAI), Company Secretary, and Registered Valuer with Strategic Management Programme from IIM Ahmedabad. Brings over three decades of leadership experience across corporate finance, investor relations, and transaction advisory. Former Group CFO of Ashok Piramal Group where he led the Investor Relations Cell. Founder and Managing Partner of Mantraa Advisory Services with experience on 40+ CFO services, 20+ M&A transactions, and 140+ startup mentoring assignments."
     },
     {
-      name: "Kartik & Gaudhary",
-      title: "Operating Partner",
-      bio: "Healthcare leadership with a track record in communications and engagement. Invest in growth-stage companies across capital markets, capital advisory, and corporate strategy. Brings deep expertise across investor relations, strategic communications, and financial advisory."
+      name: "Kartik R. Upadhyay",
+      title: "Founding Partner",
+      bio: "Over 30 years of experience in strategic communications and stakeholder engagement. Founder Director of Neubright Partners advising on reputation management, IPO communications, governance transitions, and ESG integration. Former Head of Corporate Communications at HCC Ltd, Lavasa Corporation, YES Bank, and Otis Elevators. Advanced Management Programme in Public Policy from ISB with expertise in public policy and legal matters."
     },
     {
-      name: "Prasanna",
-      title: "Senior Advisor",
-      bio: "Financial strategy and management expertise across investor relations and capital markets. Brings deep understanding of institutional investor needs and capital efficiency. Built market presence and investor confidence for multiple high-growth companies."
+      name: "Prasanna Upadhyay",
+      title: "Partner",
+      bio: "Over 25 years of experience in content development, corporate communications, CSR, and investor relations. Former journalist with leading media houses including The Indian Express, Financial Express, and Asian Age. Strong expertise in research, analysis, and due diligence for private equity and investment funds. Led communications and CSR initiatives at Ambuja Cements, Ashok Piramal Group, and TCG Real Estate."
     },
     {
-      name: "Bharati",
-      title: "Senior Advisor",
-      bio: "Leads internal engagement and communications across enterprise operations and investor strategy. Specializing in R&D integration and sustainability communications. Brings 20+ years of experience in strategic communications, marketing and investor relations."
+      name: "Dharini Desai",
+      title: "Associate Partner",
+      bio: "Over 10 years of experience in financial advisory and CFO consulting. Strong expertise in strategy, planning, and resource optimization. Proven track record of delivering sustainable results across client engagements, driving growth, improving financial performance, and enhancing profitability."
     },
     {
-      name: "Khildu",
-      title: "Senior Advisor",
-      bio: "Senior banking and asset-light business experience. Specializing in corporate governance, financial reporting, and compliance communications. Brings extensive experience in securities regulations, capital markets compliance, and investor-focused compliance communications."
+      name: "Khushbu Singh",
+      title: "Associate",
+      bio: "Strong blend of analytical training and market-facing experience. Campus placement with Business Standard, followed by senior roles at Standard Chartered Bank and HDFC Bank working with premium client segments. B.Sc. in Electronics and MBA in Marketing. Brings deep client relationship and market intelligence expertise to Neumantra."
     }
   ];
 
