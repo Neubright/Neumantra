@@ -236,7 +236,7 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`md:hidden p-2 transition-colors ${
-                isOverDarkBackground ? "text-white" : "text-primary"
+                isMenuOpen || isOverDarkBackground ? "text-primary" : "text-primary"
               }`}
               aria-label="Toggle menu"
             >
