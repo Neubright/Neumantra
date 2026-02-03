@@ -64,7 +64,6 @@ export default function Newsletter() {
                       maxWidth: "14px",
                       maxHeight: "22px",
                       objectFit: "contain",
-                      marginLeft: "2px",
                     }}
                   />
                 </span>
