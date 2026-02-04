@@ -72,11 +72,11 @@ export default function OurCapabilities() {
                 <h3 className="text-xl font-bold text-primary mb-3">
                   {capability.title}
                 </h3>
-                <p className="text-gray-700 text-base leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4 flex-grow">
                   {capability.description}
                 </p>
                 <div
-                  className="pt-4 mb-2"
+                  className="pt-4 mt-auto"
                   style={{
                     borderTop: "1px solid transparent",
                     borderImage:
