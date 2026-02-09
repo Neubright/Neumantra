@@ -71,7 +71,7 @@ export default function ServiceCategory({
                 {categoryNumber}
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-accent">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
               {categoryTitle}
             </h2>
           </div>
