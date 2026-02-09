@@ -10,7 +10,7 @@ export default function Methodology() {
     {
       number: 1,
       title: "Diagnostic & Discovery",
-      icon: "🔍",
+      icon: Search,
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
       badgeBg: "bg-blue-100",
@@ -29,7 +29,7 @@ export default function Methodology() {
     {
       number: 2,
       title: "Strategy Design",
-      icon: "💡",
+      icon: Lightbulb,
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
       badgeBg: "bg-red-100",
@@ -47,7 +47,7 @@ export default function Methodology() {
     {
       number: 3,
       title: "Execution & Engagement",
-      icon: "⚡",
+      icon: Zap,
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
       badgeBg: "bg-blue-100",
@@ -66,7 +66,7 @@ export default function Methodology() {
     {
       number: 4,
       title: "Measurement & Refinement",
-      icon: "📈",
+      icon: TrendingUp,
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
       badgeBg: "bg-red-100",
