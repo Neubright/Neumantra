@@ -4,6 +4,29 @@ import SectionDivider from "../ui/SectionDivider";
 export default function NeumanatraApproach() {
   const [ref, isInView] = useInView();
 
+  const principles = [
+    {
+      icon: "🎯",
+      title: "Precision & Purpose",
+      description: "Founded to close the mid-market IR gap with precision",
+    },
+    {
+      icon: "🔗",
+      title: "Integrated Expertise",
+      description: "Purposeful integration of financial and stakeholder engagement capabilities",
+    },
+    {
+      icon: "📚",
+      title: "Multi-Disciplinary",
+      description: "Fluency across financial analysis, capital markets, governance, and communication",
+    },
+    {
+      icon: "🤝",
+      title: "Unified Accountability",
+      description: "Single partner accountability instead of fragmented vendor relationships",
+    },
+  ];
+
   return (
     <section
       ref={ref}
@@ -16,43 +39,68 @@ export default function NeumanatraApproach() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            OUR FOUNDATION
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             The Neumantra Approach
           </h2>
           <SectionDivider />
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-6">
-            <p className="text-gray-700 text-base leading-relaxed">
-              Neumantra Capital Advisors was founded to close this gap with
-              precision.
-            </p>
-
-            <p className="text-gray-700 text-base leading-relaxed">
-              We are not a traditional communications agency learning finance.
-              We are not accountants dabbling in messaging. Neumantra represents
-              the purposeful integration of Mantraa Advisory's financial
-              strategy expertise and Neubright Partners' stakeholder engagement
-              capabilities - two established practices coming together to serve
-              an underserved market segment.
-            </p>
-
-            <p className="text-gray-700 text-base leading-relaxed">
-              Our founding teams recognized that effective investor relations
-              demands fluency across multiple disciplines: financial analysis,
-              capital markets dynamics, governance frameworks, communication
-              strategy, stakeholder psychology, and market positioning.
-              Fragmented vendor relationships create inefficiency and
-              inconsistency. Neumantra delivers unified accountability.
-            </p>
-
-            <p className="text-gray-700 text-base leading-relaxed">
-              We work with companies that are ready to scale, ready to raise,
-              and ready to build a lasting presence in the capital markets.
+        {/* Main narrative */}
+        <div className="max-w-4xl mx-auto space-y-6 mb-12">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-primary mb-4">Founded to Close the Gap</h3>
+            <p className="text-gray-800 leading-relaxed">
+              Neumantra Capital Advisors was founded to close this gap with precision. <span className="font-semibold">We are not a traditional communications agency learning finance. We are not accountants dabbling in messaging.</span> Neumantra represents the purposeful integration of Mantraa Advisory's financial strategy expertise and Neubright Partners' stakeholder engagement capabilities - two established practices coming together to serve an underserved market segment.
             </p>
           </div>
+
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
+            <h3 className="text-xl font-bold text-primary mb-4">Multiple Disciplines, Single Partner</h3>
+            <p className="text-gray-800 leading-relaxed mb-4">
+              Our founding teams recognized that effective investor relations demands fluency across multiple disciplines:
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Financial Analysis</span>
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Capital Markets</span>
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Governance</span>
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Communication Strategy</span>
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Stakeholder Psychology</span>
+              <span className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">Market Positioning</span>
+            </div>
+            <p className="text-gray-700">
+              Fragmented vendor relationships create inefficiency and inconsistency. <span className="font-semibold text-primary">Neumantra delivers unified accountability.</span>
+            </p>
+          </div>
+
+          <div className="backdrop-blur-xl bg-gradient-to-r from-green-50/40 to-green-100/20 border-2 border-green-200/50 rounded-xl p-8">
+            <p className="text-green-900 text-lg leading-relaxed">
+              We work with companies that are <span className="font-bold">ready to scale, ready to raise, and ready to build a lasting presence in the capital markets.</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Key Principles */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {principles.map((principle, index) => (
+            <div
+              key={index}
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 text-center hover:shadow-lg hover:border-white/90 transition-all duration-300 hover:bg-white/40 group"
+            >
+              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                {principle.icon}
+              </div>
+              <h3 className="text-base font-bold text-primary mb-2">
+                {principle.title}
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                {principle.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
