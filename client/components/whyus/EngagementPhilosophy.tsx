@@ -87,8 +87,8 @@ export default function EngagementPhilosophy() {
               className={`backdrop-blur-xl bg-gradient-to-br ${principle.color} border-2 ${principle.borderColor} rounded-xl p-6 hover:shadow-lg transition-all duration-300 group`}
             >
               {/* Icon */}
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {principle.icon}
+              <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                <principle.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
               </div>
 
               {/* Title */}
