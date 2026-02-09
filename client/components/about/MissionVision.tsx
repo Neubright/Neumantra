@@ -29,8 +29,8 @@ export default function MissionVision() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Mission */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-white/30 mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Target className="w-7 h-7 text-primary" strokeWidth={1.5} />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/40 border border-white/80 mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Target className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
             </div>
             <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed text-base">
@@ -40,8 +40,8 @@ export default function MissionVision() {
 
           {/* Vision */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-white/30 mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Eye className="w-7 h-7 text-primary" strokeWidth={1.5} />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/40 border border-white/80 mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Eye className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
             </div>
             <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
             <p className="text-gray-700 leading-relaxed text-base">
