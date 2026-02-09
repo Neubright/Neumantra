@@ -1,42 +1,43 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Search, Target, MessageSquare, Shield, BarChart3, Rocket } from "lucide-react";
 
 export default function EngagementPhilosophy() {
   const [ref, isInView] = useInView();
 
   const principles = [
     {
-      icon: "🔍",
+      icon: Search,
       title: "We invest deeply in understanding your business",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "We remain outcome-focused and client-centric",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
     },
     {
-      icon: "💬",
+      icon: MessageSquare,
       title: "We challenge respectfully and advise candidly",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
     {
-      icon: "🛡️",
+      icon: Shield,
       title: "We protect long-term market credibility",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
     },
     {
-      icon: "📊",
+      icon: BarChart3,
       title: "We remain accountable through transparent reporting",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
     {
-      icon: "🚀",
+      icon: Rocket,
       title: "We enable internal capability through knowledge transfer",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
