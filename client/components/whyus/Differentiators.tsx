@@ -133,7 +133,9 @@ export default function Differentiators() {
               onClick={() =>
                 setExpandedIndex(expandedIndex === diff.number - 1 ? null : diff.number - 1)
               }
-              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl overflow-hidden relative border-purple-200 ${
+              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl overflow-hidden relative ${
+                diff.number % 2 === 0 ? "border-red-200" : "border-blue-200"
+              } ${
                 expandedIndex === diff.number - 1
                   ? "ring-2 ring-offset-2 ring-accent"
                   : "hover:border-accent/50"
@@ -143,7 +145,7 @@ export default function Differentiators() {
               <div
                 className="absolute top-0 right-0 w-40 h-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
                 style={{
-                  background: `radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent)`,
+                  background: `radial-gradient(circle, ${diff.number % 2 === 0 ? "rgba(239, 68, 68, 0.3)" : "rgba(59, 130, 246, 0.3)"}, transparent)`,
                 }}
               ></div>
 
@@ -151,7 +153,9 @@ export default function Differentiators() {
                 {/* Number, Icon and Title */}
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-purple-100 text-purple-700 font-bold text-lg">
+                    <div className={`flex items-center justify-center h-10 w-10 rounded-full ${
+                      diff.number % 2 === 0 ? "bg-red-100 text-red-700" : "bg-blue-100 text-blue-700"
+                    } font-bold text-lg`}>
                       {diff.icon}
                     </div>
                   </div>
@@ -212,7 +216,9 @@ export default function Differentiators() {
                 <div className="mt-4 flex items-center justify-between">
                   <span
                     className={`text-xs font-semibold transition-colors duration-300 ${
-                      expandedIndex === diff.number - 1 ? "text-purple-700" : "text-gray-500"
+                      expandedIndex === diff.number - 1
+                        ? (diff.number % 2 === 0 ? "text-red-700" : "text-blue-700")
+                        : "text-gray-500"
                     }`}
                   >
                     {expandedIndex === diff.number - 1 ? "Show less" : "Learn more"}
@@ -222,7 +228,7 @@ export default function Differentiators() {
                       expandedIndex === diff.number - 1 ? "rotate-180" : ""
                     } ${
                       expandedIndex === diff.number - 1
-                        ? "text-purple-700"
+                        ? (diff.number % 2 === 0 ? "text-red-700" : "text-blue-700")
                         : "text-gray-400"
                     }`}
                     fill="none"
