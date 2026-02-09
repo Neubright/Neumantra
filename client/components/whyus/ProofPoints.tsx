@@ -9,10 +9,10 @@ export default function ProofPoints() {
     {
       icon: Users,
       title: "Combined Experience",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
-      badgeBg: "bg-blue-100",
-      badgeText: "text-blue-700",
+      color: "transparent",
+      borderColor: "border-white/80",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
       points: [
         "100+ years of collective experience across founding partners in financial advisory, capital markets, and stakeholder engagement",
         "Delivered impeccable valuation analysis and diagnostics for over 200 companies",
@@ -24,10 +24,10 @@ export default function ProofPoints() {
     {
       icon: Briefcase,
       title: "Advisory Depth",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
-      badgeBg: "bg-red-100",
-      badgeText: "text-red-700",
+      color: "transparent",
+      borderColor: "border-white/80",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
       points: [
         "CFO-level financial advisory and valuation expertise",
         "IR, ESG, crisis management, and reputation strategy capability",
@@ -38,10 +38,10 @@ export default function ProofPoints() {
     {
       icon: Trophy,
       title: "Market Recognition",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
-      badgeBg: "bg-blue-100",
-      badgeText: "text-blue-700",
+      color: "transparent",
+      borderColor: "border-white/80",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
       points: [
         "Relevant industry recognition, speaking engagements, published thought leadership",
         "Professional affiliations: CFA, ICAI, ICSI, industry bodies",
