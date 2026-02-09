@@ -9,38 +9,38 @@ export default function EngagementPhilosophy() {
     {
       icon: Search,
       title: "We invest deeply in understanding your business",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: Target,
       title: "We remain outcome-focused and client-centric",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: MessageSquare,
       title: "We challenge respectfully and advise candidly",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: Shield,
       title: "We protect long-term market credibility",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: BarChart3,
       title: "We remain accountable through transparent reporting",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: Rocket,
       title: "We enable internal capability through knowledge transfer",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
   ];
 
@@ -83,7 +83,7 @@ export default function EngagementPhilosophy() {
           {principles.map((principle, index) => (
             <div
               key={index}
-              className={`backdrop-blur-xl bg-gradient-to-br ${principle.color} border-2 ${principle.borderColor} rounded-xl p-6 hover:shadow-lg transition-all duration-300 group`}
+              className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-xl p-6 hover:shadow-lg hover:bg-white/50 transition-all duration-300 group`}
             >
               {/* Icon */}
               <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
