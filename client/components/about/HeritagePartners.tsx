@@ -8,7 +8,7 @@ export default function HeritagePartners() {
     {
       name: "Mantraa Advisory",
       subtitle: "Financial & Strategic Expertise",
-      icon: "💼",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
       badgeColor: "bg-blue-100",
@@ -25,7 +25,7 @@ export default function HeritagePartners() {
     {
       name: "Neubright Partners",
       subtitle: "Stakeholder Engagement Excellence",
-      icon: "🌟",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200",
       color: "from-purple-50 to-purple-100/30",
       borderColor: "border-purple-200",
       badgeColor: "bg-purple-100",
@@ -72,10 +72,14 @@ export default function HeritagePartners() {
               key={index}
               className={`backdrop-blur-xl bg-gradient-to-br ${partner.color} border-2 ${partner.borderColor} rounded-xl p-8 hover:shadow-xl transition-all duration-300`}
             >
-              {/* Icon and Title */}
+              {/* Logo and Title */}
               <div className="mb-6">
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg ${partner.badgeColor} mb-4`}>
-                  <span className="text-2xl">{partner.icon}</span>
+                <div className={`backdrop-blur-xl bg-white/40 border ${partner.borderColor} rounded-lg p-4 flex items-center justify-center mb-4 h-16`}>
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="h-8 w-auto"
+                  />
                 </div>
                 <h3 className={`text-2xl font-bold ${partner.textColor} mb-1`}>
                   {partner.name}
