@@ -213,7 +213,7 @@ export default function Differentiators() {
                   <span
                     className={`text-xs font-semibold transition-colors duration-300 ${
                       expandedIndex === diff.number - 1
-                        ? (diff.number % 2 === 0 ? "text-red-700" : "text-blue-700")
+                        ? "text-primary"
                         : "text-gray-500"
                     }`}
                   >
