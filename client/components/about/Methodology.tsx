@@ -122,14 +122,14 @@ export default function Methodology() {
               {/* Phase Header */}
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div className="flex items-start gap-4 flex-grow">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${phase.badgeBg} flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                    <phase.icon className={`w-6 h-6 ${phase.badgeText}`} strokeWidth={2} />
+                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 border border-white/80 flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                    <phase.icon className={`w-6 h-6 text-accent opacity-75`} strokeWidth={2} />
                   </div>
                   <div>
-                    <div className={`text-xs font-bold ${phase.badgeText} mb-1`}>
+                    <div className={`text-xs font-bold text-primary mb-1`}>
                       PHASE {phase.number}
                     </div>
-                    <h3 className={`text-lg font-bold ${phase.badgeText}`}>
+                    <h3 className={`text-lg font-bold text-primary`}>
                       {phase.title}
                     </h3>
                   </div>
