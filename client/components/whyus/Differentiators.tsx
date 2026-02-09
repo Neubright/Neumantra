@@ -143,7 +143,7 @@ export default function Differentiators() {
               <div
                 className="absolute top-0 right-0 w-40 h-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
                 style={{
-                  background: `radial-gradient(circle, ${diff.number % 2 === 0 ? "rgba(165, 35, 35, 0.3)" : "rgba(15, 37, 71, 0.3)"}, transparent)`,
+                  background: "radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent)",
                 }}
               ></div>
 
