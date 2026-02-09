@@ -45,7 +45,9 @@ export default function MidMarketGap() {
           {/* The Gap Card */}
           <div className="backdrop-blur-xl bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/30 rounded-xl p-8">
             <div className="flex items-start gap-4">
-              <div className="text-4xl flex-shrink-0">⚠️</div>
+              <div className="flex-shrink-0 text-accent">
+                <AlertTriangle className="w-8 h-8" strokeWidth={1.5} />
+              </div>
               <div>
                 <h3 className="text-xl font-bold text-accent mb-2">The Gap</h3>
                 <p className="text-gray-800 leading-relaxed font-medium">
