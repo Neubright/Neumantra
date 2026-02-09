@@ -96,7 +96,7 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">1</span>
               </div>
               <div>
-                <h4 className="font-semibold text-accent mb-1">Capital-Markets Readiness</h4>
+                <h4 className="font-semibold text-primary mb-1">Capital-Markets Readiness</h4>
                 <p className="text-sm text-gray-700">For companies preparing to access public or private markets</p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">2</span>
               </div>
               <div>
-                <h4 className="font-semibold text-accent mb-1">Investor Relations & Engagement</h4>
+                <h4 className="font-semibold text-primary mb-1">Investor Relations & Engagement</h4>
                 <p className="text-sm text-gray-700">For companies actively engaging with investors and analysts</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">3</span>
               </div>
               <div>
-                <h4 className="font-semibold text-accent mb-1">Customised IR for Listed</h4>
+                <h4 className="font-semibold text-primary mb-1">Customised IR for Listed</h4>
                 <p className="text-sm text-gray-700">For listed companies requiring continuous IR partnership</p>
               </div>
             </div>
