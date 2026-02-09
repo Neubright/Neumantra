@@ -26,7 +26,7 @@ export default function ServiceCategory({
   const categoryColors = {
     1: {
       bgGradient:
-        "linear-gradient(135deg, rgba(219, 234, 254, 0.08) 0%, rgba(219, 234, 254, 0.04) 100%)",
+        "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(15, 37, 71, 0.04) 100%)",
       badgeBg: "bg-blue-100",
       badgeText: "text-blue-700",
       accentColor: "from-blue-50 to-blue-100/30",
@@ -34,7 +34,7 @@ export default function ServiceCategory({
     },
     2: {
       bgGradient:
-        "linear-gradient(135deg, rgba(254, 226, 226, 0.08) 0%, rgba(254, 226, 226, 0.04) 100%)",
+        "linear-gradient(135deg, rgba(165, 35, 35, 0.08) 0%, rgba(165, 35, 35, 0.04) 100%)",
       badgeBg: "bg-red-100",
       badgeText: "text-red-700",
       accentColor: "from-red-50 to-red-100/30",
@@ -42,7 +42,7 @@ export default function ServiceCategory({
     },
     3: {
       bgGradient:
-        "linear-gradient(135deg, rgba(219, 234, 254, 0.08) 0%, rgba(219, 234, 254, 0.04) 100%)",
+        "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(15, 37, 71, 0.04) 100%)",
       badgeBg: "bg-blue-100",
       badgeText: "text-blue-700",
       accentColor: "from-blue-50 to-blue-100/30",
