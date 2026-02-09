@@ -31,7 +31,9 @@ export default function MidMarketGap() {
           {/* Growth Stories Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="text-4xl flex-shrink-0">📈</div>
+              <div className="flex-shrink-0 text-primary">
+                <TrendingUp className="w-8 h-8" strokeWidth={1.5} />
+              </div>
               <div>
                 <p className="text-gray-800 leading-relaxed">
                   India's mid-market represents some of the country's most dynamic growth stories - innovative business models, strong fundamentals, ambitious expansion plans. Yet many of these companies struggle to translate operational excellence into sustained market credibility.
