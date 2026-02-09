@@ -1,9 +1,45 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
-import { Building } from "lucide-react";
 
 export default function HeritagePartners() {
   const [ref, isInView] = useInView();
+
+  const partners = [
+    {
+      name: "Mantraa Advisory",
+      subtitle: "Financial & Strategic Expertise",
+      icon: "💼",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
+      badgeColor: "bg-blue-100",
+      textColor: "text-blue-700",
+      items: [
+        "Capital structure optimization and valuation analysis",
+        "IPO preparation and transaction readiness",
+        "Financial reporting frameworks and disclosure enhancement",
+        "CFO-level strategic guidance",
+        "Board advisory and governance strengthening",
+      ],
+      description: "Mantraa's track record of supporting companies through complex financial transitions ensures Neumantra's investor relations guidance is grounded in financial substance, not marketing narratives.",
+    },
+    {
+      name: "Neubright Partners",
+      subtitle: "Stakeholder Engagement Excellence",
+      icon: "🌟",
+      color: "from-purple-50 to-purple-100/30",
+      borderColor: "border-purple-200",
+      badgeColor: "bg-purple-100",
+      textColor: "text-purple-700",
+      items: [
+        "Stakeholder mapping and engagement strategy",
+        "Corporate messaging and narrative development",
+        "Reputation management and perception tracking",
+        "ESG integration and sustainability communication",
+        "Crisis preparedness and issue management",
+      ],
+      description: "Neubright's expertise ensures Neumantra delivers not just accurate information, but compelling, consistent, and credible communication that resonates with institutional investors and analysts.",
+    },
+  ];
 
   return (
     <section
@@ -17,135 +53,65 @@ export default function HeritagePartners() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-4">
-            <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-              <Building
-                className="w-8 h-8 text-accent opacity-75"
-                strokeWidth={1.5}
-              />
-            </div>
-          </div>
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            INTEGRATED EXPERTISE
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Our Heritage Partners
           </h2>
           <SectionDivider />
+          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
+            Two established practices coming together to serve an underserved market segment
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <div className="flex justify-start mb-6">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
-                  alt="Mantraa Logo"
-                  className="h-8 w-auto"
-                />
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className={`backdrop-blur-xl bg-gradient-to-br ${partner.color} border-2 ${partner.borderColor} rounded-xl p-8 hover:shadow-xl transition-all duration-300`}
+            >
+              {/* Icon and Title */}
+              <div className="mb-6">
+                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg ${partner.badgeColor} mb-4`}>
+                  <span className="text-2xl">{partner.icon}</span>
+                </div>
+                <h3 className={`text-2xl font-bold ${partner.textColor} mb-1`}>
+                  {partner.name}
+                </h3>
+                <p className={`text-sm font-semibold ${partner.textColor}`}>
+                  {partner.subtitle}
+                </p>
               </div>
-            </div>
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Mantraa Advisory | Financial & Strategic Expertise
-            </h3>
-            <p className="text-gray-700 text-base mb-4 leading-relaxed">
-              Mantraa brings rigorous financial advisory credentials to
-              Neumantra's foundation:
-            </p>
-            <ul className="space-y-2 mb-4">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Capital structure optimization and valuation analysis
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  IPO preparation and transaction readiness
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Financial reporting frameworks and disclosure enhancement
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  CFO-level strategic guidance
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Board advisory and governance strengthening
-                </span>
-              </li>
-            </ul>
-            <p className="text-gray-700 text-base leading-relaxed">
-              Mantraa's track record of supporting companies through complex
-              financial transitions ensures Neumantra's investor relations
-              guidance is grounded in financial substance, not marketing
-              narratives.
-            </p>
-          </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <div className="flex justify-start mb-6">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
-                  alt="Neubright Logo"
-                  className="h-10 w-auto"
-                />
+              {/* Intro */}
+              <p className={`${partner.textColor.replace("text-", "text-opacity-90 ")} mb-4 font-medium`}>
+                {partner.name === "Mantraa Advisory"
+                  ? "Mantraa brings rigorous financial advisory credentials to Neumantra's foundation:"
+                  : "Neubright contributes sophisticated communication and engagement capabilities:"}
+              </p>
+
+              {/* Items List */}
+              <ul className="space-y-3 mb-6">
+                {partner.items.map((item, i) => (
+                  <li key={i} className={`flex items-start gap-3 ${partner.textColor.replace("text-", "text-opacity-80 ")}`}>
+                    <span className={`flex-shrink-0 w-5 h-5 rounded-full ${partner.badgeColor} flex items-center justify-center mt-0.5`}>
+                      <span className={`text-xs font-bold ${partner.textColor}`}>✓</span>
+                    </span>
+                    <span className="leading-relaxed text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Description */}
+              <div className={`pt-6 border-t ${partner.borderColor}`}>
+                <p className={`${partner.textColor.replace("text-", "text-opacity-90 ")} text-sm leading-relaxed`}>
+                  {partner.description}
+                </p>
               </div>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-2">
-              Neubright Partners | Stakeholder Engagement Excellence
-            </h3>
-            <p className="text-gray-700 text-base mb-4 leading-relaxed">
-              Neubright contributes sophisticated communication and engagement
-              capabilities:
-            </p>
-            <ul className="space-y-2 mb-4">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Stakeholder mapping and engagement strategy
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Corporate messaging and narrative development
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Reputation management and perception tracking
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  ESG integration and sustainability communication
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0">•</span>
-                <span className="text-gray-700 text-base">
-                  Crisis preparedness and issue management
-                </span>
-              </li>
-            </ul>
-            <p className="text-gray-700 text-base leading-relaxed">
-              Neubright's expertise ensures Neumantra delivers not just accurate
-              information, but compelling, consistent, and credible
-              communication that resonates with institutional investors and
-              analysts.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
