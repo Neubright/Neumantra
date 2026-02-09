@@ -11,7 +11,7 @@ export default function Differentiators() {
     {
       number: 1,
       title: "Dual-Domain Expertise: Finance Meets Communication",
-      icon: "🧩",
+      icon: Puzzle,
       problem:
         "Traditional IR advisory often suffers from domain limitations. Communications agencies understand messaging but lack financial depth to engage analytically with investors. Financial and accounting advisors possess technical expertise but often struggle with stakeholder engagement sophistication. Companies are left managing multiple vendors with fragmented accountability",
       solution: [
@@ -25,7 +25,7 @@ export default function Differentiators() {
     {
       number: 2,
       title: "Mid-Market Specialisation: Built for Your Journey",
-      icon: "🎯",
+      icon: Target,
       problem:
         "Large corporations benefit from big-firm advisory access and dedicated IR teams. Early-stage startups leverage venture capital networks. Mid-market companies—those preparing to list, transitioning from SME platforms, or operating as ₹1,000–10,000 crore listed entities—are often underserved. They are too complex for basic compliance support and too small for sustained attention from large firms.",
       solution: [
@@ -40,7 +40,7 @@ export default function Differentiators() {
     {
       number: 3,
       title: "Founder-Led Advisory: Senior Attention Throughout",
-      icon: "👥",
+      icon: Users,
       problem:
         "Many advisory firms promise senior expertise but delegate execution to junior teams after the sales pitch. Companies receive standardized playbooks executed by analysts with limited capital-markets experience, forcing leadership teams to manage the advisory relationship closely.",
       solution: [
@@ -54,7 +54,7 @@ export default function Differentiators() {
     {
       number: 4,
       title: "End-to-End Capability: Single-Partner Accountability",
-      icon: "🔗",
+      icon: Link2,
       problem:
         "Effective investor relations requires coordination across finance, governance, disclosure, analyst engagement, and leadership communication. Managing multiple vendors leads to inefficiency, message inconsistency, and accountability gaps",
       solution: [
@@ -71,7 +71,7 @@ export default function Differentiators() {
     {
       number: 5,
       title: "Outcomes Orientation: Impact Over Activity",
-      icon: "📊",
+      icon: Trophy,
       problem:
         "Many IR advisors measure success by activity, such as meetings scheduled, decks created, and presentations delivered. Activity does not guarantee market impact.",
       solution: [
@@ -87,7 +87,7 @@ export default function Differentiators() {
     {
       number: 6,
       title: "Market Credibility: Track Record in Capital Markets",
-      icon: "🏆",
+      icon: Trophy,
       problem:
         "Investor relations requires more than communication skill, it demands deep understanding of capital-markets behaviour, investor decision-making, and valuation drivers.",
       solution: [
