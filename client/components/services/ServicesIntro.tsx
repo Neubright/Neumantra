@@ -74,7 +74,7 @@ export default function ServicesIntro() {
         </div>
 
         {/* Three Service Categories Overview */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 bg-gradient-to-r from-blue-50/30 to-purple-50/30">
+        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 bg-gradient-to-r from-blue-50/30 to-red-50/30">
           <h3 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
             <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/20 text-accent font-bold">
               ✓
