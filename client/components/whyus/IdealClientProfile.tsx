@@ -68,13 +68,13 @@ export default function IdealClientProfile() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {idealClients.map((item, index) => (
               <div
-                key={index}
-                className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="text-3xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </div>
+              key={index}
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300 text-primary">
+                  <item.icon className="w-6 h-6" strokeWidth={1.5} />
+                </div>
                   <p className="text-gray-700 text-sm leading-relaxed pt-1">
                     {item.text}
                   </p>
