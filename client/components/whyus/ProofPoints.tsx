@@ -1,12 +1,13 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Users, Briefcase, Trophy } from "lucide-react";
 
 export default function ProofPoints() {
   const [ref, isInView] = useInView();
 
   const proofPoints = [
     {
-      icon: "👥",
+      icon: Users,
       title: "Combined Experience",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
