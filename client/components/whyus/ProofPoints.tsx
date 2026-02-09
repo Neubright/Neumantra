@@ -83,7 +83,7 @@ export default function ProofPoints() {
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg ${point.badgeBg} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <span className="text-2xl">{point.icon}</span>
+                <point.icon className={`w-7 h-7 ${point.badgeText}`} strokeWidth={2} />
               </div>
 
               {/* Title */}
