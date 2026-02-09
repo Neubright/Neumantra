@@ -26,27 +26,27 @@ export default function ServiceCategory({
   const categoryColors = {
     1: {
       bgGradient:
-        "linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.04) 100%)",
-      badgeBg: "bg-green-100",
-      badgeText: "text-green-700",
-      accentColor: "from-green-50 to-green-100/30",
-      borderColor: "border-green-200",
-    },
-    2: {
-      bgGradient:
-        "linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0.04) 100%)",
+        "linear-gradient(135deg, rgba(219, 234, 254, 0.08) 0%, rgba(219, 234, 254, 0.04) 100%)",
       badgeBg: "bg-blue-100",
       badgeText: "text-blue-700",
       accentColor: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
+    2: {
+      bgGradient:
+        "linear-gradient(135deg, rgba(254, 226, 226, 0.08) 0%, rgba(254, 226, 226, 0.04) 100%)",
+      badgeBg: "bg-red-100",
+      badgeText: "text-red-700",
+      accentColor: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
+    },
     3: {
       bgGradient:
-        "linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%)",
-      badgeBg: "bg-purple-100",
-      badgeText: "text-purple-700",
-      accentColor: "from-purple-50 to-purple-100/30",
-      borderColor: "border-purple-200",
+        "linear-gradient(135deg, rgba(219, 234, 254, 0.08) 0%, rgba(219, 234, 254, 0.04) 100%)",
+      badgeBg: "bg-blue-100",
+      badgeText: "text-blue-700",
+      accentColor: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
     },
   };
 
