@@ -30,7 +30,7 @@ export default function WhyUsCTA() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+          "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(165, 35, 35, 0.06) 50%, rgba(229, 231, 235, 0.7) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,7 +65,7 @@ export default function WhyUsCTA() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <button className="bg-gradient-to-r from-accent to-red-600 text-white hover:shadow-lg pl-6 pr-2 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3 group hover:scale-105">
+          <button className="bg-gradient-to-r from-red-700 to-red-600 text-white hover:shadow-lg pl-6 pr-2 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3 group hover:scale-105">
             <span>Schedule a Confidential Consultation</span>
             <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300">
               <svg
