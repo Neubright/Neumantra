@@ -31,7 +31,7 @@ export default function MissionVision() {
           {/* Mission */}
           <div className="backdrop-blur-xl bg-gradient-to-br from-blue-50/40 to-blue-100/20 border-2 border-blue-200/50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 group">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-blue-100 mb-6 group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl">🎯</span>
+              <Target className="w-7 h-7 text-blue-700" strokeWidth={1.5} />
             </div>
             <h3 className="text-2xl font-bold text-blue-700 mb-4">Our Mission</h3>
             <p className="text-blue-900 leading-relaxed text-base">
