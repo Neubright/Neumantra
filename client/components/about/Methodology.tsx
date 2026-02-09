@@ -156,7 +156,7 @@ export default function Methodology() {
                 <ul className="space-y-2 mb-4 pt-4 border-t border-gray-300/30">
                   {phase.items.map((item, i) => (
                     <li key={i} className="text-gray-700 text-xs flex items-start gap-2 animate-fadeIn">
-                      <span className="flex-shrink-0 w-4 h-4 rounded-full bg-accent/20 flex items-center justify-center mt-0.5">
+                      <span className="flex-shrink-0 w-4 h-4 rounded-full bg-white/30 flex items-center justify-center mt-0.5">
                         <span className="text-xs text-accent font-bold">✓</span>
                       </span>
                       <span>{item}</span>
@@ -166,7 +166,7 @@ export default function Methodology() {
 
                 {/* Deliverable */}
                 <div className="pt-4 border-t border-gray-300/30">
-                  <p className={`text-xs font-bold ${phase.badgeText} mb-1`}>
+                  <p className={`text-xs font-bold text-primary mb-1`}>
                     DELIVERABLE
                   </p>
                   <p className="text-gray-700 text-xs leading-relaxed">
