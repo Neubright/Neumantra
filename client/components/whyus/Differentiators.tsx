@@ -159,9 +159,7 @@ export default function Differentiators() {
                   </div>
                   <div className="flex-grow">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className={`text-xs font-bold px-2 py-1 rounded ${
-                        diff.number % 2 === 0 ? "text-red-700 bg-red-100" : "text-blue-700 bg-blue-100"
-                      }`}>
+                      <span className="text-xs font-bold px-2 py-1 rounded text-primary bg-white/30">
                         #{diff.number}
                       </span>
                     </div>
