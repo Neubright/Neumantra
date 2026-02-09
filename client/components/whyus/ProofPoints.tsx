@@ -86,7 +86,7 @@ export default function ProofPoints() {
               </div>
 
               {/* Title */}
-              <h3 className={`text-xl font-bold ${point.badgeText} mb-6`}>
+              <h3 className="text-xl font-bold text-primary mb-6">
                 {point.title}
               </h3>
 
