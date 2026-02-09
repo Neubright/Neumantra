@@ -71,8 +71,10 @@ export default function IdealClientProfile() {
               className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
             >
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300 text-primary">
-                  <item.icon className="w-6 h-6" strokeWidth={1.5} />
+                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-10 h-10 flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-accent opacity-75" strokeWidth={1.5} />
+                  </div>
                 </div>
                   <p className="text-gray-700 text-sm leading-relaxed pt-1">
                     {item.text}
