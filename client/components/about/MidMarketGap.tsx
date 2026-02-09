@@ -44,11 +44,11 @@ export default function MidMarketGap() {
           {/* The Gap Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 text-accent">
+              <div className="flex-shrink-0 text-primary">
                 <AlertTriangle className="w-8 h-8" strokeWidth={1.5} />
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-accent mb-2">The Gap</h3>
+            <div>
+              <h3 className="text-xl font-bold text-primary mb-2">The Gap</h3>
                 <p className="text-gray-800 leading-relaxed font-medium">
                   The gap lies in the absence of a professional investor relations infrastructure.
                 </p>
