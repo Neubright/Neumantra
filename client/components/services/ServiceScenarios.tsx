@@ -1,15 +1,25 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 import { useState } from "react";
+import { Rocket, TrendingUp, Briefcase } from "lucide-react";
 
 export default function ServiceScenarios() {
   const [ref, isInView] = useInView();
   const [selectedScenario, setSelectedScenario] = useState(0);
 
+  const getIcon = (iconName: string) => {
+    const icons: Record<string, React.ReactNode> = {
+      rocket: <Rocket className="w-6 h-6" strokeWidth={1.5} />,
+      trending: <TrendingUp className="w-6 h-6" strokeWidth={1.5} />,
+      briefcase: <Briefcase className="w-6 h-6" strokeWidth={1.5} />,
+    };
+    return icons[iconName];
+  };
+
   const scenarios = [
     {
       title: "The Pre-IPO Company",
-      icon: "🚀",
+      icon: "rocket",
       profile: "₹750 crore revenue manufacturing company planning mainboard IPO in 18 months",
       currentState: [
         "Strong operational performance",
@@ -28,7 +38,7 @@ export default function ServiceScenarios() {
     },
     {
       title: "SME-to-Main Board Transition",
-      icon: "📈",
+      icon: "trending",
       profile: "Technology company listed on BSE SME for 3 years, planning main board migration",
       currentState: [
         "Basic quarterly compliance",
@@ -46,7 +56,7 @@ export default function ServiceScenarios() {
     },
     {
       title: "Listed Mid-Sized Company",
-      icon: "💼",
+      icon: "briefcase",
       profile: "₹4,500 crore market cap healthcare company, listed for 8 years, experiencing valuation discount to peers",
       currentState: [
         "Compliance-focused IR",
@@ -100,7 +110,9 @@ export default function ServiceScenarios() {
                   : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
               }`}
             >
-              <span className="text-2xl">{s.icon}</span>
+              <span className={selectedScenario === index ? "text-accent" : "text-gray-700"}>
+                {getIcon(s.icon)}
+              </span>
               <span className="hidden sm:inline">{s.title}</span>
               <span className="sm:hidden">Scenario {index + 1}</span>
             </button>
@@ -114,7 +126,7 @@ export default function ServiceScenarios() {
             <div className="space-y-6">
               <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
-                  <span className="text-3xl">{scenario.icon}</span>
+                  <span className="text-primary">{getIcon(scenario.icon)}</span>
                   Company Profile
                 </h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-6 font-medium">
