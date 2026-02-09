@@ -12,7 +12,7 @@ export default function MissionVision() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+          "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(165, 35, 35, 0.06) 50%, rgba(229, 231, 235, 0.7) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
