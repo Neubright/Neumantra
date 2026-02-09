@@ -99,7 +99,9 @@ export default function NeumanatraApproach() {
               className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-lg hover:bg-white/50 transition-all duration-300 group`}
             >
               <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                <principle.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                  <principle.icon className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                </div>
               </div>
               <h3 className="text-base font-bold text-primary mb-2">
                 {principle.title}
