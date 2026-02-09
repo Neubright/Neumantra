@@ -76,8 +76,8 @@ export default function NeumanatraApproach() {
             </p>
           </div>
 
-          <div className="backdrop-blur-xl bg-gradient-to-r from-green-50/40 to-green-100/20 border-2 border-green-200/50 rounded-xl p-8">
-            <p className="text-green-900 text-lg leading-relaxed">
+          <div className="backdrop-blur-xl bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/30 rounded-xl p-8">
+            <p className="text-gray-800 text-lg leading-relaxed">
               We work with companies that are <span className="font-bold">ready to scale, ready to raise, and ready to build a lasting presence in the capital markets.</span>
             </p>
           </div>
