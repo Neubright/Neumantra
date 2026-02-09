@@ -1,22 +1,23 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { BarChart3, FileText, Leaf } from "lucide-react";
 
 export default function ServicesIntro() {
   const [ref, isInView] = useInView();
 
   const highlights = [
     {
-      icon: "📊",
+      icon: BarChart3,
       title: "Market Maturity",
       description: "Institutional investors apply global evaluation frameworks with high transparency demands",
     },
     {
-      icon: "📋",
+      icon: FileText,
       title: "Regulatory Standards",
       description: "Analysts demand consistent communication while regulators raise disclosure benchmarks",
     },
     {
-      icon: "🌱",
+      icon: Leaf,
       title: "ESG Focus",
       description: "Sustainability considerations increasingly influence capital allocation decisions",
     },
