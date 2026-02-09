@@ -135,9 +135,9 @@ export default function Methodology() {
                   </div>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${
+                  className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 text-primary ${
                     expandedPhase === index ? "rotate-180" : ""
-                  } ${phase.badgeText}`}
+                  }`}
                   strokeWidth={2}
                 />
               </div>
