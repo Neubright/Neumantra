@@ -1,22 +1,23 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Briefcase, Target, TrendingUp, ArrowRight } from "lucide-react";
 
 export default function ServicesCTA() {
   const [ref, isInView] = useInView();
 
   const benefits = [
     {
-      icon: "💼",
+      icon: Briefcase,
       title: "Flexible Engagement",
       description: "Models tailored to your stage and resources",
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "Proven Expertise",
       description: "Deep experience across capital markets journey",
     },
     {
-      icon: "📈",
+      icon: TrendingUp,
       title: "Measurable Results",
       description: "Track success through investor perception metrics",
     },
@@ -54,7 +55,9 @@ export default function ServicesCTA() {
               key={index}
               className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 text-center hover:shadow-lg hover:border-white/90 transition-all duration-300 hover:bg-white/40"
             >
-              <div className="text-4xl mb-3">{benefit.icon}</div>
+              <div className="flex justify-center mb-3">
+                <benefit.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-bold text-primary mb-2">
                 {benefit.title}
               </h3>
@@ -68,19 +71,7 @@ export default function ServicesCTA() {
           <button className="bg-gradient-to-r from-red-700 to-red-600 text-white hover:shadow-lg pl-6 pr-2 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3 group hover:scale-105">
             <span>Schedule a Consultation</span>
             <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
+              <ArrowRight className="w-5 h-5" strokeWidth={2} />
             </span>
           </button>
           <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
