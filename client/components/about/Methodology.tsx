@@ -15,7 +15,8 @@ export default function Methodology() {
       borderColor: "border-blue-200",
       badgeBg: "bg-blue-100",
       badgeText: "text-blue-700",
-      description: "A comprehensive assessment establishing baseline readiness across six dimensions",
+      description:
+        "A comprehensive assessment establishing baseline readiness across six dimensions",
       items: [
         "Financial Transparency: Quality of disclosures, reporting clarity, and governance frameworks",
         "Intrinsic Value of Business: Identifying intrinsic value of business for establishing long term potential, clear positioning against markets and market players",
@@ -34,7 +35,8 @@ export default function Methodology() {
       borderColor: "border-red-200",
       badgeBg: "bg-red-100",
       badgeText: "text-red-700",
-      description: "Development of a comprehensive investor relations strategy tailored to company stage and objectives",
+      description:
+        "Development of a comprehensive investor relations strategy tailored to company stage and objectives",
       items: [
         "Investment Narrative Architecture: Core equity story, sector positioning, growth thesis, and defensibility arguments",
         "Target Investor Mapping: Identification of appropriate institutional investors, analysts, and coverage targets",
@@ -52,7 +54,8 @@ export default function Methodology() {
       borderColor: "border-blue-200",
       badgeBg: "bg-blue-100",
       badgeText: "text-blue-700",
-      description: "Hands-on implementation of investor relations programs with continuous refinement",
+      description:
+        "Hands-on implementation of investor relations programs with continuous refinement",
       items: [
         "Investor Materials: Presentations, fact books, earnings supplements, and management talking points",
         "Analyst Engagement: Initiation coverage targeting, regular updates, facility visits, and model support",
@@ -79,7 +82,8 @@ export default function Methodology() {
         "Message Effectiveness: Testing narrative resonance and addressing areas of confusion",
         "Benchmark Performance: Valuation multiples, peer positioning, institutional ownership trends",
       ],
-      deliverable: "Quarterly IR effectiveness reports with strategic recommendations",
+      deliverable:
+        "Quarterly IR effectiveness reports with strategic recommendations",
     },
   ];
 
@@ -105,7 +109,8 @@ export default function Methodology() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            A structured, four-phase approach designed to deliver sustained results
+            A structured, four-phase approach designed to deliver sustained
+            results
           </p>
         </div>
 
@@ -113,16 +118,25 @@ export default function Methodology() {
           {phases.map((phase, index) => (
             <div
               key={index}
-              onClick={() => setExpandedPhase(expandedPhase === index ? null : index)}
+              onClick={() =>
+                setExpandedPhase(expandedPhase === index ? null : index)
+              }
               className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-lg hover:bg-white/50 ${
-                expandedPhase === index ? "ring-2 ring-offset-2 ring-accent" : ""
+                expandedPhase === index
+                  ? "ring-2 ring-offset-2 ring-accent"
+                  : ""
               }`}
             >
               {/* Phase Header */}
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div className="flex items-start gap-4 flex-grow">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 border border-white/80 flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                    <phase.icon className={`w-6 h-6 text-accent opacity-75`} strokeWidth={2} />
+                  <div
+                    className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 border border-white/80 flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    <phase.icon
+                      className={`w-6 h-6 text-accent opacity-75`}
+                      strokeWidth={2}
+                    />
                   </div>
                   <div>
                     <div className={`text-xs font-bold text-primary mb-1`}>
@@ -149,12 +163,17 @@ export default function Methodology() {
               {/* Expandable Items */}
               <div
                 className={`transition-all duration-300 overflow-hidden ${
-                  expandedPhase === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  expandedPhase === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
                 <ul className="space-y-2 mb-4 pt-4 border-t border-gray-300/30">
                   {phase.items.map((item, i) => (
-                    <li key={i} className="text-gray-700 text-xs flex items-start gap-2 animate-fadeIn">
+                    <li
+                      key={i}
+                      className="text-gray-700 text-xs flex items-start gap-2 animate-fadeIn"
+                    >
                       <span className="flex-shrink-0 w-4 h-4 rounded-full bg-white/30 flex items-center justify-center mt-0.5">
                         <span className="text-xs text-accent font-bold">✓</span>
                       </span>

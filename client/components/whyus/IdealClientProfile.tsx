@@ -1,6 +1,13 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
-import { TrendingUp, Zap, Rocket, Target, Building2, BarChart3 } from "lucide-react";
+import {
+  TrendingUp,
+  Zap,
+  Rocket,
+  Target,
+  Building2,
+  BarChart3,
+} from "lucide-react";
 
 export default function IdealClientProfile() {
   const [ref, isInView] = useInView();
@@ -67,15 +74,18 @@ export default function IdealClientProfile() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {idealClients.map((item, index) => (
               <div
-              key={index}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
-            >
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-10 h-10 flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-accent opacity-75" strokeWidth={1.5} />
+                key={index}
+                className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-10 h-10 flex items-center justify-center">
+                      <item.icon
+                        className="w-5 h-5 text-accent opacity-75"
+                        strokeWidth={1.5}
+                      />
+                    </div>
                   </div>
-                </div>
                   <p className="text-gray-700 text-sm leading-relaxed pt-1">
                     {item.text}
                   </p>
@@ -87,10 +97,13 @@ export default function IdealClientProfile() {
           {/* Bottom message */}
           <div className="mt-12 backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 text-center">
             <h3 className="text-xl font-bold text-primary mb-3">
-              If these characteristics describe your company, let's explore partnership
+              If these characteristics describe your company, let's explore
+              partnership
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              We're most effective with companies that recognize IR as a strategic investment, not just a compliance requirement. If you share this perspective, Neumantra could be the right partner.
+              We're most effective with companies that recognize IR as a
+              strategic investment, not just a compliance requirement. If you
+              share this perspective, Neumantra could be the right partner.
             </p>
           </div>
         </div>

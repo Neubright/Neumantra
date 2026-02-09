@@ -9,17 +9,20 @@ export default function ServicesIntro() {
     {
       icon: BarChart3,
       title: "Market Maturity",
-      description: "Institutional investors apply global evaluation frameworks with high transparency demands",
+      description:
+        "Institutional investors apply global evaluation frameworks with high transparency demands",
     },
     {
       icon: FileText,
       title: "Regulatory Standards",
-      description: "Analysts demand consistent communication while regulators raise disclosure benchmarks",
+      description:
+        "Analysts demand consistent communication while regulators raise disclosure benchmarks",
     },
     {
       icon: Leaf,
       title: "ESG Focus",
-      description: "Sustainability considerations increasingly influence capital allocation decisions",
+      description:
+        "Sustainability considerations increasingly influence capital allocation decisions",
     },
   ];
 
@@ -47,12 +50,21 @@ export default function ServicesIntro() {
         {/* Main intro paragraph */}
         <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-xl transition-all duration-300">
           <p className="text-gray-800 text-lg leading-relaxed mb-6">
-            India's capital markets have matured significantly. Institutional investors apply global evaluation frameworks. Analysts demand transparent, consistent communication. Regulators continue to raise disclosure standards, while ESG considerations increasingly influence capital allocation decisions.
+            India's capital markets have matured significantly. Institutional
+            investors apply global evaluation frameworks. Analysts demand
+            transparent, consistent communication. Regulators continue to raise
+            disclosure standards, while ESG considerations increasingly
+            influence capital allocation decisions.
           </p>
 
           <div className="border-l-4 border-accent pl-6">
             <p className="text-gray-800 leading-relaxed italic">
-              For mid-market companies, meeting these expectations requires specialized capability that most organizations do not—and should not—build in-house. Investor relations is a professional discipline demanding continuous attention, market intelligence, and strategic coordination across finance, legal, and leadership functions.
+              For mid-market companies, meeting these expectations requires
+              specialized capability that most organizations do not—and should
+              not—build in-house. Investor relations is a professional
+              discipline demanding continuous attention, market intelligence,
+              and strategic coordination across finance, legal, and leadership
+              functions.
             </p>
           </div>
         </div>
@@ -66,10 +78,15 @@ export default function ServicesIntro() {
             >
               <div className="flex justify-center mb-4">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                  <item.icon className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+                  <item.icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+              <h3 className="text-lg font-bold text-primary mb-2">
+                {item.title}
+              </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
                 {item.description}
               </p>
@@ -87,7 +104,8 @@ export default function ServicesIntro() {
           </h3>
 
           <p className="text-gray-800 leading-relaxed mb-6">
-            Neumantra's services are structured around three distinct company journeys, each requiring different investor relations capabilities:
+            Neumantra's services are structured around three distinct company
+            journeys, each requiring different investor relations capabilities:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -96,8 +114,12 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">1</span>
               </div>
               <div>
-                <h4 className="font-semibold text-primary mb-1">Capital-Markets Readiness</h4>
-                <p className="text-sm text-gray-700">For companies preparing to access public or private markets</p>
+                <h4 className="font-semibold text-primary mb-1">
+                  Capital-Markets Readiness
+                </h4>
+                <p className="text-sm text-gray-700">
+                  For companies preparing to access public or private markets
+                </p>
               </div>
             </div>
 
@@ -106,8 +128,12 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">2</span>
               </div>
               <div>
-                <h4 className="font-semibold text-primary mb-1">Investor Relations & Engagement</h4>
-                <p className="text-sm text-gray-700">For companies actively engaging with investors and analysts</p>
+                <h4 className="font-semibold text-primary mb-1">
+                  Investor Relations & Engagement
+                </h4>
+                <p className="text-sm text-gray-700">
+                  For companies actively engaging with investors and analysts
+                </p>
               </div>
             </div>
 
@@ -116,8 +142,12 @@ export default function ServicesIntro() {
                 <span className="text-sm font-bold text-accent">3</span>
               </div>
               <div>
-                <h4 className="font-semibold text-primary mb-1">Customised IR for Listed</h4>
-                <p className="text-sm text-gray-700">For listed companies requiring continuous IR partnership</p>
+                <h4 className="font-semibold text-primary mb-1">
+                  Customised IR for Listed
+                </h4>
+                <p className="text-sm text-gray-700">
+                  For listed companies requiring continuous IR partnership
+                </p>
               </div>
             </div>
           </div>

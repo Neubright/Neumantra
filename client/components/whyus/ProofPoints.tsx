@@ -70,7 +70,8 @@ export default function ProofPoints() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Backed by decades of experience and proven success across India's capital markets
+            Backed by decades of experience and proven success across India's
+            capital markets
           </p>
         </div>
 
@@ -81,8 +82,13 @@ export default function ProofPoints() {
               className={`backdrop-blur-xl bg-white/40 border-2 ${point.borderColor} rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group`}
             >
               {/* Icon */}
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/40 border border-white/80 mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <point.icon className={`w-8 h-8 text-accent opacity-75`} strokeWidth={2} />
+              <div
+                className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/40 border border-white/80 mb-6 group-hover:scale-110 transition-transform duration-300`}
+              >
+                <point.icon
+                  className={`w-8 h-8 text-accent opacity-75`}
+                  strokeWidth={2}
+                />
               </div>
 
               {/* Title */}
@@ -93,9 +99,16 @@ export default function ProofPoints() {
               {/* Points List */}
               <ul className="space-y-3">
                 {point.points.map((item, i) => (
-                  <li key={i} className="text-gray-700 text-sm flex items-start gap-3">
-                    <span className={`flex-shrink-0 w-5 h-5 rounded-full ${point.badgeBg} flex items-center justify-center mt-0.5`}>
-                      <span className={`text-xs font-bold ${point.badgeText}`}>✓</span>
+                  <li
+                    key={i}
+                    className="text-gray-700 text-sm flex items-start gap-3"
+                  >
+                    <span
+                      className={`flex-shrink-0 w-5 h-5 rounded-full ${point.badgeBg} flex items-center justify-center mt-0.5`}
+                    >
+                      <span className={`text-xs font-bold ${point.badgeText}`}>
+                        ✓
+                      </span>
                     </span>
                     <span className="leading-relaxed">{item}</span>
                   </li>

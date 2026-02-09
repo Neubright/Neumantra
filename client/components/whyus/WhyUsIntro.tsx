@@ -9,7 +9,8 @@ export default function WhyUsIntro() {
     {
       icon: AlertTriangle,
       title: "Wrong Partner Risk",
-      description: "Damages credibility, wastes leadership time, misses market opportunities",
+      description:
+        "Damages credibility, wastes leadership time, misses market opportunities",
     },
     {
       icon: CheckCircle,
@@ -43,14 +44,18 @@ export default function WhyUsIntro() {
           </h2>
           <SectionDivider />
           <h3 className="text-xl font-semibold text-gray-800 mt-6 max-w-3xl mx-auto">
-            Selecting an investor relations advisor is a strategic decision with lasting implications
+            Selecting an investor relations advisor is a strategic decision with
+            lasting implications
           </h3>
         </div>
 
         {/* Main intro paragraph */}
         <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-xl transition-all duration-300">
           <p className="text-gray-800 text-lg leading-relaxed">
-            The wrong partner can damage credibility, waste leadership time, and miss critical market opportunities. The right partner becomes an essential extension of your leadership team—protecting reputation, expanding access, and enhancing valuation.
+            The wrong partner can damage credibility, waste leadership time, and
+            miss critical market opportunities. The right partner becomes an
+            essential extension of your leadership team—protecting reputation,
+            expanding access, and enhancing valuation.
           </p>
         </div>
 
@@ -63,10 +68,15 @@ export default function WhyUsIntro() {
             >
               <div className="flex justify-center mb-4">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                  <item.icon className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+                  <item.icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
+              <h3 className="text-lg font-bold text-primary mb-2">
+                {item.title}
+              </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
                 {item.description}
               </p>
@@ -83,7 +93,14 @@ export default function WhyUsIntro() {
             Neumantra's Distinctive Approach
           </h3>
           <p className="text-gray-800 leading-relaxed">
-            Neumantra represents a <span className="font-semibold text-primary">distinctive approach to investor relations advisory</span>, purpose-built for India's mid-market opportunity. We combine financial expertise, capital markets knowledge, and stakeholder communication excellence into a single integrated partnership designed specifically for companies like yours.
+            Neumantra represents a{" "}
+            <span className="font-semibold text-primary">
+              distinctive approach to investor relations advisory
+            </span>
+            , purpose-built for India's mid-market opportunity. We combine
+            financial expertise, capital markets knowledge, and stakeholder
+            communication excellence into a single integrated partnership
+            designed specifically for companies like yours.
           </p>
         </div>
       </div>

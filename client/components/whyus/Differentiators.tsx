@@ -122,7 +122,8 @@ export default function Differentiators() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Six core differentiators that set us apart in India's investor relations landscape
+            Six core differentiators that set us apart in India's investor
+            relations landscape
           </p>
         </div>
 
@@ -131,7 +132,9 @@ export default function Differentiators() {
             <div
               key={diff.number}
               onClick={() =>
-                setExpandedIndex(expandedIndex === diff.number - 1 ? null : diff.number - 1)
+                setExpandedIndex(
+                  expandedIndex === diff.number - 1 ? null : diff.number - 1,
+                )
               }
               className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl hover:border-white/100 overflow-hidden relative ${
                 expandedIndex === diff.number - 1
@@ -143,7 +146,8 @@ export default function Differentiators() {
               <div
                 className="absolute top-0 right-0 w-40 h-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
                 style={{
-                  background: "radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent)",
+                  background:
+                    "radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent)",
                 }}
               ></div>
 
@@ -152,7 +156,10 @@ export default function Differentiators() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-full bg-white/40 border border-white/80">
-                      <diff.icon className="w-5 h-5 text-accent opacity-75" strokeWidth={2} />
+                      <diff.icon
+                        className="w-5 h-5 text-accent opacity-75"
+                        strokeWidth={2}
+                      />
                     </div>
                   </div>
                   <div className="flex-grow">
@@ -170,7 +177,10 @@ export default function Differentiators() {
                 {/* Problem Statement */}
                 <div className="mb-4 pb-4 border-b border-gray-300/30">
                   <p className="text-gray-700 text-sm leading-relaxed italic">
-                    <span className="font-semibold text-primary">The Challenge:</span> {diff.problem}
+                    <span className="font-semibold text-primary">
+                      The Challenge:
+                    </span>{" "}
+                    {diff.problem}
                   </p>
                 </div>
 
@@ -193,7 +203,9 @@ export default function Differentiators() {
                           className="text-gray-700 text-sm flex items-start gap-3 animate-fadeIn"
                         >
                           {point.includes(":") ? (
-                            <span className="font-semibold text-primary">{point}</span>
+                            <span className="font-semibold text-primary">
+                              {point}
+                            </span>
                           ) : (
                             <>
                               <span className="text-accent flex-shrink-0 font-bold mt-1">
@@ -217,7 +229,9 @@ export default function Differentiators() {
                         : "text-gray-500"
                     }`}
                   >
-                    {expandedIndex === diff.number - 1 ? "Show less" : "Learn more"}
+                    {expandedIndex === diff.number - 1
+                      ? "Show less"
+                      : "Learn more"}
                   </span>
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${

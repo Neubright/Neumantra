@@ -32,12 +32,19 @@ export default function MidMarketGap() {
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                  <TrendingUp
+                    className="w-6 h-6 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
               <div>
                 <p className="text-gray-800 leading-relaxed">
-                  India's mid-market represents some of the country's most dynamic growth stories - innovative business models, strong fundamentals, ambitious expansion plans. Yet many of these companies struggle to translate operational excellence into sustained market credibility.
+                  India's mid-market represents some of the country's most
+                  dynamic growth stories - innovative business models, strong
+                  fundamentals, ambitious expansion plans. Yet many of these
+                  companies struggle to translate operational excellence into
+                  sustained market credibility.
                 </p>
               </div>
             </div>
@@ -48,13 +55,17 @@ export default function MidMarketGap() {
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
-                  <AlertTriangle className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                  <AlertTriangle
+                    className="w-6 h-6 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-2">The Gap</h3>
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-2">The Gap</h3>
                 <p className="text-gray-800 leading-relaxed font-medium">
-                  The gap lies in the absence of a professional investor relations infrastructure.
+                  The gap lies in the absence of a professional investor
+                  relations infrastructure.
                 </p>
               </div>
             </div>
@@ -65,28 +76,45 @@ export default function MidMarketGap() {
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
-                  <Building className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                  <Building
+                    className="w-6 h-6 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-primary mb-3">Market Segments & Support</h3>
+                <h3 className="text-lg font-semibold text-primary mb-3">
+                  Market Segments & Support
+                </h3>
                 <div className="space-y-3">
                   <div className="flex gap-3 items-start">
                     <span className="text-lg">✓</span>
                     <p className="text-gray-700">
-                      <span className="font-semibold text-primary">Large corporations:</span> Benefit from dedicated IR teams and long-standing advisory relationships
+                      <span className="font-semibold text-primary">
+                        Large corporations:
+                      </span>{" "}
+                      Benefit from dedicated IR teams and long-standing advisory
+                      relationships
                     </p>
                   </div>
                   <div className="flex gap-3 items-start">
                     <span className="text-lg">✓</span>
                     <p className="text-gray-700">
-                      <span className="font-semibold text-primary">Early-stage startups:</span> Leverage venture capital networks
+                      <span className="font-semibold text-primary">
+                        Early-stage startups:
+                      </span>{" "}
+                      Leverage venture capital networks
                     </p>
                   </div>
                   <div className="flex gap-3 items-start">
                     <span className="text-lg">✓</span>
                     <p className="text-gray-700">
-                      <span className="font-semibold text-primary">Mid-market companies:</span> Those preparing to list, already on SME exchanges, or operating as listed mid-sized entities often navigate capital markets with limited specialised support
+                      <span className="font-semibold text-primary">
+                        Mid-market companies:
+                      </span>{" "}
+                      Those preparing to list, already on SME exchanges, or
+                      operating as listed mid-sized entities often navigate
+                      capital markets with limited specialised support
                     </p>
                   </div>
                 </div>

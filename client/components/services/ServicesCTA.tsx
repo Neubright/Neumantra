@@ -43,7 +43,9 @@ export default function ServicesCTA() {
           </h2>
           <SectionDivider />
           <p className="text-base text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
-            Every company's capital markets journey is unique. Neumantra's flexible engagement models ensure support aligned to your stage, objectives, and resources.
+            Every company's capital markets journey is unique. Neumantra's
+            flexible engagement models ensure support aligned to your stage,
+            objectives, and resources.
           </p>
         </div>
 
@@ -56,7 +58,10 @@ export default function ServicesCTA() {
             >
               <div className="flex justify-center mb-4">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                  <benefit.icon className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+                  <benefit.icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
               <h3 className="text-lg font-bold text-primary mb-2">
@@ -83,7 +88,8 @@ export default function ServicesCTA() {
         {/* Trust indicator */}
         <div className="text-center">
           <p className="text-gray-600 text-sm">
-            Join India's leading mid-market companies in elevating their investor relations strategy
+            Join India's leading mid-market companies in elevating their
+            investor relations strategy
           </p>
         </div>
       </div>

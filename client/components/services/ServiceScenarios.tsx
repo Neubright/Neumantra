@@ -20,7 +20,8 @@ export default function ServiceScenarios() {
     {
       title: "The Pre-IPO Company",
       icon: "rocket",
-      profile: "₹750 crore revenue manufacturing company planning mainboard IPO in 18 months",
+      profile:
+        "₹750 crore revenue manufacturing company planning mainboard IPO in 18 months",
       currentState: [
         "Strong operational performance",
         "Existing debt relationships",
@@ -29,17 +30,38 @@ export default function ServiceScenarios() {
         "Founder-led management",
       ],
       engagement: [
-        { phase: "Phase 1", duration: "Months 1-3", tasks: "IR readiness diagnostic, governance gap identification, equity story development" },
-        { phase: "Phase 2", duration: "Months 4-12", tasks: "Governance strengthening, board appointments, disclosure enhancement, management IR training, Merchant Banker Selection" },
-        { phase: "Phase 3", duration: "Months 13-18", tasks: "Regulatory Filings & Support, Investor materials development, pre-IPO positioning, analyst education, IPO support" },
-        { phase: "Post-IPO", duration: "Ongoing", tasks: "Transition to ongoing IR partnership" },
+        {
+          phase: "Phase 1",
+          duration: "Months 1-3",
+          tasks:
+            "IR readiness diagnostic, governance gap identification, equity story development",
+        },
+        {
+          phase: "Phase 2",
+          duration: "Months 4-12",
+          tasks:
+            "Governance strengthening, board appointments, disclosure enhancement, management IR training, Merchant Banker Selection",
+        },
+        {
+          phase: "Phase 3",
+          duration: "Months 13-18",
+          tasks:
+            "Regulatory Filings & Support, Investor materials development, pre-IPO positioning, analyst education, IPO support",
+        },
+        {
+          phase: "Post-IPO",
+          duration: "Ongoing",
+          tasks: "Transition to ongoing IR partnership",
+        },
       ],
-      outcome: "Successful IPO with strong institutional demand, analyst coverage from 3 research firms, premium valuation",
+      outcome:
+        "Successful IPO with strong institutional demand, analyst coverage from 3 research firms, premium valuation",
     },
     {
       title: "SME-to-Main Board Transition",
       icon: "trending",
-      profile: "Technology company listed on BSE SME for 3 years, planning main board migration",
+      profile:
+        "Technology company listed on BSE SME for 3 years, planning main board migration",
       currentState: [
         "Basic quarterly compliance",
         "Minimal investor engagement",
@@ -47,17 +69,37 @@ export default function ServiceScenarios() {
         "Limited analyst awareness",
       ],
       engagement: [
-        { phase: "Phase 1", duration: "Month 1-2", tasks: "Assessment of main board readiness gaps" },
-        { phase: "Phase 2", duration: "Month 3-6", tasks: "Enhanced disclosure implementation, governance committee formation, IR infrastructure development" },
-        { phase: "Phase 3", duration: "Month 7-12", tasks: "Analyst initiation campaign, institutional investor targeting, quarterly IR process establishment" },
-        { phase: "Phase 4", duration: "Post-Migration", tasks: "Structured IR program with quarterly analyst engagement" },
+        {
+          phase: "Phase 1",
+          duration: "Month 1-2",
+          tasks: "Assessment of main board readiness gaps",
+        },
+        {
+          phase: "Phase 2",
+          duration: "Month 3-6",
+          tasks:
+            "Enhanced disclosure implementation, governance committee formation, IR infrastructure development",
+        },
+        {
+          phase: "Phase 3",
+          duration: "Month 7-12",
+          tasks:
+            "Analyst initiation campaign, institutional investor targeting, quarterly IR process establishment",
+        },
+        {
+          phase: "Phase 4",
+          duration: "Post-Migration",
+          tasks: "Structured IR program with quarterly analyst engagement",
+        },
       ],
-      outcome: "Successful main board migration, expanded analyst coverage, 40% increase in institutional ownership within first year",
+      outcome:
+        "Successful main board migration, expanded analyst coverage, 40% increase in institutional ownership within first year",
     },
     {
       title: "Listed Mid-Sized Company",
       icon: "briefcase",
-      profile: "₹4,500 crore market cap healthcare company, listed for 8 years, experiencing valuation discount to peers",
+      profile:
+        "₹4,500 crore market cap healthcare company, listed for 8 years, experiencing valuation discount to peers",
       currentState: [
         "Compliance-focused IR",
         "Inconsistent investor engagement",
@@ -65,12 +107,32 @@ export default function ServiceScenarios() {
         "Unclear equity story",
       ],
       engagement: [
-        { phase: "Quarter 1", duration: "Q1", tasks: "Investor perception study, competitive positioning analysis, equity story refinement" },
-        { phase: "Quarters 2-4", duration: "Q2-Q4", tasks: "Enhanced investor materials, analyst engagement intensification, quarterly earnings process professionalization" },
-        { phase: "Year 2", duration: "Year 2", tasks: "Sustained engagement program, investor day execution, ESG disclosure enhancement" },
-        { phase: "Ongoing", duration: "Continuous", tasks: "Continuous IR partnership with quarterly program management" },
+        {
+          phase: "Quarter 1",
+          duration: "Q1",
+          tasks:
+            "Investor perception study, competitive positioning analysis, equity story refinement",
+        },
+        {
+          phase: "Quarters 2-4",
+          duration: "Q2-Q4",
+          tasks:
+            "Enhanced investor materials, analyst engagement intensification, quarterly earnings process professionalization",
+        },
+        {
+          phase: "Year 2",
+          duration: "Year 2",
+          tasks:
+            "Sustained engagement program, investor day execution, ESG disclosure enhancement",
+        },
+        {
+          phase: "Ongoing",
+          duration: "Continuous",
+          tasks: "Continuous IR partnership with quarterly program management",
+        },
       ],
-      outcome: "Valuation multiple expansion from 12x to 16x P/E over 18 months, analyst coverage expansion from 2 to 6 firms, improved institutional ownership quality",
+      outcome:
+        "Valuation multiple expansion from 12x to 16x P/E over 18 months, analyst coverage expansion from 2 to 6 firms, improved institutional ownership quality",
     },
   ];
 
@@ -93,7 +155,8 @@ export default function ServiceScenarios() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-2xl mx-auto">
-            Explore how different companies at various stages benefit from Neumantra's tailored solutions
+            Explore how different companies at various stages benefit from
+            Neumantra's tailored solutions
           </p>
         </div>
 
@@ -109,7 +172,11 @@ export default function ServiceScenarios() {
                   : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
               }`}
             >
-              <span className={selectedScenario === index ? "text-accent" : "text-gray-700"}>
+              <span
+                className={
+                  selectedScenario === index ? "text-accent" : "text-gray-700"
+                }
+              >
                 {getIcon(s.icon)}
               </span>
               <span className="hidden sm:inline">{s.title}</span>
@@ -132,11 +199,18 @@ export default function ServiceScenarios() {
                   {scenario.profile}
                 </p>
 
-                <h4 className="text-sm font-bold text-primary mb-3 uppercase tracking-wide">Current State</h4>
+                <h4 className="text-sm font-bold text-primary mb-3 uppercase tracking-wide">
+                  Current State
+                </h4>
                 <ul className="space-y-2">
                   {scenario.currentState.map((item, i) => (
-                    <li key={i} className="text-gray-700 text-sm flex items-start gap-2">
-                      <span className="text-accent flex-shrink-0 font-bold mt-1">◆</span>
+                    <li
+                      key={i}
+                      className="text-gray-700 text-sm flex items-start gap-2"
+                    >
+                      <span className="text-accent flex-shrink-0 font-bold mt-1">
+                        ◆
+                      </span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -148,8 +222,16 @@ export default function ServiceScenarios() {
             <div className="space-y-6">
               <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <svg
+                    className="w-5 h-5 text-primary"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                   Expected Outcome
                 </h3>
@@ -162,7 +244,9 @@ export default function ServiceScenarios() {
 
           {/* Engagement Timeline */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
-            <h3 className="text-lg font-bold text-primary mb-8">Neumantra Engagement Timeline</h3>
+            <h3 className="text-lg font-bold text-primary mb-8">
+              Neumantra Engagement Timeline
+            </h3>
 
             <div className="space-y-4">
               {scenario.engagement.map((item, index) => (

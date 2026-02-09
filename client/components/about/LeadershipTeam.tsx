@@ -9,25 +9,29 @@ export default function LeadershipTeam() {
     {
       name: "Vinay Pandya",
       title: "Founding Partner",
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fed6f9b50ce9e472d936002b43f4ca331?format=webp&width=800&height=1200",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fed6f9b50ce9e472d936002b43f4ca331?format=webp&width=800&height=1200",
       bio: "Vinay Pandya is a Chartered Accountant (ICAI), Company Secretary, and Registered Valuer, and has completed the Strategic Management Programme at IIM Ahmedabad. He brings over three decades of leadership experience across corporate finance, investor relations, and transaction advisory.\n\nHe has served as Group CFO of the Ashok Piramal Group, where he also led the Investor Relations Cell, working closely with promoters, boards, and investors. His earlier roles include CFO at Ciba Geigy – Lalbhai JV and CFO at Mitsu Ltd / Bilag Ltd (JV). Vinay has also served as an Ex-Board Advisor to Meril Life Sciences.\n\nVinay is the Founder and Managing Partner of Mantraa Advisory Services, where he has advised on 40+ CFO services engagements, 20+ mergers and acquisitions transactions, and 140+ startup mentoring assignments. He has played a key role in several large and complex M&A transactions, including landmark deals in the ink, packaging, and paper industries.\n\nHe has built strategic alliances with merchant bankers, brokerage houses, and influential investors, supporting businesses across growth, transactions, and capital markets preparation.",
     },
     {
       name: "Kartik R. Upadhyay",
       title: "Founding Partner",
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2F621078cae5bf4a62b6c486e38f6668d2?format=webp&width=800&height=1200",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2F621078cae5bf4a62b6c486e38f6668d2?format=webp&width=800&height=1200",
       bio: "Kartik Upadhyay brings over 30 years of experience in strategic communications and stakeholder engagement. He is the Founder Director of Neubright Partners, where he has advised leadership teams on reputation management, IPO communications, governance transitions, and ESG integration.\n\nHis client experience spans industries and organisations across the full spectrum — from start-ups to legacy enterprises — with recognised capability in crafting stakeholder strategies for complex, multi-audience environments.\n\nKartik has led investor relations campaigns for IPOs, including shareholder and analyst outreach, and has held senior leadership roles as Head of Corporate Communications and Public Affairs at HCC Ltd, Lavasa Corporation, YES Bank, and Otis Elevators.\n\nWith formal training through the Advanced Management Programme in Public Policy at ISB, he brings public policy and legal expertise and has been actively involved in mentoring and guiding young professionals in the communications and public affairs industry.",
     },
     {
       name: "Prasanna Upadhyay",
       title: "Partner",
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2F0b6519e64c6c42209b2951b91a1c9cfa?format=webp&width=800&height=1200",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2F0b6519e64c6c42209b2951b91a1c9cfa?format=webp&width=800&height=1200",
       bio: "Prasanna Upadhyay has over 25 years of experience in content development, corporate communications, CSR, and investor relations. She brings strong expertise in research, analysis, and due diligence for private equity and investment funds.\n\nA former journalist, Prasanna has worked with leading media houses including The Indian Express, Financial Express, and Asian Age. She has led communications, investor relations, CSR, and sustainability reporting initiatives at Ambuja Cements, Ashok Piramal Group, and TCG Real Estate.",
     },
     {
       name: "Dharini Desai",
       title: "Associate Partner",
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fd2aa0f47428d4e41b6bd82e9f58c609b?format=webp&width=800&height=1200",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fd2aa0f47428d4e41b6bd82e9f58c609b?format=webp&width=800&height=1200",
       bio: "Dharini Desai has over 10 years of experience in financial advisory and CFO consulting. She has strong expertise in strategy, planning, and resource optimisation, and is skilled at driving growth, improving financial performance, and enhancing profitability.\n\nHer work reflects a proven track record of delivering sustainable results and long-term success across client engagements.",
     },
     {
@@ -59,7 +63,8 @@ export default function LeadershipTeam() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Decades of expertise in capital markets, finance, and stakeholder engagement
+            Decades of expertise in capital markets, finance, and stakeholder
+            engagement
           </p>
         </div>
 
@@ -73,7 +78,9 @@ export default function LeadershipTeam() {
               {/* Avatar */}
               <div className="flex justify-center mb-6">
                 <div className="relative">
-                  <div className={`w-32 h-32 rounded-full bg-white/30 border-2 border-white/80 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300`}>
+                  <div
+                    className={`w-32 h-32 rounded-full bg-white/30 border-2 border-white/80 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+                  >
                     {leader.image ? (
                       <img
                         src={leader.image}
@@ -115,20 +122,20 @@ export default function LeadershipTeam() {
               {/* Bio - Expandable */}
               <div
                 className={`transition-all duration-300 overflow-hidden ${
-                  expandedId === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  expandedId === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="pt-4 border-t border-gray-300/30 text-gray-700 text-xs leading-relaxed space-y-3">
-                  {leader.bio
-                    .split("\n")
-                    .map(
-                      (paragraph, idx) =>
-                        paragraph.trim() && (
-                          <p key={idx} className="animate-fadeIn">
-                            {paragraph.trim()}
-                          </p>
-                        ),
-                    )}
+                  {leader.bio.split("\n").map(
+                    (paragraph, idx) =>
+                      paragraph.trim() && (
+                        <p key={idx} className="animate-fadeIn">
+                          {paragraph.trim()}
+                        </p>
+                      ),
+                  )}
                 </div>
               </div>
 

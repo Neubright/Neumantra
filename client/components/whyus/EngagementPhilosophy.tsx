@@ -1,6 +1,13 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
-import { Search, Target, MessageSquare, Shield, BarChart3, Rocket } from "lucide-react";
+import {
+  Search,
+  Target,
+  MessageSquare,
+  Shield,
+  BarChart3,
+  Rocket,
+} from "lucide-react";
 
 export default function EngagementPhilosophy() {
   const [ref, isInView] = useInView();
@@ -71,7 +78,12 @@ export default function EngagementPhilosophy() {
             Partnership, Not Vendor Relationship
           </h3>
           <p className="text-gray-800 leading-relaxed mb-4">
-            Effective investor relations isn't transactional—it's a sustained partnership requiring <span className="font-semibold">trust, transparency, and strategic alignment</span>.
+            Effective investor relations isn't transactional—it's a sustained
+            partnership requiring{" "}
+            <span className="font-semibold">
+              trust, transparency, and strategic alignment
+            </span>
+            .
           </p>
           <p className="text-gray-700 font-medium">
             When you engage Neumantra, you get:
@@ -88,7 +100,10 @@ export default function EngagementPhilosophy() {
               {/* Icon */}
               <div className="mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
-                  <principle.icon className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                  <principle.icon
+                    className="w-6 h-6 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
 

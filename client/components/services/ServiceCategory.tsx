@@ -112,7 +112,9 @@ export default function ServiceCategory({
               <div className="relative z-10">
                 {/* Service number and title */}
                 <div className="flex items-start gap-4 mb-4">
-                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg ${colors.badgeBg} flex items-center justify-center`}>
+                  <div
+                    className={`flex-shrink-0 w-8 h-8 rounded-lg ${colors.badgeBg} flex items-center justify-center`}
+                  >
                     <span className={`text-sm font-bold text-accent`}>
                       {index + 1}
                     </span>
@@ -156,7 +158,9 @@ export default function ServiceCategory({
                 <div className="mt-4 flex items-center justify-between">
                   <span
                     className={`text-xs font-semibold transition-colors duration-300 ${
-                      expandedIndex === index ? colors.badgeText : "text-gray-500"
+                      expandedIndex === index
+                        ? colors.badgeText
+                        : "text-gray-500"
                     }`}
                   >
                     {expandedIndex === index ? "Show less" : "View details"}

@@ -20,7 +20,8 @@ export default function HeritagePartners() {
         "CFO-level strategic guidance",
         "Board advisory and governance strengthening",
       ],
-      description: "Mantraa's track record of supporting companies through complex financial transitions ensures Neumantra's investor relations guidance is grounded in financial substance, not marketing narratives.",
+      description:
+        "Mantraa's track record of supporting companies through complex financial transitions ensures Neumantra's investor relations guidance is grounded in financial substance, not marketing narratives.",
     },
     {
       name: "Neubright Partners",
@@ -37,7 +38,8 @@ export default function HeritagePartners() {
         "ESG integration and sustainability communication",
         "Crisis preparedness and issue management",
       ],
-      description: "Neubright's expertise ensures Neumantra delivers not just accurate information, but compelling, consistent, and credible communication that resonates with institutional investors and analysts.",
+      description:
+        "Neubright's expertise ensures Neumantra delivers not just accurate information, but compelling, consistent, and credible communication that resonates with institutional investors and analysts.",
     },
   ];
 
@@ -61,7 +63,8 @@ export default function HeritagePartners() {
           </h2>
           <SectionDivider />
           <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Two established practices coming together to serve an underserved market segment
+            Two established practices coming together to serve an underserved
+            market segment
           </p>
         </div>
 
@@ -73,7 +76,9 @@ export default function HeritagePartners() {
             >
               {/* Logo and Title */}
               <div className="mb-6">
-                <div className={`backdrop-blur-xl bg-white/40 border ${partner.borderColor} rounded-lg p-4 flex items-center justify-center mb-4 h-16`}>
+                <div
+                  className={`backdrop-blur-xl bg-white/40 border ${partner.borderColor} rounded-lg p-4 flex items-center justify-center mb-4 h-16`}
+                >
                   <img
                     src={partner.logo}
                     alt={partner.name}
@@ -89,7 +94,9 @@ export default function HeritagePartners() {
               </div>
 
               {/* Intro */}
-              <p className={`${partner.textColor.replace("text-", "text-opacity-90 ")} mb-4 font-medium`}>
+              <p
+                className={`${partner.textColor.replace("text-", "text-opacity-90 ")} mb-4 font-medium`}
+              >
                 {partner.name === "Mantraa Advisory"
                   ? "Mantraa brings rigorous financial advisory credentials to Neumantra's foundation:"
                   : "Neubright contributes sophisticated communication and engagement capabilities:"}
@@ -98,9 +105,18 @@ export default function HeritagePartners() {
               {/* Items List */}
               <ul className="space-y-3 mb-6">
                 {partner.items.map((item, i) => (
-                  <li key={i} className={`flex items-start gap-3 ${partner.textColor.replace("text-", "text-opacity-80 ")}`}>
-                    <span className={`flex-shrink-0 w-5 h-5 rounded-full ${partner.badgeColor} flex items-center justify-center mt-0.5`}>
-                      <span className={`text-xs font-bold ${partner.textColor}`}>✓</span>
+                  <li
+                    key={i}
+                    className={`flex items-start gap-3 ${partner.textColor.replace("text-", "text-opacity-80 ")}`}
+                  >
+                    <span
+                      className={`flex-shrink-0 w-5 h-5 rounded-full ${partner.badgeColor} flex items-center justify-center mt-0.5`}
+                    >
+                      <span
+                        className={`text-xs font-bold ${partner.textColor}`}
+                      >
+                        ✓
+                      </span>
                     </span>
                     <span className="leading-relaxed text-sm">{item}</span>
                   </li>
@@ -109,7 +125,9 @@ export default function HeritagePartners() {
 
               {/* Description */}
               <div className={`pt-6 border-t ${partner.borderColor}`}>
-                <p className={`${partner.textColor.replace("text-", "text-opacity-90 ")} text-sm leading-relaxed`}>
+                <p
+                  className={`${partner.textColor.replace("text-", "text-opacity-90 ")} text-sm leading-relaxed`}
+                >
                   {partner.description}
                 </p>
               </div>

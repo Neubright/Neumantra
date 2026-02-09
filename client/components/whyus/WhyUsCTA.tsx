@@ -9,7 +9,8 @@ export default function WhyUsCTA() {
     {
       icon: Phone,
       title: "Initial Conversation",
-      description: "Share your capital markets objectives and current IR approach",
+      description:
+        "Share your capital markets objectives and current IR approach",
     },
     {
       icon: ClipboardList,
@@ -43,7 +44,9 @@ export default function WhyUsCTA() {
           </h2>
           <SectionDivider />
           <p className="text-base text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss whether Neumantra's approach aligns with your capital-markets objectives. We're confident that if you value the approach outlined here, we can deliver significant value.
+            Let's discuss whether Neumantra's approach aligns with your
+            capital-markets objectives. We're confident that if you value the
+            approach outlined here, we can deliver significant value.
           </p>
         </div>
 
@@ -56,7 +59,10 @@ export default function WhyUsCTA() {
             >
               <div className="flex justify-center mb-4">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                  <step.icon className="w-8 h-8 text-accent opacity-75" strokeWidth={1.5} />
+                  <step.icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
                 </div>
               </div>
               <h3 className="text-lg font-bold text-primary mb-2">
@@ -83,7 +89,8 @@ export default function WhyUsCTA() {
         {/* Trust indicator */}
         <div className="text-center">
           <p className="text-gray-600 text-sm">
-            Neumantra serves India's most ambitious mid-market companies seeking to elevate their capital markets presence
+            Neumantra serves India's most ambitious mid-market companies seeking
+            to elevate their capital markets presence
           </p>
         </div>
       </div>
