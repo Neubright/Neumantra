@@ -73,11 +73,7 @@ export default function LeadershipTeam() {
               {/* Avatar */}
               <div className="flex justify-center mb-6">
                 <div className="relative">
-                  <div className={`w-32 h-32 rounded-full bg-gradient-to-br ${
-                    index % 2 === 0
-                      ? "from-blue-500/30 to-blue-300/10"
-                      : "from-red-500/30 to-red-300/10"
-                  } border-2 border-white/60 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300`}>
+                  <div className={`w-32 h-32 rounded-full bg-white/30 border-2 border-white/80 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300`}>
                     {leader.image ? (
                       <img
                         src={leader.image}
