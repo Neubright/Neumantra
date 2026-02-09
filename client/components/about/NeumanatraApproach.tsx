@@ -9,21 +9,29 @@ export default function NeumanatraApproach() {
       icon: "🎯",
       title: "Precision & Purpose",
       description: "Founded to close the mid-market IR gap with precision",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
     },
     {
       icon: "🔗",
       title: "Integrated Expertise",
       description: "Purposeful integration of financial and stakeholder engagement capabilities",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
     },
     {
       icon: "📚",
       title: "Multi-Disciplinary",
       description: "Fluency across financial analysis, capital markets, governance, and communication",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
     },
     {
       icon: "🤝",
       title: "Unified Accountability",
       description: "Single partner accountability instead of fragmented vendor relationships",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
     },
   ];
 
@@ -88,7 +96,7 @@ export default function NeumanatraApproach() {
           {principles.map((principle, index) => (
             <div
               key={index}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 text-center hover:shadow-lg hover:border-white/90 transition-all duration-300 hover:bg-white/40 group"
+              className={`backdrop-blur-xl bg-gradient-to-br ${principle.color} border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 group`}
             >
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                 {principle.icon}
