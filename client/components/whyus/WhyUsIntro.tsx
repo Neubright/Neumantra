@@ -30,7 +30,7 @@ export default function WhyUsIntro() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+          "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(165, 35, 35, 0.06) 50%, rgba(229, 231, 235, 0.7) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@ export default function WhyUsIntro() {
         </div>
 
         {/* Value Proposition */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 bg-gradient-to-r from-blue-50/30 to-purple-50/30">
+        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 bg-gradient-to-r from-blue-50/30 to-red-50/30">
           <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-3">
             <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/20 text-accent font-bold">
               ✓
