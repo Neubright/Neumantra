@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Target, Link2, BookOpen, Handshake } from "lucide-react";
 
 export default function NeumanatraApproach() {
   const [ref, isInView] = useInView();
