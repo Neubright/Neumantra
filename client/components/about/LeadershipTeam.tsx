@@ -1,7 +1,10 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { useState } from "react";
 
 export default function LeadershipTeam() {
+  const [expandedId, setExpandedId] = useState<number | null>(null);
+
   const leaders = [
     {
       name: "Vinay Pandya",
@@ -48,60 +51,143 @@ export default function LeadershipTeam() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            MEET THE TEAM
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Leadership Team
           </h2>
           <SectionDivider />
+          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
+            Decades of expertise in capital markets, finance, and stakeholder engagement
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {leaders.map((leader, index) => (
             <div
               key={index}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col items-center text-center"
+              onClick={() => setExpandedId(expandedId === index ? null : index)}
+              className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300 cursor-pointer group hover:border-white/100 overflow-hidden"
             >
-              <div className="w-24 h-24 rounded-full bg-white/40 border border-white/80 mb-6 overflow-hidden backdrop-blur-xl">
-                {leader.image ? (
-                  <img
-                    src={leader.image}
-                    alt={leader.name}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <svg
-                      className="w-12 h-12 text-accent"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
+              {/* Avatar */}
+              <div className="flex justify-center mb-6">
+                <div className="relative">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-accent/20 to-accent/10 border-2 border-white/60 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                    {leader.image ? (
+                      <img
+                        src={leader.image}
+                        alt={leader.name}
+                        className="w-full h-full object-cover"
                       />
-                    </svg>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <svg
+                          className="w-16 h-16 text-accent/50"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-1 text-primary">
-                {leader.name}
-              </h3>
-              <p className="text-accent font-semibold text-sm mb-4">
-                {leader.title}
-              </p>
-              <div className="text-gray-700 text-sm leading-relaxed space-y-3">
-                {leader.bio
-                  .split("\n")
-                  .map(
-                    (paragraph, idx) =>
-                      paragraph.trim() && <p key={idx}>{paragraph.trim()}</p>,
-                  )}
+
+              {/* Name and Title */}
+              <div className="text-center mb-4">
+                <h3 className="text-xl font-bold text-primary mb-1">
+                  {leader.name}
+                </h3>
+                <p className="text-accent font-semibold text-sm mb-2">
+                  {leader.title}
+                </p>
+                <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold">
+                  {expandedId === index ? "Less" : "More"} Info
+                </div>
               </div>
+
+              {/* Bio - Expandable */}
+              <div
+                className={`transition-all duration-300 overflow-hidden ${
+                  expandedId === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="pt-4 border-t border-gray-300/30 text-gray-700 text-xs leading-relaxed space-y-3">
+                  {leader.bio
+                    .split("\n")
+                    .map(
+                      (paragraph, idx) =>
+                        paragraph.trim() && (
+                          <p key={idx} className="animate-fadeIn">
+                            {paragraph.trim()}
+                          </p>
+                        ),
+                    )}
+                </div>
+              </div>
+
+              {/* Expand indicator */}
+              {expandedId !== index && (
+                <div className="text-center pt-3 border-t border-gray-300/30">
+                  <svg
+                    className="w-5 h-5 mx-auto text-gray-400 animate-bounce"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                    />
+                  </svg>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .animate-fadeIn:nth-child(2) {
+          animation-delay: 0.05s;
+        }
+
+        .animate-fadeIn:nth-child(3) {
+          animation-delay: 0.1s;
+        }
+
+        .animate-fadeIn:nth-child(4) {
+          animation-delay: 0.15s;
+        }
+
+        .animate-fadeIn:nth-child(5) {
+          animation-delay: 0.2s;
+        }
+      `}</style>
     </section>
   );
 }
