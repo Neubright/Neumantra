@@ -133,12 +133,10 @@ export default function Differentiators() {
               onClick={() =>
                 setExpandedIndex(expandedIndex === diff.number - 1 ? null : diff.number - 1)
               }
-              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl overflow-hidden relative ${
-                diff.number % 2 === 0 ? "border-red-200" : "border-blue-200"
-              } ${
+              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl hover:border-white/100 overflow-hidden relative ${
                 expandedIndex === diff.number - 1
                   ? "ring-2 ring-offset-2 ring-accent"
-                  : "hover:border-accent/50"
+                  : ""
               }`}
             >
               {/* Gradient accent */}
