@@ -42,7 +42,7 @@ export default function MidMarketGap() {
           </div>
 
           {/* The Gap Card */}
-          <div className="backdrop-blur-xl bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/30 rounded-xl p-8">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 text-accent">
                 <AlertTriangle className="w-8 h-8" strokeWidth={1.5} />
