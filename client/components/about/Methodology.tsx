@@ -1,7 +1,7 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 import { useState } from "react";
-import { Search, Lightbulb, Zap, TrendingUp } from "lucide-react";
+import { Search, Lightbulb, Zap, TrendingUp, ChevronDown } from "lucide-react";
 
 export default function Methodology() {
   const [expandedPhase, setExpandedPhase] = useState<number | null>(null);
