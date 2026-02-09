@@ -113,69 +113,176 @@ export default function Differentiators() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            OUR COMPETITIVE ADVANTAGES
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             What Makes Neumantra Different
           </h2>
           <SectionDivider />
+          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
+            Six core differentiators that set us apart in India's investor relations landscape
+          </p>
         </div>
 
-        <div className="space-y-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
           {differentiators.map((diff) => (
             <div
               key={diff.number}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
+              onClick={() =>
+                setExpandedIndex(expandedIndex === diff.number - 1 ? null : diff.number - 1)
+              }
+              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl overflow-hidden relative border-purple-200 ${
+                expandedIndex === diff.number - 1
+                  ? "ring-2 ring-offset-2 ring-accent"
+                  : "hover:border-accent/50"
+              }`}
             >
-              <div className="flex items-start gap-4 mb-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-accent text-white font-bold text-sm">
-                    {diff.number}
+              {/* Gradient accent */}
+              <div
+                className="absolute top-0 right-0 w-40 h-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
+                style={{
+                  background: `radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent)`,
+                }}
+              ></div>
+
+              <div className="relative z-10">
+                {/* Number, Icon and Title */}
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-purple-100 text-purple-700 font-bold text-lg">
+                      {diff.icon}
+                    </div>
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded">
+                        #{diff.number}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-bold text-primary leading-tight">
+                      {diff.title}
+                    </h3>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-primary pt-0.5">
-                  {diff.title}
-                </h3>
-              </div>
 
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-bold text-primary mb-3 text-base">
-                    The Problem We Solve
-                  </h4>
-                  <p className="text-gray-700 text-base leading-relaxed">
-                    {diff.problem}
+                {/* Problem Statement */}
+                <div className="mb-4 pb-4 border-b border-gray-300/30">
+                  <p className="text-gray-700 text-sm leading-relaxed italic">
+                    <span className="font-semibold text-primary">The Challenge:</span> {diff.problem}
                   </p>
                 </div>
 
-                <div>
-                  <h4 className="font-bold text-primary mb-3 text-base">
-                    The Neumantra Difference:
-                  </h4>
-                  <ul className="space-y-2">
-                    {diff.solution.map((point, idx) => (
-                      <li
-                        key={idx}
-                        className="text-gray-700 text-base flex items-start"
-                      >
-                        {point.includes(":") ? (
-                          <span className="font-semibold">{point}</span>
-                        ) : (
-                          <>
-                            <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                              −
-                            </span>
-                            <span>{point}</span>
-                          </>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
+                {/* Expandable Solution */}
+                <div
+                  className={`transition-all duration-300 overflow-hidden ${
+                    expandedIndex === diff.number - 1
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="mt-4 space-y-2">
+                    <h4 className="text-sm font-bold text-primary mb-3">
+                      Our Solution:
+                    </h4>
+                    <ul className="space-y-2">
+                      {diff.solution.map((point, idx) => (
+                        <li
+                          key={idx}
+                          className="text-gray-700 text-sm flex items-start gap-3 animate-fadeIn"
+                        >
+                          {point.includes(":") ? (
+                            <span className="font-semibold text-primary">{point}</span>
+                          ) : (
+                            <>
+                              <span className="text-accent flex-shrink-0 font-bold mt-1">
+                                ✓
+                              </span>
+                              <span>{point}</span>
+                            </>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Expand indicator */}
+                <div className="mt-4 flex items-center justify-between">
+                  <span
+                    className={`text-xs font-semibold transition-colors duration-300 ${
+                      expandedIndex === diff.number - 1 ? "text-purple-700" : "text-gray-500"
+                    }`}
+                  >
+                    {expandedIndex === diff.number - 1 ? "Show less" : "Learn more"}
+                  </span>
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-300 ${
+                      expandedIndex === diff.number - 1 ? "rotate-180" : ""
+                    } ${
+                      expandedIndex === diff.number - 1
+                        ? "text-purple-700"
+                        : "text-gray-400"
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        .animate-fadeIn:nth-child(2) {
+          animation-delay: 0.05s;
+        }
+
+        .animate-fadeIn:nth-child(3) {
+          animation-delay: 0.1s;
+        }
+
+        .animate-fadeIn:nth-child(4) {
+          animation-delay: 0.15s;
+        }
+
+        .animate-fadeIn:nth-child(5) {
+          animation-delay: 0.2s;
+        }
+
+        .animate-fadeIn:nth-child(6) {
+          animation-delay: 0.25s;
+        }
+
+        .animate-fadeIn:nth-child(7) {
+          animation-delay: 0.3s;
+        }
+      `}</style>
     </section>
   );
 }
