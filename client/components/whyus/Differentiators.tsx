@@ -1,6 +1,7 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 import { useState } from "react";
+import { Puzzle, Target, Users, Link2, BookOpen, Trophy } from "lucide-react";
 
 export default function Differentiators() {
   const [ref, isInView] = useInView();
