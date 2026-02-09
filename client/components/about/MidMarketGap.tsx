@@ -60,7 +60,9 @@ export default function MidMarketGap() {
           {/* Market Segments Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="text-4xl flex-shrink-0">🏢</div>
+              <div className="flex-shrink-0 text-primary">
+                <Building className="w-8 h-8" strokeWidth={1.5} />
+              </div>
               <div>
                 <h3 className="text-lg font-semibold text-primary mb-3">Market Segments & Support</h3>
                 <div className="space-y-3">
