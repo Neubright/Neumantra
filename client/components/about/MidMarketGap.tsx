@@ -16,34 +16,70 @@ export default function MidMarketGap() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            THE OPPORTUNITY
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             The Mid-Market IR Gap
           </h2>
           <SectionDivider />
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-6">
-            <p className="text-gray-700 text-base leading-relaxed">
-              India's mid-market represents some of the country's most dynamic
-              growth stories - innovative business models, strong fundamentals,
-              ambitious expansion plans. Yet many of these companies struggle to
-              translate operational excellence into sustained market
-              credibility.
-            </p>
-            <p className="text-gray-700 text-base font-semibold leading-relaxed text-primary">
-              The gap lies in the absence of a professional investor relations
-              infrastructure.
-            </p>
-            <p className="text-gray-700 text-base leading-relaxed">
-              Large corporations benefit from dedicated IR teams and
-              long-standing advisory relationships. Early-stage startups
-              leverage venture capital networks. Mid-market companies—those
-              preparing to list, already on SME exchanges, or operating as
-              listed mid-sized entities—often navigate capital markets with
-              limited specialised support.
-            </p>
+        <div className="max-w-4xl mx-auto space-y-6">
+          {/* Growth Stories Card */}
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start gap-4">
+              <div className="text-4xl flex-shrink-0">📈</div>
+              <div>
+                <p className="text-gray-800 leading-relaxed">
+                  India's mid-market represents some of the country's most dynamic growth stories - innovative business models, strong fundamentals, ambitious expansion plans. Yet many of these companies struggle to translate operational excellence into sustained market credibility.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* The Gap Card */}
+          <div className="backdrop-blur-xl bg-gradient-to-r from-red-50/40 to-red-100/20 border-2 border-red-200/50 rounded-xl p-8">
+            <div className="flex items-start gap-4">
+              <div className="text-4xl flex-shrink-0">⚠️</div>
+              <div>
+                <h3 className="text-xl font-bold text-red-700 mb-2">The Gap</h3>
+                <p className="text-red-900 leading-relaxed font-medium">
+                  The gap lies in the absence of a professional investor relations infrastructure.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Market Segments Card */}
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+            <div className="flex items-start gap-4">
+              <div className="text-4xl flex-shrink-0">🏢</div>
+              <div>
+                <h3 className="text-lg font-semibold text-primary mb-3">Market Segments & Support</h3>
+                <div className="space-y-3">
+                  <div className="flex gap-3 items-start">
+                    <span className="text-lg">✓</span>
+                    <p className="text-gray-700">
+                      <span className="font-semibold text-primary">Large corporations:</span> Benefit from dedicated IR teams and long-standing advisory relationships
+                    </p>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <span className="text-lg">✓</span>
+                    <p className="text-gray-700">
+                      <span className="font-semibold text-primary">Early-stage startups:</span> Leverage venture capital networks
+                    </p>
+                  </div>
+                  <div className="flex gap-3 items-start">
+                    <span className="text-lg">✓</span>
+                    <p className="text-gray-700">
+                      <span className="font-semibold text-primary">Mid-market companies:</span> Those preparing to list, already on SME exchanges, or operating as listed mid-sized entities often navigate capital markets with limited specialised support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
