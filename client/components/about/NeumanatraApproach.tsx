@@ -7,28 +7,28 @@ export default function NeumanatraApproach() {
 
   const principles = [
     {
-      icon: "🎯",
+      icon: Target,
       title: "Precision & Purpose",
       description: "Founded to close the mid-market IR gap with precision",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
     {
-      icon: "🔗",
+      icon: Link2,
       title: "Integrated Expertise",
       description: "Purposeful integration of financial and stakeholder engagement capabilities",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
     },
     {
-      icon: "📚",
+      icon: BookOpen,
       title: "Multi-Disciplinary",
       description: "Fluency across financial analysis, capital markets, governance, and communication",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
     },
     {
-      icon: "🤝",
+      icon: Handshake,
       title: "Unified Accountability",
       description: "Single partner accountability instead of fragmented vendor relationships",
       color: "from-red-50 to-red-100/30",
