@@ -1,32 +1,33 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { TrendingUp, Zap, Rocket, Target, Building2, BarChart3 } from "lucide-react";
 
 export default function IdealClientProfile() {
   const [ref, isInView] = useInView();
 
   const idealClients = [
     {
-      icon: "📈",
+      icon: TrendingUp,
       text: "Are mid-market size (₹500-10,000 crore revenue or market cap range)",
     },
     {
-      icon: "💪",
+      icon: Zap,
       text: "Have strong business fundamentals deserving better market recognition",
     },
     {
-      icon: "🚀",
+      icon: Rocket,
       text: "Are preparing for listing, transitioning from SME, or seeking enhanced IR for existing listing",
     },
     {
-      icon: "🎯",
+      icon: Target,
       text: "Value strategic counsel over tactical execution services alone",
     },
     {
-      icon: "🏛️",
+      icon: Building2,
       text: "Are committed to governance strengthening and professional market engagement",
     },
     {
-      icon: "📊",
+      icon: BarChart3,
       text: "Expect accountability, transparency, and measurable outcomes from advisors",
     },
   ];
