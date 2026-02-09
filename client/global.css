@@ -60,17 +60,17 @@
   }
 
   .dark {
-    --background: 210 62% 16%;
+    --background: 213 65% 17%;
     --foreground: 0 0% 100%;
 
-    --card: 210 62% 16%;
+    --card: 213 65% 17%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 210 62% 16%;
+    --popover: 213 65% 17%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 0 0% 100%;
-    --primary-foreground: 210 62% 16%;
+    --primary-foreground: 213 65% 17%;
 
     --secondary: 220 20% 25%;
     --secondary-foreground: 0 0% 100%;
@@ -87,7 +87,7 @@
     --border: 220 20% 25%;
     --input: 220 20% 25%;
     --ring: 0 65% 39%;
-    --sidebar-background: 210 62% 16%;
+    --sidebar-background: 213 65% 17%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 0 65% 39%;
     --sidebar-primary-foreground: 0 0% 100%;
