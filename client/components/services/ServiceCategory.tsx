@@ -113,7 +113,7 @@ export default function ServiceCategory({
                 {/* Service number and title */}
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`flex-shrink-0 w-8 h-8 rounded-lg ${colors.badgeBg} flex items-center justify-center`}>
-                    <span className={`text-sm font-bold ${colors.badgeText}`}>
+                    <span className={`text-sm font-bold text-accent`}>
                       {index + 1}
                     </span>
                   </div>
