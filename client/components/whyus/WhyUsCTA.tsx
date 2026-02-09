@@ -71,19 +71,7 @@ export default function WhyUsCTA() {
           <button className="bg-gradient-to-r from-red-700 to-red-600 text-white hover:shadow-lg pl-6 pr-2 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3 group hover:scale-105">
             <span>Schedule a Confidential Consultation</span>
             <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
+              <ArrowRight className="w-5 h-5" strokeWidth={2} />
             </span>
           </button>
           <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
