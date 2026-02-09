@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Target, Eye } from "lucide-react";
 
 export default function MissionVision() {
   const [ref, isInView] = useInView();
