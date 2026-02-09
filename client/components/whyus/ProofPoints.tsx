@@ -36,7 +36,7 @@ export default function ProofPoints() {
       ],
     },
     {
-      icon: "🏆",
+      icon: Trophy,
       title: "Market Recognition",
       color: "from-blue-50 to-blue-100/30",
       borderColor: "border-blue-200",
