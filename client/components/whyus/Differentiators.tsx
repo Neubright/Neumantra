@@ -155,9 +155,11 @@ export default function Differentiators() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
                     <div className={`flex items-center justify-center h-10 w-10 rounded-full ${
-                      diff.number % 2 === 0 ? "bg-red-100 text-red-700" : "bg-blue-100 text-blue-700"
-                    } font-bold text-lg`}>
-                      {diff.icon}
+                      diff.number % 2 === 0 ? "bg-red-100" : "bg-blue-100"
+                    }`}>
+                      <diff.icon className={`w-5 h-5 ${
+                        diff.number % 2 === 0 ? "text-red-700" : "text-blue-700"
+                      }`} strokeWidth={2} />
                     </div>
                   </div>
                   <div className="flex-grow">
