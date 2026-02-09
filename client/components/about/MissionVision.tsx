@@ -28,23 +28,23 @@ export default function MissionVision() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Mission */}
-          <div className="backdrop-blur-xl bg-gradient-to-br from-blue-50/40 to-blue-100/20 border-2 border-blue-200/50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 group">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-blue-100 mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Target className="w-7 h-7 text-blue-700" strokeWidth={1.5} />
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-white/30 mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Target className="w-7 h-7 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-4">Our Mission</h3>
-            <p className="text-blue-900 leading-relaxed text-base">
+            <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
+            <p className="text-gray-700 leading-relaxed text-base">
               To partner with India's mid-market growth companies to transform financial strength into credible market brands through strategic, integrated investor relations built on <span className="font-semibold">financial insight, disciplined communication, and stakeholder trust.</span>
             </p>
           </div>
 
           {/* Vision */}
-          <div className="backdrop-blur-xl bg-gradient-to-br from-red-50/40 to-red-100/20 border-2 border-red-200/50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 group">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-red-100 mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Eye className="w-7 h-7 text-red-700" strokeWidth={1.5} />
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-white/30 mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Eye className="w-7 h-7 text-primary" strokeWidth={1.5} />
             </div>
-            <h3 className="text-2xl font-bold text-red-700 mb-4">Our Vision</h3>
-            <p className="text-red-900 leading-relaxed text-base">
+            <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
+            <p className="text-gray-700 leading-relaxed text-base">
               To be the trusted investor relations partner for mid-market growth companies, integrating <span className="font-semibold">financial rigour with strategic brand and reputation building expertise</span> to unlock inherent value and support long-term growth.
             </p>
           </div>
