@@ -39,12 +39,12 @@ export default function MissionVision() {
           </div>
 
           {/* Vision */}
-          <div className="backdrop-blur-xl bg-gradient-to-br from-purple-50/40 to-purple-100/20 border-2 border-purple-200/50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 group">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-purple-100 mb-6 group-hover:scale-110 transition-transform duration-300">
+          <div className="backdrop-blur-xl bg-gradient-to-br from-red-50/40 to-red-100/20 border-2 border-red-200/50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 group">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-red-100 mb-6 group-hover:scale-110 transition-transform duration-300">
               <span className="text-2xl">👁️</span>
             </div>
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">Our Vision</h3>
-            <p className="text-purple-900 leading-relaxed text-base">
+            <h3 className="text-2xl font-bold text-red-700 mb-4">Our Vision</h3>
+            <p className="text-red-900 leading-relaxed text-base">
               To be the trusted investor relations partner for mid-market growth companies, integrating <span className="font-semibold">financial rigour with strategic brand and reputation building expertise</span> to unlock inherent value and support long-term growth.
             </p>
           </div>
