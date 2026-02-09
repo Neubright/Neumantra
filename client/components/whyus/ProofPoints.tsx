@@ -23,10 +23,10 @@ export default function ProofPoints() {
     {
       icon: "💼",
       title: "Advisory Depth",
-      color: "from-purple-50 to-purple-100/30",
-      borderColor: "border-purple-200",
-      badgeBg: "bg-purple-100",
-      badgeText: "text-purple-700",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
+      badgeBg: "bg-red-100",
+      badgeText: "text-red-700",
       points: [
         "CFO-level financial advisory and valuation expertise",
         "IR, ESG, crisis management, and reputation strategy capability",
@@ -37,10 +37,10 @@ export default function ProofPoints() {
     {
       icon: "🏆",
       title: "Market Recognition",
-      color: "from-green-50 to-green-100/30",
-      borderColor: "border-green-200",
-      badgeBg: "bg-green-100",
-      badgeText: "text-green-700",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
+      badgeBg: "bg-blue-100",
+      badgeText: "text-blue-700",
       points: [
         "Relevant industry recognition, speaking engagements, published thought leadership",
         "Professional affiliations: CFA, ICAI, ICSI, industry bodies",
