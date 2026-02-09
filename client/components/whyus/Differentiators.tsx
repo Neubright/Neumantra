@@ -224,7 +224,7 @@ export default function Differentiators() {
                       expandedIndex === diff.number - 1 ? "rotate-180" : ""
                     } ${
                       expandedIndex === diff.number - 1
-                        ? (diff.number % 2 === 0 ? "text-red-700" : "text-blue-700")
+                        ? "text-primary"
                         : "text-gray-400"
                     }`}
                     fill="none"
