@@ -14,32 +14,32 @@ export default function EngagementPhilosophy() {
     {
       icon: "🎯",
       title: "We remain outcome-focused and client-centric",
-      color: "from-green-50 to-green-100/30",
-      borderColor: "border-green-200",
-    },
-    {
-      icon: "💬",
-      title: "We challenge respectfully and advise candidly",
-      color: "from-purple-50 to-purple-100/30",
-      borderColor: "border-purple-200",
-    },
-    {
-      icon: "🛡️",
-      title: "We protect long-term market credibility",
-      color: "from-amber-50 to-amber-100/30",
-      borderColor: "border-amber-200",
-    },
-    {
-      icon: "📊",
-      title: "We remain accountable through transparent reporting",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
     },
     {
+      icon: "💬",
+      title: "We challenge respectfully and advise candidly",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
+    },
+    {
+      icon: "🛡️",
+      title: "We protect long-term market credibility",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
+    },
+    {
+      icon: "📊",
+      title: "We remain accountable through transparent reporting",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
+    },
+    {
       icon: "🚀",
       title: "We enable internal capability through knowledge transfer",
-      color: "from-cyan-50 to-cyan-100/30",
-      borderColor: "border-cyan-200",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
     },
   ];
 
