@@ -109,7 +109,7 @@ export default function Differentiators() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(248, 223, 228, 0.8) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+          "linear-gradient(135deg, rgba(165, 35, 35, 0.06) 0%, rgba(15, 37, 71, 0.08) 50%, rgba(165, 35, 35, 0.06) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,7 +145,7 @@ export default function Differentiators() {
               <div
                 className="absolute top-0 right-0 w-40 h-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
                 style={{
-                  background: `radial-gradient(circle, ${diff.number % 2 === 0 ? "rgba(239, 68, 68, 0.3)" : "rgba(59, 130, 246, 0.3)"}, transparent)`,
+                  background: `radial-gradient(circle, ${diff.number % 2 === 0 ? "rgba(165, 35, 35, 0.3)" : "rgba(15, 37, 71, 0.3)"}, transparent)`,
                 }}
               ></div>
 
@@ -161,7 +161,9 @@ export default function Differentiators() {
                   </div>
                   <div className="flex-grow">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded">
+                      <span className={`text-xs font-bold px-2 py-1 rounded ${
+                        diff.number % 2 === 0 ? "text-red-700 bg-red-100" : "text-blue-700 bg-blue-100"
+                      }`}>
                         #{diff.number}
                       </span>
                     </div>
