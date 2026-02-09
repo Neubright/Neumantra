@@ -1,22 +1,23 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { AlertTriangle, CheckCircle, Target } from "lucide-react";
 
 export default function WhyUsIntro() {
   const [ref, isInView] = useInView();
 
   const risks = [
     {
-      icon: "⚠️",
+      icon: AlertTriangle,
       title: "Wrong Partner Risk",
       description: "Damages credibility, wastes leadership time, misses market opportunities",
     },
     {
-      icon: "✅",
+      icon: CheckCircle,
       title: "Right Partner Benefit",
       description: "Protects reputation, expands access, enhances valuation",
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "Strategic Decision",
       description: "Choosing advisor has lasting implications for your company",
     },
@@ -61,7 +62,9 @@ export default function WhyUsIntro() {
               key={index}
               className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 transition-all duration-300 text-center"
             >
-              <div className="text-4xl mb-3">{item.icon}</div>
+              <div className="flex justify-center mb-3">
+                <item.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-bold text-primary mb-2">{item.title}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
                 {item.description}
