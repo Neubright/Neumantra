@@ -30,8 +30,10 @@ export default function MidMarketGap() {
           {/* Growth Stories Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 text-primary">
-                <TrendingUp className="w-8 h-8" strokeWidth={1.5} />
+              <div className="flex-shrink-0">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                  <TrendingUp className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                </div>
               </div>
               <div>
                 <p className="text-gray-800 leading-relaxed">
@@ -44,8 +46,10 @@ export default function MidMarketGap() {
           {/* The Gap Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 text-primary">
-                <AlertTriangle className="w-8 h-8" strokeWidth={1.5} />
+              <div className="flex-shrink-0">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                  <AlertTriangle className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                </div>
               </div>
             <div>
               <h3 className="text-xl font-bold text-primary mb-2">The Gap</h3>
@@ -59,8 +63,10 @@ export default function MidMarketGap() {
           {/* Market Segments Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 text-primary">
-                <Building className="w-8 h-8" strokeWidth={1.5} />
+              <div className="flex-shrink-0">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                  <Building className="w-6 h-6 text-accent opacity-75" strokeWidth={1.5} />
+                </div>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-primary mb-3">Market Segments & Support</h3>
