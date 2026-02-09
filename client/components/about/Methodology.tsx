@@ -123,7 +123,7 @@ export default function Methodology() {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div className="flex items-start gap-4 flex-grow">
                   <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${phase.badgeBg} flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                    <span className="text-2xl">{phase.icon}</span>
+                    <phase.icon className={`w-6 h-6 ${phase.badgeText}`} strokeWidth={2} />
                   </div>
                   <div>
                     <div className={`text-xs font-bold ${phase.badgeText} mb-1`}>
