@@ -65,13 +65,13 @@ export default function ServiceCategory({
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div
-              className={`w-12 h-12 rounded-lg ${colors.badgeBg} flex items-center justify-center`}
+              className={`w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center`}
             >
-              <span className={`text-lg font-bold ${colors.badgeText}`}>
+              <span className={`text-lg font-bold text-accent`}>
                 {categoryNumber}
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            <h2 className="text-3xl md:text-4xl font-bold text-accent">
               {categoryTitle}
             </h2>
           </div>
