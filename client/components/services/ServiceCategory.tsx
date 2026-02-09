@@ -25,28 +25,25 @@ export default function ServiceCategory({
 
   const categoryColors = {
     1: {
-      bgGradient:
-        "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(15, 37, 71, 0.04) 100%)",
-      badgeBg: "bg-blue-100",
-      badgeText: "text-blue-700",
-      accentColor: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      bgGradient: "transparent",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
+      accentColor: "",
+      borderColor: "border-white/80",
     },
     2: {
-      bgGradient:
-        "linear-gradient(135deg, rgba(165, 35, 35, 0.08) 0%, rgba(165, 35, 35, 0.04) 100%)",
-      badgeBg: "bg-red-100",
-      badgeText: "text-red-700",
-      accentColor: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      bgGradient: "transparent",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
+      accentColor: "",
+      borderColor: "border-white/80",
     },
     3: {
-      bgGradient:
-        "linear-gradient(135deg, rgba(15, 37, 71, 0.08) 0%, rgba(15, 37, 71, 0.04) 100%)",
-      badgeBg: "bg-blue-100",
-      badgeText: "text-blue-700",
-      accentColor: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      bgGradient: "transparent",
+      badgeBg: "bg-white/30",
+      badgeText: "text-primary",
+      accentColor: "",
+      borderColor: "border-white/80",
     },
   };
 
@@ -61,7 +58,7 @@ export default function ServiceCategory({
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
-        background: colors.bgGradient,
+        background: "transparent",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
