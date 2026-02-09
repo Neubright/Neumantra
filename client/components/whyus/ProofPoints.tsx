@@ -22,7 +22,7 @@ export default function ProofPoints() {
       ],
     },
     {
-      icon: "💼",
+      icon: Briefcase,
       title: "Advisory Depth",
       color: "from-red-50 to-red-100/30",
       borderColor: "border-red-200",
