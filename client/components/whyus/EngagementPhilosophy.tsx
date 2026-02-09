@@ -6,28 +6,40 @@ export default function EngagementPhilosophy() {
 
   const principles = [
     {
+      icon: "🔍",
       title: "We invest deeply in understanding your business",
-      description: "",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
     },
     {
+      icon: "🎯",
       title: "We remain outcome-focused and client-centric",
-      description: "",
+      color: "from-green-50 to-green-100/30",
+      borderColor: "border-green-200",
     },
     {
+      icon: "💬",
       title: "We challenge respectfully and advise candidly",
-      description: "",
+      color: "from-purple-50 to-purple-100/30",
+      borderColor: "border-purple-200",
     },
     {
+      icon: "🛡️",
       title: "We protect long-term market credibility",
-      description: "",
+      color: "from-amber-50 to-amber-100/30",
+      borderColor: "border-amber-200",
     },
     {
+      icon: "📊",
       title: "We remain accountable through transparent reporting",
-      description: "",
+      color: "from-red-50 to-red-100/30",
+      borderColor: "border-red-200",
     },
     {
+      icon: "🚀",
       title: "We enable internal capability through knowledge transfer",
-      description: "",
+      color: "from-cyan-50 to-cyan-100/30",
+      borderColor: "border-cyan-200",
     },
   ];
 
@@ -43,40 +55,47 @@ export default function EngagementPhilosophy() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            HOW WE WORK
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Engagement Philosophy
+            Our Engagement Philosophy
           </h2>
           <SectionDivider />
         </div>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <h3 className="text-xl font-bold text-primary mb-4">
-              Partnership, Not Vendor Relationship
-            </h3>
-            <p className="text-gray-700 text-base leading-relaxed mb-6">
-              Effective investor relations isn't transactional - it's a
-              sustained partnership requiring trust, transparency, and strategic
-              alignment.
-            </p>
-            <p className="text-gray-700 text-base mb-6 font-semibold">
-              When you engage Neumantra:
-            </p>
-            <ul className="space-y-3">
-              {principles.map((principle, index) => (
-                <li
-                  key={index}
-                  className="text-gray-700 text-base flex items-start"
-                >
-                  <span className="text-accent mr-3 text-lg flex-shrink-0 font-bold">
-                    ✓
-                  </span>
-                  <span>{principle.title}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Main Philosophy Statement */}
+        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 max-w-4xl mx-auto text-center">
+          <h3 className="text-2xl font-bold text-primary mb-4">
+            Partnership, Not Vendor Relationship
+          </h3>
+          <p className="text-gray-800 leading-relaxed mb-4">
+            Effective investor relations isn't transactional—it's a sustained partnership requiring <span className="font-semibold">trust, transparency, and strategic alignment</span>.
+          </p>
+          <p className="text-gray-700 font-medium">
+            When you engage Neumantra, you get:
+          </p>
+        </div>
+
+        {/* Principles Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {principles.map((principle, index) => (
+            <div
+              key={index}
+              className={`backdrop-blur-xl bg-gradient-to-br ${principle.color} border-2 ${principle.borderColor} rounded-xl p-6 hover:shadow-lg transition-all duration-300 group`}
+            >
+              {/* Icon */}
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                {principle.icon}
+              </div>
+
+              {/* Title */}
+              <h3 className="text-lg font-bold text-primary leading-snug">
+                {principle.title}
+              </h3>
+            </div>
+          ))}
         </div>
       </div>
     </section>
