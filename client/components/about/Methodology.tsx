@@ -115,7 +115,7 @@ export default function Methodology() {
             <div
               key={index}
               onClick={() => setExpandedPhase(expandedPhase === index ? null : index)}
-              className={`backdrop-blur-xl bg-gradient-to-br ${phase.color} border-2 ${phase.borderColor} rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-lg ${
+              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-lg hover:bg-white/50 ${
                 expandedPhase === index ? "ring-2 ring-offset-2 ring-accent" : ""
               }`}
             >
