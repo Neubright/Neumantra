@@ -40,12 +40,12 @@ export default function MidMarketGap() {
           </div>
 
           {/* The Gap Card */}
-          <div className="backdrop-blur-xl bg-gradient-to-r from-red-50/40 to-red-100/20 border-2 border-red-200/50 rounded-xl p-8">
+          <div className="backdrop-blur-xl bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/30 rounded-xl p-8">
             <div className="flex items-start gap-4">
               <div className="text-4xl flex-shrink-0">⚠️</div>
               <div>
-                <h3 className="text-xl font-bold text-red-700 mb-2">The Gap</h3>
-                <p className="text-red-900 leading-relaxed font-medium">
+                <h3 className="text-xl font-bold text-accent mb-2">The Gap</h3>
+                <p className="text-gray-800 leading-relaxed font-medium">
                   The gap lies in the absence of a professional investor relations infrastructure.
                 </p>
               </div>
