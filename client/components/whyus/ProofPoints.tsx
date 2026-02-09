@@ -81,8 +81,8 @@ export default function ProofPoints() {
               className={`backdrop-blur-xl bg-white/40 border-2 ${point.borderColor} rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group`}
             >
               {/* Icon */}
-              <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg ${point.badgeBg} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <point.icon className={`w-7 h-7 ${point.badgeText}`} strokeWidth={2} />
+              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/40 border border-white/80 mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <point.icon className={`w-8 h-8 text-accent opacity-75`} strokeWidth={2} />
               </div>
 
               {/* Title */}
