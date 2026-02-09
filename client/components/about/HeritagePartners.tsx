@@ -76,11 +76,11 @@ export default function HeritagePartners() {
             >
               {/* Logo and Title */}
               <div className="mb-6">
-                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center mb-4">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-start mb-4 w-fit">
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="h-8 w-auto"
+                    className={partner.name === "Neubright Partners" ? "h-10 w-auto" : "h-8 w-auto"}
                   />
                 </div>
                 <h3 className={`text-2xl font-bold ${partner.textColor} mb-1`}>
