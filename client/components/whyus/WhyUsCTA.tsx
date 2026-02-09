@@ -1,22 +1,23 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Phone, ClipboardList, Handshake, ArrowRight } from "lucide-react";
 
 export default function WhyUsCTA() {
   const [ref, isInView] = useInView();
 
   const nextSteps = [
     {
-      icon: "📞",
+      icon: Phone,
       title: "Initial Conversation",
       description: "Share your capital markets objectives and current IR approach",
     },
     {
-      icon: "📋",
+      icon: ClipboardList,
       title: "Diagnostic Assessment",
       description: "We evaluate your readiness and identify key opportunities",
     },
     {
-      icon: "🤝",
+      icon: Handshake,
       title: "Partnership Proposal",
       description: "Custom engagement approach aligned to your needs",
     },
