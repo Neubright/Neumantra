@@ -1,9 +1,53 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
-import { Users, Briefcase, Trophy } from "lucide-react";
 
 export default function ProofPoints() {
   const [ref, isInView] = useInView();
+
+  const proofPoints = [
+    {
+      icon: "👥",
+      title: "Combined Experience",
+      color: "from-blue-50 to-blue-100/30",
+      borderColor: "border-blue-200",
+      badgeBg: "bg-blue-100",
+      badgeText: "text-blue-700",
+      points: [
+        "100+ years of collective experience across founding partners in financial advisory, capital markets, and stakeholder engagement",
+        "Delivered impeccable valuation analysis and diagnostics for over 200 companies",
+        "Supported over a dozen companies through IPO processes across mainboard and SME segments",
+        "Advised 200 companies on investor relations and corporate communications",
+        "Managed stakeholder engagement for companies spanning multiple sectors",
+      ],
+    },
+    {
+      icon: "💼",
+      title: "Advisory Depth",
+      color: "from-purple-50 to-purple-100/30",
+      borderColor: "border-purple-200",
+      badgeBg: "bg-purple-100",
+      badgeText: "text-purple-700",
+      points: [
+        "CFO-level financial advisory and valuation expertise",
+        "IR, ESG, crisis management, and reputation strategy capability",
+        "Board advisory experience across listed and pre-IPO companies",
+        "Recognised thought leadership in capital-markets readiness",
+      ],
+    },
+    {
+      icon: "🏆",
+      title: "Market Recognition",
+      color: "from-green-50 to-green-100/30",
+      borderColor: "border-green-200",
+      badgeBg: "bg-green-100",
+      badgeText: "text-green-700",
+      points: [
+        "Relevant industry recognition, speaking engagements, published thought leadership",
+        "Professional affiliations: CFA, ICAI, ICSI, industry bodies",
+        "Media commentary on capital markets and IR topics",
+      ],
+    },
+  ];
 
   return (
     <section
@@ -17,162 +61,48 @@ export default function ProofPoints() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            TRACK RECORD
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Our Proof Points
           </h2>
           <SectionDivider />
+          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
+            Backed by decades of experience and proven success across India's capital markets
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <div className="flex justify-start mb-4">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                <Users
-                  className="w-8 h-8 text-accent opacity-75"
-                  strokeWidth={1.5}
-                />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {proofPoints.map((point, index) => (
+            <div
+              key={index}
+              className={`backdrop-blur-xl bg-gradient-to-br ${point.color} border-2 ${point.borderColor} rounded-xl p-8 hover:shadow-xl transition-all duration-300 group`}
+            >
+              {/* Icon */}
+              <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg ${point.badgeBg} mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <span className="text-2xl">{point.icon}</span>
               </div>
-            </div>
-            <h3 className="text-xl font-bold text-primary mb-6">
-              Combined Experience
-            </h3>
-            <ul className="space-y-4 text-gray-700 text-base">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  100+ years of collective experience across founding partners
-                  in financial advisory, capital markets, and stakeholder
-                  engagement
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Delivered impeccable valuation analysis and diagnostics for
-                  over 200 companies
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Supported over a dozen companies through IPO processes across
-                  mainboard and SME segments
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Advised 200 companies on investor relations and corporate
-                  communications
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Managed stakeholder engagement for companies spanning multiple
-                  sectors
-                </span>
-              </li>
-            </ul>
-          </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <div className="flex justify-start mb-4">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                <Briefcase
-                  className="w-8 h-8 text-accent opacity-75"
-                  strokeWidth={1.5}
-                />
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-primary mb-6">
-              Advisory Depth
-            </h3>
-            <ul className="space-y-4 text-gray-700 text-base">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  CFO-level financial advisory and valuation expertise
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  IR, ESG, crisis management, and reputation strategy capability
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Board advisory experience across listed and pre-IPO companies
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Recognised thought leadership in capital-markets readiness
-                </span>
-              </li>
-            </ul>
-          </div>
+              {/* Title */}
+              <h3 className={`text-xl font-bold ${point.badgeText} mb-6`}>
+                {point.title}
+              </h3>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
-            <div className="flex justify-start mb-4">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
-                <Trophy
-                  className="w-8 h-8 text-accent opacity-75"
-                  strokeWidth={1.5}
-                />
-              </div>
+              {/* Points List */}
+              <ul className="space-y-3">
+                {point.points.map((item, i) => (
+                  <li key={i} className="text-gray-700 text-sm flex items-start gap-3">
+                    <span className={`flex-shrink-0 w-5 h-5 rounded-full ${point.badgeBg} flex items-center justify-center mt-0.5`}>
+                      <span className={`text-xs font-bold ${point.badgeText}`}>✓</span>
+                    </span>
+                    <span className="leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-6">
-              Market Recognition
-            </h3>
-            <ul className="space-y-4 text-gray-700 text-base">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Relevant industry recognition, speaking engagements, published
-                  thought leadership
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>
-                  Professional affiliations: CFA, ICAI, ICSI, industry bodies
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                  −
-                </span>
-                <span>Media commentary on capital markets and IR topics</span>
-              </li>
-            </ul>
-          </div>
+          ))}
         </div>
       </div>
     </section>
