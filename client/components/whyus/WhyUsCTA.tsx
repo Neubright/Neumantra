@@ -55,7 +55,9 @@ export default function WhyUsCTA() {
               key={index}
               className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 text-center hover:shadow-lg hover:border-white/90 transition-all duration-300 hover:bg-white/40"
             >
-              <div className="text-4xl mb-3">{step.icon}</div>
+              <div className="flex justify-center mb-3">
+                <step.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-bold text-primary mb-2">
                 {step.title}
               </h3>
