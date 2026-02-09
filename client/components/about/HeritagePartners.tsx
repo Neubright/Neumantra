@@ -76,9 +76,7 @@ export default function HeritagePartners() {
             >
               {/* Logo and Title */}
               <div className="mb-6">
-                <div
-                  className={`backdrop-blur-xl bg-white/40 border ${partner.borderColor} rounded-lg p-4 flex items-center justify-center mb-4 h-16`}
-                >
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center mb-4">
                   <img
                     src={partner.logo}
                     alt={partner.name}
