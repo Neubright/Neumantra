@@ -10,29 +10,29 @@ export default function NeumanatraApproach() {
       icon: Target,
       title: "Precision & Purpose",
       description: "Founded to close the mid-market IR gap with precision",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: Link2,
       title: "Integrated Expertise",
       description: "Purposeful integration of financial and stakeholder engagement capabilities",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: BookOpen,
       title: "Multi-Disciplinary",
       description: "Fluency across financial analysis, capital markets, governance, and communication",
-      color: "from-blue-50 to-blue-100/30",
-      borderColor: "border-blue-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
     {
       icon: Handshake,
       title: "Unified Accountability",
       description: "Single partner accountability instead of fragmented vendor relationships",
-      color: "from-red-50 to-red-100/30",
-      borderColor: "border-red-200",
+      color: "transparent",
+      borderColor: "border-white/80",
     },
   ];
 
@@ -96,7 +96,7 @@ export default function NeumanatraApproach() {
           {principles.map((principle, index) => (
             <div
               key={index}
-              className={`backdrop-blur-xl bg-gradient-to-br ${principle.color} border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 group`}
+              className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-lg hover:bg-white/50 transition-all duration-300 group`}
             >
               <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 <principle.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
