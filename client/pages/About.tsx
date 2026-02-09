@@ -12,18 +12,21 @@ import { usePageLoadScroll } from "@/hooks/usePageLoadScroll";
 export default function About() {
   usePageLoadScroll();
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow">
-        <OurStory />
-        <MidMarketGap />
-        <NeumanatraApproach />
-        <MissionVision />
-        <HeritagePartners />
-        <Methodology />
-        <LeadershipTeam />
-      </main>
-      <Footer />
+    <div className="flex flex-col min-h-screen relative">
+      <div className="fixed inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/85 pointer-events-none z-0"></div>
+      <div className="relative z-10">
+        <Header />
+        <main className="flex-grow">
+          <OurStory />
+          <MidMarketGap />
+          <NeumanatraApproach />
+          <MissionVision />
+          <HeritagePartners />
+          <Methodology />
+          <LeadershipTeam />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
