@@ -1,9 +1,11 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 import { BarChart3, FileText, Leaf } from "lucide-react";
+import { useState } from "react";
 
 export default function ServicesIntro() {
   const [ref, isInView] = useInView();
+  const [selectedService, setSelectedService] = useState(0);
 
   const highlights = [
     {
@@ -96,58 +98,66 @@ export default function ServicesIntro() {
         </div>
 
         {/* Three Service Categories Overview */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
-          <h3 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent/20 text-accent font-bold">
-              ✓
-            </span>
-            Our Three-Part Approach
-          </h3>
+        <div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Our Three-Part Approach
+            </h2>
+            <SectionDivider />
+            <p className="text-gray-700 mt-6 max-w-2xl mx-auto">
+              Neumantra's services are structured around three distinct company
+              journeys, each requiring different investor relations capabilities
+            </p>
+          </div>
 
-          <p className="text-gray-800 leading-relaxed mb-6">
-            Neumantra's services are structured around three distinct company
-            journeys, each requiring different investor relations capabilities:
-          </p>
+          {/* Service Category Selector */}
+          <div className="flex flex-col md:flex-row gap-4 mb-12 justify-center">
+            {[
+              {
+                title: "Capital-Markets Readiness",
+                description: "For companies preparing to access public or private markets",
+              },
+              {
+                title: "Investor Relations & Stakeholder Engagement",
+                description: "For companies actively engaging with investors and analysts",
+              },
+              {
+                title: "Customised IR for Listed Companies",
+                description: "For listed companies requiring continuous IR partnership",
+              },
+            ].map((service, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedService(index)}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 backdrop-blur-xl border-2 text-center ${
+                  selectedService === index
+                    ? "bg-accent/20 border-accent text-accent shadow-lg"
+                    : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
+                }`}
+              >
+                <span className="text-sm font-bold">{index + 1}</span>
+                <span className="hidden sm:inline text-sm">{service.title}</span>
+                <span className="sm:hidden">Service {index + 1}</span>
+              </button>
+            ))}
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                <span className="text-sm font-bold text-accent">1</span>
+          {/* Selected Service Details */}
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
+            <div className="flex gap-3 mb-4">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
+                <span className="text-sm font-bold text-accent">{selectedService + 1}</span>
               </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-1">
-                  Capital-Markets Readiness
+              <div className="flex-grow">
+                <h4 className="font-bold text-primary text-lg mb-2">
+                  {selectedService === 0 && "Capital-Markets Readiness"}
+                  {selectedService === 1 && "Investor Relations & Stakeholder Engagement"}
+                  {selectedService === 2 && "Customised IR for Listed Companies"}
                 </h4>
-                <p className="text-sm text-gray-700">
-                  For companies preparing to access public or private markets
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                <span className="text-sm font-bold text-accent">2</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-1">
-                  Investor Relations & Engagement
-                </h4>
-                <p className="text-sm text-gray-700">
-                  For companies actively engaging with investors and analysts
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3">
-              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                <span className="text-sm font-bold text-accent">3</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-primary mb-1">
-                  Customised IR for Listed
-                </h4>
-                <p className="text-sm text-gray-700">
-                  For listed companies requiring continuous IR partnership
+                <p className="text-gray-700">
+                  {selectedService === 0 && "For companies preparing to access public or private markets"}
+                  {selectedService === 1 && "For companies actively engaging with investors and analysts"}
+                  {selectedService === 2 && "For listed companies requiring continuous IR partnership"}
                 </p>
               </div>
             </div>
