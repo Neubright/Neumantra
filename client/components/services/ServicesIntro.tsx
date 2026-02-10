@@ -115,7 +115,7 @@ export default function ServicesIntro() {
             {[
               {
                 title: "Capital-Markets Readiness",
-                description: "For companies preparing to access public or private markets",
+                description: "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
               },
               {
                 title: "Investor Relations & Stakeholder Engagement",
@@ -155,7 +155,7 @@ export default function ServicesIntro() {
                   {selectedService === 2 && "Customised IR for Listed Companies"}
                 </h4>
                 <p className="text-gray-700">
-                  {selectedService === 0 && "For companies preparing to access public or private markets"}
+                  {selectedService === 0 && "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
                   {selectedService === 1 && "For companies actively engaging with investors and analysts"}
                   {selectedService === 2 && "For listed companies requiring continuous IR partnership"}
                 </p>
