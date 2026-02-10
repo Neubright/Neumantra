@@ -55,9 +55,6 @@ export default function LeadershipTeam() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
-            MEET THE TEAM
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Leadership Team
           </h2>
