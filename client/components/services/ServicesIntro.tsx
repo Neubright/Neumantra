@@ -337,7 +337,7 @@ export default function ServicesIntro() {
             </div>
 
             {/* Service Components */}
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {serviceDetails[selectedService].services.map((service, index) => (
                 <div key={index} className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
                   <h5 className="text-base font-bold text-primary mb-2">{service.title}</h5>
