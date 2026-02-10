@@ -29,14 +29,14 @@ export default function LeadershipTeam() {
     },
     {
       name: "Dharini Desai",
-      title: "Associate Partner",
+      title: "Partner",
       image:
         "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fd2aa0f47428d4e41b6bd82e9f58c609b?format=webp&width=800&height=1200",
       bio: "Dharini Desai has over 10 years of experience in financial advisory and CFO consulting. She has strong expertise in strategy, planning, and resource optimisation, and is skilled at driving growth, improving financial performance, and enhancing profitability.\n\nHer work reflects a proven track record of delivering sustainable results and long-term success across client engagements.",
     },
     {
       name: "Khushbu Singh",
-      title: "Associate",
+      title: "Partner",
       bio: "Khushbu brings a strong blend of analytical training and market-facing experience to Neumantra. She began her career through a campus placement with Business Standard and has held senior roles at Standard Chartered Bank and HDFC Bank, where she worked closely with premium client segments and relationship teams. She holds a B.Sc. in Electronics and an MBA in Marketing.",
     },
   ];
