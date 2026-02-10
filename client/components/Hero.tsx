@@ -96,7 +96,7 @@ export default function Hero() {
         </p>
         <button className="hero-button pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-gradient-to-r from-primary to-primary text-white border-2 border-white hover:shadow-lg hover:scale-105 shadow-lg">
           Schedule a Strategic Consultation
-          <span className="flex-shrink-0 bg-primary rounded-full w-10 h-10 flex items-center justify-center">
+          <span className="flex-shrink-0 bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
               alt="Arrow"
