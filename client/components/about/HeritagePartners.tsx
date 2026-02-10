@@ -78,7 +78,11 @@ export default function HeritagePartners() {
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className={partner.name === "Neubright Partners" ? "h-10 w-auto" : "h-8 w-auto"}
+                    className={
+                      partner.name === "Neubright Partners"
+                        ? "h-10 w-auto"
+                        : "h-8 w-auto"
+                    }
                   />
                 </div>
                 <h3 className={`text-2xl font-bold ${partner.textColor} mb-1`}>

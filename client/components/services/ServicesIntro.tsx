@@ -10,11 +10,13 @@ export default function ServicesIntro() {
   const serviceDetails = [
     {
       title: "Capital-Markets Readiness",
-      description: "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
+      description:
+        "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
       services: [
         {
           title: "IPO & Public Issue Preparation",
-          description: "Comprehensive support for companies planning mainboard or SME listings:",
+          description:
+            "Comprehensive support for companies planning mainboard or SME listings:",
           points: [
             "Pre-IPO Positioning Strategy: Timing considerations, market condition assessment, and investor appetite evaluation",
             "Equity Story Development: Investment thesis articulation, competitive differentiation, and growth narrative development",
@@ -26,7 +28,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Private Capital Raise Support",
-          description: "Investor relations for companies approaching PE/VC or institutional investors:",
+          description:
+            "Investor relations for companies approaching PE/VC or institutional investors:",
           points: [
             "Investor Targeting Intelligence: Identifying appropriate funds based on sector focus, ticket size, and investment stage",
             "Management Presentation Development: Pitch deck optimization, data room organization, and due diligence preparation",
@@ -36,7 +39,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Financial Readiness & Governance Review",
-          description: "Diagnostic assessment identifying gaps that could undermine investor confidence:",
+          description:
+            "Diagnostic assessment identifying gaps that could undermine investor confidence:",
           points: [
             "Disclosure Quality Audit: Evaluation of financial reporting against best practices and regulatory requirements",
             "Governance Framework Assessment: Board composition, committee structures, policy documentation, compliance infrastructure",
@@ -47,7 +51,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Investor-Facing Materials Development",
-          description: "Professional-grade documentation establishing market credibility:",
+          description:
+            "Professional-grade documentation establishing market credibility:",
           points: [
             "Corporate Presentation: Comprehensive company overview for investor meetings",
             "Investor Fact Book: Detailed operating metrics, historical financials, industry context",
@@ -60,11 +65,13 @@ export default function ServicesIntro() {
     },
     {
       title: "Investor Relations & Stakeholder Engagement",
-      description: "For companies actively engaging with investors and analysts",
+      description:
+        "For companies actively engaging with investors and analysts",
       services: [
         {
           title: "Analyst Coverage Development",
-          description: "Strategic program to establish and expand equity research coverage:",
+          description:
+            "Strategic program to establish and expand equity research coverage:",
           points: [
             "Coverage Gap Analysis: Identifying analysts and research firms appropriate for company profile",
             "Initiation Targeting Strategy: Prioritized outreach plan with customized analyst engagement approach",
@@ -75,7 +82,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Investor Outreach & Targeting",
-          description: "Structured engagement with institutional investors and fund managers:",
+          description:
+            "Structured engagement with institutional investors and fund managers:",
           points: [
             "Institutional Investor Mapping: Identifying funds with sector mandates, market cap focus, and investment philosophy alignment",
             "Non-Deal Roadshow Planning: Coordinating management meetings with target investors in key financial centers",
@@ -86,7 +94,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Quarterly & Annual Earnings Support",
-          description: "Comprehensive support through results announcement cycle:",
+          description:
+            "Comprehensive support through results announcement cycle:",
           points: [
             "Earnings Preparation: Results analysis, talking points, Q&A anticipation, scenario planning",
             "Earnings Release Drafting: Professional announcements balancing regulatory requirements and investor communication",
@@ -125,7 +134,8 @@ export default function ServicesIntro() {
       services: [
         {
           title: "Comprehensive IR Program Management",
-          description: "Full-service investor relations as an extension of the company:",
+          description:
+            "Full-service investor relations as an extension of the company:",
           points: [
             "Quarterly IR Calendar Management: Earnings cycle coordination, analyst meetings, investor events, conference participation",
             "Investor Relations Officer (IRO) Services: Professional IRO representation for companies without full-time IR staff",
@@ -136,7 +146,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Relationship Cultivation & Advocacy Building",
-          description: "Systematic development of investor and analyst relationships:",
+          description:
+            "Systematic development of investor and analyst relationships:",
           points: [
             "Top Holder Engagement Program: Regular interaction with largest institutional shareholders",
             "New Investor Identification: Monitoring trading activity to identify emerging shareholders for relationship initiation",
@@ -147,7 +158,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Market Intelligence & Feedback",
-          description: "Continuous monitoring and analysis of market perceptions:",
+          description:
+            "Continuous monitoring and analysis of market perceptions:",
           points: [
             "Investor Perception Studies: Annual or semi-annual feedback collection from institutional investors and analysts",
             "Peer Benchmarking: Comparative analysis of valuation multiples, disclosure practices, IR programs",
@@ -169,7 +181,8 @@ export default function ServicesIntro() {
         },
         {
           title: "Crisis IR & Issue Management",
-          description: "Preparedness and response for investor-impacting events:",
+          description:
+            "Preparedness and response for investor-impacting events:",
           points: [
             "Crisis Communication Protocols: Pre-developed frameworks for rapid investor communication during crises",
             "Issue Anticipation: Identifying potential investor concerns before they escalate",
@@ -290,15 +303,18 @@ export default function ServicesIntro() {
             {[
               {
                 title: "Capital-Markets Readiness",
-                description: "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
+                description:
+                  "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
               },
               {
                 title: "Investor Relations & Stakeholder Engagement",
-                description: "For companies actively engaging with investors and analysts",
+                description:
+                  "For companies actively engaging with investors and analysts",
               },
               {
                 title: "Customised IR for Listed Companies",
-                description: "For listed companies requiring continuous IR partnership",
+                description:
+                  "For listed companies requiring continuous IR partnership",
               },
             ].map((service, index) => (
               <button
@@ -311,7 +327,9 @@ export default function ServicesIntro() {
                 }`}
               >
                 <span className="text-sm font-bold">{index + 1}</span>
-                <span className="hidden sm:inline text-sm">{service.title}</span>
+                <span className="hidden sm:inline text-sm">
+                  {service.title}
+                </span>
                 <span className="sm:hidden">Service {index + 1}</span>
               </button>
             ))}
@@ -323,7 +341,9 @@ export default function ServicesIntro() {
             <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
               <div className="flex gap-3">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                  <span className="text-sm font-bold text-accent">{selectedService + 1}</span>
+                  <span className="text-sm font-bold text-accent">
+                    {selectedService + 1}
+                  </span>
                 </div>
                 <div className="flex-grow">
                   <h4 className="font-bold text-primary text-lg mb-2">
@@ -338,20 +358,34 @@ export default function ServicesIntro() {
 
             {/* Service Components */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {serviceDetails[selectedService].services.map((service, index) => (
-                <div key={index} className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
-                  <h5 className="text-base font-bold text-primary mb-2">{service.title}</h5>
-                  <p className="text-sm text-gray-700 mb-4">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.points.map((point, pointIndex) => (
-                      <li key={pointIndex} className="text-sm text-gray-700 flex items-start gap-3">
-                        <span className="text-accent flex-shrink-0 font-bold">◆</span>
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              {serviceDetails[selectedService].services.map(
+                (service, index) => (
+                  <div
+                    key={index}
+                    className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+                  >
+                    <h5 className="text-base font-bold text-primary mb-2">
+                      {service.title}
+                    </h5>
+                    <p className="text-sm text-gray-700 mb-4">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-2">
+                      {service.points.map((point, pointIndex) => (
+                        <li
+                          key={pointIndex}
+                          className="text-sm text-gray-700 flex items-start gap-3"
+                        >
+                          <span className="text-accent flex-shrink-0 font-bold">
+                            ◆
+                          </span>
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
