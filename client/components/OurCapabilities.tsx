@@ -85,9 +85,9 @@ export default function OurCapabilities() {
                   }}
                 >
                   <p className="text-xs font-semibold text-primary mb-2">
-                    KEY DELIVERABLES
+                    Key deliverables
                   </p>
-                  <p className="text-gray-600 text-xs leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {capability.deliverables}
                   </p>
                 </div>
