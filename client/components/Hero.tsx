@@ -94,9 +94,9 @@ export default function Hero() {
           with stakeholder engagement excellence - helping mid-market companies
           command attention in India's capital markets.
         </p>
-        <button className="hero-button pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-accent text-white hover:bg-red-700 shadow-lg">
+        <button className="hero-button pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-white text-accent border-2 border-accent hover:bg-accent hover:text-white shadow-lg">
           Schedule a Strategic Consultation
-          <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
+          <span className="flex-shrink-0 backdrop-blur-md bg-accent/25 border border-accent/40 rounded-full w-10 h-10 flex items-center justify-center">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
               alt="Arrow"
