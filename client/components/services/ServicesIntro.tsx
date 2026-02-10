@@ -7,6 +7,181 @@ export default function ServicesIntro() {
   const [ref, isInView] = useInView();
   const [selectedService, setSelectedService] = useState(0);
 
+  const serviceDetails = [
+    {
+      title: "Capital-Markets Readiness",
+      description: "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months",
+      services: [
+        {
+          title: "IPO & Public Issue Preparation",
+          description: "Comprehensive support for companies planning mainboard or SME listings:",
+          points: [
+            "Pre-IPO Positioning Strategy: Timing considerations, market condition assessment, and investor appetite evaluation",
+            "Equity Story Development: Investment thesis articulation, competitive differentiation, and growth narrative development",
+            "Valuation Communication Framework: Translating DCF, comparable analysis, and precedent transactions into accessible investor language",
+            "Pre-Marketing Coordination: Working with investment banks on pre-IPO investor education within regulatory boundaries",
+            "Management Preparation: Leadership coaching for investor presentations, analyst Q&A, and media interactions",
+            "Documentation Support: DRHP inputs, investor presentation development, and FAQ preparation",
+          ],
+        },
+        {
+          title: "Private Capital Raise Support",
+          description: "Investor relations for companies approaching PE/VC or institutional investors:",
+          points: [
+            "Investor Targeting Intelligence: Identifying appropriate funds based on sector focus, ticket size, and investment stage",
+            "Management Presentation Development: Pitch deck optimization, data room organization, and due diligence preparation",
+            "Valuation Justification Materials: Building credible valuation arguments supported by market comparables and financial projections",
+            "Negotiation Support Materials: Term sheet analysis, cap table modeling, and governance implications assessment",
+          ],
+        },
+        {
+          title: "Financial Readiness & Governance Review",
+          description: "Diagnostic assessment identifying gaps that could undermine investor confidence:",
+          points: [
+            "Disclosure Quality Audit: Evaluation of financial reporting against best practices and regulatory requirements",
+            "Governance Framework Assessment: Board composition, committee structures, policy documentation, compliance infrastructure",
+            "Related-Party Transaction Review: Transparency of RPTs, approval processes, and disclosure adequacy",
+            "Internal Controls Evaluation: Financial controls maturity aligned with public company expectations",
+            "Risk Disclosure Development: Comprehensive risk factor articulation for investor materials",
+          ],
+        },
+        {
+          title: "Investor-Facing Materials Development",
+          description: "Professional-grade documentation establishing market credibility:",
+          points: [
+            "Corporate Presentation: Comprehensive company overview for investor meetings",
+            "Investor Fact Book: Detailed operating metrics, historical financials, industry context",
+            "Management Discussion & Analysis: Enhanced MD&A exceeding regulatory minimums",
+            "ESG Disclosures: Sustainability reporting aligned with investor expectations",
+            "Executive Biography Development: Professional leadership profiles for investor confidence",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Investor Relations & Stakeholder Engagement",
+      description: "For companies actively engaging with investors and analysts",
+      services: [
+        {
+          title: "Analyst Coverage Development",
+          description: "Strategic program to establish and expand equity research coverage:",
+          points: [
+            "Coverage Gap Analysis: Identifying analysts and research firms appropriate for company profile",
+            "Initiation Targeting Strategy: Prioritized outreach plan with customized analyst engagement approach",
+            "Model Support Coordination: Providing financial data, operating metrics, and assumptions to support analyst modeling",
+            "Analyst Day Execution: Organizing facility visits, management access, and deep-dive sessions",
+            "Coverage Maintenance: Regular analyst updates, quarterly engagement, relationship cultivation",
+          ],
+        },
+        {
+          title: "Investor Outreach & Targeting",
+          description: "Structured engagement with institutional investors and fund managers:",
+          points: [
+            "Institutional Investor Mapping: Identifying funds with sector mandates, market cap focus, and investment philosophy alignment",
+            "Non-Deal Roadshow Planning: Coordinating management meetings with target investors in key financial centers",
+            "Investor Conference Participation: Selection of appropriate conferences, presentation preparation, meeting scheduling",
+            "Investor Perception Research: Gathering feedback on investment thesis, concerns, competitive positioning",
+            "CRM & Engagement Tracking: Systematic recording of investor interactions, follow-ups, relationship history",
+          ],
+        },
+        {
+          title: "Quarterly & Annual Earnings Support",
+          description: "Comprehensive support through results announcement cycle:",
+          points: [
+            "Earnings Preparation: Results analysis, talking points, Q&A anticipation, scenario planning",
+            "Earnings Release Drafting: Professional announcements balancing regulatory requirements and investor communication",
+            "Analyst Call Scripting: Management remarks, forward-looking statements, disclosure discipline",
+            "Post-Earnings Follow-Up: Addressing analyst questions, model updates, clarification requests",
+            "Annual Report Enhancement: Upgrading annual reports beyond compliance to stakeholder engagement tools",
+          ],
+        },
+        {
+          title: "Investor Events & Presentations",
+          description: "Design and execution of investor engagement events:",
+          points: [
+            "Annual Investor Day: Comprehensive company update with business unit presentations, facility tours, management Q&A",
+            "Virtual Roadshows: Digital investor engagement for geographic reach and efficiency",
+            "Industry Conference Presentations: Developing sector-positioning presentations for investor conferences",
+            "ESG Investor Forums: Specialized engagement with sustainability-focused investors",
+            "Crisis Communication Events: Managing investor communication during unexpected challenges",
+          ],
+        },
+        {
+          title: "Corporate Announcements & Disclosure Management",
+          description: "Strategic communication support for material events:",
+          points: [
+            "M&A Communication: Acquisition/divestiture rationale, valuation justification, integration messaging",
+            "Strategic Initiative Announcements: New market entry, product launches, capex programs, partnerships",
+            "Guidance Management: Forward-looking statement development, guidance methodology, revision communication",
+            "Material Information Disclosure: Ensuring compliance while maintaining competitive confidentiality",
+            "FAQ Development: Anticipating investor questions and preparing management responses",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Customised IR for Listed Companies",
+      description: "For listed companies requiring continuous IR partnership",
+      services: [
+        {
+          title: "Comprehensive IR Program Management",
+          description: "Full-service investor relations as an extension of the company:",
+          points: [
+            "Quarterly IR Calendar Management: Earnings cycle coordination, analyst meetings, investor events, conference participation",
+            "Investor Relations Officer (IRO) Services: Professional IRO representation for companies without full-time IR staff",
+            "IR Website Management: Content updates, presentation libraries, financial data, corporate governance disclosures",
+            "Investor Database Maintenance: Shareholder analysis, ownership tracking, trading pattern monitoring",
+            "IR Budget Planning: Cost management for IR activities, conference participation, perception studies",
+          ],
+        },
+        {
+          title: "Relationship Cultivation & Advocacy Building",
+          description: "Systematic development of investor and analyst relationships:",
+          points: [
+            "Top Holder Engagement Program: Regular interaction with largest institutional shareholders",
+            "New Investor Identification: Monitoring trading activity to identify emerging shareholders for relationship initiation",
+            "Sell-Side Analyst Relationships: Continuous engagement maintaining coverage quality and accuracy",
+            "Buy-Side Analyst Access: Facilitating portfolio manager and analyst meetings with management",
+            "Investor Loyalty Programs: Recognition and engagement strategies for long-term shareholders",
+          ],
+        },
+        {
+          title: "Market Intelligence & Feedback",
+          description: "Continuous monitoring and analysis of market perceptions:",
+          points: [
+            "Investor Perception Studies: Annual or semi-annual feedback collection from institutional investors and analysts",
+            "Peer Benchmarking: Comparative analysis of valuation multiples, disclosure practices, IR programs",
+            "Trading Pattern Analysis: Monitoring volume, volatility, and ownership changes for insight into sentiment shifts",
+            "Analyst Report Monitoring: Tracking coverage, recommendations, target prices, earnings estimates",
+            "Media Monitoring: Financial press coverage analysis and reputation tracking",
+          ],
+        },
+        {
+          title: "ESG & Sustainability Communication",
+          description: "Integrating ESG into investor relations program:",
+          points: [
+            "ESG Disclosure Development: Sustainability reporting aligned with investor frameworks (BRSR, GRI, SASB, TCFD)",
+            "ESG Investor Targeting: Identifying and engaging with sustainability-focused institutional investors",
+            "ESG Rating Engagement: Managing relationships with rating agencies (MSCI, Sustainalytics, CDP)",
+            "Climate-Related Financial Disclosures: Supporting TCFD or similar climate disclosure frameworks",
+            "Social & Governance Messaging: Communicating diversity initiatives, board composition, stakeholder capitalism approach",
+          ],
+        },
+        {
+          title: "Crisis IR & Issue Management",
+          description: "Preparedness and response for investor-impacting events:",
+          points: [
+            "Crisis Communication Protocols: Pre-developed frameworks for rapid investor communication during crises",
+            "Issue Anticipation: Identifying potential investor concerns before they escalate",
+            "Activist Investor Defense: Supporting management in responding to activist campaigns",
+            "Short-Seller Response: Coordinating company responses to short-seller reports",
+            "Regulatory Investigation Communication: Managing investor communication during enforcement actions or investigations",
+          ],
+        },
+      ],
+    },
+  ];
+
   const highlights = [
     {
       icon: BarChart3,
@@ -143,23 +318,40 @@ export default function ServicesIntro() {
           </div>
 
           {/* Selected Service Details */}
-          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
-            <div className="flex gap-3 mb-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
-                <span className="text-sm font-bold text-accent">{selectedService + 1}</span>
+          <div className="space-y-6">
+            {/* Service Overview */}
+            <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
+              <div className="flex gap-3">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
+                  <span className="text-sm font-bold text-accent">{selectedService + 1}</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-bold text-primary text-lg mb-2">
+                    {serviceDetails[selectedService].title}
+                  </h4>
+                  <p className="text-gray-700">
+                    {serviceDetails[selectedService].description}
+                  </p>
+                </div>
               </div>
-              <div className="flex-grow">
-                <h4 className="font-bold text-primary text-lg mb-2">
-                  {selectedService === 0 && "Capital-Markets Readiness"}
-                  {selectedService === 1 && "Investor Relations & Stakeholder Engagement"}
-                  {selectedService === 2 && "Customised IR for Listed Companies"}
-                </h4>
-                <p className="text-gray-700">
-                  {selectedService === 0 && "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
-                  {selectedService === 1 && "For companies actively engaging with investors and analysts"}
-                  {selectedService === 2 && "For listed companies requiring continuous IR partnership"}
-                </p>
-              </div>
+            </div>
+
+            {/* Service Components */}
+            <div className="space-y-6">
+              {serviceDetails[selectedService].services.map((service, index) => (
+                <div key={index} className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
+                  <h5 className="text-base font-bold text-primary mb-2">{service.title}</h5>
+                  <p className="text-sm text-gray-700 mb-4">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="text-sm text-gray-700 flex items-start gap-3">
+                        <span className="text-accent flex-shrink-0 font-bold">◆</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </div>
