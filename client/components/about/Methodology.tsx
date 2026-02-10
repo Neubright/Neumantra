@@ -182,7 +182,7 @@ export default function Methodology() {
                 {/* Deliverable */}
                 <div className="pt-4 border-t border-gray-300/30">
                   <p className={`text-xs font-bold text-primary mb-1`}>
-                    DELIVERABLE
+                    Deliverable
                   </p>
                   <p className="text-gray-700 text-xs leading-relaxed">
                     {phase.deliverable}
