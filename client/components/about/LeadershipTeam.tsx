@@ -113,7 +113,7 @@ export default function LeadershipTeam() {
                   {leader.title}
                 </p>
                 <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold">
-                  {expandedId === index ? "Less" : "More"} Info
+                  {expandedId === index ? "Read Less" : "Read More"}
                 </div>
               </div>
 
