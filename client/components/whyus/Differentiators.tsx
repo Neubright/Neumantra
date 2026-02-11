@@ -185,28 +185,39 @@ export default function Differentiators() {
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="mt-4 space-y-2">
+                  <div className="mt-4 space-y-4">
                     <ul className="space-y-2">
-                      {diff.solution.map((point, idx) => (
-                        <li
-                          key={idx}
-                          className="text-gray-700 text-sm flex items-start gap-3 animate-fadeIn"
-                        >
-                          {point.includes(":") ? (
-                            <span className="font-semibold text-primary">
-                              {point}
-                            </span>
-                          ) : (
-                            <>
-                              <span className="text-accent flex-shrink-0 font-bold mt-1">
-                                ✓
+                      {diff.solution.map((point, idx) => {
+                        const isLastItem = idx === diff.solution.length - 1;
+
+                        if (isLastItem && !point.includes(":")) {
+                          return null;
+                        }
+
+                        return (
+                          <li
+                            key={idx}
+                            className="text-gray-700 text-sm flex items-start gap-3 animate-fadeIn"
+                          >
+                            {point.includes(":") ? (
+                              <span className="font-semibold text-primary">
+                                {point}
                               </span>
-                              <span>{point}</span>
-                            </>
-                          )}
-                        </li>
-                      ))}
+                            ) : (
+                              <>
+                                <span className="text-accent flex-shrink-0 font-bold mt-1">
+                                  ✓
+                                </span>
+                                <span>{point}</span>
+                              </>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
+                    <p className="text-gray-700 text-sm leading-relaxed mt-4 pt-4 border-t border-gray-300/30">
+                      {diff.solution[diff.solution.length - 1]}
+                    </p>
                   </div>
                 </div>
 
