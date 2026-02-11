@@ -92,18 +92,6 @@ export default function IdealClientProfile() {
             ))}
           </div>
 
-          {/* Bottom message */}
-          <div className="mt-12 backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 text-center">
-            <h3 className="text-xl font-bold text-primary mb-3">
-              If these characteristics describe your company, let's explore
-              partnership
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              We're most effective with companies that recognize IR as a
-              strategic investment, not just a compliance requirement. If you
-              share this perspective, Neumantra could be the right partner.
-            </p>
-          </div>
         </div>
       </div>
     </section>
