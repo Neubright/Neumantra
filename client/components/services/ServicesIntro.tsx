@@ -130,7 +130,7 @@ export default function ServicesIntro() {
     },
     {
       title: "Customised IR for Listed Companies",
-      description: "For listed companies requiring continuous IR partnership",
+      description: "For listed mid-sized companies requiring a continuous investor relations partnership",
       services: [
         {
           title: "Comprehensive IR Program Management",
@@ -291,7 +291,7 @@ export default function ServicesIntro() {
               {
                 title: "Customised IR for Listed Companies",
                 description:
-                  "For listed companies requiring continuous IR partnership",
+                  "For listed mid-sized companies requiring a continuous investor relations partnership",
               },
             ].map((service, index) => (
               <button
