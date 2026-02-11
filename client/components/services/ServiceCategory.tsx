@@ -77,14 +77,14 @@ export default function ServiceCategory({
             </h2>
           </div>
           <SectionDivider />
-          <p className="text-base text-gray-700 mt-6 max-w-3xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
             {categoryNumber === 1 &&
               "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
             {categoryNumber === 2 &&
               "For companies actively engaging with investors, analysts, and the investment community"}
             {categoryNumber === 3 &&
               "For listed mid-sized companies requiring a continuous investor relations partnership"}
-          </p>
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">

@@ -125,10 +125,9 @@ export default function Differentiators() {
             What Makes Neumantra Different
           </h2>
           <SectionDivider />
-          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Six core differentiators that set us apart in India's investor
-            relations landscape
-          </p>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+            Six core differentiators that set us apart in India's investor relations landscape
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">

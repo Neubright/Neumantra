@@ -43,11 +43,9 @@ export default function WhyUsCTA() {
             Ready for a Strategic IR Partnership?
           </h2>
           <SectionDivider />
-          <p className="text-base text-gray-700 mt-6 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss whether Neumantra's approach aligns with your
-            capital-markets objectives. We're confident that if you value the
-            approach outlined here, we can deliver significant value.
-          </p>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+            Let's discuss whether Neumantra's approach aligns with your capital-markets objectives. We're confident that if you value the approach outlined here, we can deliver significant value.
+          </h3>
         </div>
 
         {/* Next Steps */}

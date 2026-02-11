@@ -155,10 +155,9 @@ export default function ServiceScenarios() {
             Client Journey Scenarios
           </h2>
           <SectionDivider />
-          <p className="text-gray-700 mt-6 max-w-2xl mx-auto">
-            Explore how different companies at various stages benefit from
-            Neumantra's tailored solutions
-          </p>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-2xl mx-auto">
+            Explore how different companies at various stages benefit from Neumantra's tailored solutions
+          </h3>
         </div>
 
         {/* Scenario Selector */}

@@ -62,10 +62,9 @@ export default function LeadershipTeam() {
             Leadership Team
           </h2>
           <SectionDivider />
-          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
-            Decades of expertise in capital markets, finance, and stakeholder
-            engagement
-          </p>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+            Decades of expertise in capital markets, finance, and stakeholder engagement
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
