@@ -161,26 +161,19 @@ export default function ServiceScenarios() {
         </div>
 
         {/* Scenario Selector */}
-        <div className="flex flex-col md:flex-row gap-4 mb-12 justify-center">
+        <div className="flex flex-row gap-4 mb-12 justify-center flex-wrap">
           {scenarios.map((s, index) => (
             <button
               key={index}
               onClick={() => setSelectedScenario(index)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 backdrop-blur-xl border-2 ${
+              className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                 selectedScenario === index
                   ? "bg-accent/20 border-accent text-accent shadow-lg"
                   : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
               }`}
             >
-              <span
-                className={
-                  selectedScenario === index ? "text-accent" : "text-gray-700"
-                }
-              >
-                {getIcon(s.icon)}
-              </span>
-              <span className="hidden sm:inline">{s.title}</span>
-              <span className="sm:hidden">Scenario {index + 1}</span>
+              <span className="hidden md:inline">{s.title}</span>
+              <span className="md:hidden">Scenario {index + 1}</span>
             </button>
           ))}
         </div>
