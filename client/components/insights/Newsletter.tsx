@@ -48,11 +48,11 @@ export default function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-grow px-4 py-3 rounded border border-gray-300 focus:outline-none focus:border-accent bg-white/80"
+                className="flex-grow px-4 py-3 rounded border border-gray-300 focus:outline-none focus:border-primary bg-white/80"
               />
               <button
                 type="submit"
-                className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg whitespace-nowrap inline-flex items-center gap-3"
+                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg whitespace-nowrap inline-flex items-center gap-3"
               >
                 Subscribe
                 <span
@@ -74,7 +74,7 @@ export default function Newsletter() {
             </div>
 
             {submitted && (
-              <p className="text-accent font-semibold text-sm mb-3">
+              <p className="text-primary font-semibold text-sm mb-3">
                 Thank you for subscribing!
               </p>
             )}
