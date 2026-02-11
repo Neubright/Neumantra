@@ -30,11 +30,12 @@ export default function Differentiators() {
       problem:
         "Large corporations benefit from big-firm advisory access and dedicated IR teams. Early-stage startups leverage venture capital networks. Mid-market companies—those preparing to list, transitioning from SME platforms, or operating as ₹1,000–10,000 crore listed entities—are often underserved. They are too complex for basic compliance support and too small for sustained attention from large firms.",
       solution: [
+        "The Neumantra Difference:",
         "Our entire practice is calibrated to the mid-market growth companies:",
-        "Understanding Constraints: Engagement models designed for efficiency, not excess",
-        "Stage-Appropriate Expectations: No inappropriate large-cap playbooks",
-        "Focused Investor Targeting: Knowledge of analysts and institutions active in mid-market opportunities",
-        "Governance Realism: Strengthening governance without creating unnecessary bureaucracy",
+        "Understanding Constraints – Engagement models designed for efficiency, not excess",
+        "Stage-Appropriate Expectations – No inappropriate large-cap playbooks",
+        "Focused Investor Targeting – Knowledge of analysts and institutions active in mid-market opportunities",
+        "Governance Realism – Strengthening governance without creating unnecessary bureaucracy",
         "Mid-market isn't a compromise for us, it's our deliberate focus and expertise.",
       ],
     },
