@@ -1,15 +1,36 @@
 import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
+import { Clock, Target, Lightbulb, Handshake, CheckCircle } from "lucide-react";
 
 export default function ScheduleConsultation() {
   const [ref, isInView] = useInView();
 
   const expectations = [
-    "60-minute confidential consultation with Neumantra partners",
-    "Discussion of your business context and capital markets goals",
-    "Overview of relevant Neumantra capabilities and approach",
-    "Preliminary thoughts on potential engagement framework",
-    "No obligation, simply an opportunity for mutual exploration",
+    {
+      title: "60-minute confidential consultation",
+      description: "With Neumantra partners",
+      icon: Clock,
+    },
+    {
+      title: "Discussion of your business context",
+      description: "And capital markets goals",
+      icon: Target,
+    },
+    {
+      title: "Overview of relevant capabilities",
+      description: "And our approach",
+      icon: Lightbulb,
+    },
+    {
+      title: "Preliminary engagement framework",
+      description: "Thoughts on potential structure",
+      icon: Handshake,
+    },
+    {
+      title: "No obligation",
+      description: "Simply an opportunity for mutual exploration",
+      icon: CheckCircle,
+    },
   ];
 
   return (
@@ -48,27 +69,41 @@ export default function ScheduleConsultation() {
             </p>
           </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
-            <h3 className="text-xl font-bold text-primary mb-6">
+          <div className="mb-8">
+            <h3 className="text-xl font-bold text-primary mb-8 text-center">
               What to expect:
             </h3>
-            <ul className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {expectations.map((item, index) => (
-                <li
+                <div
                   key={index}
-                  className="text-gray-700 text-base flex items-start"
+                  className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
                 >
-                  <span className="text-accent mr-3 flex-shrink-0 font-bold">
-                    −
-                  </span>
-                  <span>{item}</span>
-                </li>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                        <item.icon
+                          className="w-6 h-6 text-primary opacity-75"
+                          strokeWidth={1.5}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1 text-sm">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-700 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className="flex justify-center">
-            <button className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3">
+            <button className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3">
               Schedule Consultation
               <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
                 <img
