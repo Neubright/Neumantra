@@ -275,7 +275,7 @@ export default function ServicesIntro() {
           </div>
 
           {/* Service Category Selector */}
-          <div className="flex flex-col md:flex-row gap-4 mb-12 justify-center">
+          <div className="flex flex-row gap-4 mb-12 justify-center flex-wrap">
             {[
               {
                 title: "Capital-Markets Readiness",
