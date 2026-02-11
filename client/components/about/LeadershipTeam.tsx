@@ -130,7 +130,13 @@ export default function LeadershipTeam() {
                   {leader.bio.split("\n").map(
                     (paragraph, idx) =>
                       paragraph.trim() && (
-                        <p key={idx} className="animate-fadeIn">
+                        <p
+                          key={idx}
+                          style={{
+                            animation: `fadeIn 0.3s ease-out forwards`,
+                            animationDelay: `${idx * 0.05}s`,
+                          }}
+                        >
                           {paragraph.trim()}
                         </p>
                       ),
@@ -161,7 +167,7 @@ export default function LeadershipTeam() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;
@@ -171,26 +177,6 @@ export default function LeadershipTeam() {
             opacity: 1;
             transform: translateY(0);
           }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out forwards;
-        }
-
-        .animate-fadeIn:nth-child(2) {
-          animation-delay: 0.05s;
-        }
-
-        .animate-fadeIn:nth-child(3) {
-          animation-delay: 0.1s;
-        }
-
-        .animate-fadeIn:nth-child(4) {
-          animation-delay: 0.15s;
-        }
-
-        .animate-fadeIn:nth-child(5) {
-          animation-delay: 0.2s;
         }
       `}</style>
     </section>
