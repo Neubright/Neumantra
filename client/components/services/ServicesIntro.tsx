@@ -230,9 +230,12 @@ export default function ServicesIntro() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Why Investor Relations Matters Today
+            Introduction
           </h2>
           <SectionDivider />
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4">
+            Why Investor Relations Matters Today
+          </h3>
         </div>
 
         {/* Main intro paragraph */}
