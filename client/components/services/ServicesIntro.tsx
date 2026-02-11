@@ -248,16 +248,19 @@ export default function ServicesIntro() {
             influence capital allocation decisions.
           </p>
 
-          <div className="border-l-4 border-accent pl-6">
-            <p className="text-gray-800 leading-relaxed italic">
-              For mid-market companies, meeting these expectations requires
-              specialized capability that most organizations do not—and should
-              not—build in-house. Investor relations is a professional
-              discipline demanding continuous attention, market intelligence,
-              and strategic coordination across finance, legal, and leadership
-              functions.
-            </p>
-          </div>
+          <p className="text-gray-800 text-lg leading-relaxed mb-6">
+            For mid-market companies, meeting these expectations requires
+            specialized capability that most organisations do not—and should
+            not—build in-house. Investor relations is a professional
+            discipline demanding continuous attention, market intelligence,
+            and strategic coordination across finance, legal, and leadership
+            functions.
+          </p>
+
+          <p className="text-gray-800 text-lg leading-relaxed">
+            Neumantra's services are structured around three distinct company
+            journeys, each requiring different investor relations capabilities
+          </p>
         </div>
 
         {/* Key Market Dynamics */}
