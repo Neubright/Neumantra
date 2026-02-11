@@ -168,7 +168,11 @@ export default function Methodology() {
                   {phase.items.map((item, i) => (
                     <li
                       key={i}
-                      className="text-gray-700 text-xs flex items-start gap-2 animate-fadeIn"
+                      className="text-gray-700 text-xs flex items-start gap-2"
+                      style={{
+                        animation: `fadeIn 0.3s ease-out forwards`,
+                        animationDelay: `${i * 0.05}s`,
+                      }}
                     >
                       <span className="flex-shrink-0 w-4 h-4 rounded-full bg-white/30 flex items-center justify-center mt-0.5">
                         <span className="text-xs text-accent font-bold">✓</span>
@@ -200,7 +204,7 @@ export default function Methodology() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;
@@ -210,30 +214,6 @@ export default function Methodology() {
             opacity: 1;
             transform: translateY(0);
           }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out forwards;
-        }
-
-        .animate-fadeIn:nth-child(2) {
-          animation-delay: 0.05s;
-        }
-
-        .animate-fadeIn:nth-child(3) {
-          animation-delay: 0.1s;
-        }
-
-        .animate-fadeIn:nth-child(4) {
-          animation-delay: 0.15s;
-        }
-
-        .animate-fadeIn:nth-child(5) {
-          animation-delay: 0.2s;
-        }
-
-        .animate-fadeIn:nth-child(6) {
-          animation-delay: 0.25s;
         }
       `}</style>
     </section>
