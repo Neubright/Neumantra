@@ -205,25 +205,31 @@ export default function Footer() {
             Contact Information
           </h4>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-base text-white space-y-2">
+            <div className="text-base text-white space-y-3">
               <p className="font-semibold">Neumantra Capital Advisors</p>
-              <p>[Office Address]</p>
-              <p>
+              <div className="space-y-1">
+                <p className="text-sm">A 303, Rajkamal CHS</p>
+                <p className="text-sm">Opp. Mumbai University, Vidyanagari</p>
+                <p className="text-sm">Manipada, Kalina, Santacruz East</p>
+                <p className="text-sm">Mumbai – 400098</p>
+              </div>
+              <p className="text-sm">
                 <a
-                  href="mailto:contact@neumantra.com"
+                  href="mailto:info@mantraa.com"
                   className="hover:text-accent transition-colors"
                 >
-                  Email: contact@neumantra.com
+                  Email: info@mantraa.com
                 </a>
               </p>
-              <p>
+              <p className="text-sm">
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+919326389159"
                   className="hover:text-accent transition-colors"
                 >
-                  Phone: +91-[XX]-XXXX-XXXX
+                  Phone: +91 93263 89159
                 </a>
               </p>
+              <p className="text-sm">Office Hours: Monday–Friday: 9:30 AM – 6:00 PM IST</p>
             </div>
           </div>
         </div>
