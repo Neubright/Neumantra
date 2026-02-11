@@ -83,33 +83,38 @@ export default function ContactFormAndDetails() {
                   <div>
                     <h4 className="font-bold text-primary mb-3">Address</h4>
                     <p className="text-gray-700 text-sm">
-                      [Office Address Line 1]
+                      A 303, Rajkamal CHS
                       <br />
-                      [Office Address Line 2]
+                      Opp. Mumbai University, Vidyanagari
                       <br />
-                      [City, State, PIN Code]
+                      Manipada, Kalina, Santacruz East
+                      <br />
+                      Mumbai – 400098
                     </p>
                   </div>
 
                   <div>
                     <h4 className="font-bold text-primary mb-3">Email</h4>
-                    <p className="text-gray-700 text-sm mb-2">
-                      <span className="font-semibold">General Inquiries:</span>
-                      <br />
-                      contact@neumantra.com
-                    </p>
                     <p className="text-gray-700 text-sm">
-                      <span className="font-semibold">
-                        New Client Inquiries:
-                      </span>
-                      <br />
-                      engage@neumantra.com
+                      <a
+                        href="mailto:info@mantraa.com"
+                        className="hover:text-accent transition-colors"
+                      >
+                        info@mantraa.com
+                      </a>
                     </p>
                   </div>
 
                   <div>
                     <h4 className="font-bold text-primary mb-3">Phone</h4>
-                    <p className="text-gray-700 text-sm">+91-[XX]-XXXX-XXXX</p>
+                    <p className="text-gray-700 text-sm">
+                      <a
+                        href="tel:+919326389159"
+                        className="hover:text-accent transition-colors"
+                      >
+                        +91 93263 89159
+                      </a>
+                    </p>
                   </div>
 
                   <div>
@@ -182,7 +187,7 @@ export default function ContactFormAndDetails() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white/80"
                   />
                 </div>
 
@@ -196,7 +201,7 @@ export default function ContactFormAndDetails() {
                     value={formData.company}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white/80"
                   />
                 </div>
 
@@ -210,7 +215,7 @@ export default function ContactFormAndDetails() {
                     value={formData.designation}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white/80"
                   />
                 </div>
 
@@ -224,7 +229,7 @@ export default function ContactFormAndDetails() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white/80"
                   />
                 </div>
 
@@ -238,7 +243,7 @@ export default function ContactFormAndDetails() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-accent bg-white/80"
+                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white/80"
                   />
                 </div>
 
@@ -304,7 +309,7 @@ export default function ContactFormAndDetails() {
               <div className="flex justify-center mb-4">
                 <button
                   type="submit"
-                  className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3"
+                  className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3"
                 >
                   Submit
                   <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
@@ -324,7 +329,7 @@ export default function ContactFormAndDetails() {
               </div>
 
               {submitted && (
-                <p className="text-accent font-semibold text-center text-sm">
+                <p className="text-primary font-semibold text-center text-sm">
                   Thank you! We have received your message and will be in touch
                   shortly.
                 </p>
