@@ -60,7 +60,7 @@ export default function HeritagePartners() {
             Our Heritage Partners
           </h2>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
             Two established practices coming together to serve an underserved market segment
           </h3>
         </div>

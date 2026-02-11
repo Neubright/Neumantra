@@ -77,7 +77,7 @@ export default function ServiceCategory({
             </h2>
           </div>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
             {categoryNumber === 1 &&
               "For companies preparing to access public or private markets, including SME platforms, within the next 12-24 months"}
             {categoryNumber === 2 &&

@@ -106,7 +106,7 @@ export default function Methodology() {
             The Neumantra IR Methodology
           </h2>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
             A structured, four-phase approach designed to deliver sustained results
           </h3>
         </div>

@@ -67,7 +67,7 @@ export default function ProofPoints() {
             Our Proof Points
           </h2>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
             Backed by decades of experience and proven success across India's capital markets
           </h3>
         </div>

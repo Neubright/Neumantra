@@ -233,7 +233,7 @@ export default function ServicesIntro() {
             Introduction
           </h2>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4">
             Why Investor Relations Matters Today
           </h3>
         </div>

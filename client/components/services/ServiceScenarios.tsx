@@ -155,7 +155,7 @@ export default function ServiceScenarios() {
             Client Journey Scenarios
           </h2>
           <SectionDivider />
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-2xl mx-auto">
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-2xl mx-auto">
             Explore how different companies at various stages benefit from Neumantra's tailored solutions
           </h3>
         </div>

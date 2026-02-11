@@ -32,7 +32,7 @@ export default function Newsletter() {
           Stay Informed
         </h2>
         <SectionDivider />
-        <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-4xl mx-auto">
+        <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-4xl mx-auto">
           Subscribe to receive insights, resources, and updates from the Neumantra team. We share perspectives on capital markets readiness, investor relations best practices, and stakeholder engagement strategies for growth companies.
         </h3>
 
