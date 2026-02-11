@@ -306,7 +306,7 @@ export default function ServicesIntro() {
                   {service.title}
                 </span>
                 <span className="md:hidden">
-                  {index === 0 ? "Capital Markets" : index === 1 ? "IR & Engagement" : "Listed Companies"}
+                  Service {index + 1}
                 </span>
               </button>
             ))}
