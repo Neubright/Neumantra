@@ -79,9 +79,9 @@ export default function ContactFormAndDetails() {
                   Neumantra Capital Advisors
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div>
-                    <h4 className="font-bold text-primary mb-3">Address</h4>
+                    <h4 className="font-bold text-primary mb-1">Address</h4>
                     <p className="text-gray-700 text-sm">
                       A 303, Rajkamal CHS
                       <br />
@@ -94,7 +94,7 @@ export default function ContactFormAndDetails() {
                   </div>
 
                   <div>
-                    <h4 className="font-bold text-primary mb-3">Email</h4>
+                    <h4 className="font-bold text-primary mb-1">Email</h4>
                     <p className="text-gray-700 text-sm">
                       <a
                         href="mailto:info@mantraa.com"
@@ -106,7 +106,7 @@ export default function ContactFormAndDetails() {
                   </div>
 
                   <div>
-                    <h4 className="font-bold text-primary mb-3">Phone</h4>
+                    <h4 className="font-bold text-primary mb-1">Phone</h4>
                     <p className="text-gray-700 text-sm">
                       <a
                         href="tel:+919326389159"
@@ -118,7 +118,7 @@ export default function ContactFormAndDetails() {
                   </div>
 
                   <div>
-                    <h4 className="font-bold text-primary mb-3">
+                    <h4 className="font-bold text-primary mb-1">
                       Office Hours
                     </h4>
                     <p className="text-gray-700 text-sm">
