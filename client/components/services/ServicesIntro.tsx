@@ -286,7 +286,7 @@ export default function ServicesIntro() {
               {
                 title: "Investor Relations & Stakeholder Engagement",
                 description:
-                  "For companies actively engaging with investors and analysts",
+                  "For companies actively engaging with investors, analysts, and the investment community",
               },
               {
                 title: "Customised IR for Listed Companies",
