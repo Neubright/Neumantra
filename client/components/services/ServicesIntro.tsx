@@ -266,7 +266,7 @@ export default function ServicesIntro() {
         {/* Three Service Categories Overview */}
         <div>
           <div className="text-center mb-12 backdrop-blur-xl bg-white/20 border border-white/40 rounded-lg p-6 max-w-3xl mx-auto">
-            <p className="text-sm md:text-base font-semibold text-primary mb-3">
+            <p className="text-lg md:text-2xl font-bold text-primary mb-3">
               Our Three-Part Approach
             </p>
             <p className="text-base md:text-lg text-gray-800 leading-relaxed">
