@@ -266,13 +266,12 @@ export default function ServicesIntro() {
         {/* Three Service Categories Overview */}
         <div>
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            <p className="text-sm md:text-base font-medium text-gray-700 mb-2">
               Our Three-Part Approach
-            </h2>
-            <SectionDivider />
-            <h3 className="text-xl md:text-2xl font-semibold text-primary mt-6 mb-4 max-w-2xl mx-auto">
+            </p>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Neumantra's services are structured around three distinct company journeys, each requiring different investor relations capabilities
-            </h3>
+            </p>
           </div>
 
           {/* Service Category Selector */}
