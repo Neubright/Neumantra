@@ -87,7 +87,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/95"></div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 md:pt-24">
         <h1 className="hero-title text-4xl md:text-5xl lg:text-5xl font-bold mb-6 md:mb-8">
-          Building Market Credibility for India's Growth Companies
+          <span className="text-accent">Building</span> Market <span className="text-accent">Credibility</span> for India's Growth Companies
         </h1>
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
           Strategic investor relations advisory that combine financial rigour
