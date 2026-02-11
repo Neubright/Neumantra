@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Rocket, TrendingUp, Briefcase } from "lucide-react";
 
 export default function ServiceScenarios() {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView({ threshold: 0.05 });
   const [selectedScenario, setSelectedScenario] = useState(0);
 
   const getIcon = (iconName: string) => {

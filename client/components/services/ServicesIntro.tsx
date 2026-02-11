@@ -4,7 +4,7 @@ import { BarChart3, FileText, Leaf } from "lucide-react";
 import { useState } from "react";
 
 export default function ServicesIntro() {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView({ threshold: 0.05 });
   const [selectedService, setSelectedService] = useState(0);
 
   const serviceDetails = [

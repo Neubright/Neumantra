@@ -3,7 +3,7 @@ import SectionDivider from "../ui/SectionDivider";
 import { Briefcase, Target, TrendingUp, ArrowRight } from "lucide-react";
 
 export default function ServicesCTA() {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView({ threshold: 0.05 });
 
   const benefits = [
     {

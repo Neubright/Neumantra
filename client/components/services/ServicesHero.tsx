@@ -2,7 +2,7 @@ import { useInView } from "@/hooks/useInView";
 import SectionDivider from "@/components/ui/SectionDivider";
 
 export default function ServicesHero() {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView({ threshold: 0.05 });
 
   return (
     <section
