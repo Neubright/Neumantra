@@ -171,7 +171,7 @@ export default function Differentiators() {
                 <div className="mb-4 pb-4 border-b border-gray-300/30">
                   <p className="text-gray-700 text-sm leading-relaxed italic">
                     <span className="font-semibold text-primary">
-                      The Challenge:
+                      The Problem We Solve:
                     </span>{" "}
                     {diff.problem}
                   </p>
