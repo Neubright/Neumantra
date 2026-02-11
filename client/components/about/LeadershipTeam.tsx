@@ -37,6 +37,8 @@ export default function LeadershipTeam() {
     {
       name: "Khushbu Singh",
       title: "Partner",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fb34be88f4b824f81973b485e69731337?format=webp&width=800&height=1200",
       bio: "Khushbu brings a strong blend of analytical training and market-facing experience to Neumantra. She began her career through a campus placement with Business Standard and has held senior roles at Standard Chartered Bank and HDFC Bank, where she worked closely with premium client segments and relationship teams. She holds a B.Sc. in Electronics and an MBA in Marketing.",
     },
   ];
