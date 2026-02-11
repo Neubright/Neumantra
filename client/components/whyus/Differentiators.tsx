@@ -135,16 +135,9 @@ export default function Differentiators() {
           {differentiators.map((diff) => (
             <div
               key={diff.number}
-              onClick={() =>
-                setExpandedIndex(
-                  expandedIndex === diff.number - 1 ? null : diff.number - 1,
-                )
-              }
-              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 cursor-pointer group hover:shadow-xl hover:border-white/100 overflow-hidden relative ${
-                expandedIndex === diff.number - 1
-                  ? "ring-2 ring-offset-2 ring-accent"
-                  : ""
-              }`}
+              onMouseEnter={() => setExpandedIndex(diff.number - 1)}
+              onMouseLeave={() => setExpandedIndex(null)}
+              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 group hover:shadow-xl hover:border-white/100 overflow-hidden relative`}
             >
               {/* Gradient accent */}
               <div
