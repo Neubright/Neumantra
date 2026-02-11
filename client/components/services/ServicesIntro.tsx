@@ -385,6 +385,28 @@ export default function ServicesIntro() {
               )}
             </div>
           </div>
+
+          {/* CTA Button */}
+          <div className="mt-12 flex justify-center">
+            <button className="bg-gradient-to-r from-primary to-primary text-white hover:shadow-lg pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-xl border-2 border-white/80 group">
+              Schedule a Confidential Consultation
+              <span className="flex-shrink-0 bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300">
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
