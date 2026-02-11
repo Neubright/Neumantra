@@ -234,7 +234,7 @@ export default function ServicesIntro() {
           </h2>
           <SectionDivider />
           <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4">
-            Why Investor Relations Matters Today
+            Modern Investor Relations Demands More
           </h3>
         </div>
 
