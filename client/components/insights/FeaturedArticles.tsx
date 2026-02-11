@@ -11,36 +11,42 @@ export default function FeaturedArticles() {
       description:
         "Most mid-market companies underestimate preparation time for successful market access. This article outlines the essential readiness dimensions: governance frameworks, disclosure quality, financial communication capability, stakeholder infrastructure, and leadership IR competency. Includes diagnostic questions companies should ask themselves 18-24 months before planned listing or fundraise.",
       readTime: "8-minute read",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&h=300",
     },
     {
       title: "SME-to-Main Board: What Actually Changes",
       description:
         "Transitioning from SME listing to main board isn't just a market cap threshold - it's a fundamental shift in investor expectations, disclosure standards, and stakeholder sophistication. This piece explores the governance, IR infrastructure, and communication enhancements required for successful main board migration.",
       readTime: "10-minute read",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&h=300",
     },
     {
       title: "What Equity Research Analysts Actually Want",
       description:
         "Mid-market companies often struggle to secure analyst coverage. This article demystifies the analyst initiation process: what triggers coverage decisions, what information analysts need, how companies can facilitate quality research, and common mistakes that undermine coverage development.",
       readTime: "12-minute read",
+      image: "https://images.unsplash.com/photo-1460925895917-adf4e565f371?auto=format&fit=crop&w=500&h=300",
     },
     {
       title: "Building Investment Narratives That Resonate",
       description:
         "The difference between functional and compelling equity stories. Explores how to construct investment narratives that balance growth aspirations with credible execution, differentiate from competitors without exaggerating capabilities, and communicate complexity with clarity. Includes real examples of effective and ineffective narrative approaches.",
       readTime: "15-minute read",
+      image: "https://images.unsplash.com/photo-1552664782-a7d61e6a88f7?auto=format&fit=crop&w=500&h=300",
     },
     {
       title: "IR During Market Volatility: Maintaining Confidence",
       description:
         "When markets decline or sector sentiment shifts, investor communication becomes critical. This article provides frameworks for maintaining stakeholder confidence during challenging periods: what to communicate, when to increase engagement, how to balance transparency with competitive prudence, and when to adjust guidance.",
       readTime: "9-minute read",
+      image: "https://images.unsplash.com/photo-1579532537598-459e09a48b8f?auto=format&fit=crop&w=500&h=300",
     },
     {
       title: "ESG Integration in Investor Relations",
       description:
         "Sustainability is no longer peripheral to IR - it's central to institutional investor evaluation. This piece explains how mid-market companies can integrate ESG into investor relations without overwhelming resources: materiality identification, disclosure frameworks (BRSR, TCFD, GRI), ESG investor targeting, and rating agency engagement.",
       readTime: "14-minute read",
+      image: "https://images.unsplash.com/photo-1559163615-cd4628902249?auto=format&fit=crop&w=500&h=300",
     },
   ];
 
@@ -73,6 +79,7 @@ export default function FeaturedArticles() {
               title={article.title}
               description={article.description}
               readTime={article.readTime}
+              image={article.image}
             />
           ))}
         </div>
