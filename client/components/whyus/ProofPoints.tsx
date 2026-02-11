@@ -53,7 +53,7 @@ export default function ProofPoints() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
