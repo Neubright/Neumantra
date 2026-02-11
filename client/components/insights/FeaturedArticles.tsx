@@ -61,6 +61,9 @@ export default function FeaturedArticles() {
             Featured Perspectives
           </h2>
           <SectionDivider />
+          <p className="text-gray-700 mt-6 max-w-3xl mx-auto">
+            Neumantra shares perspectives on capital markets readiness, investor engagement strategy, and IR best practices for mid-market companies navigating India's evolving investment landscape.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
