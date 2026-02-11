@@ -46,6 +46,7 @@ export default function Differentiators() {
       problem:
         "Many advisory firms promise senior expertise but delegate execution to junior teams after the sales pitch. Companies receive standardized playbooks executed by analysts with limited capital-markets experience, forcing leadership teams to manage the advisory relationship closely.",
       solution: [
+        "The Neumantra Difference:",
         "Direct founding-partner involvement in every engagement",
         "Custom IR strategies developed from deep company immersion",
         "Board- and promoter-level advisory, not operational delegation",
