@@ -15,6 +15,7 @@ export default function Differentiators() {
       problem:
         "Traditional IR advisory often suffers from domain limitations. Communications agencies understand messaging but lack financial depth to engage analytically with investors. Financial and accounting advisors possess technical expertise but often struggle with stakeholder engagement sophistication. Companies are left managing multiple vendors with fragmented accountability",
       solution: [
+        "The Neumantra Difference:",
         "We are purpose-built as the integration of financial strategy (Mantraa Advisory) and stakeholder engagement (Neubright Partners). Our team brings:",
         "CFO-level experience in financial analysis, valuation, and capital-markets transactions",
         "Communication strategists who have managed complex stakeholder environments for listed companies",
@@ -185,9 +186,6 @@ export default function Differentiators() {
                   }`}
                 >
                   <div className="mt-4 space-y-2">
-                    <h4 className="text-sm font-bold text-primary mb-3">
-                      Our Solution:
-                    </h4>
                     <ul className="space-y-2">
                       {diff.solution.map((point, idx) => (
                         <li
