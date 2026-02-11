@@ -71,7 +71,7 @@ export default function EngagementPhilosophy() {
         </div>
 
         {/* Main Philosophy Section */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Partnership Statement */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-8">
             <h3 className="text-2xl font-bold text-primary mb-4">
