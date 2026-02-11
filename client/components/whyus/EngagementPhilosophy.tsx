@@ -65,52 +65,47 @@ export default function EngagementPhilosophy() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Our Engagement Philosophy
+            Engagement Philosophy
           </h2>
           <SectionDivider />
         </div>
 
-        {/* Main Philosophy Statement */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-primary mb-4">
-            Partnership, Not Vendor Relationship
-          </h3>
-          <p className="text-gray-800 leading-relaxed mb-4">
-            Effective investor relations isn't transactional—it's a sustained
-            partnership requiring{" "}
-            <span className="font-semibold">
-              trust, transparency, and strategic alignment
-            </span>
-            .
-          </p>
-          <p className="text-gray-700 font-medium">
-            When you engage Neumantra, you get:
-          </p>
-        </div>
+        {/* Main Philosophy Section */}
+        <div className="max-w-4xl mx-auto">
+          {/* Partnership Statement */}
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              Partnership, Not Vendor Relationship
+            </h3>
+            <p className="text-gray-800 leading-relaxed mb-4">
+              Effective investor relations isn't transactional—it's a sustained
+              partnership requiring{" "}
+              <span className="font-semibold">
+                trust, transparency, and strategic alignment
+              </span>
+              .
+            </p>
+          </div>
 
-        {/* Principles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {principles.map((principle, index) => (
-            <div
-              key={index}
-              className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-xl p-6 hover:shadow-lg hover:bg-white/50 transition-all duration-300 group`}
-            >
-              {/* Icon */}
-              <div className="mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
-                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
-                  <principle.icon
-                    className="w-6 h-6 text-accent opacity-75"
-                    strokeWidth={1.5}
-                  />
-                </div>
-              </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-bold text-primary leading-snug">
-                {principle.title}
-              </h3>
-            </div>
-          ))}
+          {/* When you engage Neumantra */}
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
+            <h4 className="text-lg font-bold text-primary mb-6">
+              When you engage Neumantra:
+            </h4>
+            <ul className="space-y-3">
+              {principles.map((principle, index) => (
+                <li
+                  key={index}
+                  className="text-gray-700 text-sm flex items-start gap-3"
+                >
+                  <span className="text-accent flex-shrink-0 font-bold mt-1">
+                    •
+                  </span>
+                  <span>{principle.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
