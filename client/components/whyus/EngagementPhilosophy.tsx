@@ -88,23 +88,32 @@ export default function EngagementPhilosophy() {
           </div>
 
           {/* When you engage Neumantra */}
-          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
-            <h4 className="text-lg font-bold text-primary mb-6">
+          <div>
+            <h4 className="text-lg font-bold text-primary mb-6 text-center">
               When you engage Neumantra:
             </h4>
-            <ul className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {principles.map((principle, index) => (
-                <li
+                <div
                   key={index}
-                  className="text-gray-700 text-sm flex items-start gap-3"
+                  className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
                 >
-                  <span className="text-accent flex-shrink-0 font-bold mt-1">
-                    •
-                  </span>
-                  <span>{principle.title}</span>
-                </li>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-10 h-10 flex items-center justify-center">
+                        <principle.icon
+                          className="w-5 h-5 text-accent opacity-75"
+                          strokeWidth={1.5}
+                        />
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed font-medium pt-1">
+                      {principle.title}
+                    </p>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
