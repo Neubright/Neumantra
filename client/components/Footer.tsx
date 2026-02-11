@@ -12,10 +12,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
-            <div className="mb-4 h-10 opacity-60">
+            <div className="mb-4 h-10">
               <Logo variant="white" />
             </div>
-            <p className="text-base text-white mb-6 leading-relaxed">
+            <p className="text-base text-white mb-6 leading-relaxed opacity-60">
               Investor relations advisory combining financial strategy expertise
               and stakeholder engagement excellence.
             </p>
