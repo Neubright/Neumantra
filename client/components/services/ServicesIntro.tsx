@@ -296,17 +296,18 @@ export default function ServicesIntro() {
               <button
                 key={index}
                 onClick={() => setSelectedService(index)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 backdrop-blur-xl border-2 text-center ${
+                className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                   selectedService === index
                     ? "bg-accent/20 border-accent text-accent shadow-lg"
                     : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
                 }`}
               >
-                <span className="text-sm font-bold">{index + 1}</span>
-                <span className="hidden sm:inline text-sm">
+                <span className="hidden md:inline">
                   {service.title}
                 </span>
-                <span className="sm:hidden">Service {index + 1}</span>
+                <span className="md:hidden">
+                  {index === 0 ? "Capital Markets" : index === 1 ? "IR & Engagement" : "Listed Companies"}
+                </span>
               </button>
             ))}
           </div>
