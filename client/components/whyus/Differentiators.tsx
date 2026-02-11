@@ -150,22 +150,16 @@ export default function Differentiators() {
               ></div>
 
               <div className="relative z-10">
-                {/* Number, Icon and Title */}
+                {/* Number and Title */}
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-white/40 border border-white/80">
-                      <diff.icon
-                        className="w-5 h-5 text-accent opacity-75"
-                        strokeWidth={2}
-                      />
-                    </div>
-                  </div>
-                  <div className="flex-grow">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-xs font-bold px-2 py-1 rounded text-primary bg-white/30">
-                        #{diff.number}
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/40 border border-white/80">
+                      <span className="text-lg font-bold text-accent">
+                        {diff.number}
                       </span>
                     </div>
+                  </div>
+                  <div className="flex-grow pt-1">
                     <h3 className="text-lg font-bold text-primary leading-tight">
                       {diff.title}
                     </h3>
