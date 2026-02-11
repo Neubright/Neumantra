@@ -151,7 +151,7 @@ export default function Differentiators() {
 
               <div className="relative z-10">
                 {/* Number and Title */}
-                <div className="flex items-start gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/40 border border-white/80">
                       <span className="text-lg font-bold text-accent">
@@ -159,7 +159,7 @@ export default function Differentiators() {
                       </span>
                     </div>
                   </div>
-                  <div className="flex-grow pt-1">
+                  <div className="flex-grow">
                     <h3 className="text-lg font-bold text-primary leading-tight">
                       {diff.title}
                     </h3>
