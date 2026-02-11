@@ -117,14 +117,6 @@ export default function ContactFormAndDetails() {
                     </p>
                   </div>
 
-                  <div>
-                    <h4 className="font-bold text-primary mb-1">
-                      Office Hours
-                    </h4>
-                    <p className="text-gray-700 text-sm">
-                      Monday–Friday: 9:30 AM – 6:00 PM IST
-                    </p>
-                  </div>
                 </div>
               </div>
 

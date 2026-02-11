@@ -229,7 +229,6 @@ export default function Footer() {
                   Phone: +91 93263 89159
                 </a>
               </p>
-              <p className="text-sm">Office Hours: Monday–Friday: 9:30 AM – 6:00 PM IST</p>
             </div>
           </div>
         </div>
