@@ -57,6 +57,8 @@
     --sidebar-border: 213 65% 17%;
 
     --sidebar-ring: 0 65% 39%;
+
+    --shadow-apple: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   .dark {
@@ -116,5 +118,11 @@
   code {
     overflow-x: auto;
     white-space: pre;
+  }
+}
+
+@layer components {
+  .shadow-apple {
+    box-shadow: var(--shadow-apple);
   }
 }
