@@ -199,7 +199,7 @@ export default function Header() {
         }
       `}</style>
         <div
-          className={`backdrop-blur-2xl rounded-full shadow-apple transition-all duration-300 ${
+          className={`rounded-full shadow-apple transition-all duration-300 ${
             isMenuOpen
               ? "text-primary"
               : isOverDarkBackground
@@ -210,9 +210,9 @@ export default function Header() {
             background: isMenuOpen
               ? "linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%)"
               : isOverDarkBackground
-                ? "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.90) 100%)"
-                : "linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.65) 100%)",
-            backdropFilter: isMenuOpen ? "none" : "blur(20px)",
+                ? "linear-gradient(135deg, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.70) 100%)"
+                : "linear-gradient(135deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.50) 100%)",
+            backdropFilter: isMenuOpen ? "none" : "blur(40px)",
             borderWidth: isMenuOpen ? "0" : "1px",
             borderStyle: "solid",
             borderColor: isMenuOpen
