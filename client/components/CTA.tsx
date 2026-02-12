@@ -29,7 +29,7 @@ export default function CTA() {
             background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
           }}>
             Schedule a Consultation
-            <span className="flex-shrink-0 backdrop-blur-md bg-white/40 border border-white/60 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/50 transition-all duration-300 ml-auto">
+            <span className="flex-shrink-0 backdrop-blur-md bg-white/40 border-2 border-red-300/70 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/50 transition-all duration-300 ml-auto">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
                 alt="Arrow"
