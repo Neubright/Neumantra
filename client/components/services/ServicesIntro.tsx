@@ -368,9 +368,12 @@ export default function ServicesIntro() {
 
           {/* CTA Button */}
           <div className="mt-12 flex justify-center">
-            <button className="bg-gradient-to-r from-primary to-primary text-white hover:shadow-lg pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-xl border-2 border-white/80 group">
+            <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-xl hover:scale-105 hover:border-red-300/80 shadow-2xl group" style={{
+              background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
+              backdropFilter: "blur(30px)",
+            }}>
               Schedule a Confidential Consultation
-              <span className="flex-shrink-0 bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300">
+              <span className="flex-shrink-0 bg-primary rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300">
                 <svg
                   className="w-5 h-5 text-white"
                   fill="none"
