@@ -103,7 +103,7 @@ export default function Hero() {
               src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
               alt="Arrow"
               style={{
-                filter: "brightness(0) sepia(1) saturate(10) hue-rotate(-10deg)",
+                filter: "brightness(0) saturate(100%) invert(15%) sepia(95%) saturate(3500%) hue-rotate(-10deg)",
                 maxWidth: "14px",
                 maxHeight: "22px",
                 objectFit: "contain",
