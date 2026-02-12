@@ -49,7 +49,7 @@ export default function Newsletter() {
               />
               <button
                 type="submit"
-                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple whitespace-nowrap inline-flex items-center gap-3"
+                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 whitespace-nowrap inline-flex items-center gap-3"
               >
                 Subscribe
                 <span

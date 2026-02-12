@@ -30,7 +30,7 @@ export default function OurHeritage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300 shadow-apple">
+          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300">
             <div className="flex justify-start mb-6">
               <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
                 <img
@@ -58,7 +58,7 @@ export default function OurHeritage() {
             </p>
           </div>
 
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300 shadow-apple">
+          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300">
             <div className="flex justify-start mb-6">
               <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
                 <img

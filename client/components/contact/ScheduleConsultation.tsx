@@ -103,7 +103,7 @@ export default function ScheduleConsultation() {
           </div>
 
           <div className="flex justify-center">
-            <button className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple inline-flex items-center gap-3">
+            <button className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3">
               Schedule Consultation
               <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
                 <img

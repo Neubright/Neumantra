@@ -168,7 +168,7 @@ export default function ServiceScenarios() {
               onClick={() => setSelectedScenario(index)}
               className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                 selectedScenario === index
-                  ? "bg-accent/20 border-accent text-accent shadow-apple"
+                  ? "bg-accent/20 border-accent text-accent"
                   : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
               }`}
             >
@@ -245,7 +245,7 @@ export default function ServiceScenarios() {
               {scenario.engagement.map((item, index) => (
                 <div key={index} className="relative pl-10 pb-4">
                   {/* Timeline dot */}
-                  <div className="absolute left-0 top-1 w-5 h-5 bg-accent rounded-full border-4 border-white shadow-apple"></div>
+                  <div className="absolute left-0 top-1 w-5 h-5 bg-accent rounded-full border-4 border-white"></div>
 
                   {/* Connector line */}
                   {index !== scenario.engagement.length - 1 && (

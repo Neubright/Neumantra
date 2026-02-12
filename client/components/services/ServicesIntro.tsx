@@ -298,7 +298,7 @@ export default function ServicesIntro() {
                 onClick={() => setSelectedService(index)}
                 className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                   selectedService === index
-                    ? "bg-accent/20 border-accent text-accent shadow-apple"
+                    ? "bg-accent/20 border-accent text-accent"
                     : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
                 }`}
               >
@@ -368,7 +368,7 @@ export default function ServicesIntro() {
 
           {/* CTA Button */}
           <div className="mt-12 flex justify-center">
-            <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 shadow-apple group" style={{
+            <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 group" style={{
               background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
               backdropFilter: "blur(30px)",
             }}>
