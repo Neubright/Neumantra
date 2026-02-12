@@ -88,10 +88,10 @@ export default function Hero() {
       <div className="relative mx-6 sm:mx-10 lg:mx-20 py-12 md:py-16">
         <div className="backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-6 sm:p-8 md:p-12 mt-20">
           <div className="text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="hero-title text-4xl md:text-5xl lg:text-5xl font-bold mb-6 md:mb-8">
+        <h1 className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-6 md:mb-8">
           <span className="text-accent">Building</span> Market <span className="text-accent">Credibility</span> for India's Growth Companies
         </h1>
-        <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
+        <p className="hero-subtitle text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
           Strategic investor relations advisory that combine financial rigour
           with stakeholder engagement excellence - helping mid-market companies
           command attention in India's capital markets.
