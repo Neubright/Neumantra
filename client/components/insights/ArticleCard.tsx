@@ -55,7 +55,7 @@ export default function ArticleCard({
           <span className="text-gray-600 text-sm">{readTime}</span>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;
