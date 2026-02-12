@@ -27,8 +27,8 @@ export default function MidMarketGap() {
         <div className="max-w-4xl mx-auto space-y-6">
           {/* Growth Stories Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
+            <div className="flex flex-col md:flex-row md:items-start items-center gap-4">
+              <div className="flex-shrink-0 md:mt-0 mt-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
                   <TrendingUp
                     className="w-6 h-6 text-accent opacity-75"
@@ -36,7 +36,7 @@ export default function MidMarketGap() {
                   />
                 </div>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <p className="text-gray-800 leading-relaxed">
                   India's mid-market represents some of the country's most
                   dynamic growth stories - innovative business models, strong
@@ -50,7 +50,7 @@ export default function MidMarketGap() {
 
           {/* The Gap Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8">
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col md:flex-row md:items-start items-center gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
                   <AlertTriangle
@@ -59,7 +59,7 @@ export default function MidMarketGap() {
                   />
                 </div>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <h3 className="text-xl font-bold text-primary mb-2">The Gap</h3>
                 <p className="text-gray-800 leading-relaxed font-medium">
                   The gap lies in the absence of a professional investor
@@ -71,7 +71,7 @@ export default function MidMarketGap() {
 
           {/* Market Segments Card */}
           <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col md:flex-row md:items-start items-center gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
                   <Building
@@ -80,7 +80,7 @@ export default function MidMarketGap() {
                   />
                 </div>
               </div>
-              <div>
+              <div className="text-center md:text-left">
                 <h3 className="text-lg font-semibold text-primary mb-3">
                   Market Segments & Support
                 </h3>
