@@ -73,10 +73,13 @@ export default function ServicesCTA() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <button className="bg-gradient-to-r from-primary to-primary text-white hover:shadow-lg pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3 group">
+          <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-xl hover:scale-105 hover:border-red-300/80 shadow-2xl group" style={{
+            background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
+            backdropFilter: "blur(30px)",
+          }}>
             <span>Schedule a Consultation</span>
-            <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-white/35 transition-all duration-300 ml-auto">
-              <ArrowRight className="w-5 h-5" strokeWidth={2} />
+            <span className="flex-shrink-0 bg-primary rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300 ml-auto">
+              <ArrowRight className="w-5 h-5 text-white" strokeWidth={2} />
             </span>
           </button>
           <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl">
