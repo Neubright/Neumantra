@@ -25,7 +25,7 @@ export default function CTA() {
           strategic IR partnership that growth-focused companies require.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-white/40 hover:shadow-lg hover:scale-105 shadow-lg group" style={{
+          <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/70 hover:shadow-lg hover:scale-105 shadow-lg group" style={{
             background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
           }}>
             Schedule a Consultation
