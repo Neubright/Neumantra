@@ -74,11 +74,11 @@ export default function OurStory() {
         <h1 className="hero-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8">
           Our Story
         </h1>
+        <SectionDivider />
         <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
           Forged from two decades of excellence in financial advisory and
           stakeholder engagement
         </p>
-        <SectionDivider />
           </div>
         </div>
       </div>
