@@ -51,7 +51,7 @@ export default function WhyNeumantra() {
       }`}
       style={{
         background:
-          "radial-gradient(ellipse at 70% 50%, rgba(219, 234, 254, 0.7) 0%, rgba(254, 226, 226, 0.6) 40%, rgba(248, 223, 228, 0.6) 100%)",
+          "radial-gradient(ellipse at 70% 50%, rgba(219, 234, 254, 0.9) 0%, rgba(254, 226, 226, 0.85) 40%, rgba(248, 223, 228, 0.85) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

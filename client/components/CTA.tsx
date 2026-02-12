@@ -11,7 +11,7 @@ export default function CTA() {
       }`}
       style={{
         background:
-          "radial-gradient(circle at 50% 50%, rgba(219, 234, 254, 0.5) 0%, rgba(254, 226, 226, 0.4) 50%, rgba(248, 223, 228, 0.5) 100%)",
+          "radial-gradient(circle at 50% 50%, rgba(219, 234, 254, 0.8) 0%, rgba(254, 226, 226, 0.7) 50%, rgba(248, 223, 228, 0.8) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
