@@ -148,11 +148,12 @@ export default function Header() {
           }
 
           .nav-link.active {
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid rgba(220, 38, 38, 0.3);
-            padding: 8px 16px;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.35);
+            border: none;
+            padding: 4px 12px;
+            border-radius: 16px;
             color: hsl(var(--accent));
+            backdrop-filter: blur(10px);
           }
 
           .nav-link.active::after {
