@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
+      className="relative text-white h-screen flex items-center justify-center overflow-hidden pt-[88px]"
       style={{
         backgroundImage:
           "url('https://images.pexels.com/photos/416320/pexels-photo-416320.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
