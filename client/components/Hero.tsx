@@ -83,8 +83,7 @@ export default function Hero() {
         }
       `}</style>
 
-      {/* Overlay for text visibility */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/85"></div>
+      {/* Overlay removed - background image now shows through */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="backdrop-blur-2xl bg-white/40 border-2 border-white/90 rounded-xl p-8 md:p-12 mt-16">
           <div className="text-center">
