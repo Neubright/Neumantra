@@ -99,7 +99,7 @@ export default function Hero() {
         <button className="hero-button px-2 sm:pl-3 sm:pr-1.5 py-1.5 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 inline-flex items-center gap-2 sm:gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/70 hover:shadow-apple hover:scale-105 group whitespace-nowrap" style={{
           background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
         }}>
-          Schedule a Strategic Consultation
+          Schedule a <span className="hidden sm:inline">Strategic </span>Consultation
           <span className="flex-shrink-0 bg-primary rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
