@@ -100,7 +100,7 @@ export default function OurHeritage() {
         </div>
 
         <div className="text-center backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-8 mt-8">
-          <h4 className="text-2xl font-bold mb-3 text-primary">Together as Neumantra</h4>
+          <h4 className="text-2xl font-bold mb-3 text-accent">Together as Neumantra</h4>
           <p className="text-gray-800 text-lg max-w-3xl mx-auto">
             A new standard in investor relations - where financial substance
             meets communication sophistication, purpose-built for India's
