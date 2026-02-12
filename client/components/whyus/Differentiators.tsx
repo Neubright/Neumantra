@@ -116,7 +116,7 @@ export default function Differentiators() {
       }`}
       style={{
         background:
-          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.85) 0%, rgba(219, 234, 254, 0.85) 50%, rgba(254, 240, 242, 0.85) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,7 +136,7 @@ export default function Differentiators() {
               key={diff.number}
               onMouseEnter={() => setExpandedIndex(diff.number - 1)}
               onMouseLeave={() => setExpandedIndex(null)}
-              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 group hover:shadow-apple hover:border-white/100 overflow-hidden relative`}
+              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 group hover:shadow-xl hover:border-white/100 overflow-hidden relative`}
             >
               {/* Gradient accent */}
               <div

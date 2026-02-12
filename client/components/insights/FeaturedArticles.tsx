@@ -58,7 +58,7 @@ export default function FeaturedArticles() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+          "linear-gradient(135deg, rgba(254, 226, 226, 0.85) 0%, rgba(219, 234, 254, 0.85) 50%, rgba(254, 240, 242, 0.85) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

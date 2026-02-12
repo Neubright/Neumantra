@@ -24,7 +24,7 @@ export default function Newsletter() {
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(248, 223, 228, 0.85) 50%, rgba(229, 231, 235, 0.9) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
