@@ -30,9 +30,9 @@ export default function OurHeritage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
             <div className="flex justify-start mb-6">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-start">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
                   alt="Mantraa Logo"
@@ -40,7 +40,7 @@ export default function OurHeritage() {
                 />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-2">
               <a
                 href="https://www.mantraa.com"
                 target="_blank"
@@ -50,6 +50,12 @@ export default function OurHeritage() {
                 Mantraa Advisory
               </a>
             </h3>
+            <p className="text-sm font-semibold text-primary mb-4">
+              Financial Advisory & Strategy
+            </p>
+            <p className="text-gray-800 font-medium mb-4">
+              Mantraa brings rigorous financial advisory credentials to Neumantra's foundation:
+            </p>
             <p className="text-gray-700 text-base leading-relaxed">
               Established financial and strategic advisory practice with deep
               capital-markets expertise - supporting companies through
@@ -58,9 +64,9 @@ export default function OurHeritage() {
             </p>
           </div>
 
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
             <div className="flex justify-start mb-6">
-              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-center">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-start">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
                   alt="Neubright Logo"
@@ -68,7 +74,7 @@ export default function OurHeritage() {
                 />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-2">
               <a
                 href="https://www.neubright.in/"
                 target="_blank"
@@ -78,6 +84,12 @@ export default function OurHeritage() {
                 Neubright Partners
               </a>
             </h3>
+            <p className="text-sm font-semibold text-primary mb-4">
+              Stakeholder Engagement & Communication
+            </p>
+            <p className="text-gray-800 font-medium mb-4">
+              Neubright contributes sophisticated communication and engagement capabilities:
+            </p>
             <p className="text-gray-700 text-base leading-relaxed">
               Strategic consulting firm specializing in stakeholder engagement,
               corporate communications, reputation management, and ESG
