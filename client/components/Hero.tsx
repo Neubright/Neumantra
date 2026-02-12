@@ -88,10 +88,10 @@ export default function Hero() {
       <div className="relative mx-4 sm:mx-6 md:mx-10 lg:mx-20 py-12 md:py-16">
         <div className="backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-4 sm:p-6 md:p-8 lg:p-12 mt-20">
           <div className="text-center w-full">
-        <h1 className="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 px-2">
+        <h1 className="hero-title text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 px-2">
           <span className="text-accent">Building</span> Market <span className="text-accent">Credibility</span> for India's Growth Companies
         </h1>
-        <p className="hero-subtitle text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto px-2">
+        <p className="hero-subtitle text-base lg:text-lg text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto px-2">
           Strategic investor relations advisory that combine financial rigour
           with stakeholder engagement excellence - helping mid-market companies
           command attention in India's capital markets.
@@ -115,7 +115,7 @@ export default function Hero() {
           </span>
         </button>
         <SectionDivider />
-        <p className="text-gray-200 max-w-3xl mx-auto text-xs sm:text-sm md:text-base px-2">
+        <p className="text-gray-200 max-w-3xl mx-auto text-base px-2">
           Neumantra brings together the proven capabilities of Mantraa Advisory
           and Neubright Partners to deliver integrated IR advisory for companies
           preparing to list, transitioning to main board, or strengthening their
