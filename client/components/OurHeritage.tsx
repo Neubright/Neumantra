@@ -99,9 +99,9 @@ export default function OurHeritage() {
           </div>
         </div>
 
-        <div className="text-center bg-primary text-white rounded-lg p-8 mt-8">
-          <h4 className="text-2xl font-bold mb-3">Together as Neumantra</h4>
-          <p className="text-white text-lg max-w-3xl mx-auto">
+        <div className="text-center backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-8 mt-8">
+          <h4 className="text-2xl font-bold mb-3 text-primary">Together as Neumantra</h4>
+          <p className="text-gray-800 text-lg max-w-3xl mx-auto">
             A new standard in investor relations - where financial substance
             meets communication sophistication, purpose-built for India's
             ambitious mid-market companies.
