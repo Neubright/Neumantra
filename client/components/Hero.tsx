@@ -85,7 +85,9 @@ export default function Hero() {
 
       {/* Overlay for text visibility */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/85"></div>
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 md:pt-24">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-xl p-8 md:p-12">
+          <div className="text-center">
         <h1 className="hero-title text-4xl md:text-5xl lg:text-5xl font-bold mb-6 md:mb-8">
           <span className="text-accent">Building</span> Market <span className="text-accent">Credibility</span> for India's Growth Companies
         </h1>
@@ -119,6 +121,8 @@ export default function Hero() {
           preparing to list, transitioning to main board, or strengthening their
           market presence.
         </p>
+          </div>
+        </div>
       </div>
     </section>
   );
