@@ -115,7 +115,7 @@ export default function Hero() {
           </span>
         </button>
         <SectionDivider />
-        <p className="text-gray-200 max-w-3xl mx-auto text-base px-2">
+        <p className="text-gray-200 max-w-3xl mx-auto text-sm md:text-base px-2">
           Neumantra brings together the proven capabilities of Mantraa Advisory
           and Neubright Partners to deliver integrated IR advisory for companies
           preparing to list, transitioning to main board, or strengthening their
