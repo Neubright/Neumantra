@@ -76,7 +76,7 @@ export default function ProofPoints() {
           {proofPoints.map((point, index) => (
             <div
               key={index}
-              className={`backdrop-blur-xl bg-white/40 border-2 ${point.borderColor} rounded-xl p-8 hover:shadow-xl hover:bg-white/50 transition-all duration-300 group`}
+              className={`backdrop-blur-xl bg-white/40 border-2 ${point.borderColor} rounded-xl p-8 hover:shadow-apple hover:bg-white/50 transition-all duration-300 group`}
             >
               {/* Icon */}
               <div

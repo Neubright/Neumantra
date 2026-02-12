@@ -36,7 +36,7 @@ export default function Newsletter() {
           Subscribe to receive insights, resources, and updates from the Neumantra team. We share perspectives on capital markets readiness, investor relations best practices, and stakeholder engagement strategies for growth companies.
         </h3>
 
-        <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-md mx-auto">
+        <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-md mx-auto">
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col sm:flex-row gap-3 mb-4">
               <input
@@ -49,7 +49,7 @@ export default function Newsletter() {
               />
               <button
                 type="submit"
-                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg whitespace-nowrap inline-flex items-center gap-3"
+                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple whitespace-nowrap inline-flex items-center gap-3"
               >
                 Subscribe
                 <span

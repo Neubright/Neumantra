@@ -136,7 +136,7 @@ export default function Differentiators() {
               key={diff.number}
               onMouseEnter={() => setExpandedIndex(diff.number - 1)}
               onMouseLeave={() => setExpandedIndex(null)}
-              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 group hover:shadow-xl hover:border-white/100 overflow-hidden relative`}
+              className={`backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 transition-all duration-300 group hover:shadow-apple hover:border-white/100 overflow-hidden relative`}
             >
               {/* Gradient accent */}
               <div

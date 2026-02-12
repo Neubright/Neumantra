@@ -240,7 +240,7 @@ export default function ServicesIntro() {
         </div>
 
         {/* Main intro paragraph */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-xl transition-all duration-300">
+        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-apple transition-all duration-300">
           <p className="text-gray-800 text-lg leading-relaxed mb-6">
             India's capital markets have matured significantly. Institutional
             investors apply global evaluation frameworks. Analysts demand
@@ -299,7 +299,7 @@ export default function ServicesIntro() {
                 onClick={() => setSelectedService(index)}
                 className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                   selectedService === index
-                    ? "bg-accent/20 border-accent text-accent shadow-lg"
+                    ? "bg-accent/20 border-accent text-accent shadow-apple"
                     : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
                 }`}
               >
@@ -340,7 +340,7 @@ export default function ServicesIntro() {
                 (service, index) => (
                   <div
                     key={index}
-                    className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+                    className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-apple transition-all duration-300"
                   >
                     <h5 className="text-base font-bold text-primary mb-2">
                       {service.title}
@@ -369,7 +369,7 @@ export default function ServicesIntro() {
 
           {/* CTA Button */}
           <div className="mt-12 flex justify-center">
-            <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-xl hover:scale-105 hover:border-red-300/80 shadow-2xl group" style={{
+            <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 shadow-apple group" style={{
               background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
               backdropFilter: "blur(30px)",
             }}>

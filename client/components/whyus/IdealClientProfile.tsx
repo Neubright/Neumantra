@@ -73,7 +73,7 @@ export default function IdealClientProfile() {
             {idealClients.map((item, index) => (
               <div
                 key={index}
-                className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
+                className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-apple hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">

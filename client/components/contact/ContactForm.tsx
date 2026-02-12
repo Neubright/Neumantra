@@ -75,7 +75,7 @@ export default function ContactForm() {
 
         <form
           onSubmit={handleSubmit}
-          className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-7xl mx-auto"
+          className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-7xl mx-auto"
         >
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
@@ -210,7 +210,7 @@ export default function ContactForm() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3"
+              className="bg-accent hover:bg-red-700 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple inline-flex items-center gap-3"
             >
               Submit
               <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">

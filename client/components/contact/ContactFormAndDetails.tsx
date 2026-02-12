@@ -74,7 +74,7 @@ export default function ContactFormAndDetails() {
             </h2>
 
             <div className="space-y-6">
-              <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+              <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100">
                 <h3 className="text-2xl font-bold text-primary mb-6">
                   Neumantra Capital Advisors
                 </h3>
@@ -120,7 +120,7 @@ export default function ContactFormAndDetails() {
                 </div>
               </div>
 
-              <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+              <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100">
                 <h4 className="font-bold text-primary mb-4 text-lg">
                   Connect With Us
                 </h4>
@@ -166,7 +166,7 @@ export default function ContactFormAndDetails() {
 
             <form
               onSubmit={handleSubmit}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100"
             >
               <div className="space-y-4 mb-6">
                 <div>
@@ -301,7 +301,7 @@ export default function ContactFormAndDetails() {
               <div className="flex justify-center mb-4">
                 <button
                   type="submit"
-                  className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3"
+                  className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple inline-flex items-center gap-3"
                 >
                   Submit
                   <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">

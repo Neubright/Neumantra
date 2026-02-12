@@ -24,7 +24,7 @@ export default function InsightsIntro() {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100">
             <div className="space-y-6 text-gray-700">
               <p className="text-base leading-relaxed">
                 Capital markets are dynamic. Regulatory expectations evolve.

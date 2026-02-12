@@ -53,7 +53,7 @@ export default function ScheduleConsultation() {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
             <p className="text-base text-gray-700 mb-6 leading-relaxed">
               Whether you are beginning to explore capital markets engagement,
               preparing for a significant transaction, or seeking to strengthen
@@ -77,7 +77,7 @@ export default function ScheduleConsultation() {
               {expectations.map((item, index) => (
                 <div
                   key={index}
-                  className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
+                  className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-apple hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -103,7 +103,7 @@ export default function ScheduleConsultation() {
           </div>
 
           <div className="flex justify-center">
-            <button className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg inline-flex items-center gap-3">
+            <button className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple inline-flex items-center gap-3">
               Schedule Consultation
               <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
                 <img

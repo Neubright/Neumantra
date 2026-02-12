@@ -18,7 +18,7 @@ export default function ArticleCard({
   return (
     <div
       onClick={() => setIsExpanded(!isExpanded)}
-      className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-full flex flex-col cursor-pointer"
+      className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg overflow-hidden hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-full flex flex-col cursor-pointer"
     >
       <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden flex items-center justify-center">
         {image && (

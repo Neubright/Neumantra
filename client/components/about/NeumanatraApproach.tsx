@@ -131,7 +131,7 @@ export default function NeumanatraApproach() {
           {principles.map((principle, index) => (
             <div
               key={index}
-              className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-lg hover:bg-white/50 transition-all duration-300 group`}
+              className={`backdrop-blur-xl bg-white/40 border-2 ${principle.borderColor} rounded-lg p-6 text-center hover:shadow-apple hover:bg-white/50 transition-all duration-300 group`}
             >
               <div className="flex justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">

@@ -48,7 +48,7 @@ export default function WhyUsIntro() {
         </div>
 
         {/* Main intro paragraph */}
-        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-xl transition-all duration-300">
+        <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 mb-12 hover:shadow-apple transition-all duration-300">
           <p className="text-gray-800 text-lg leading-relaxed">
             The wrong partner can damage credibility, waste leadership time, and
             miss critical market opportunities. The right partner becomes an
@@ -62,7 +62,7 @@ export default function WhyUsIntro() {
           {risks.map((item, index) => (
             <div
               key={index}
-              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-lg hover:border-white/90 transition-all duration-300 text-center"
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-apple hover:border-white/90 transition-all duration-300 text-center"
             >
               <div className="flex justify-center mb-4">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">

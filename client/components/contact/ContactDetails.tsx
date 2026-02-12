@@ -29,7 +29,7 @@ export default function ContactDetails() {
               Neumantra Capital Advisors
             </h3>
 
-            <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-8">
+            <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-8">
               <div>
                 <h4 className="font-bold text-primary mb-3">Address</h4>
                 <p className="text-gray-700">
@@ -69,7 +69,7 @@ export default function ContactDetails() {
             </div>
           </div>
 
-          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-fit">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-fit">
             <h4 className="font-bold text-primary mb-4 text-lg">
               Connect With Us
             </h4>

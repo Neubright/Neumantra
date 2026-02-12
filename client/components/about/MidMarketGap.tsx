@@ -26,7 +26,7 @@ export default function MidMarketGap() {
 
         <div className="max-w-4xl mx-auto space-y-6">
           {/* Growth Stories Card */}
-          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
@@ -70,7 +70,7 @@ export default function MidMarketGap() {
           </div>
 
           {/* Market Segments Card */}
-          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">

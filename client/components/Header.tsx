@@ -199,7 +199,7 @@ export default function Header() {
         }
       `}</style>
         <div
-          className={`backdrop-blur-2xl rounded-full shadow-2xl transition-all duration-300 ${
+          className={`backdrop-blur-2xl rounded-full shadow-apple transition-all duration-300 ${
             isMenuOpen
               ? "text-primary"
               : isOverDarkBackground
@@ -264,7 +264,7 @@ export default function Header() {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="hidden md:block bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-lg"
+                className="hidden md:block bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full font-semibold transition-all duration-300 shadow-apple"
               >
                 Contact Us
               </Link>

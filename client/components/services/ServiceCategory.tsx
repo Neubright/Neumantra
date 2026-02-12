@@ -94,7 +94,7 @@ export default function ServiceCategory({
               onClick={() =>
                 setExpandedIndex(expandedIndex === index ? null : index)
               }
-              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 md:p-8 transition-all duration-300 cursor-pointer group hover:shadow-xl overflow-hidden relative ${
+              className={`backdrop-blur-xl bg-white/40 border-2 rounded-xl p-6 md:p-8 transition-all duration-300 cursor-pointer group hover:shadow-apple overflow-hidden relative ${
                 colors.borderColor
               } ${
                 expandedIndex === index

@@ -69,7 +69,7 @@ export default function HeritagePartners() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className={`backdrop-blur-xl bg-gradient-to-br ${partner.color} border-2 ${partner.borderColor} rounded-xl p-8 hover:shadow-xl transition-all duration-300`}
+              className={`backdrop-blur-xl bg-gradient-to-br ${partner.color} border-2 ${partner.borderColor} rounded-xl p-8 hover:shadow-apple transition-all duration-300`}
             >
               {/* Logo and Title */}
               <div className="mb-6">

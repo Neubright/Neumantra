@@ -71,7 +71,7 @@ export default function WhyNeumantra() {
             return (
               <div
                 key={index}
-                className="backdrop-blur-xl bg-white/35 border-2 border-white/80 rounded-lg p-6 text-left hover:shadow-2xl hover:bg-white/50 hover:border-white/100 transition-all duration-300"
+                className="backdrop-blur-xl bg-white/35 border-2 border-white/80 rounded-lg p-6 text-left hover:shadow-apple hover:bg-white/50 hover:border-white/100 transition-all duration-300"
               >
                 <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon

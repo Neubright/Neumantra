@@ -168,7 +168,7 @@ export default function ServiceScenarios() {
               onClick={() => setSelectedScenario(index)}
               className={`px-4 py-2 rounded-lg font-semibold transition-all duration-300 backdrop-blur-xl border-2 text-center whitespace-nowrap text-sm md:text-base ${
                 selectedScenario === index
-                  ? "bg-accent/20 border-accent text-accent shadow-lg"
+                  ? "bg-accent/20 border-accent text-accent shadow-apple"
                   : "bg-white/20 border-white/50 text-gray-700 hover:border-white/80 hover:bg-white/30"
               }`}
             >
@@ -183,7 +183,7 @@ export default function ServiceScenarios() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* Left Column - Context */}
             <div className="space-y-6">
-              <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+              <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-apple transition-all duration-300">
                 <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
                   <span className="text-primary">{getIcon(scenario.icon)}</span>
                   Company Profile
@@ -213,7 +213,7 @@ export default function ServiceScenarios() {
 
             {/* Right Column - Expected Outcome */}
             <div className="space-y-6">
-              <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+              <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-apple transition-all duration-300">
                 <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
                   <svg
                     className="w-5 h-5 text-primary"
@@ -245,7 +245,7 @@ export default function ServiceScenarios() {
               {scenario.engagement.map((item, index) => (
                 <div key={index} className="relative pl-10 pb-4">
                   {/* Timeline dot */}
-                  <div className="absolute left-0 top-1 w-5 h-5 bg-accent rounded-full border-4 border-white shadow-lg"></div>
+                  <div className="absolute left-0 top-1 w-5 h-5 bg-accent rounded-full border-4 border-white shadow-apple"></div>
 
                   {/* Connector line */}
                   {index !== scenario.engagement.length - 1 && (

@@ -72,13 +72,13 @@ export default function LeadershipTeam() {
             <div
               key={index}
               onClick={() => setExpandedId(expandedId === index ? null : index)}
-              className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-xl transition-all duration-300 cursor-pointer group hover:border-white/100 overflow-hidden"
+              className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-6 hover:shadow-apple transition-all duration-300 cursor-pointer group hover:border-white/100 overflow-hidden"
             >
               {/* Avatar */}
               <div className="flex justify-center mb-6">
                 <div className="relative">
                   <div
-                    className={`w-32 h-32 rounded-full bg-white/30 border-2 border-white/80 overflow-hidden backdrop-blur-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
+                    className={`w-32 h-32 rounded-full bg-white/30 border-2 border-white/80 overflow-hidden backdrop-blur-xl shadow-apple group-hover:shadow-apple transition-shadow duration-300`}
                   >
                     {leader.image ? (
                       <img
