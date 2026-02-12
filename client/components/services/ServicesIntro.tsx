@@ -2,6 +2,7 @@ import { useInView } from "@/hooks/useInView";
 import SectionDivider from "../ui/SectionDivider";
 import { BarChart3, FileText, Leaf } from "lucide-react";
 import { useState } from "react";
+import { useInView } from "@/hooks/useInView";
 
 export default function ServicesIntro() {
   const [ref, isInView] = useInView({ threshold: 0.05 });
