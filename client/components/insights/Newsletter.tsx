@@ -49,11 +49,14 @@ export default function Newsletter() {
               />
               <button
                 type="submit"
-                className="bg-primary hover:bg-primary/90 text-white pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 whitespace-nowrap inline-flex items-center gap-3"
+                className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 whitespace-nowrap inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 group"
+                style={{
+                  background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
+                }}
               >
                 Subscribe
                 <span
-                  className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center"
+                  className="flex-shrink-0 bg-primary rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300"
                   style={{ marginLeft: "auto" }}
                 >
                   <img
