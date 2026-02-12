@@ -1,6 +1,6 @@
 export default function SectionDivider() {
   return (
-    <div className="flex items-center justify-center gap-3 my-6">
+    <div className="flex items-center justify-center gap-3 my-4 sm:my-6">
       <div
         className="flex-grow h-px flex-shrink-0"
         style={{
