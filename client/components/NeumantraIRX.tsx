@@ -108,9 +108,9 @@ export default function NeumantraIRX() {
             onClick={() => handleClose()}
           />
           <div className={`fixed inset-0 flex items-center justify-center z-50 px-4 ${isClosing ? 'pop-out' : 'pop-in'}`}>
-            <div 
+            <div
               ref={modalRef}
-              className="w-full max-w-md backdrop-blur-2xl bg-white/40 border-2 border-white/90 rounded-xl p-6 shadow-apple"
+              className="w-full max-w-md backdrop-blur-2xl bg-white/60 border-2 border-white/90 rounded-xl p-6 shadow-apple"
             >
               <div className="flex justify-between items-center mb-6">
                 <button
