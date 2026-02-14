@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { X } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function NeumantraIRX() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -126,6 +127,11 @@ export default function NeumantraIRX() {
               </div>
 
               <div className="text-center space-y-2 mb-6">
+                <div className="flex justify-center mb-4">
+                  <div className="h-10 w-auto">
+                    <Logo />
+                  </div>
+                </div>
                 <h3 className="text-lg font-bold text-primary">
                   Neumantra Investor Relations <span className="text-accent">X</span>
                 </h3>
