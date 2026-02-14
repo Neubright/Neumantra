@@ -88,7 +88,7 @@ export default function NeumantraIRX() {
         }
 
         .pop-out {
-          animation: popOut 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+          animation: popOut 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .fade-in-backdrop {
@@ -96,7 +96,7 @@ export default function NeumantraIRX() {
         }
 
         .fade-out-backdrop {
-          animation: fadeOutBackdrop 0.35s ease-in forwards;
+          animation: fadeOutBackdrop 1s ease-out forwards;
         }
       `}</style>
 
