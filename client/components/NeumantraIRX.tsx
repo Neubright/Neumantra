@@ -70,7 +70,7 @@ export default function NeumantraIRX() {
           }
           100% {
             opacity: 0;
-            transform: scale(0.3) translate(calc(100vw - 80px), calc(-100vh + 80px));
+            transform: scale(0.3) translate(calc(-50vw + 50px), calc(-50vh + 50px));
           }
         }
 
@@ -88,7 +88,7 @@ export default function NeumantraIRX() {
         }
 
         .pop-out {
-          animation: popOut 0.6s cubic-bezier(0.4, 0, 1, 1) forwards;
+          animation: popOut 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
         }
 
         .fade-in-backdrop {
@@ -96,7 +96,7 @@ export default function NeumantraIRX() {
         }
 
         .fade-out-backdrop {
-          animation: fadeOutBackdrop 0.6s ease-in forwards;
+          animation: fadeOutBackdrop 0.35s ease-in forwards;
         }
       `}</style>
 
