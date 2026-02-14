@@ -229,7 +229,7 @@ export default function Header() {
           }}
         >
           <div className="max-w-7xl mx-auto px-1 sm:px-1 lg:px-2">
-            <div className="flex items-center justify-between h-14">
+            <div className="flex items-center justify-between h-12">
               {/* Logo */}
               <div className="flex items-center gap-3">
                 <Link
