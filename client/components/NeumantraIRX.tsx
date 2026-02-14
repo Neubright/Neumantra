@@ -137,7 +137,7 @@ export default function NeumantraIRX() {
                 </h3>
                 <p className="text-sm text-gray-700 font-medium">X is for…</p>
 
-                <div className="space-y-3 my-6">
+                <div className="grid grid-cols-2 gap-3 my-6">
                   {values.map((value, index) => (
                     <div
                       key={index}
@@ -147,7 +147,7 @@ export default function NeumantraIRX() {
                         animationDelay: `${index * 0.1}s`,
                       }}
                     >
-                      <p className="text-accent font-bold text-base">
+                      <p className="text-accent font-bold text-base text-center">
                         {value}
                       </p>
                     </div>
