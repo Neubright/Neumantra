@@ -14,13 +14,13 @@ export default function Index() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <NeumantraIRX />
         <WhoWeServe />
         <OurCapabilities />
         <WhyNeumantra />
         <OurHeritage />
         <CTA />
       </main>
+      <NeumantraIRX />
       <Footer />
     </div>
   );
