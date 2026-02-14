@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import NeumantraIRX from "./NeumantraIRX";
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
@@ -360,6 +361,7 @@ export default function Header() {
           </nav>
         )}
       </header>
+      <NeumantraIRX />
     </>
   );
 }
