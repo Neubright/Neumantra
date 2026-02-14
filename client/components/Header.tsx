@@ -343,7 +343,7 @@ export default function Header() {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
+                className="mx-4 bg-accent hover:bg-red-900 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors block text-center w-auto"
               >
                 Contact Us
               </Link>
