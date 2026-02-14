@@ -200,7 +200,7 @@ export default function Header() {
         }
       `}</style>
         <div
-          className={`rounded-full shadow-apple transition-all duration-300 ${
+          className={`rounded-full shadow-apple transition-all duration-300 py-2 ${
             isMenuOpen
               ? "text-primary"
               : isOverDarkBackground
