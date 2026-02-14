@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import NeumantraIRX from "@/components/NeumantraIRX";
 import WhoWeServe from "@/components/WhoWeServe";
 import OurCapabilities from "@/components/OurCapabilities";
 import WhyNeumantra from "@/components/WhyNeumantra";
@@ -13,6 +14,7 @@ export default function Index() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <NeumantraIRX />
         <WhoWeServe />
         <OurCapabilities />
         <WhyNeumantra />
