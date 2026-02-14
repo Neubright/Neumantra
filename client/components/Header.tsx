@@ -235,9 +235,9 @@ export default function Header() {
                 <Link
                   to="/"
                   onClick={scrollToTop}
-                  className="flex items-center gap-2 ml-2 sm:ml-3"
+                  className="flex items-center gap-2 -ml-1"
                   style={{
-                    transform: "scale(0.9)",
+                    transform: "scale(0.81)",
                     transformOrigin: "left center",
                   }}
                 >
