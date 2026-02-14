@@ -66,11 +66,11 @@ export default function NeumantraIRX() {
         @keyframes popOut {
           0% {
             opacity: 1;
-            transform: scale(1) translate(0, 0);
+            transform: scale(1);
           }
           100% {
             opacity: 0;
-            transform: scale(0.3) translate(calc(-50vw + 50px), calc(-50vh + 50px));
+            transform: scale(0.8);
           }
         }
 
