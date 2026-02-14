@@ -25,12 +25,12 @@ export default function CTA() {
           strategic IR partnership that growth-focused companies require.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="pl-3 pr-1.5 py-1.5 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 group" style={{
+          <button className="pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 group" style={{
             background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
             backdropFilter: "blur(30px)",
           }}>
             Schedule a Consultation
-            <span className="flex-shrink-0 bg-primary rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300 ml-auto">
+            <span className="flex-shrink-0 bg-primary rounded-xl w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300 ml-auto">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
                 alt="Arrow"
@@ -44,7 +44,7 @@ export default function CTA() {
               />
             </span>
           </button>
-          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 hover:shadow-apple hover:scale-105 px-3 py-1.5 rounded-full font-semibold transition-all duration-300">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 hover:shadow-apple hover:scale-105 px-3 py-1.5 rounded-xl font-semibold transition-all duration-300">
             Download IR Readiness Assessment
           </button>
         </div>
