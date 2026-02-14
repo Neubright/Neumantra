@@ -151,7 +151,7 @@ export default function Header() {
             background: rgba(255, 255, 255, 0.35);
             border: none;
             padding: 4px 12px;
-            border-radius: 12px;
+            border-radius: 8px;
             color: hsl(var(--accent));
             backdrop-filter: blur(10px);
           }
