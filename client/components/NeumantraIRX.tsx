@@ -112,41 +112,41 @@ export default function NeumantraIRX() {
               ref={modalRef}
               className="w-full max-w-md backdrop-blur-2xl bg-white/40 border-2 border-white/90 rounded-xl p-6 shadow-apple"
             >
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-bold text-primary">
-                  Neumantra IR<span className="text-accent">X</span>
-                </h3>
+              <div className="flex justify-between items-center mb-6">
                 <button
                   onClick={() => handleClose()}
-                  className="text-primary hover:text-accent transition-colors"
+                  className="text-primary hover:text-accent transition-colors ml-auto"
                 >
                   <X size={20} />
                 </button>
               </div>
 
-              <p className="text-xs text-gray-700 mb-4 font-medium">X is for…</p>
+              <div className="text-center space-y-2 mb-6">
+                <h3 className="text-lg font-bold text-primary">
+                  Neumantra Investor Relations <span className="text-accent">X</span>
+                </h3>
+                <p className="text-sm text-gray-700 font-medium">X is for…</p>
 
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                {values.map((value, index) => (
-                  <div
-                    key={index}
-                    className="backdrop-blur-xl bg-white/30 border border-white/60 rounded-lg p-2 text-center hover:shadow-apple transition-all duration-300"
-                    style={{
-                      animation: `popIn 0.3s ease-out forwards`,
-                      animationDelay: `${index * 0.05}s`,
-                    }}
-                  >
-                    <p className="text-primary font-bold text-xs">
+                <div className="space-y-1 my-4">
+                  {values.map((value, index) => (
+                    <p
+                      key={index}
+                      className="text-primary font-semibold"
+                      style={{
+                        animation: `popIn 0.3s ease-out forwards`,
+                        animationDelay: `${index * 0.05}s`,
+                      }}
+                    >
                       {value}
                     </p>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              <div className="border-t border-white/40 pt-3">
-                <p className="text-xs text-primary font-semibold text-center leading-relaxed">
-                  The integrated investor relations experience.
-                </p>
+                <div className="border-t border-white/40 pt-4 mt-4">
+                  <p className="text-sm text-primary font-semibold leading-relaxed">
+                    The integrated investor relations experience.
+                  </p>
+                </div>
               </div>
 
               <button
