@@ -250,7 +250,7 @@ export default function Header() {
                     const irxEvent = new CustomEvent('openIRXWidget');
                     window.dispatchEvent(irxEvent);
                   }}
-                  className="hidden md:flex items-center gap-1 bg-primary hover:bg-primary/90 text-white px-2 py-1 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-apple hover:scale-105 group whitespace-nowrap"
+                  className="flex items-center gap-1 bg-primary hover:bg-primary/90 text-white px-2 py-1 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-apple hover:scale-105 group whitespace-nowrap"
                   title="Neumantra IRX"
                 >
                   <span className="font-bold">IR</span>
