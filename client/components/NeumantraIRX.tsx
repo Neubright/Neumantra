@@ -15,7 +15,7 @@ export default function NeumantraIRX() {
     const timer = setTimeout(() => {
       setIsExpanded(true);
       setHasOpenedOnce(true);
-    }, 500);
+    }, 2500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -84,7 +84,7 @@ export default function NeumantraIRX() {
         }
 
         .pop-in {
-          animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+          animation: popIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         .pop-out {
@@ -92,7 +92,7 @@ export default function NeumantraIRX() {
         }
 
         .fade-in-backdrop {
-          animation: fadeInBackdrop 0.3s ease-out forwards;
+          animation: fadeInBackdrop 1s ease-out forwards;
         }
 
         .fade-out-backdrop {
@@ -131,7 +131,7 @@ export default function NeumantraIRX() {
                   {values.map((value, index) => (
                     <p
                       key={index}
-                      className="text-primary font-semibold"
+                      className="text-accent font-semibold"
                       style={{
                         animation: `popIn 0.3s ease-out forwards`,
                         animationDelay: `${index * 0.05}s`,
