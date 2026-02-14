@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { X, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function NeumantraIRX() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -148,17 +148,6 @@ export default function NeumantraIRX() {
                   </p>
                 </div>
               </div>
-
-              <button
-                onClick={() => handleClose()}
-                className="w-full mt-4 flex items-center justify-center gap-2 text-primary font-semibold text-sm hover:text-accent transition-colors group"
-              >
-                Close
-                <ChevronRight
-                  size={16}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </button>
             </div>
           </div>
         </>
