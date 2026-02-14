@@ -340,16 +340,6 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  const irxEvent = new CustomEvent('openIRXWidget');
-                  window.dispatchEvent(irxEvent);
-                }}
-                className="md:hidden mx-4 bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
-              >
-                IRX
-              </button>
               <Link
                 to="/contact"
                 onClick={handleNavClick}
