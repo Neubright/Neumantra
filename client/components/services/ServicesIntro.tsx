@@ -374,19 +374,17 @@ export default function ServicesIntro() {
             }}>
               Schedule a Confidential Consultation
               <span className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300">
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+                  alt="Arrow"
+                  style={{
+                    filter: "brightness(0) invert(1)",
+                    maxWidth: "14px",
+                    maxHeight: "22px",
+                    objectFit: "contain",
+                    marginLeft: "2px",
+                  }}
+                />
               </span>
             </button>
           </div>
