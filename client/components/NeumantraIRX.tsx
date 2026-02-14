@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import Logo from "@/components/Logo";
 
 export default function NeumantraIRX() {
@@ -8,17 +9,20 @@ export default function NeumantraIRX() {
   const [isVisible, setIsVisible] = useState(true);
   const [hasOpenedOnce, setHasOpenedOnce] = useState(false);
   const modalRef = useRef(null);
+  const location = useLocation();
 
   const values = ["Experience", "Excellence", "Execution", "Expertise"];
 
-  // Auto-open on page load with delay
+  // Auto-open on page load with delay - only on home page
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsExpanded(true);
-      setHasOpenedOnce(true);
-    }, 2500);
-    return () => clearTimeout(timer);
-  }, []);
+    if (location.pathname === "/") {
+      const timer = setTimeout(() => {
+        setIsExpanded(true);
+        setHasOpenedOnce(true);
+      }, 2500);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleOpenIRX = () => {
