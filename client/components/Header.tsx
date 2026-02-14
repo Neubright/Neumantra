@@ -254,7 +254,7 @@ export default function Header() {
                   title="Neumantra IRX"
                 >
                   <span className="font-bold">IR</span>
-                  <span className="text-xs text-accent font-bold">X</span>
+                  <span className="text-accent font-bold">X</span>
                 </button>
               </div>
 
