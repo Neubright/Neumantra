@@ -114,10 +114,10 @@ export default function NeumantraIRX() {
           >
             <div
               ref={modalRef}
-              className="w-full max-w-md backdrop-blur-2xl bg-white/60 border-2 border-white/90 rounded-xl p-6 shadow-apple"
+              className="w-full max-w-md backdrop-blur-2xl bg-white/60 border-2 border-white/90 rounded-xl p-4 shadow-apple"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex justify-between items-center mb-6">
+              <div className="flex justify-between items-center mb-3">
                 <button
                   onClick={() => handleClose()}
                   className="text-primary hover:text-accent transition-colors ml-auto"
@@ -126,7 +126,7 @@ export default function NeumantraIRX() {
                 </button>
               </div>
 
-              <div className="text-center space-y-2 mb-6">
+              <div className="text-center space-y-2 mb-4">
                 <div className="flex justify-center mb-4">
                   <div className="h-12 w-auto bg-white rounded-lg p-2 flex items-center">
                     <Logo />
@@ -137,7 +137,7 @@ export default function NeumantraIRX() {
                 </h3>
                 <p className="text-sm text-gray-700 font-medium">X is for…</p>
 
-                <div className="grid grid-cols-2 gap-3 my-6">
+                <div className="grid grid-cols-2 gap-3 my-4">
                   {values.map((value, index) => (
                     <div
                       key={index}
@@ -154,7 +154,7 @@ export default function NeumantraIRX() {
                   ))}
                 </div>
 
-                <div className="border-t border-white/40 pt-4 mt-4">
+                <div className="border-t border-white/40 pt-3 mt-3">
                   <p className="text-sm text-primary font-semibold leading-relaxed">
                     The integrated investor relations experience.
                   </p>
