@@ -35,37 +35,41 @@ export default function NeumantraIRX() {
         @keyframes popIn {
           0% {
             opacity: 0;
-            transform: scale(0.5) translateX(-20px);
+            transform: scale(0.8);
           }
           100% {
             opacity: 1;
-            transform: scale(1) translateX(0);
+            transform: scale(1);
           }
         }
 
-        @keyframes slideInLeft {
+        @keyframes fadeInBackdrop {
           from {
             opacity: 0;
-            transform: translateX(-30px);
           }
           to {
             opacity: 1;
-            transform: translateX(0);
           }
         }
 
         .pop-in {
-          animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+          animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
-        .slide-in-left {
-          animation: slideInLeft 0.4s ease-out forwards;
+        .fade-in-backdrop {
+          animation: fadeInBackdrop 0.3s ease-out forwards;
         }
       `}</style>
 
-      {/* Expanded Panel - Left Sidebar */}
+      {/* Expanded Panel - Centered Modal */}
       {isExpanded && (
-        <div className="slide-in-left fixed left-4 bottom-20 md:left-6 lg:left-8 z-40 w-80 max-h-96 backdrop-blur-2xl bg-white/40 border-2 border-white/90 rounded-xl p-6 shadow-apple">
+        <>
+          <div
+            className="fade-in-backdrop fixed inset-0 bg-black/30 backdrop-blur-sm z-40"
+            onClick={() => setIsExpanded(false)}
+          />
+          <div className="pop-in fixed inset-0 flex items-center justify-center z-50 px-4">
+            <div className="w-full max-w-md backdrop-blur-2xl bg-white/40 border-2 border-white/90 rounded-xl p-6 shadow-apple">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-bold text-primary">
               Neumantra IR<span className="text-accent">X</span>
@@ -86,7 +90,7 @@ export default function NeumantraIRX() {
                 key={index}
                 className="backdrop-blur-xl bg-white/30 border border-white/60 rounded-lg p-2 text-center hover:shadow-apple transition-all duration-300"
                 style={{
-                  animation: `slideInLeft 0.3s ease-out forwards`,
+                  animation: `popIn 0.3s ease-out forwards`,
                   animationDelay: `${index * 0.05}s`,
                 }}
               >
@@ -113,7 +117,9 @@ export default function NeumantraIRX() {
               className="group-hover:translate-x-1 transition-transform"
             />
           </button>
-        </div>
+            </div>
+          </div>
+        </>
       )}
     </>
   );
