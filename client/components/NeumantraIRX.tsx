@@ -111,6 +111,7 @@ export default function NeumantraIRX() {
             <div
               ref={modalRef}
               className="w-full max-w-md backdrop-blur-2xl bg-white/60 border-2 border-white/90 rounded-xl p-6 shadow-apple"
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-6">
                 <button
