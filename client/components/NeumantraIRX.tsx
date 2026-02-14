@@ -17,6 +17,16 @@ export default function NeumantraIRX() {
     }
   }, [isVisible, isExpanded, autoCollapse]);
 
+  useEffect(() => {
+    const handleOpenIRX = () => {
+      setIsExpanded(true);
+      setAutoCollapse(false);
+    };
+
+    window.addEventListener('openIRXWidget', handleOpenIRX);
+    return () => window.removeEventListener('openIRXWidget', handleOpenIRX);
+  }, []);
+
   if (!isVisible) return null;
 
   return (

@@ -261,6 +261,18 @@ export default function Header() {
                 ))}
               </nav>
 
+              {/* IRX Button */}
+              <button
+                onClick={() => {
+                  const irxEvent = new CustomEvent('openIRXWidget');
+                  window.dispatchEvent(irxEvent);
+                }}
+                className="hidden md:flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full font-semibold transition-all duration-300 hover:shadow-apple hover:scale-105 group"
+              >
+                <span className="font-bold">IR</span>
+                <span className="text-xs opacity-80">X</span>
+              </button>
+
               {/* Desktop Contact Button */}
               <Link
                 to="/contact"
@@ -324,6 +336,16 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  const irxEvent = new CustomEvent('openIRXWidget');
+                  window.dispatchEvent(irxEvent);
+                }}
+                className="mx-4 bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
+              >
+                Neumantra IRX
+              </button>
               <Link
                 to="/contact"
                 onClick={handleNavClick}
