@@ -10,12 +10,12 @@ export default function NeumantraIRX() {
 
   const values = ["Experience", "Excellence", "Execution", "Expertise"];
 
-  // Auto-open on page load
+  // Auto-open on page load with delay
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsExpanded(true);
       setHasOpenedOnce(true);
-    }, 500);
+    }, 2500);
     return () => clearTimeout(timer);
   }, []);
 
