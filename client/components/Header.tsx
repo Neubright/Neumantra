@@ -231,17 +231,32 @@ export default function Header() {
           <div className="max-w-7xl mx-auto px-1 sm:px-1 lg:px-2">
             <div className="flex items-center justify-between h-14">
               {/* Logo */}
-              <Link
-                to="/"
-                onClick={scrollToTop}
-                className="flex items-center gap-2 ml-2 sm:ml-3"
-                style={{
-                  transform: "scale(0.9)",
-                  transformOrigin: "left center",
-                }}
-              >
-                <Logo />
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link
+                  to="/"
+                  onClick={scrollToTop}
+                  className="flex items-center gap-2 ml-2 sm:ml-3"
+                  style={{
+                    transform: "scale(0.9)",
+                    transformOrigin: "left center",
+                  }}
+                >
+                  <Logo />
+                </Link>
+
+                {/* IRX Button */}
+                <button
+                  onClick={() => {
+                    const irxEvent = new CustomEvent('openIRXWidget');
+                    window.dispatchEvent(irxEvent);
+                  }}
+                  className="hidden md:flex items-center gap-1 bg-primary hover:bg-primary/90 text-white px-2 py-1 rounded-full font-semibold text-sm transition-all duration-300 hover:shadow-apple hover:scale-105 group"
+                  title="Neumantra IRX"
+                >
+                  <span className="font-bold">IR</span>
+                  <span className="text-xs opacity-80">X</span>
+                </button>
+              </div>
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center gap-8">
@@ -260,18 +275,6 @@ export default function Header() {
                   </Link>
                 ))}
               </nav>
-
-              {/* IRX Button */}
-              <button
-                onClick={() => {
-                  const irxEvent = new CustomEvent('openIRXWidget');
-                  window.dispatchEvent(irxEvent);
-                }}
-                className="hidden md:flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full font-semibold transition-all duration-300 hover:shadow-apple hover:scale-105 group"
-              >
-                <span className="font-bold">IR</span>
-                <span className="text-xs opacity-80">X</span>
-              </button>
 
               {/* Desktop Contact Button */}
               <Link
@@ -342,9 +345,9 @@ export default function Header() {
                   const irxEvent = new CustomEvent('openIRXWidget');
                   window.dispatchEvent(irxEvent);
                 }}
-                className="mx-4 bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
+                className="md:hidden mx-4 bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors block text-center w-auto"
               >
-                Neumantra IRX
+                IRX
               </button>
               <Link
                 to="/contact"
