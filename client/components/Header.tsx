@@ -280,7 +280,7 @@ export default function Header() {
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="hidden md:block text-primary px-3 py-1.5 rounded-lg font-semibold transition-all duration-300 border-2 border-red-300/60 hover:shadow-apple hover:scale-105 group"
+                className="hidden md:block text-primary px-3 py-1.5 rounded-xl font-semibold transition-all duration-300 border-2 border-red-300/60 hover:shadow-apple hover:scale-105 group"
                 style={{
                   background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
                 }}
