@@ -137,18 +137,20 @@ export default function NeumantraIRX() {
                 </h3>
                 <p className="text-sm text-gray-700 font-medium">X is for…</p>
 
-                <div className="space-y-1 my-4">
+                <div className="space-y-3 my-6">
                   {values.map((value, index) => (
-                    <p
+                    <div
                       key={index}
-                      className="text-accent font-semibold"
+                      className="bg-accent/10 border border-accent/30 rounded-lg py-3 px-4"
                       style={{
                         animation: `popIn 0.3s ease-out forwards`,
-                        animationDelay: `${index * 0.05}s`,
+                        animationDelay: `${index * 0.1}s`,
                       }}
                     >
-                      {value}
-                    </p>
+                      <p className="text-accent font-bold text-base">
+                        {value}
+                      </p>
+                    </div>
                   ))}
                 </div>
 
