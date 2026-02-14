@@ -128,7 +128,7 @@ export default function NeumantraIRX() {
 
               <div className="text-center space-y-2 mb-6">
                 <div className="flex justify-center mb-4">
-                  <div className="h-8 w-auto bg-white rounded-lg p-2">
+                  <div className="h-12 w-auto bg-white rounded-lg p-2 flex items-center">
                     <Logo />
                   </div>
                 </div>
