@@ -6,12 +6,12 @@ export default function CTA() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
-          "radial-gradient(circle at 50% 50%, rgba(219, 234, 254, 0.5) 0%, rgba(254, 226, 226, 0.4) 50%, rgba(248, 223, 228, 0.5) 100%)",
+          "radial-gradient(circle at 50% 50%, rgba(219, 234, 254, 0.8) 0%, rgba(254, 226, 226, 0.7) 50%, rgba(248, 223, 228, 0.8) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -25,10 +25,26 @@ export default function CTA() {
           strategic IR partnership that growth-focused companies require.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="backdrop-blur-md bg-accent text-white border border-accent hover:bg-red-700 px-8 py-3 rounded font-semibold transition-all duration-300 shadow-lg">
+          <button className="pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 group" style={{
+            background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
+            backdropFilter: "blur(30px)",
+          }}>
             Schedule a Consultation
+            <span className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300 ml-auto">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+                alt="Arrow"
+                style={{
+                  filter: "brightness(0) invert(1)",
+                  maxWidth: "14px",
+                  maxHeight: "22px",
+                  objectFit: "contain",
+                  marginLeft: "2px",
+                }}
+              />
+            </span>
           </button>
-          <button className="backdrop-blur-md bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded font-semibold transition-all duration-300 shadow-lg">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 hover:shadow-apple hover:scale-105 px-3 py-1.5 rounded-xl font-semibold transition-all duration-300">
             Download IR Readiness Assessment
           </button>
         </div>

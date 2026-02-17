@@ -13,18 +13,18 @@
   */
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 62% 16%;
+    --foreground: 213 65% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 62% 16%;
+    --card-foreground: 213 65% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 62% 16%;
+    --popover-foreground: 213 65% 17%;
 
-    --primary: 210 62% 16%;
+    --primary: 213 65% 17%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 62% 16%;
+    --secondary: 213 65% 17%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 13% 91%;
@@ -38,39 +38,41 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 210 62% 16%;
+    --ring: 213 65% 17%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 207 68% 18%;
+    --sidebar-background: 213 65% 17%;
 
     --sidebar-foreground: 0 0% 100%;
 
-    --sidebar-primary: 207 68% 18%;
+    --sidebar-primary: 213 65% 17%;
 
     --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 351 76% 40%;
+    --sidebar-accent: 0 65% 39%;
 
     --sidebar-accent-foreground: 0 0% 100%;
 
-    --sidebar-border: 207 68% 18%;
+    --sidebar-border: 213 65% 17%;
 
-    --sidebar-ring: 351 76% 40%;
+    --sidebar-ring: 0 65% 39%;
+
+    --shadow-apple: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   .dark {
-    --background: 210 62% 16%;
+    --background: 213 65% 17%;
     --foreground: 0 0% 100%;
 
-    --card: 210 62% 16%;
+    --card: 213 65% 17%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 210 62% 16%;
+    --popover: 213 65% 17%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 0 0% 100%;
-    --primary-foreground: 210 62% 16%;
+    --primary-foreground: 213 65% 17%;
 
     --secondary: 220 20% 25%;
     --secondary-foreground: 0 0% 100%;
@@ -87,7 +89,7 @@
     --border: 220 20% 25%;
     --input: 220 20% 25%;
     --ring: 0 65% 39%;
-    --sidebar-background: 210 62% 16%;
+    --sidebar-background: 213 65% 17%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 0 65% 39%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -116,5 +118,11 @@
   code {
     overflow-x: auto;
     white-space: pre;
+  }
+}
+
+@layer components {
+  .shadow-apple {
+    box-shadow: var(--shadow-apple);
   }
 }

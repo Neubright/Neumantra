@@ -46,12 +46,12 @@ export default function WhyNeumantra() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
-          "radial-gradient(ellipse at 70% 50%, rgba(219, 234, 254, 0.7) 0%, rgba(254, 226, 226, 0.6) 40%, rgba(248, 223, 228, 0.6) 100%)",
+          "radial-gradient(ellipse at 70% 50%, rgba(219, 234, 254, 0.9) 0%, rgba(254, 226, 226, 0.85) 40%, rgba(248, 223, 228, 0.85) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,16 +71,18 @@ export default function WhyNeumantra() {
             return (
               <div
                 key={index}
-                className="backdrop-blur-xl bg-white/35 border-2 border-white/80 rounded-lg p-6 text-left hover:shadow-2xl hover:bg-white/50 hover:border-white/100 transition-all duration-300"
+                className="backdrop-blur-xl bg-white/35 border-2 border-white/80 rounded-lg p-6 text-left hover:shadow-apple hover:bg-white/50 hover:border-white/100 transition-all duration-300"
               >
-                <Icon
-                  className="w-12 h-12 text-accent mb-4 opacity-75"
-                  strokeWidth={1.5}
-                />
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                  <Icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
+                </div>
                 <h3 className="text-base font-bold text-primary mb-2">
                   {reason.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {reason.description}
                 </p>
               </div>

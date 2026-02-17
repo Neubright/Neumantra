@@ -12,7 +12,13 @@ import { usePageLoadScroll } from "@/hooks/usePageLoadScroll";
 export default function WhyUs() {
   usePageLoadScroll();
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className="flex flex-col min-h-screen"
+      style={{
+        background:
+          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
+    >
       <Header />
       <main className="flex-grow">
         <WhyUsHero />

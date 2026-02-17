@@ -1,4 +1,4 @@
-import { Linkedin, X, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -8,59 +8,75 @@ export default function Footer() {
       <div className="h-1 bg-accent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        {/* Main Footer Content */}
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
             <div className="mb-4 h-10">
               <Logo variant="white" />
             </div>
-            <p className="text-sm text-gray-300 mb-6 leading-relaxed">
-              Bridging the gap between corporate value and market perception
-              through strategic investor relations.
+            <p className="text-base text-white mb-6 leading-relaxed opacity-60">
+              Investor relations advisory combining financial strategy expertise
+              and stakeholder engagement excellence.
             </p>
             {/* Social Icons */}
             <div className="flex gap-4">
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center hover:bg-white/30 hover:border-white/50 transition-all duration-300 inline-flex overflow-hidden"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={18} />
-              </span>
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
-                aria-label="X"
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc70c353ad8944f4dbb75a6bb24c76824?format=webp&width=800&height=1200"
+                  alt="LinkedIn"
+                  className="w-6 h-6 object-contain"
+                />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center hover:bg-white/30 hover:border-white/50 transition-all duration-300 inline-flex overflow-hidden"
+                aria-label="YouTube"
               >
-                <X size={18} />
-              </span>
-              <span
-                className="w-10 h-10 rounded-full backdrop-blur-md bg-white/15 border border-white/30 flex items-center justify-center text-gray-300 hover:bg-white/30 hover:border-white/50 hover:text-accent transition-all duration-300 cursor-default inline-flex"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
-              </span>
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
             </div>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
               Company
             </h4>
-            <ul className="space-y-3 text-sm text-gray-300">
+            <ul className="space-y-3 text-base text-white">
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
                   About Us
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
-                  Our Team
-                </span>
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
+                  Our Approach
+                </Link>
               </li>
               <li>
-                <span className="hover:text-accent transition-colors cursor-default">
-                  Heritage
-                </span>
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
+                  Leadership Team
+                </Link>
               </li>
               <li>
                 <span className="hover:text-accent transition-colors cursor-default">
@@ -72,28 +88,72 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
               Services
             </h4>
-            <ul className="space-y-3 text-sm text-gray-300">
+            <ul className="space-y-3 text-base text-white">
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
+                  Capital Markets Readiness
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
+                  Investor Relations & Engagement
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
+                  Ongoing IR Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-accent transition-colors"
+                >
+                  Service Overview
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
+              Resources
+            </h4>
+            <ul className="space-y-3 text-base text-white">
+              <li>
+                <Link
+                  to="/insights"
+                  className="hover:text-accent transition-colors"
+                >
+                  Insights & Articles
+                </Link>
+              </li>
               <li>
                 <span className="hover:text-accent transition-colors cursor-default">
-                  Capital Readiness
+                  Downloadable Tools
                 </span>
               </li>
               <li>
                 <span className="hover:text-accent transition-colors cursor-default">
-                  Strategic IR
+                  Case Studies
                 </span>
               </li>
               <li>
                 <span className="hover:text-accent transition-colors cursor-default">
-                  ESG Integration
-                </span>
-              </li>
-              <li>
-                <span className="hover:text-accent transition-colors cursor-default">
-                  Analyst Engagement
+                  FAQs
                 </span>
               </li>
             </ul>
@@ -101,35 +161,94 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-6 uppercase tracking-wider">
+            <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
               Contact
             </h4>
-            <div className="text-sm text-gray-300 space-y-3">
-              <p>
+            <ul className="space-y-3 text-base text-white">
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-accent transition-colors"
+                >
+                  Schedule Consultation
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@neumantra.com"
+                  className="hover:text-accent transition-colors"
+                >
+                  General Inquiries
+                </a>
+              </li>
+              <li>
                 <span className="hover:text-accent transition-colors cursor-default">
-                  info@neumantra.com
+                  Locations
                 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="border-t border-gray-700 pt-8 pb-8">
+          <h4 className="text-base font-bold text-white mb-6 uppercase tracking-wider opacity-60">
+            Contact Information
+          </h4>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="text-base text-white space-y-3">
+              <p className="font-semibold">Neumantra Capital Advisors</p>
+              <div className="space-y-1">
+                <p className="text-sm">A 303, Rajkamal CHS</p>
+                <p className="text-sm">Opp. Mumbai University, Vidyanagari</p>
+                <p className="text-sm">Manipada, Kalina, Santacruz East</p>
+                <p className="text-sm">Mumbai – 400098</p>
+              </div>
+              <p className="text-sm">
+                <a
+                  href="mailto:info@mantraa.com"
+                  className="hover:text-accent transition-colors"
+                >
+                  Email: info@mantraa.com
+                </a>
               </p>
-              <p>
-                <span className="hover:text-accent transition-colors cursor-default">
-                  +91-22-XXXXXXX
-                </span>
+              <p className="text-sm">
+                <a
+                  href="tel:+919326389159"
+                  className="hover:text-accent transition-colors"
+                >
+                  Phone: +91 93263 89159
+                </a>
               </p>
-              <p>Mumbai, India</p>
             </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400">
-          <p>&copy; 2024 Neumantra Capital Advisors. All Rights Reserved.</p>
-          <div className="flex gap-6 mt-4 sm:mt-0">
-            <span className="hover:text-accent transition-colors cursor-default">
-              Privacy Policy
-            </span>
-            <span className="hover:text-accent transition-colors cursor-default">
-              Terms of Service
-            </span>
+        {/* Bottom Section - Legal & Copyright */}
+        <div className="border-t border-gray-700 pt-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-6">
+            <div className="text-sm text-white space-y-3">
+              <p>© 2025 Neumantra Capital Advisors. All rights reserved.</p>
+              <p className="text-gray-500">
+                Neumantra Capital Advisors is an investor relations advisory
+                practice combining the capabilities of Mantraa Advisory and
+                Neubright Partners.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center text-sm text-white border-t border-gray-700 pt-6">
+            <div className="flex gap-6">
+              <span className="hover:text-accent transition-colors cursor-default">
+                Privacy Policy
+              </span>
+              <span className="hover:text-accent transition-colors cursor-default">
+                Terms of Service
+              </span>
+              <span className="hover:text-accent transition-colors cursor-default">
+                Disclaimer
+              </span>
+            </div>
           </div>
         </div>
       </div>

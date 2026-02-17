@@ -35,57 +35,59 @@ export default function OurCapabilities() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-primary text-white transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 text-gray-900 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(248, 223, 228, 0.85) 50%, rgba(229, 231, 235, 0.9) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Our Capabilities
           </h2>
           <SectionDivider />
-          <p className="text-gray-200 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-3xl mx-auto">
             End-to-end investor relations services spanning market preparation,
             strategic engagement, and sustained value creation.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {capabilities.map((capability, index) => {
             const Icon = capability.icon;
             return (
               <div
                 key={index}
-                className="backdrop-blur-md border-2 border-white/20 rounded-lg p-8 hover:border-white/40 transition-all duration-300 shadow-lg"
-                style={{
-                  background:
-                    "linear-gradient(to bottom right, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%)",
-                }}
+                className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 flex flex-col h-full"
               >
-                <Icon
-                  className="w-14 h-14 text-white mb-4 opacity-75"
-                  strokeWidth={1.5}
-                />
-                <h3 className="text-xl font-bold text-white mb-3">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                  <Icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-3">
                   {capability.title}
                 </h3>
-                <p className="text-gray-200 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-base leading-relaxed mb-4 flex-grow">
                   {capability.description}
                 </p>
                 <div
-                  className="pt-4 mb-2"
+                  className="pt-4 mt-auto"
                   style={{
                     borderTop: "1px solid transparent",
                     borderImage:
-                      "linear-gradient(to right, rgb(220, 38, 38) 0%, transparent 100%)",
+                      "linear-gradient(to right, hsl(var(--accent)) 0%, transparent 100%)",
                     borderImageSlice: 1,
                   }}
                 >
-                  <p className="text-xs font-semibold text-white mb-2">
-                    KEY DELIVERABLES
+                  <p className="text-xs font-semibold text-primary mb-2">
+                    Key deliverables
                   </p>
-                  <p className="text-gray-300 text-xs leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {capability.deliverables}
                   </p>
                 </div>

@@ -6,12 +6,12 @@ export default function OurHeritage() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 text-gray-900 transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 text-gray-900 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
-          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(248, 223, 228, 0.85) 50%, rgba(229, 231, 235, 0.9) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,15 +30,17 @@ export default function OurHeritage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300 shadow-lg">
-            <div className="flex justify-start mb-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
-                alt="Mantraa Logo"
-                className="h-6 w-auto"
-              />
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
+            <div className="flex justify-start mb-6">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-start">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2Fde161038493542a5bbd349610b65931a?format=webp&width=800&height=1200"
+                  alt="Mantraa Logo"
+                  className="h-8 w-auto"
+                />
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-2">
               <a
                 href="https://www.mantraa.com"
                 target="_blank"
@@ -48,7 +50,13 @@ export default function OurHeritage() {
                 Mantraa Advisory
               </a>
             </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <p className="text-sm font-semibold text-primary mb-4">
+              Financial Advisory & Strategy
+            </p>
+            <p className="text-gray-800 font-medium mb-4">
+              Mantraa brings rigorous financial advisory credentials to Neumantra's foundation:
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed">
               Established financial and strategic advisory practice with deep
               capital-markets expertise - supporting companies through
               valuations, IPO preparation, CFO-level guidance, and transaction
@@ -56,15 +64,17 @@ export default function OurHeritage() {
             </p>
           </div>
 
-          <div className="backdrop-blur-xl border-2 border-primary/30 rounded-lg p-8 bg-white/40 hover:bg-white/50 transition-all duration-300 shadow-lg">
-            <div className="flex justify-start mb-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
-                alt="Neubright Logo"
-                className="h-6 w-auto"
-              />
+          <div className="backdrop-blur-xl bg-white/40 border-2 border-white/80 rounded-xl p-8 hover:shadow-apple transition-all duration-300">
+            <div className="flex justify-start mb-6">
+              <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-lg p-4 flex items-center justify-start">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F0b27405b6ba144e189319268af836d65%2F9b6912099ccf4aba935a03dc14a8323f?format=webp&width=800&height=1200"
+                  alt="Neubright Logo"
+                  className="h-10 w-auto"
+                />
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-2">
               <a
                 href="https://www.neubright.in/"
                 target="_blank"
@@ -74,7 +84,13 @@ export default function OurHeritage() {
                 Neubright Partners
               </a>
             </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <p className="text-sm font-semibold text-primary mb-4">
+              Stakeholder Engagement & Communication
+            </p>
+            <p className="text-gray-800 font-medium mb-4">
+              Neubright contributes sophisticated communication and engagement capabilities:
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed">
               Strategic consulting firm specializing in stakeholder engagement,
               corporate communications, reputation management, and ESG
               integration - trusted by leadership teams navigating complex
@@ -83,9 +99,9 @@ export default function OurHeritage() {
           </div>
         </div>
 
-        <div className="text-center bg-red-700 text-white rounded-lg p-8 mt-8">
-          <h4 className="text-2xl font-bold mb-3">Together as Neumantra</h4>
-          <p className="text-white text-lg max-w-3xl mx-auto">
+        <div className="text-center backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-8 mt-8">
+          <h4 className="text-2xl font-bold mb-3 text-accent">Together as Neumantra</h4>
+          <p className="text-gray-800 text-lg max-w-3xl mx-auto">
             A new standard in investor relations - where financial substance
             meets communication sophistication, purpose-built for India's
             ambitious mid-market companies.

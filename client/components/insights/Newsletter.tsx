@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import { useState } from "react";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function Newsletter() {
   const [ref, isInView] = useInView();
@@ -18,47 +19,71 @@ export default function Newsletter() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(248, 223, 228, 0.85) 50%, rgba(229, 231, 235, 0.9) 100%)",
+      }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
           Stay Informed
         </h2>
-
-        <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+        <SectionDivider />
+        <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-4xl mx-auto">
           Subscribe to receive insights, resources, and updates from the Neumantra team. We share perspectives on capital markets readiness, investor relations best practices, and stakeholder engagement strategies for growth companies.
-        </p>
+        </h3>
 
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-          <div className="flex flex-col sm:flex-row gap-3 mb-4">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="flex-grow px-4 py-3 rounded border border-gray-300 focus:outline-none focus:border-accent"
-            />
-            <button
-              type="submit"
-              className="bg-accent hover:bg-red-700 text-white px-6 py-3 rounded font-semibold transition-colors whitespace-nowrap"
-            >
-              Subscribe
-            </button>
-          </div>
+        <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 max-w-md mx-auto">
+          <form onSubmit={handleSubmit}>
+            <div className="flex flex-col sm:flex-row gap-3 mb-4">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="flex-grow px-4 py-3 rounded border border-gray-300 focus:outline-none focus:border-primary bg-white/80"
+              />
+              <button
+                type="submit"
+                className="pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 whitespace-nowrap inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 group"
+                style={{
+                  background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
+                }}
+              >
+                Subscribe
+                <span
+                  className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300"
+                  style={{ marginLeft: "auto" }}
+                >
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+                    alt="Arrow"
+                    style={{
+                      filter: "brightness(0) invert(1)",
+                      maxWidth: "14px",
+                      maxHeight: "22px",
+                      objectFit: "contain",
+                    }}
+                  />
+                </span>
+              </button>
+            </div>
 
-          {submitted && (
-            <p className="text-accent font-semibold text-sm">
-              Thank you for subscribing!
+            {submitted && (
+              <p className="text-primary font-semibold text-sm mb-3">
+                Thank you for subscribing!
+              </p>
+            )}
+
+            <p className="text-gray-600 text-sm">
+              We respect your privacy. Unsubscribe anytime.
             </p>
-          )}
-
-          <p className="text-gray-500 text-sm">
-            We respect your privacy. Unsubscribe anytime.
-          </p>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   );

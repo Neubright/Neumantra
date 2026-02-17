@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative text-white h-[90vh] flex items-start justify-center pt-16 md:pt-20 overflow-hidden"
+      className="relative text-white h-screen flex items-center justify-center overflow-hidden -mt-[72px]"
       style={{
         backgroundImage:
           "url('https://images.pexels.com/photos/416320/pexels-photo-416320.jpeg?auto=compress&cs=tinysrgb&w=1200&q=40')",
@@ -16,8 +16,15 @@ export default function Hero() {
         backgroundAttachment: "fixed",
         backgroundColor: "#1a1a2e",
       }}
+      id="hero-section"
     >
       <style>{`
+        @media (max-width: 768px) {
+          section {
+            background-attachment: scroll !important;
+          }
+        }
+
         @keyframes slideInUp {
           from {
             opacity: 0;
@@ -76,30 +83,46 @@ export default function Hero() {
         }
       `}</style>
 
-      {/* Overlay for text visibility */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/80 to-primary/85"></div>
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="hero-title text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-          Building Market Credibility for India's Growth Companies
+      {/* Blue-tinted overlay for background image */}
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(15, 37, 71, 0.40)" }}></div>
+      <div className="relative mx-4 sm:mx-6 md:mx-10 lg:mx-20 py-12 md:py-16">
+        <div className="backdrop-blur-2xl bg-white/15 border-2 border-white/90 rounded-xl p-4 sm:p-6 md:p-8 lg:p-12 mt-20">
+          <div className="text-center w-full">
+        <h1 className="hero-title text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 px-2">
+          <span className="text-accent">Building</span> Market <span className="text-accent">Credibility</span> for India's Growth Companies
         </h1>
-        <p className="hero-subtitle text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-3xl mx-auto">
+        <p className="hero-subtitle text-base lg:text-lg text-gray-200 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto px-2">
           Strategic investor relations advisory that combine financial rigour
           with stakeholder engagement excellence - helping mid-market companies
           command attention in India's capital markets.
         </p>
-        <button className="hero-button px-3 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center gap-3 bg-accent text-white hover:bg-red-700 shadow-lg">
+        <button className="hero-button pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/70 hover:shadow-apple hover:scale-105 group" style={{
+          background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
+        }}>
           Schedule a Strategic Consultation
-          <span className="flex-shrink-0 backdrop-blur-md bg-white/25 border border-white/40 rounded-full w-10 h-10 flex items-center justify-center">
-            →
+          <span className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+              alt="Arrow"
+              style={{
+                filter: "brightness(0) invert(1)",
+                maxWidth: "14px",
+                maxHeight: "22px",
+                objectFit: "contain",
+                marginLeft: "2px",
+              }}
+            />
           </span>
         </button>
         <SectionDivider />
-        <p className="text-gray-200 max-w-3xl mx-auto text-xs md:text-sm">
+        <p className="text-gray-200 max-w-3xl mx-auto text-sm md:text-base px-2">
           Neumantra brings together the proven capabilities of Mantraa Advisory
           and Neubright Partners to deliver integrated IR advisory for companies
           preparing to list, transitioning to main board, or strengthening their
           market presence.
         </p>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,29 +1,108 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
+import { Briefcase, Target, TrendingUp } from "lucide-react";
 
 export default function ServicesCTA() {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView({ threshold: 0.05 });
+
+  const benefits = [
+    {
+      icon: Briefcase,
+      title: "Flexible Engagement",
+      description: "Models tailored to your stage and resources",
+    },
+    {
+      icon: Target,
+      title: "Proven Expertise",
+      description: "Deep experience across capital markets journey",
+    },
+    {
+      icon: TrendingUp,
+      title: "Measurable Results",
+      description: "Track success through investor perception metrics",
+    },
+  ];
 
   return (
     <section
       ref={ref}
-      className={`bg-accent text-white py-16 md:py-24 transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+      }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to Elevate Your IR Capability?
-        </h2>
-        <p className="text-lg text-red-100 mb-8 max-w-2xl mx-auto">
-          Every company's capital markets journey is unique. Neumantra's flexible engagement models ensure appropriate support matched to your stage, objectives, and resources.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-accent hover:bg-gray-100 px-8 py-3 rounded font-semibold transition-colors">
-            Schedule a Consultation
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold text-sm mb-4">
+            NEXT STEPS
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Ready to Elevate Your IR Capability?
+          </h2>
+          <SectionDivider />
+          <h3 className="text-lg md:text-xl font-semibold text-primary mt-6 mb-4 max-w-3xl mx-auto">
+            Every company's capital markets journey is unique. Neumantra's flexible engagement models ensure support aligned to your stage, objectives, and resources.
+          </h3>
+        </div>
+
+        {/* Why Choose Neumantra */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 text-center hover:shadow-apple hover:border-white/90 transition-all duration-300 hover:bg-white/40"
+            >
+              <div className="flex justify-center mb-4">
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center">
+                  <benefit.icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-700 text-sm">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <button className="pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-3xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 hover:border-red-300/80 group" style={{
+            background: "linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.55) 100%)",
+            backdropFilter: "blur(30px)",
+          }}>
+            <span>Schedule a Consultation</span>
+            <span className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300 ml-auto">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+                alt="Arrow"
+                style={{
+                  filter: "brightness(0) invert(1)",
+                  maxWidth: "14px",
+                  maxHeight: "22px",
+                  objectFit: "contain",
+                  marginLeft: "2px",
+                }}
+              />
+            </span>
           </button>
-          <button className="border-2 border-white text-white hover:bg-white hover:text-accent px-8 py-3 rounded font-semibold transition-colors">
+          <button className="backdrop-blur-xl bg-white/40 border-2 border-white/80 text-primary hover:bg-white/60 hover:border-white/100 px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-apple">
             Download Service Overview
           </button>
+        </div>
+
+        {/* Trust indicator */}
+        <div className="text-center">
+          <p className="text-gray-600 text-sm">
+            Join India's leading mid-market companies in elevating their
+            investor relations strategy
+          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
 
 export default function ContactDetails() {
   const [ref, isInView] = useInView();
@@ -6,27 +7,36 @@ export default function ContactDetails() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.8) 0%, rgba(248, 223, 228, 0.6) 50%, rgba(229, 231, 235, 0.7) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-          Corporate Contact Details
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Corporate Contact Details
+          </h2>
+          <SectionDivider />
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
           <div>
             <h3 className="text-2xl font-bold text-primary mb-6">
               Neumantra Capital Advisors
             </h3>
 
-            <div className="space-y-8">
+            <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 space-y-8">
               <div>
                 <h4 className="font-bold text-primary mb-3">Address</h4>
                 <p className="text-gray-700">
-                  [Office Address Line 1]<br />
-                  [Office Address Line 2]<br />
+                  [Office Address Line 1]
+                  <br />
+                  [Office Address Line 2]
+                  <br />
                   [City, State, PIN Code]
                 </p>
               </div>
@@ -34,20 +44,20 @@ export default function ContactDetails() {
               <div>
                 <h4 className="font-bold text-primary mb-3">Email</h4>
                 <p className="text-gray-700 mb-2">
-                  <span className="font-semibold">General Inquiries:</span><br />
+                  <span className="font-semibold">General Inquiries:</span>
+                  <br />
                   contact@neumantra.com
                 </p>
                 <p className="text-gray-700">
-                  <span className="font-semibold">New Client Inquiries:</span><br />
+                  <span className="font-semibold">New Client Inquiries:</span>
+                  <br />
                   engage@neumantra.com
                 </p>
               </div>
 
               <div>
                 <h4 className="font-bold text-primary mb-3">Phone</h4>
-                <p className="text-gray-700">
-                  +91-[XX]-XXXX-XXXX
-                </p>
+                <p className="text-gray-700">+91-[XX]-XXXX-XXXX</p>
               </div>
 
               <div>
@@ -59,9 +69,11 @@ export default function ContactDetails() {
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8 border border-gray-200 h-fit">
-            <h4 className="font-bold text-primary mb-4 text-lg">Connect With Us</h4>
-            
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 h-fit">
+            <h4 className="font-bold text-primary mb-4 text-lg">
+              Connect With Us
+            </h4>
+
             <div className="space-y-4">
               <a
                 href="#"

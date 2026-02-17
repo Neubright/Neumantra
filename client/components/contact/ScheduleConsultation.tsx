@@ -1,54 +1,127 @@
 import { useInView } from "@/hooks/useInView";
+import SectionDivider from "../ui/SectionDivider";
+import { Clock, Target, Lightbulb, Handshake, CheckCircle } from "lucide-react";
 
 export default function ScheduleConsultation() {
   const [ref, isInView] = useInView();
 
   const expectations = [
-    "60-minute confidential consultation with Neumantra partners",
-    "Discussion of your business context and capital markets goals",
-    "Overview of relevant Neumantra capabilities and approach",
-    "Preliminary thoughts on potential engagement framework",
-    "No obligation - simply an opportunity for mutual exploration",
+    {
+      title: "60-minute confidential consultation",
+      description: "With Neumantra partners",
+      icon: Clock,
+    },
+    {
+      title: "Discussion of your business context",
+      description: "And capital markets goals",
+      icon: Target,
+    },
+    {
+      title: "Overview of relevant capabilities",
+      description: "And our approach",
+      icon: Lightbulb,
+    },
+    {
+      title: "Preliminary engagement framework",
+      description: "Thoughts on potential structure",
+      icon: Handshake,
+    },
+    {
+      title: "No obligation",
+      description: "Simply an opportunity for mutual exploration",
+      icon: CheckCircle,
+    },
   ];
 
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 bg-white transition-all duration-700 ease-out ${
-        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
+        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(219, 234, 254, 0.95) 0%, rgba(248, 223, 228, 0.85) 50%, rgba(229, 231, 235, 0.9) 100%)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Schedule a Consultation
           </h2>
+          <SectionDivider />
+        </div>
+
+        <div className="max-w-7xl mx-auto">
+          <div className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100 mb-8">
+            <p className="text-base text-gray-700 mb-6 leading-relaxed">
+              Whether you are beginning to explore capital markets engagement,
+              preparing for a significant transaction, or seeking to strengthen
+              an existing investor relations function, we welcome a conversation
+              about your goals and how Neumantra can support them.
+            </p>
+
+            <p className="text-base text-gray-700 mb-6 leading-relaxed">
+              Our initial discussions are exploratory and confidential. We take
+              time to understand your business, capital markets objectives, and
+              current stakeholder engagement approach—then provide perspective
+              on how we might add value.
+            </p>
+          </div>
 
           <div className="mb-8">
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Whether you are beginning to explore capital markets engagement, preparing for a significant transaction, or seeking to strengthen an existing IR function, we would welcome a conversation about your goals and how Neumantra can support them.
-            </p>
-
-            <p className="text-base text-gray-700 mb-8 leading-relaxed">
-              Our initial discussions are exploratory and confidential. We will take time to understand your business, your capital markets objectives, and your current stakeholder engagement approach—then provide perspective on how we might add value.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-8 mb-8 border-l-4 border-accent">
-            <h3 className="text-xl font-bold text-primary mb-6">What to expect:</h3>
-            <ul className="space-y-3">
+            <h3 className="text-xl font-bold text-primary mb-8 text-center">
+              What to expect:
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {expectations.map((item, index) => (
-                <li key={index} className="text-gray-700 flex items-start">
-                  <span className="text-accent mr-3 flex-shrink-0">✓</span>
-                  <span>{item}</span>
-                </li>
+                <div
+                  key={index}
+                  className="backdrop-blur-xl bg-white/30 border-2 border-white/60 rounded-lg p-6 hover:shadow-apple hover:border-white/90 hover:bg-white/40 transition-all duration-300 group"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-12 h-12 flex items-center justify-center">
+                        <item.icon
+                          className="w-6 h-6 text-primary opacity-75"
+                          strokeWidth={1.5}
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1 text-sm">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-700 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
-          <button className="bg-accent hover:bg-red-700 text-white px-8 py-4 rounded font-semibold transition-colors text-lg">
-            Schedule Consultation
-          </button>
+          <div className="flex justify-center">
+            <button className="pl-3 pr-1.5 py-1.5 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 backdrop-blur-2xl text-primary border-2 border-red-300/60 hover:shadow-apple hover:scale-105 group" style={{
+              background: "linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.75) 100%)",
+            }}>
+              Schedule Consultation
+              <span className="flex-shrink-0 bg-primary rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-primary/90 transition-all duration-300">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ffcfda2dcaa5c41399e1e44107fdf402a%2Fc76f1a82d1c747c78df66373da84fda9?format=webp&width=800&height=1200"
+                  alt="Arrow"
+                  style={{
+                    filter: "brightness(0) invert(1)",
+                    maxWidth: "14px",
+                    maxHeight: "22px",
+                    objectFit: "contain",
+                    marginLeft: "2px",
+                  }}
+                />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>

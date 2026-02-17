@@ -29,12 +29,12 @@ export default function WhoWeServe() {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-24 transition-all duration-700 ease-out ${
+      className={`py-12 md:py-18 transition-all duration-700 ease-out ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{
         background:
-          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.6) 0%, rgba(219, 234, 254, 0.6) 50%, rgba(254, 240, 242, 0.6) 100%)",
+          "radial-gradient(circle at 20% 30%, rgba(254, 226, 226, 0.85) 0%, rgba(219, 234, 254, 0.85) 50%, rgba(254, 240, 242, 0.85) 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,16 +56,18 @@ export default function WhoWeServe() {
             return (
               <div
                 key={index}
-                className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-2xl transition-all duration-300 hover:bg-white/40 hover:border-white/100"
+                className="backdrop-blur-xl bg-white/30 border-2 border-white/80 rounded-lg p-8 hover:shadow-apple transition-all duration-300 hover:bg-white/40 hover:border-white/100"
               >
-                <Icon
-                  className="w-12 h-12 text-accent mb-4 opacity-75"
-                  strokeWidth={1.5}
-                />
+                <div className="backdrop-blur-xl bg-white/40 border border-white/80 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                  <Icon
+                    className="w-8 h-8 text-accent opacity-75"
+                    strokeWidth={1.5}
+                  />
+                </div>
                 <h3 className="text-xl font-bold text-primary mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-base leading-relaxed">
                   {service.description}
                 </p>
               </div>
